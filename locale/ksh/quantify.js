@@ -1,0 +1,1 @@
+module.exports=function(e){return 0==e?"zero":1==e?"one":"other"}
