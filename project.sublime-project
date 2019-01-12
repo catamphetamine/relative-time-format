@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"folder_exclude_patterns": [".nyc_output", "bundle", "node_modules", "coverage", "modules", "commonjs", "project.sublime-workspace"]
+		}
+	],
+	"settings":
+	{
+		"trim_trailing_white_space_on_save": true
+	}
+}
