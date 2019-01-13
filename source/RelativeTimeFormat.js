@@ -5,6 +5,8 @@ import {
   addLocaleData
 } from './LocaleDataStore'
 
+import resolveLocale from './resolveLocale'
+
 // Valid time units.
 const UNITS = [
   "second",
@@ -28,12 +30,6 @@ const STYLE_VALUES = [
   "long",
   "short",
   "narrow"
-]
-
-// Valid values for the `localeMatcher` option.
-const LOCALE_MATCHER_VALUES = [
-  "lookup",
-  // "best-fit"
 ]
 
 /**
@@ -78,9 +74,6 @@ export default class RelativeTimeFormat {
 
     // Set `localeMatcher` option.
     if (localeMatcher) {
-      if (LOCALE_MATCHER_VALUES.indexOf(localeMatcher) < 0) {
-        throw new RangeError(`Invalid "localeMatcher" option: ${localeMatcher}`)
-      }
       this.localeMatcher = localeMatcher
     }
 
@@ -278,78 +271,11 @@ export default class RelativeTimeFormat {
  * Intl.RelativeTimeFormat.supportedLocalesOf(locales, options)
  */
 RelativeTimeFormat.supportedLocalesOf = function(locales, options = {}) {
-  // Validate `localeMatcher` option.
-  let { localeMatcher } = options
-  if (localeMatcher) {
-    if (LOCALE_MATCHER_VALUES.indexOf(localeMatcher) < 0) {
-      throw new RangeError(`Invalid "localeMatcher" option: ${localeMatcher}`)
-    }
-    localeMatcher = localeMatcher
-  } else {
-    localeMatcher = 'lookup'
-  }
   // Convert `locales` to an array.
   if (typeof locales === 'string') {
     locales = [locales]
   }
   return locales.filter(locale => resolveLocale(locale, options))
-}
-
-/**
- * Resolves a locale to a supported one (if any).
- * @param  {string} locale
- * @param {Object} [options] - An object that may have the following property:
- * @param {string} [options.localeMatcher="lookup"] - The locale matching algorithm to use. Possible values are "lookup" and "best fit". Currently only "lookup" is supported.
- * @return {string} [locale]
- * @example
- * // Returns "sr"
- * resolveLocale("sr-Cyrl-BA")
- * // Returns `undefined`
- * resolveLocale("xx-Latn")
- */
-export function resolveLocale(locale, options = {}) {
-  let { localeMatcher } = options
-  if (localeMatcher) {
-    if (LOCALE_MATCHER_VALUES.indexOf(localeMatcher) < 0) {
-      throw new RangeError(`Invalid "localeMatcher" option: ${localeMatcher}`)
-    }
-    localeMatcher = localeMatcher
-  } else {
-    localeMatcher = 'lookup'
-  }
-  switch (localeMatcher) {
-    case 'lookup':
-      return lookUpLocale(locale)
-  }
-}
-
-/**
- * Resolves a locale to a supported one (if any).
- * Starts from the most specific locale and gradually
- * falls back to less specific ones.
- * This is a basic implementation of the "lookup" algorithm.
- * https://tools.ietf.org/html/rfc4647#section-3.4
- * @param  {string} locale
- * @return {string} [locale]
- * @example
- * // Returns "sr"
- * lookUpLocale("sr-Cyrl-BA")
- * // Returns `undefined`
- * lookUpLocale("xx-Latn")
- */
-function lookUpLocale(locale) {
-  if (getLocaleData(locale)) {
-    return locale
-  }
-  // `sr-Cyrl-BA` -> `sr-Cyrl` -> `sr`.
-  const parts = locale.split('-')
-  while (locale.length > 1) {
-    parts.pop()
-    locale = parts.join('-')
-    if (getLocaleData(locale)) {
-      return locale
-    }
-  }
 }
 
 /**

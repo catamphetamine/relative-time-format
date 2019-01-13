@@ -3,7 +3,7 @@ import en from '../locale/en'
 import ru from '../locale/ru'
 import to from '../locale/to'
 
-import RelativeTimeFormat, { resolveLocale } from './RelativeTimeFormat'
+import RelativeTimeFormat from './RelativeTimeFormat'
 
 RelativeTimeFormat.addLocale(ccp)
 RelativeTimeFormat.addLocale(en)
@@ -172,14 +172,6 @@ describe('Intl.RelativeTimeFormat', () => {
 
   it('"supportedLocalesOf" should throw when "localeMatcher" option is not a valid one', () => {
     expect(() => RelativeTimeFormat.supportedLocalesOf(["en"], { localeMatcher: "eccentric" })).to.throw('Invalid "localeMatcher" option')
-  })
-
-  it('"resolveLocale" should throw when "localeMatcher" option is not a valid one', () => {
-    expect(() => resolveLocale(["en"], { localeMatcher: "eccentric" })).to.throw('Invalid "localeMatcher" option')
-  })
-
-  it('"resolveLocale" should resolve locale', () => {
-    resolveLocale("en-XX").should.equal("en")
   })
 
   it(`should quantify as "other" when no quantifier function is present for a locale`, () => {
