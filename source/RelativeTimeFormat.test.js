@@ -1,4 +1,5 @@
 import ccp from '../locale/ccp'
+import de from '../locale/de'
 import en from '../locale/en'
 import ru from '../locale/ru'
 import to from '../locale/to'
@@ -6,6 +7,7 @@ import to from '../locale/to'
 import RelativeTimeFormat from './RelativeTimeFormat'
 
 RelativeTimeFormat.addLocale(ccp)
+RelativeTimeFormat.addLocale(de)
 RelativeTimeFormat.addLocale(en)
 RelativeTimeFormat.addLocale(ru)
 RelativeTimeFormat.addLocale(to)
@@ -67,7 +69,7 @@ describe('Intl.RelativeTimeFormat', () => {
   })
 
   it('should format yesterday/today/tomorrow', () => {
-    const rtf = new RelativeTimeFormat("en", { numeric: "auto" })
+    const rtf = new RelativeTimeFormat("de", { numeric: "auto" })
 
     // "today" is useless for relative time labels.
     // E.g. for `23:59:00` "today" is too vague.
@@ -80,9 +82,11 @@ describe('Intl.RelativeTimeFormat', () => {
     // "yesterday", "today" and "tomorrow".
     // The algorithm should take local time into account.
 
-    expect(rtf.format(-1, "day")).to.equal("yesterday")
-    expect(rtf.format(0, "day")).to.equal("today")
-    expect(rtf.format(1, "day")).to.equal("tomorrow")
+    expect(rtf.format(-2, "day")).to.equal("vorgestern")
+    expect(rtf.format(-1, "day")).to.equal("gestern")
+    expect(rtf.format(0, "day")).to.equal("heute")
+    expect(rtf.format(1, "day")).to.equal("morgen")
+    expect(rtf.format(2, "day")).to.equal("übermorgen")
   })
 
   it('shouldn\'t format yesterday/today/tomorrow when there\'s no locale data', () => {
