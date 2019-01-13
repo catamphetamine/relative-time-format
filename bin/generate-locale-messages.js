@@ -192,11 +192,11 @@ function listAllLocales() {
 function createTimeLabels(locale, style, localeMessages) {
 	const content = JSON.stringify(localeMessages[style], null, '\t')
 	// `sr-Cyrl-BA` -> `sr-Cyrl` -> `sr`.
-	const inherit_from = findParentLocaleHavingFile(locale, `${style}.json`, {
+	const parentLocale = findParentLocaleHavingFile(locale, `${style}.json`, {
 		condition: (file) => fs.readFileSync(file, 'utf-8') === content
 	})
-	if (inherit_from) {
-		return `../${inherit_from}/${style}.json`
+	if (parentLocale) {
+		return `../${parentLocale}/${style}.json`
 	}
 	fs.outputFileSync(path.join(__dirname, '../locale', locale, `${style}.json`), content)
 	return `./${style}.json`
