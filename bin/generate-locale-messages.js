@@ -1,7 +1,8 @@
 import path from 'path'
 import fs from 'fs-extra'
 
-import parseCLDR from '../source/tools/cldr'
+import extractRelativeTimeMessages from '../source/CLDR/extractRelativeTimeMessages'
+import getLocalesListInCLDR from '../source/CLDR/getLocalesList'
 
 // CLDR stubs missing translations with English ones.
 // This can be used to find out whether a translation is missing.
@@ -22,13 +23,8 @@ const LONG_STYLE_TRANSLATION_STUB = `{
 // npm run generate-locale-messages
 // // npm run generate-load-all-locales
 // ````
-for (const locale of listAllCLDRLocales())
+for (const locale of getLocalesListInCLDR())
 {
-	// Don't know what the "root" key is for so skip it.
-	if (locale === 'root') {
-		continue
-	}
-
 	if (
 		// Different variations of "en" language have `en/short.json` and `en/narrow.json`
 		// which differ from one another by a simple dot, e.g. `yr.` vs `yr`.
@@ -48,7 +44,7 @@ for (const locale of listAllCLDRLocales())
 		continue
 	}
 
-	console.log(locale)
+	// console.log(locale)
 
 	// "language" is the top-most parent locale of the `locale`.
 	const language = locale.split('-')[0]
@@ -69,7 +65,7 @@ for (const locale of listAllCLDRLocales())
 	// for this language then don't add it.
 	const quantifyDirectory = findQuantifyDirectory(locale)
 
-	const localeMessages = parseCLDR(require(cldrJsonPath))
+	const localeMessages = extractRelativeTimeMessages(require(cldrJsonPath))
 
 	// "long" messages are always present.
 	if (!localeMessages.long) {
@@ -78,7 +74,7 @@ for (const locale of listAllCLDRLocales())
 
 	// If there are no translations for a locale then skip it.
 	if (JSON.stringify(localeMessages.long, null, '\t').indexOf(LONG_STYLE_TRANSLATION_STUB) === 0) {
-		console.warn(`Data for "${locale}" locale is an English stub. Skipping.`)
+		// console.log(`No translation for "${locale}". Skipping.`)
 		fs.removeSync(localeDirectory)
 		continue
 	}
@@ -105,8 +101,7 @@ for (const locale of listAllCLDRLocales())
 	fs.outputFileSync(
 		path.join(localeDirectory, 'index.js'),
 		`
-module.exports =
-{
+module.exports = {
 	${[
 	"locale: '" + locale + "'",
 	"long: require('" + createTimeLabels(locale, 'long', localeMessages) + "')",
@@ -122,7 +117,7 @@ module.exports =
 
 	// Remove all locales containing just `index.js`
 	// which means they're fully inherting from their parent locale.
-	for (const locale of listAllLocales()) {
+	for (const locale of getLocalesListGenerated()) {
 		const files = fs.readdirSync(path.join(__dirname, '../locale', locale))
 		if (files.length === 1 && files[0] === 'index.js') {
 			fs.removeSync(path.resolve(__dirname, '../locale', locale))
@@ -164,19 +159,10 @@ function compactQuantifiersData(flavour) {
 }
 
 /**
- * Returns a list of all locales supported by CLDR.
- * @return {string[]}
- */
-export function listAllCLDRLocales() {
-	return fs.readdirSync(path.join(__dirname, '../node_modules/cldr-dates-full/main/'))
-		.filter(_ => fs.statSync(path.join(__dirname, '../node_modules/cldr-dates-full/main', _)).isDirectory())
-}
-
-/**
  * Returns a list of all supported locales.
  * @return {string[]}
  */
-function listAllLocales() {
+function getLocalesListGenerated() {
 	return fs.readdirSync(path.join(__dirname, '../locale'))
 		.filter(_ => fs.statSync(path.join(__dirname, '../locale', _)).isDirectory())
 }

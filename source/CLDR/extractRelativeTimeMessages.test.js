@@ -1,16 +1,14 @@
-import parseCLDR from './cldr'
+import extractRelativeTimeMessages from './extractRelativeTimeMessages'
 import { short as englishShort, long as englishLong } from '../../locale/en'
 
-describe('CLDR', function()
-{
-	it('should parse Unicode CLDR locale data', () =>
-	{
-    // console.log(JSON.stringify(parseCLDR(englishCLDR), null, 2))
-		parseCLDR(englishCLDR).should.deep.equal(englishCLDRConverted)
+describe('CLDR', () => {
+	it('should parse Unicode CLDR locale data', () => {
+    // console.log(JSON.stringify(extractRelativeTimeMessages(englishDateMessagesInCLDR), null, 2))
+		extractRelativeTimeMessages(englishDateMessagesInCLDR).should.deep.equal(englishRelativeTimeMessages)
 	})
 })
 
-const englishCLDRConverted =
+const englishRelativeTimeMessages =
 {
   "long": {
     "year": {
@@ -245,7 +243,7 @@ const englishCLDRConverted =
   }
 }
 
-const englishCLDR =
+const englishDateMessagesInCLDR =
 {
   "main": {
     "en-US-POSIX": {

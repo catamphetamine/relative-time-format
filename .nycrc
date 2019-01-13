@@ -10,6 +10,7 @@
     "source/**/*.js"
   ],
   "exclude": [
+    "source/CLDR/getLocalesList.js",
     "**/*.test.js"
   ],
   "sourceMap": false,

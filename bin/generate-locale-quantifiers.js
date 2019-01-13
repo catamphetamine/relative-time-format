@@ -8,9 +8,9 @@ import UglifyJS from 'uglify-js'
 import path from 'path'
 import fs from 'fs-extra'
 
-import { listAllCLDRLocales } from './generate-locale-messages'
+import getLocalesListInCLDR from '../source/CLDR/getLocalesList'
 
-const cldrLocales = listAllCLDRLocales()
+const CLDR_LOCALES = getLocalesListInCLDR()
 
 // Generate a pluralization function for each language
 for (const locale of Object.keys(plurals)) {
@@ -25,7 +25,7 @@ for (const locale of Object.keys(plurals)) {
 
 	// If this locale has no relative time labels
 	// in CLDR data then skip it.
-	if (cldrLocales.indexOf(locale) < 0) {
+	if (CLDR_LOCALES.indexOf(locale) < 0) {
 		continue
 	}
 
@@ -63,4 +63,13 @@ for (const locale of Object.keys(plurals)) {
 		path.join(__dirname, '../locale', locale, 'quantify.js'),
 		`module.exports=${code}`
 	)
+}
+
+/**
+ * Returns a list of all locales supported by CLDR.
+ * @return {string[]}
+ */
+function listAllCLDRLocales() {
+	return fs.readdirSync(path.join(__dirname, '../node_modules/cldr-dates-full/main/'))
+		.filter(name => fs.statSync(path.join(__dirname, '../node_modules/cldr-dates-full/main', name)).isDirectory())
 }

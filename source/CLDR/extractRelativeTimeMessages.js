@@ -69,26 +69,22 @@ const narrow = /-narrow$/
 // 	...
 // }
 // ```
-export default function parseCLDR(data)
+export default function extractRelativeTimeMessages(localeData)
 {
-	// Extract `locale` from CLDR data
-	const locale = Object.keys(data.main)[0]
-	const timeUnitsFormattingRules = data.main[locale].dates.fields
+	// Extract `locale` from CLDR locale data.
+	const locale = Object.keys(localeData.main)[0]
+	const timeUnitsFormattingRules = localeData.main[locale].dates.fields
 
 	return Object.keys(timeUnitsFormattingRules)
-	.filter((unit) =>
-	{
-		// Take only the generic time measurement units
-		// (skip exotic ones like "fri" on "thu").
-		return units.indexOf(parseUnit(unit).unit) >= 0
-	})
-	.reduce((localeData, _unit) =>
-	{
-		const { unit, type } = parseUnit(_unit)
-		return setUnitRules(localeData, type, unit, parseCLDRTimeUnitFormattingRules(timeUnitsFormattingRules[_unit]))
-	},
-	// Parsed locale data
-	{})
+		.filter((unit) => {
+			// Take only the generic time measurement units
+			// (skip exotic ones like "fri" on "thu").
+			return units.indexOf(parseUnit(unit).unit) >= 0
+		})
+		.reduce((localeData, _unit) => {
+			const { unit, type } = parseUnit(_unit)
+			return setUnitRules(localeData, type, unit, extractTimeUnitFormattingRules(timeUnitsFormattingRules[_unit]))
+		}, {})
 }
 
 /**
@@ -96,7 +92,7 @@ export default function parseCLDR(data)
  * @param  {object} - CLDR time unit formatting rules.
  * @return {(object|string)}
  */
-function parseCLDRTimeUnitFormattingRules(rulesCLDR)
+function extractTimeUnitFormattingRules(rulesCLDR)
 {
 	let rules = {}
 
@@ -213,19 +209,15 @@ function parseCLDRTimeUnitFormattingRules(rulesCLDR)
  * @param {object} rules
  * @return {object} Locale data.
  */
-function setUnitRules(localeData, type, unit, rules)
-{
+function setUnitRules(localeData, type, unit, rules) {
 	if (!localeData[type]) {
 		localeData[type] = {}
 	}
-
 	localeData[type][unit] = rules
-
 	// Populate "now" unit rules.
 	if (unit === 'second' && rules.current) {
 		localeData[type].now = rules.current
 	}
-
 	return localeData
 }
 
@@ -234,8 +226,7 @@ function setUnitRules(localeData, type, unit, rules)
  * @param  {string} CLDR_unit
  * @return {object} `{ type, unit }`.
  */
-function parseUnit(unit)
-{
+function parseUnit(unit) {
 	if (narrow.test(unit)) {
 		return { type: 'narrow', unit: unit.replace(narrow, '') }
 	}
