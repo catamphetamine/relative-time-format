@@ -87,6 +87,8 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(rtf.format(0, "day")).to.equal("heute")
     expect(rtf.format(1, "day")).to.equal("morgen")
     expect(rtf.format(2, "day")).to.equal("übermorgen")
+
+    expect(rtf.format(0, "second")).to.equal("jetzt")
   })
 
   it('shouldn\'t format yesterday/today/tomorrow when there\'s no locale data', () => {
