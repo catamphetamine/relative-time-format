@@ -54,6 +54,5 @@
 		"current": "nou",
 		"past": "{0} s. gelede",
 		"future": "oor {0} s."
-	},
-	"now": "nou"
+	}
 }

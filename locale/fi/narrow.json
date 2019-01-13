@@ -48,6 +48,5 @@
 		"current": "nyt",
 		"past": "{0} s sitten",
 		"future": "{0} s päästä"
-	},
-	"now": "nyt"
+	}
 }

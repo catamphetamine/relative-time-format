@@ -60,6 +60,5 @@
 			"other": "pirms {0} s"
 		},
 		"future": "pēc {0} s"
-	},
-	"now": "tagad"
+	}
 }

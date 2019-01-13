@@ -72,6 +72,5 @@
 		"current": "tani",
 		"past": "{0} sek më parë",
 		"future": "pas {0} sek"
-	},
-	"now": "tani"
+	}
 }

@@ -96,6 +96,5 @@
 			"one": "an {0} Sek.",
 			"other": "a(n) {0} Sek."
 		}
-	},
-	"now": "now"
+	}
 }

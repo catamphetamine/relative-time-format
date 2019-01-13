@@ -60,6 +60,5 @@
 		"current": "now",
 		"past": "{0} sec. ago",
 		"future": "in {0} sec."
-	},
-	"now": "now"
+	}
 }

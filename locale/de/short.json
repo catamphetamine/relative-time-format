@@ -72,6 +72,5 @@
 		"current": "jetzt",
 		"past": "vor {0} Sek.",
 		"future": "in {0} Sek."
-	},
-	"now": "jetzt"
+	}
 }

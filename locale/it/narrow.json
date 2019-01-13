@@ -66,6 +66,5 @@
 		"current": "ora",
 		"past": "{0} s fa",
 		"future": "tra {0} s"
-	},
-	"now": "ora"
+	}
 }

@@ -48,6 +48,5 @@
 		"current": "most",
 		"past": "{0} másodperccel ezelőtt",
 		"future": "{0} másodperc múlva"
-	},
-	"now": "most"
+	}
 }

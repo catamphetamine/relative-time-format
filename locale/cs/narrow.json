@@ -67,6 +67,5 @@
 		"current": "nyní",
 		"past": "před {0} s",
 		"future": "za {0} s"
-	},
-	"now": "nyní"
+	}
 }

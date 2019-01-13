@@ -72,6 +72,5 @@
 		"current": "nu",
 		"past": "for {0} sek. siden",
 		"future": "om {0} sek."
-	},
-	"now": "nu"
+	}
 }

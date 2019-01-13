@@ -87,6 +87,5 @@
 		"current": "nawr",
 		"past": "{0} eiliad yn ôl",
 		"future": "ymhen {0} eiliad"
-	},
-	"now": "nawr"
+	}
 }

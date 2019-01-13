@@ -74,6 +74,5 @@
 		"current": "teraz",
 		"past": "{0} sek. temu",
 		"future": "za {0} sek."
-	},
-	"now": "teraz"
+	}
 }

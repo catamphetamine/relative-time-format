@@ -56,6 +56,5 @@
 		"current": "sada",
 		"past": "prije {0} sek.",
 		"future": "za {0} sek."
-	},
-	"now": "sada"
+	}
 }

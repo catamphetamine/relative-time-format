@@ -70,6 +70,5 @@
 		"current": "acum",
 		"past": "acum {0} sec.",
 		"future": "peste {0} sec."
-	},
-	"now": "acum"
+	}
 }

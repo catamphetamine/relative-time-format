@@ -60,6 +60,5 @@
 		"current": "ahora",
 		"past": "hace {0} s",
 		"future": "en {0} s"
-	},
-	"now": "ahora"
+	}
 }

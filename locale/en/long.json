@@ -96,6 +96,5 @@
 			"one": "in {0} second",
 			"other": "in {0} seconds"
 		}
-	},
-	"now": "now"
+	}
 }

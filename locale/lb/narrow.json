@@ -48,6 +48,5 @@
 		"current": "now",
 		"past": "-{0} Sek.",
 		"future": "+{0} Sek."
-	},
-	"now": "now"
+	}
 }

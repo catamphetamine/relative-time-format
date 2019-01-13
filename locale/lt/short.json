@@ -48,6 +48,5 @@
 		"current": "dabar",
 		"past": "prieš {0} sek.",
 		"future": "po {0} sek."
-	},
-	"now": "dabar"
+	}
 }

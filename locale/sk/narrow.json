@@ -48,6 +48,5 @@
 		"current": "teraz",
 		"past": "pred {0} s",
 		"future": "o {0} s"
-	},
-	"now": "teraz"
+	}
 }

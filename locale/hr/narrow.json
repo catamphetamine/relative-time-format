@@ -48,6 +48,5 @@
 		"current": "sad",
 		"past": "prije {0} s",
 		"future": "za {0} s"
-	},
-	"now": "sad"
+	}
 }

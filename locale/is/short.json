@@ -63,6 +63,5 @@
 		"current": "núna",
 		"past": "fyrir {0} sek.",
 		"future": "eftir {0} sek."
-	},
-	"now": "núna"
+	}
 }

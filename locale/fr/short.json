@@ -48,6 +48,5 @@
 		"current": "maintenant",
 		"past": "il y a {0} s",
 		"future": "dans {0} s"
-	},
-	"now": "maintenant"
+	}
 }

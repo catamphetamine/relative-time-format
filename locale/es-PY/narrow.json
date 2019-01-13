@@ -54,6 +54,5 @@
 		"current": "ahora",
 		"past": "hace {0} seg.",
 		"future": "dentro de {0} seg."
-	},
-	"now": "ahora"
+	}
 }

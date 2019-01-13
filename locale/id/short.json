@@ -48,6 +48,5 @@
 		"current": "sekarang",
 		"past": "{0} dtk lalu",
 		"future": "dlm {0} dtk"
-	},
-	"now": "sekarang"
+	}
 }

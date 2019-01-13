@@ -66,6 +66,5 @@
 		"current": "ara",
 		"past": "fa {0} s",
 		"future": "d’aquí a {0} s"
-	},
-	"now": "ara"
+	}
 }

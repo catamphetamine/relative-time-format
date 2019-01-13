@@ -48,6 +48,5 @@
 		"current": "ora",
 		"past": "-{0} s",
 		"future": "+{0} s"
-	},
-	"now": "ora"
+	}
 }

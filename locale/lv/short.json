@@ -54,6 +54,5 @@
 		"current": "tagad",
 		"past": "pirms {0} sek.",
 		"future": "pēc {0} sek."
-	},
-	"now": "tagad"
+	}
 }

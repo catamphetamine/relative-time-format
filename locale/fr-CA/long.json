@@ -90,6 +90,5 @@
 			"one": "dans {0} seconde",
 			"other": "dans {0} secondes"
 		}
-	},
-	"now": "maintenant"
+	}
 }

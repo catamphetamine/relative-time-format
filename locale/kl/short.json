@@ -48,6 +48,5 @@
 		"current": "now",
 		"past": "for {0} sekundi siden",
 		"future": "om {0} sekundi"
-	},
-	"now": "now"
+	}
 }

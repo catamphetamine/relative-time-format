@@ -66,6 +66,5 @@
 		"current": "agora",
 		"past": "hai {0} s",
 		"future": "en {0} s"
-	},
-	"now": "agora"
+	}
 }

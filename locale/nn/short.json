@@ -48,6 +48,5 @@
 		"current": "no",
 		"past": "for {0} sek sidan",
 		"future": "om {0} sek"
-	},
-	"now": "no"
+	}
 }

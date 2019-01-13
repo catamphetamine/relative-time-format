@@ -48,6 +48,5 @@
 		"current": "nüüd",
 		"past": "{0} sek eest",
 		"future": "{0} sek pärast"
-	},
-	"now": "nüüd"
+	}
 }

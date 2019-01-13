@@ -54,6 +54,5 @@
 		"current": "brem.",
 		"past": "-{0} s",
 		"future": "+{0} s"
-	},
-	"now": "brem."
+	}
 }

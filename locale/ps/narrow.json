@@ -54,6 +54,5 @@
 		"current": "now",
 		"past": "-{0} s",
 		"future": "+{0} s"
-	},
-	"now": "now"
+	}
 }

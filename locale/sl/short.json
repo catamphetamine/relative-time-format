@@ -74,6 +74,5 @@
 		"current": "zdaj",
 		"past": "pred {0} s",
 		"future": "čez {0} s"
-	},
-	"now": "zdaj"
+	}
 }

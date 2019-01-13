@@ -48,6 +48,5 @@
 		"current": "sekarang",
 		"past": "{0} saat lalu",
 		"future": "dalam {0} saat"
-	},
-	"now": "sekarang"
+	}
 }

@@ -66,6 +66,5 @@
 		"current": "jetzt",
 		"past": "vor {0} s",
 		"future": "in {0} s"
-	},
-	"now": "jetzt"
+	}
 }

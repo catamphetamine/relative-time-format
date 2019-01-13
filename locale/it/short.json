@@ -72,6 +72,5 @@
 			"one": "tra {0} s",
 			"other": "tra {0} sec."
 		}
-	},
-	"now": "ora"
+	}
 }

@@ -84,6 +84,5 @@
 			"one": "over {0} seconde",
 			"other": "over {0} seconden"
 		}
-	},
-	"now": "nu"
+	}
 }

@@ -96,6 +96,5 @@
 			"one": "pēc {0} sekundes",
 			"other": "pēc {0} sekundēm"
 		}
-	},
-	"now": "tagad"
+	}
 }

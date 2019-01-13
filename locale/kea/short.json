@@ -48,6 +48,5 @@
 		"current": "now",
 		"past": "a ten {0} sig",
 		"future": "di li {0} sig"
-	},
-	"now": "now"
+	}
 }

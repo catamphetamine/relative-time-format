@@ -48,6 +48,5 @@
 		"current": "orain",
 		"past": "Duela {0} segundo",
 		"future": "{0} segundo barru"
-	},
-	"now": "orain"
+	}
 }
