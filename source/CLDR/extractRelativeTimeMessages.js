@@ -1,9 +1,6 @@
 // import { isEqual } from 'lodash'
 
-// The generic time measurement units.
-// (other units like "fri" or "thu" are ignored)
-// ("quarter" is required by `Intl.RelativeTimeFormat`)
-const units = ['second', 'minute', 'hour', 'day', 'week', 'month', 'quarter', 'year']
+import { UNITS } from '../RelativeTimeFormat'
 
 // Detects short and narrow flavours of labels (yr., mo., etc).
 // E.g. there are "month", "month-short", "month-narrow".
@@ -79,7 +76,7 @@ export default function extractRelativeTimeMessages(localeData)
 		.filter((unit) => {
 			// Take only the generic time measurement units
 			// (skip exotic ones like "fri" on "thu").
-			return units.indexOf(parseUnit(unit).unit) >= 0
+			return UNITS.indexOf(parseUnit(unit).unit) >= 0
 		})
 		.reduce((localeData, _unit) => {
 			const { unit, type } = parseUnit(_unit)
@@ -214,10 +211,6 @@ function setUnitRules(localeData, type, unit, rules) {
 		localeData[type] = {}
 	}
 	localeData[type][unit] = rules
-	// Populate "now" unit rules.
-	if (unit === 'second' && rules.current) {
-		localeData[type].now = rules.current
-	}
 	return localeData
 }
 

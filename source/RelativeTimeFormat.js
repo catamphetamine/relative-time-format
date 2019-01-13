@@ -8,7 +8,7 @@ import {
 import resolveLocale from './resolveLocale'
 
 // Valid time units.
-const UNITS = [
+export const UNITS = [
   "second",
   "minute",
   "hour",

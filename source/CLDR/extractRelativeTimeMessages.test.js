@@ -108,8 +108,7 @@ const englishRelativeTimeMessages =
         "one": "in {0} second",
         "other": "in {0} seconds"
       }
-    },
-    "now": "now"
+    }
   },
   "short": {
     "year": {
@@ -173,8 +172,7 @@ const englishRelativeTimeMessages =
       "current": "now",
       "past": "{0} sec. ago",
       "future": "in {0} sec."
-    },
-    "now": "now"
+    }
   },
   "narrow": {
     "year": {
@@ -238,8 +236,7 @@ const englishRelativeTimeMessages =
       "current": "now",
       "future": "in {0} sec.",
       "past": "{0} sec. ago"
-    },
-    "now": "now"
+    }
   }
 }
 
