@@ -207,21 +207,21 @@ export default class RelativeTimeFormat {
     // Special case for "yesterday"/"today"/"tomorrow".
     if (this.numeric === "auto") {
       // "yesterday", "the day before yesterday", etc.
-      if (value < 0) {
+      if (value === -2 || value === -1) {
         const message = unitRules[`previous${value === -1 ? '' : '-' + Math.abs(value)}`]
         if (message) {
           return message
         }
       }
       // "tomorrow", "the day after tomorrow", etc.
-      else if (value > 0) {
+      else if (value === 1 || value === 2) {
         const message = unitRules[`next${value === 1 ? '' : '-' + Math.abs(value)}`]
         if (message) {
           return message
         }
       }
       // "today"
-      else {
+      else if (value === 0) {
         if (unitRules.current) {
           return unitRules.current
         }
