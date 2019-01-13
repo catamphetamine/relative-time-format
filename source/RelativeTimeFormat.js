@@ -231,6 +231,7 @@ export default class RelativeTimeFormat {
     // If there's only "other" then it's being collapsed.
     // (the resulting bundle size optimization technique)
     const quantifierRules = unitRules[value <= 0 ? "past" : "future"]
+    // Bundle size optimization technique.
     if (typeof quantifierRules === "string") {
       return quantifierRules
     }
@@ -245,7 +246,7 @@ export default class RelativeTimeFormat {
     quantifier = quantifier || 'other'
     // "other" rule is supposed to be always present.
     // If only "other" rule is present then "rules" is not an object and is a string.
-    return quantifierRules[quantifier]
+    return quantifierRules[quantifier] || quantifierRules.other
   }
 
   /**

@@ -63,6 +63,15 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(rtf.format(100, "day")).to.equal("in 100 days")
   })
 
+  it('should fall back to "other" quantifier if others have been removed as an optimization', () => {
+    const rtf = new RelativeTimeFormat("ru")
+    // `2` is classified as "few" in Russian.
+    // The rule for "few" is identical to that for "other"
+    // so the rule for "few" is omitted from locale data
+    // to reduce bundle size.
+    expect(rtf.format(-2, "day")).to.equal("2 дня назад")
+  })
+
   it('should throw if a time unit is unsupported', () => {
     const rtf = new RelativeTimeFormat("en")
     expect(() => rtf.format(-1, "decade")).to.throw("Unknown time unit: decade.")
