@@ -21,8 +21,9 @@ export default function resolveLocale(locale, options = {}) {
       return resolveLocaleLookup(locale)
     // "best fit" locale matching is not supported.
     // https://github.com/catamphetamine/relative-time-format/issues/2
-    // case 'best fit':
-    //   return resolveLocaleBestFit(locale)
+    case 'best fit':
+      // return resolveLocaleBestFit(locale)
+      return resolveLocaleLookup(locale)
     default:
       throw new RangeError(`Invalid "localeMatcher" option: ${localeMatcher}`)
   }
