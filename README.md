@@ -57,6 +57,13 @@ The `locale` folder is generated from CLDR data by running:
 npm run generate-locales
 ```
 
+Locale data is extracted from `cldr-data` (quantifiers) and `cldr-dates-full` (relative time messages) packages which usually get some updates once or twice a year.
+
+```sh
+npm install cldr-data@latest cldr-dates-full@latest --save
+npm run generate-locales
+```
+
 ## Contributing
 
 After cloning this repo, ensure dependencies are installed by running:
