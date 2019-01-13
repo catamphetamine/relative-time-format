@@ -65,13 +65,6 @@ for (const locale of listAllCLDRLocales())
 	const localeDirectory = path.join(__dirname, '../locale', locale)
 	const languageDirectory = path.join(__dirname, '../locale', language)
 
-	// // If no such language exists in `cldr-dates-full`
-	// // then delete its folder along with the pluralization function.
-	// if (!fs.existsSync(path.resolve(__dirname, '../node_modules', cldrJsonPath))) {
-	// 	// fs.removeSync(localeDirectory)
-	// 	continue
-	// }
-
 	// If there's no pluralization classifier function
 	// for this language then don't add it.
 	const quantifyDirectory = findQuantifyDirectory(locale)
@@ -126,12 +119,6 @@ module.exports =
 }
 		`.trim()
 	)
-
-	// // Remove all non-CLDR-translated locales.
-	// // (the ones having just a quantify function)
-	// for (const locale of listAllLocales().filter(_ => allCLDRLocales.indexOf(_) < 0)) {
-	// 	fs.removeSync(path.resolve(__dirname, '../locale', locale))
-	// }
 
 	// Remove all locales containing just `index.js`
 	// which means they're fully inherting from their parent locale.
