@@ -1,5 +1,4 @@
-module.exports =
-{
+module.exports = {
 	locale: 'se-FI',
 	long: require('./long.json'),
 	short: require('./short.json'),

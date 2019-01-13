@@ -1,5 +1,4 @@
-module.exports =
-{
+module.exports = {
 	locale: 'bs-Cyrl',
 	long: require('./long.json'),
 	short: require('./short.json'),
