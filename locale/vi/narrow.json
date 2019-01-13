@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "Hôm qua",
+		"previous-2": "Hôm kia",
 		"current": "Hôm nay",
 		"next": "Ngày mai",
+		"next-2": "Ngày kia",
 		"past": "{0} ngày trước",
 		"future": "sau {0} ngày nữa"
 	},

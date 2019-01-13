@@ -60,8 +60,10 @@
 	},
 	"day": {
 		"previous": "včera",
+		"previous-2": "předevčírem",
 		"current": "dnes",
 		"next": "zítra",
+		"next-2": "pozítří",
 		"past": {
 			"one": "před {0} dnem",
 			"many": "před {0} dne",

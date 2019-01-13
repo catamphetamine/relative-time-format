@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "尋日",
+		"previous-2": "前天",
 		"current": "今日",
 		"next": "聽日",
+		"next-2": "後天",
 		"past": "{0} 日前",
 		"future": "{0} 日後"
 	},

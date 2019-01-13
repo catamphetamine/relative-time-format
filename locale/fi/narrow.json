@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "eilen",
+		"previous-2": "toissap.",
 		"current": "tänään",
 		"next": "huom.",
+		"next-2": "ylihuom.",
 		"past": "{0} pv sitten",
 		"future": "{0} pv päästä"
 	},

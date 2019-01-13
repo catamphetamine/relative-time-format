@@ -47,8 +47,10 @@
 	},
 	"day": {
 		"previous": "i går",
+		"previous-2": "i forgårs",
 		"current": "i dag",
 		"next": "i morgen",
+		"next-2": "i overmorgen",
 		"past": {
 			"one": "for {0} dag siden",
 			"other": "for {0} dage siden"

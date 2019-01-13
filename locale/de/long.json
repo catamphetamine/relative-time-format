@@ -53,8 +53,10 @@
 	},
 	"day": {
 		"previous": "gestern",
+		"previous-2": "vorgestern",
 		"current": "heute",
 		"next": "morgen",
+		"next-2": "übermorgen",
 		"past": {
 			"one": "vor {0} Tag",
 			"other": "vor {0} Tagen"

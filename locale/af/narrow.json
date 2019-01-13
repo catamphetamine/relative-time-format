@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "gister",
+		"previous-2": "eergister",
 		"current": "vandag",
 		"next": "môre",
+		"next-2": "oormôre",
 		"past": {
 			"one": "{0} dag gelede",
 			"other": "{0} dae gelede"

@@ -61,8 +61,10 @@
 	},
 	"day": {
 		"previous": "ieri",
+		"previous-2": "alaltăieri",
 		"current": "azi",
 		"next": "mâine",
+		"next-2": "poimâine",
 		"past": {
 			"one": "acum {0} zi",
 			"few": "acum {0} zile",

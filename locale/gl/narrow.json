@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "onte",
+		"previous-2": "antonte",
 		"current": "hoxe",
 		"next": "mañá",
+		"next-2": "pasadomañá",
 		"past": {
 			"one": "hai {0} día",
 			"other": "hai {0} días"

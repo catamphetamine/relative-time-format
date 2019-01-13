@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "ʻaneafi",
+		"previous-2": "ʻaneheafi",
 		"current": "ʻahó ni",
 		"next": "ʻapongipongi",
+		"next-2": "ʻahepongipongi",
 		"past": "ʻaho ʻe {0} kuoʻosi",
 		"future": "ʻi he ʻaho ʻe {0}"
 	},

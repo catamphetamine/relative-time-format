@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "igår",
+		"previous-2": "i förrgår",
 		"current": "idag",
 		"next": "imorgon",
+		"next-2": "i övermorgon",
 		"past": "−{0} d",
 		"future": "+{0} d"
 	},

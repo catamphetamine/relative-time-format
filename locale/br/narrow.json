@@ -35,6 +35,7 @@
 	},
 	"day": {
 		"previous": "decʼh",
+		"previous-2": "dercʼhent-decʼh",
 		"current": "hiziv",
 		"next": "warcʼhoazh",
 		"past": "-{0} d",

@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "vakar",
+		"previous-2": "užvakar",
 		"current": "šiandien",
 		"next": "rytoj",
+		"next-2": "poryt",
 		"past": "prieš {0} d.",
 		"future": "po {0} d."
 	},

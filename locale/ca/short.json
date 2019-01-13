@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "ahir",
+		"previous-2": "abans-d’ahir",
 		"current": "avui",
 		"next": "demà",
+		"next-2": "demà passat",
 		"past": {
 			"one": "fa {0} dia",
 			"other": "fa {0} dies"

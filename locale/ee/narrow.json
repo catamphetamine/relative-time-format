@@ -44,8 +44,10 @@
 	},
 	"day": {
 		"previous": "etsɔ si va yi",
+		"previous-2": "nyitsɔ si va yi",
 		"current": "egbe",
 		"next": "etsɔ si gbɔna",
+		"next-2": "nyitsɔ si gbɔna",
 		"past": {
 			"one": "ŋkeke {0} si va yi",
 			"other": "ŋkeke {0} si wo va yi"

@@ -47,8 +47,10 @@
 	},
 	"day": {
 		"previous": "gisteren",
+		"previous-2": "eergisteren",
 		"current": "vandaag",
 		"next": "morgen",
+		"next-2": "overmorgen",
 		"past": {
 			"one": "{0} dag geleden",
 			"other": "{0} dagen geleden"

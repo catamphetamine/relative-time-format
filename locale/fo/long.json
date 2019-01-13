@@ -47,8 +47,10 @@
 	},
 	"day": {
 		"previous": "í gjár",
+		"previous-2": "fyrradagin",
 		"current": "í dag",
 		"next": "í morgin",
+		"next-2": "í ovurmorgin",
 		"past": {
 			"one": "{0} dagur síðan",
 			"other": "{0} dagar síðan"

@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "ayer",
+		"previous-2": "anteayer",
 		"current": "hoy",
 		"next": "mañana",
+		"next-2": "pasado mañana",
 		"past": "hace {0} días",
 		"future": "dentro de {0} días"
 	},

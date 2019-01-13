@@ -53,8 +53,10 @@
 	},
 	"day": {
 		"previous": "izolo",
+		"previous-2": "usuku olwandulela olwayizolo",
 		"current": "namhlanje",
 		"next": "kusasa",
+		"next-2": "usuku olulandela olwakusasa",
 		"past": {
 			"one": "osukwini olungu-{0} olwedlule",
 			"other": "ezinsukwini ezingu-{0} ezedlule."

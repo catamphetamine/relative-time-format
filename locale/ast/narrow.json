@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "ayeri",
+		"previous-2": "antay.",
 		"current": "güei",
 		"next": "mañ.",
+		"next-2": "p. mañ.",
 		"past": "hai {0} d.",
 		"future": "en {0} d."
 	},

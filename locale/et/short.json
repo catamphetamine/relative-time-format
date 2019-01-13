@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "eile",
+		"previous-2": "üleeile",
 		"current": "täna",
 		"next": "homme",
+		"next-2": "ülehomme",
 		"past": "{0} p eest",
 		"future": "{0} p pärast"
 	},

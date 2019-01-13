@@ -58,8 +58,10 @@
 	},
 	"day": {
 		"previous": "ddoe",
+		"previous-2": "echdoe",
 		"current": "heddiw",
 		"next": "yfory",
+		"next-2": "drennydd",
 		"past": {
 			"two": "{0} ddiwrnod yn ôl",
 			"other": "{0} diwrnod yn ôl"

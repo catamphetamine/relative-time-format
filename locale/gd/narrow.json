@@ -1,6 +1,7 @@
 {
 	"year": {
 		"previous": "an-uir.",
+		"previous-2": "a-bh-uir.",
 		"current": "am bl.",
 		"next": "an ath-bhl.",
 		"past": {
@@ -45,8 +46,11 @@
 	},
 	"day": {
 		"previous": "an-dè",
+		"previous-2": "a-bhòin-dè",
 		"current": "an-diugh",
 		"next": "a-màireach",
+		"next-2": "an-earar",
+		"next-3": "an-eararais",
 		"past": "-{0} là",
 		"future": "+{0} là"
 	},

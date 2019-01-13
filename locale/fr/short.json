@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "hier",
+		"previous-2": "avant-hier",
 		"current": "aujourd’hui",
 		"next": "demain",
+		"next-2": "après-demain",
 		"past": "il y a {0} j",
 		"future": "dans {0} j"
 	},

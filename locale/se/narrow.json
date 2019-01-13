@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "ikte",
+		"previous-2": "oovdebpeivvi",
 		"current": "odne",
 		"next": "ihttin",
+		"next-2": "paijeelittáá",
 		"past": {
 			"one": "{0} jándor árat",
 			"other": "{0} jándora árat"

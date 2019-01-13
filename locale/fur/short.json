@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "îr",
+		"previous-2": "îr l’altri",
 		"current": "vuê",
 		"next": "doman",
+		"next-2": "passantdoman",
 		"past": {
 			"one": "{0} zornade indaûr",
 			"other": "{0} zornadis indaûr"

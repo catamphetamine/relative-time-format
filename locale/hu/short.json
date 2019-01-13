@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "tegnap",
+		"previous-2": "tegnapelőtt",
 		"current": "ma",
 		"next": "holnap",
+		"next-2": "holnapután",
 		"past": "{0} napja",
 		"future": "{0} nap múlva"
 	},

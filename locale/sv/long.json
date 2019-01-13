@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "i går",
+		"previous-2": "i förrgår",
 		"current": "i dag",
 		"next": "i morgon",
+		"next-2": "i övermorgon",
 		"past": {
 			"one": "för {0} dag sedan",
 			"other": "för {0} dagar sedan"

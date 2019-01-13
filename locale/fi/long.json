@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "eilen",
+		"previous-2": "toissa päivänä",
 		"current": "tänään",
 		"next": "huomenna",
+		"next-2": "ylihuomenna",
 		"past": {
 			"one": "{0} päivä sitten",
 			"other": "{0} päivää sitten"

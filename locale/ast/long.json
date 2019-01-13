@@ -53,8 +53,10 @@
 	},
 	"day": {
 		"previous": "ayeri",
+		"previous-2": "antayeri",
 		"current": "güei",
 		"next": "mañana",
+		"next-2": "pasao mañana",
 		"past": {
 			"one": "hai {0} día",
 			"other": "hai {0} díes"

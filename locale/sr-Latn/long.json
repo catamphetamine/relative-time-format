@@ -56,8 +56,10 @@
 	},
 	"day": {
 		"previous": "juče",
+		"previous-2": "prekjuče",
 		"current": "danas",
 		"next": "sutra",
+		"next-2": "prekosutra",
 		"past": "pre {0} dana",
 		"future": {
 			"one": "za {0} dan",

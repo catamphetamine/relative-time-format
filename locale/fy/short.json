@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "gisteren",
+		"previous-2": "eergisteren",
 		"current": "vandaag",
 		"next": "morgen",
+		"next-2": "Oermorgen",
 		"past": {
 			"one": "{0} dei lyn",
 			"other": "{0} deien lyn"

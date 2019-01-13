@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "어제",
+		"previous-2": "그저께",
 		"current": "오늘",
 		"next": "내일",
+		"next-2": "모레",
 		"past": "{0}일 전",
 		"future": "{0}일 후"
 	},

@@ -51,8 +51,10 @@
 	},
 	"day": {
 		"previous": "ikte",
+		"previous-2": "ovddet beaivvi",
 		"current": "odne",
 		"next": "ihttin",
+		"next-2": "don beaivve",
 		"past": {
 			"one": "ikte",
 			"two": "ovddet beaivve",

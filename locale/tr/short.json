@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "dün",
+		"previous-2": "evvelsi gün",
 		"current": "bugün",
 		"next": "yarın",
+		"next-2": "öbür gün",
 		"past": "{0} gün önce",
 		"future": "{0} gün sonra"
 	},

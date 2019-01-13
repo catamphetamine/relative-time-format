@@ -53,8 +53,10 @@
 	},
 	"day": {
 		"previous": "vakar",
+		"previous-2": "aizvakar",
 		"current": "šodien",
 		"next": "rīt",
+		"next-2": "parīt",
 		"past": {
 			"one": "pirms {0} dienas",
 			"other": "pirms {0} dienām"

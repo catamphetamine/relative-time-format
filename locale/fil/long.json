@@ -53,8 +53,10 @@
 	},
 	"day": {
 		"previous": "kahapon",
+		"previous-2": "Araw bago ang kahapon",
 		"current": "ngayong araw",
 		"next": "bukas",
+		"next-2": "Samakalawa",
 		"past": {
 			"one": "{0} araw ang nakalipas",
 			"other": "{0} (na) araw ang nakalipas"

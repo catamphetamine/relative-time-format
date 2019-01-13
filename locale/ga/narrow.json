@@ -49,8 +49,10 @@
 	},
 	"day": {
 		"previous": "inné",
+		"previous-2": "arú inné",
 		"current": "inniu",
 		"next": "amárach",
+		"next-2": "arú amárach",
 		"past": "-{0} lá",
 		"future": "+{0} lá"
 	},

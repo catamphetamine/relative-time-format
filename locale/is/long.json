@@ -50,8 +50,10 @@
 	},
 	"day": {
 		"previous": "í gær",
+		"previous-2": "í fyrradag",
 		"current": "í dag",
 		"next": "á morgun",
+		"next-2": "eftir tvo daga",
 		"past": {
 			"one": "fyrir {0} degi",
 			"other": "fyrir {0} dögum"

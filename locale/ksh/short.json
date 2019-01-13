@@ -37,8 +37,10 @@
 	},
 	"day": {
 		"previous": "jestere",
+		"previous-2": "vörjestere",
 		"current": "hück",
 		"next": "morje",
+		"next-2": "övvermorje",
 		"past": "-{0} d",
 		"future": "+{0} d"
 	},

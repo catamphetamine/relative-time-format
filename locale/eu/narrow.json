@@ -29,8 +29,10 @@
 	},
 	"day": {
 		"previous": "atzo",
+		"previous-2": "herenegun",
 		"current": "gaur",
 		"next": "bihar",
+		"next-2": "etzi",
 		"past": "Duela {0} egun",
 		"future": "{0} egun barru"
 	},

@@ -50,8 +50,10 @@
 	},
 	"day": {
 		"previous": "kahapon",
+		"previous-2": "Araw bago ang kahapon",
 		"current": "ngayong araw",
 		"next": "bukas",
+		"next-2": "Samakalawa",
 		"past": "{0} (na) araw ang nakalipas",
 		"future": "sa {0} (na) araw"
 	},

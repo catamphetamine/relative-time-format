@@ -38,8 +38,10 @@
 	},
 	"day": {
 		"previous": "Gešter",
+		"previous-2": "Vorgešter",
 		"current": "Hitte",
 		"next": "Móre",
+		"next-2": "Ubermóre",
 		"past": {
 			"one": "vor {0} tag",
 			"other": "vor {0} täg"

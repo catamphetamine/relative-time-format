@@ -47,8 +47,10 @@
 	},
 	"day": {
 		"previous": "jana",
+		"previous-2": "juzi",
 		"current": "leo",
 		"next": "kesho",
+		"next-2": "kesho kutwa",
 		"past": {
 			"one": "siku {0} iliyopita",
 			"other": "siku {0} zilizopita"

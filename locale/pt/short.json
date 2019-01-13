@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "ontem",
+		"previous-2": "anteontem",
 		"current": "hoje",
 		"next": "amanhã",
+		"next-2": "depois de amanhã",
 		"past": {
 			"one": "há {0} dia",
 			"other": "há {0} dias"

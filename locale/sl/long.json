@@ -65,8 +65,10 @@
 	},
 	"day": {
 		"previous": "včeraj",
+		"previous-2": "predvčerajšnjim",
 		"current": "danes",
 		"next": "jutri",
+		"next-2": "pojutrišnjem",
 		"past": {
 			"one": "pred {0} dnevom",
 			"two": "pred {0} dnevoma",

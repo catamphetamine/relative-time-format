@@ -41,8 +41,10 @@
 	},
 	"day": {
 		"previous": "ieri",
+		"previous-2": "l’altro ieri",
 		"current": "oggi",
 		"next": "domani",
+		"next-2": "dopodomani",
 		"past": {
 			"one": "{0} g fa",
 			"other": "{0} gg fa"

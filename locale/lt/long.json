@@ -60,8 +60,10 @@
 	},
 	"day": {
 		"previous": "vakar",
+		"previous-2": "užvakar",
 		"current": "šiandien",
 		"next": "rytoj",
+		"next-2": "poryt",
 		"past": {
 			"one": "prieš {0} dieną",
 			"few": "prieš {0} dienas",

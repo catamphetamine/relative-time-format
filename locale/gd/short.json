@@ -1,6 +1,7 @@
 {
 	"year": {
 		"previous": "an-uiridh",
+		"previous-2": "a-bhòn-uiridh",
 		"current": "am bliadhna",
 		"next": "an ath-bhliadhna",
 		"past": {
@@ -61,8 +62,11 @@
 	},
 	"day": {
 		"previous": "an-dè",
+		"previous-2": "a-bhòin-dè",
 		"current": "an-diugh",
 		"next": "a-màireach",
+		"next-2": "an-earar",
+		"next-3": "an-eararais",
 		"past": {
 			"few": "o {0} là.",
 			"other": "o {0} là"

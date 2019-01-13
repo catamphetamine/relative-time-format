@@ -45,8 +45,10 @@
 	},
 	"day": {
 		"previous": "wczoraj",
+		"previous-2": "przedwczoraj",
 		"current": "dzisiaj",
 		"next": "jutro",
+		"next-2": "pojutrze",
 		"past": {
 			"one": "{0} dzień temu",
 			"few": "{0} dni temu",
