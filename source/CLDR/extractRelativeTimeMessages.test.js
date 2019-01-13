@@ -64,9 +64,11 @@ const englishRelativeTimeMessages =
       }
     },
     "day": {
+      "previous-2": "the day before yesterday (test)",
       "previous": "yesterday",
       "current": "today",
       "next": "tomorrow",
+      "next-2": "the day after tomorrow (test)",
       "past": {
         "one": "{0} day ago",
         "other": "{0} days ago"
@@ -428,9 +430,11 @@ const englishDateMessagesInCLDR =
           },
           "day": {
             "displayName": "day",
+            "relative-type--2": "the day before yesterday (test)",
             "relative-type--1": "yesterday",
             "relative-type-0": "today",
             "relative-type-1": "tomorrow",
+            "relative-type-2": "the day after tomorrow (test)",
             "relativeTime-type-future": {
               "relativeTimePattern-count-one": "in {0} day",
               "relativeTimePattern-count-other": "in {0} days"

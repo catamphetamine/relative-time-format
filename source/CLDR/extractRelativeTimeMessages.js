@@ -98,9 +98,17 @@ function extractTimeUnitFormattingRules(rulesCLDR)
 	// and "in 0.49 years" != "this year" (it could be Nov 30th).
 	// Still including them here for `Intl.RelativeTimeFormat` polyfill.
 
-	// "yesterday"
-	if (rulesCLDR['relative-type--1']) {
-		rules.previous = rulesCLDR['relative-type--1']
+	// "yesterday".
+	//
+	// "the day before yesterday".
+	// For example, in German it's "Vorgestern".
+	//
+	// etc.
+	//
+	let previousIndex = 1
+	while (rulesCLDR[`relative-type--${previousIndex}`]) {
+		rules[`previous${previousIndex === 1 ? '' : '-' + previousIndex}`] = rulesCLDR[`relative-type--${previousIndex}`]
+		previousIndex++
 	}
 
 	// "today"
@@ -109,9 +117,17 @@ function extractTimeUnitFormattingRules(rulesCLDR)
 		rules.current = rulesCLDR['relative-type-0']
 	}
 
-	// "tomorrow"
-	if (rulesCLDR['relative-type-1']) {
-		rules.next = rulesCLDR['relative-type-1']
+	// "tomorrow".
+	//
+	// "the day after tomorrow".
+	// For example, in German it's "Übermorgen".
+	//
+	// etc.
+	//
+	let nextIndex = 1
+	while (rulesCLDR[`relative-type-${nextIndex}`]) {
+		rules[`next${nextIndex === 1 ? '' : '-' + nextIndex}`] = rulesCLDR[`relative-type-${nextIndex}`]
+		nextIndex++
 	}
 
 	// Formatting past times.
