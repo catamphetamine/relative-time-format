@@ -108,13 +108,6 @@ for (const locale of listAllCLDRLocales())
 	// What are "narrow" and "short" styles and how are they constructed:
 	// http://cldr.unicode.org/translation/plurals#TOC-Narrow-and-Short-Forms
 
-	// Extra flavours.
-	const shortTimeDirectory       = findFlavorDirectory(locale, 'short-time')
-	const shortConvenientDirectory = findFlavorDirectory(locale, 'short-convenient')
-	const longTimeDirectory        = findFlavorDirectory(locale, 'long-time')
-	const longConvenientDirectory  = findFlavorDirectory(locale, 'long-convenient')
-	const tinyDirectory            = findFlavorDirectory(locale, 'tiny')
-
 	// Create `index.js` file in the locale directory.
 	fs.outputFileSync(
 		path.join(localeDirectory, 'index.js'),
@@ -124,25 +117,19 @@ module.exports =
 	${[
 	"locale: '" + locale + "'",
 	"long: require('" + createTimeLabels(locale, 'long', localeMessages) + "')",
-	longTimeDirectory && "long_time: require('" + longTimeDirectory + "/long-time.json')",
-	longConvenientDirectory && "long_convenient: require('" + longConvenientDirectory + "/long-convenient.json')",
 	"short: require('" + createTimeLabels(locale, 'short', localeMessages) + "')",
-	shortTimeDirectory && "short_time: require('" + shortTimeDirectory + "/short-time.json')",
-	shortConvenientDirectory && "short_convenient: require('" + shortConvenientDirectory + "/short-convenient.json')",
 	"narrow: require('" + createTimeLabels(locale, 'narrow', localeMessages) + "')",
-	tinyDirectory && "tiny: require('" + tinyDirectory + "/tiny.json')",
 	quantifyDirectory && ("quantify: require('" + quantifyDirectory + "/quantify')")
-]
-.filter(_ => _)
-.join(',\n\t')}
+	]
+	.filter(_ => _)
+	.join(',\n\t')}
 }
-		`
-		.trim()
+		`.trim()
 	)
 
 	// // Remove all non-CLDR-translated locales.
 	// // (the ones having just a quantify function)
-	// for (const locale of listAllLocales().filter(_ => all_cldr_locales.indexOf(_) < 0)) {
+	// for (const locale of listAllLocales().filter(_ => allCLDRLocales.indexOf(_) < 0)) {
 	// 	fs.removeSync(path.resolve(__dirname, '../locale', locale))
 	// }
 
