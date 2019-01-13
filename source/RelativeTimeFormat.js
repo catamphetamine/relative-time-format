@@ -77,6 +77,7 @@ export default class RelativeTimeFormat {
       this.localeMatcher = localeMatcher
     }
 
+    // Set `locale`.
     // Convert `locales` to an array.
     if (typeof locales === 'string') {
       locales = [locales]
@@ -93,6 +94,11 @@ export default class RelativeTimeFormat {
     this.locale = resolveLocale(this.locale, {
       localeMatcher: this.localeMatcher
     })
+
+    // Use `Intl.NumberFormat` for formatting numbers (when available).
+    if (typeof Intl !== 'undefined' && Intl.NumberFormat) {
+      this.numberFormat = new Intl.NumberFormat(this.locale)
+    }
   }
 
   /**
@@ -108,7 +114,7 @@ export default class RelativeTimeFormat {
    * rtf.format(5, "minute")
    */
   format(value, unit) {
-    return this.getRule(value, unit).replace('{0}', Math.abs(value))
+    return this.getRule(value, unit).replace('{0}', this.formatNumber(Math.abs(value)))
   }
 
   /**
@@ -154,7 +160,7 @@ export default class RelativeTimeFormat {
     parts.push({
       unit,
       type: "integer",
-      value: String(Math.abs(value))
+      value: this.formatNumber(Math.abs(value))
     })
     if (valueIndex + "{0}".length < rule.length - 1) {
       parts.push({
@@ -240,6 +246,16 @@ export default class RelativeTimeFormat {
     // "other" rule is supposed to be always present.
     // If only "other" rule is present then "rules" is not an object and is a string.
     return quantifierRules[quantifier]
+  }
+
+  /**
+   * Formats a number into a string.
+   * Uses `Intl.NumberFormat` when available.
+   * @param  {number} number
+   * @return {string}
+   */
+  formatNumber(number) {
+    return this.numberFormat ? this.numberFormat.format(number) : String(number)
   }
 
   /**

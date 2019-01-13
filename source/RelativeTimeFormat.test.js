@@ -91,6 +91,20 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(rtf.format(0, "second")).to.equal("jetzt")
   })
 
+  it('should use "Intl.NumberFormat" (when available)', () => {
+    const rtf = new RelativeTimeFormat("en")
+    expect(rtf.format(1000, "day")).to.equal("in 1,000 days")
+  })
+
+  it('should fall back when "Intl.NumberFormat" is not available', () => {
+    const NumberFormat = Intl.NumberFormat
+    // I imagine `Intl` object getting "frozen" in future.
+    delete Intl.NumberFormat
+    const rtf = new RelativeTimeFormat("en")
+    expect(rtf.format(1000, "day")).to.equal("in 1000 days")
+    Intl.NumberFormat = NumberFormat
+  })
+
   it('shouldn\'t format yesterday/today/tomorrow when there\'s no locale data', () => {
     const enLongDay = { ...en.long.day }
     delete en.long.day.previous
