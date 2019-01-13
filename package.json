@@ -25,6 +25,7 @@
     "cross-env": "^5.1.4",
     "fs-extra": "^5.0.0",
     "make-plural": "^4.1.1",
+    "mkdirp": "^0.5.1",
     "mocha": "^5.0.5",
     "npm-run-all": "^1.4.0",
     "nyc": "^13.0.0",
@@ -44,9 +45,10 @@
     "build": "npm-run-all clean-for-build build-commonjs-modules build-es6-modules browser-build",
     "prepublish": "npm-run-all build test",
     "delete-locales": "rimraf ./locale/**/*",
+    "create-locales-directory": "mkdirp locale",
     "generate-locale-messages": "babel-node bin/generate-locale-messages",
     "generate-locale-quantifiers": "babel-node bin/generate-locale-quantifiers",
-    "generate-locales": "npm-run-all delete-locales generate-locale-quantifiers generate-locale-messages"
+    "generate-locales": "npm-run-all delete-locales create-locales-directory generate-locale-quantifiers generate-locale-messages"
   },
   "repository": {
     "type": "git",
