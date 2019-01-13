@@ -1,3 +1,8 @@
+0.1.3 / 14.01.2018
+===================
+
+  * Fixed a bug when `.format()` threw an error in some cases.
+
 0.1.1 / 13.01.2018
 ===================
 
