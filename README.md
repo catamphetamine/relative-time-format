@@ -62,6 +62,35 @@ npm install cldr-data@latest cldr-dates-full@latest --save
 npm run generate-locales
 ```
 
+## Higher-level API
+
+`Intl.RelativeTimeFormat` is intentionally a low-level API. Third-party libraries are supposed to be built on top of this base-level API. An example of such library is [`javascript-time-ago`](https://github.com/catamphetamine/javascript-time-ago/) which uses `Intl.RelativeTimeFormat` internally and provides a higher-level API:
+
+```js
+import TimeAgo from 'javascript-time-ago'
+
+// Load locale-specific relative date/time formatting rules.
+import en from 'javascript-time-ago/locale/en'
+
+// Add locale-specific relative date/time formatting rules.
+TimeAgo.addLocale(en)
+
+// Create relative date/time formatter.
+const timeAgo = new TimeAgo('en-US')
+
+timeAgo.format(new Date())
+// "just now"
+
+timeAgo.format(Date.now() - 60 * 1000)
+// "a minute ago"
+
+timeAgo.format(Date.now() - 2 * 60 * 60 * 1000)
+// "2 hours ago"
+
+timeAgo.format(Date.now() - 24 * 60 * 60 * 1000)
+// "a day ago"
+```
+
 ## Contributing
 
 After cloning this repo, ensure dependencies are installed by running:
