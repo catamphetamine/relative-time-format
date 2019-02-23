@@ -20,7 +20,7 @@ If you're not using a bundler then use a [standalone version from a CDN](#cdn).
 
 ```js
 import RelativeTimeFormat from 'relative-time-format'
-import en from 'relative-time-format/locale/en'
+import en from 'relative-time-format/locale/en.json'
 
 RelativeTimeFormat.addLocale(en)
 
