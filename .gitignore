@@ -32,3 +32,6 @@ NUL
 
 # browser builds
 /bundle/
+
+# Demo page
+/demo/

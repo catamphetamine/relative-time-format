@@ -6,11 +6,15 @@
 
 [`Intl.RelativeTimeFormat`](https://github.com/tc39/proposal-intl-relative-time) polyfill.
 
+[See Demo](https://catamphetamine.github.io/relative-time-format/)
+
 ## Install
 
 ```
 npm install relative-time-format --save
 ```
+
+If you're not using a bundler then use a [standalone version from a CDN](https://github.com/catamphetamine/relative-time-format/#cdn).
 
 ## Use
 
@@ -90,6 +94,22 @@ timeAgo.format(Date.now() - 2 * 60 * 60 * 1000)
 timeAgo.format(Date.now() - 24 * 60 * 60 * 1000)
 // "a day ago"
 ```
+
+## CDN
+
+One can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdelivr.net](https://jsdelivr.net)
+
+```html
+<script src="https://unpkg.com/relative-time-format@[version]/bundle/relative-time-format.js"></script>
+
+<script>
+  var en = ... // Somehow import `relative-time-format/locale/en.json`.
+  RelativeTimeFormat.addLocale(en)
+  console.log(new RelativeTimeFormat('en').format(-1, 'days'))
+</script>
+```
+
+where `[version]` is an npm package version range (for example, `0.2.x` or `^0.2.0`).
 
 ## Contributing
 
