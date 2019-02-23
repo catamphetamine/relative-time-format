@@ -14,7 +14,7 @@
 npm install relative-time-format --save
 ```
 
-If you're not using a bundler then use a [standalone version from a CDN](https://github.com/catamphetamine/relative-time-format/#cdn).
+If you're not using a bundler then use a [standalone version from a CDN](#cdn).
 
 ## Use
 
