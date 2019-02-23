@@ -1,3 +1,12 @@
+0.2.0 / 23.02.2018
+==================
+
+  * `locale` messages are now single `index.js` bundles instead of being a bunch of files like `long.js`/`short.js`/`narrow.js`/`quantify.js`/`index.js`. This was [requested](https://github.com/catamphetamine/relative-time-format/issues/4) for being able to use this library in scenarios when no "bundlers" are involved (for example, in a web browser).
+
+<!--
+  * `locale` property inside `locale/${locale}/index.js` files was renamed to `id`.
+-->
+
 0.1.3 / 14.01.2018
 ===================
 

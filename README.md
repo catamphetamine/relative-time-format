@@ -58,7 +58,7 @@ npm run generate-locales
 Locale data is extracted from `cldr-data` (quantifiers) and `cldr-dates-full` (relative time messages) packages which usually get some updates once or twice a year.
 
 ```sh
-npm install cldr-data@latest cldr-dates-full@latest --save
+npm install cldr-data@latest cldr-dates-full@latest make-plural@latest --save-dev
 npm run generate-locales
 ```
 

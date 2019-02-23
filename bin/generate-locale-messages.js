@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs-extra'
+import { isEqual } from 'lodash'
 
 import extractRelativeTimeMessages from '../source/CLDR/extractRelativeTimeMessages'
 import getLocalesListInCLDR from '../source/CLDR/getLocalesList'
@@ -61,9 +62,13 @@ for (const locale of getLocalesListInCLDR())
 	const localeDirectory = path.join(__dirname, '../locale', locale)
 	const languageDirectory = path.join(__dirname, '../locale', language)
 
-	// If there's no pluralization classifier function
-	// for this language then don't add it.
-	const quantifyDirectory = findQuantifyDirectory(locale)
+	// Find the directory containing `quantify.js` for this locale (if any).
+	//
+	// For `pt` language `quantify.js` is really weird and seems to be a "no op".
+	// Seems like a bug in CLDR data.
+	// So replacing `pt/quantify.js` with `pt-PT/quantify.js` here.
+	//
+	const quantifyDirectory = findQuantifyDirectory(localeInCLDR)
 
 	const localeMessages = extractRelativeTimeMessages(require(cldrJsonPath))
 
@@ -97,39 +102,98 @@ for (const locale of getLocalesListInCLDR())
 	// What are "narrow" and "short" styles and how are they constructed:
 	// http://cldr.unicode.org/translation/plurals#TOC-Narrow-and-Short-Forms
 
+	// Get quantify function code.
+	let quantify
+	let quantifySameAsFor
+	if (quantifyDirectory) {
+		quantify = fs.readFileSync(path.join(__dirname, '../locale', locale, quantifyDirectory, 'quantify.js'), 'utf-8')
+		quantify = quantify.slice('module.exports='.length)
+		quantifySameAsFor = quantifyDirectory.slice('../'.length)
+	}
+
+	const longMessagesSameAsFor = findParentLocaleBundleHavingSameLabelsOfStyle(locale, localeMessages, 'long')
+	const shortMessagesSameAsFor = findParentLocaleBundleHavingSameLabelsOfStyle(locale, localeMessages, 'short')
+	const narrowMessagesSameAsFor = findParentLocaleBundleHavingSameLabelsOfStyle(locale, localeMessages, 'narrow')
+
+	// If this locale fully inherits from a parent locale then skip it.
+	if (longMessagesSameAsFor &&
+		longMessagesSameAsFor === shortMessagesSameAsFor &&
+		longMessagesSameAsFor === narrowMessagesSameAsFor &&
+		longMessagesSameAsFor === quantifySameAsFor) {
+		// console.log(`Locale "${locale}" fully inherits from "${longMessagesSameAsFor}". Skipping.`)
+		fs.removeSync(localeDirectory)
+		continue
+	}
+
 	// Create `index.js` file in the locale directory.
 	fs.outputFileSync(
-		path.join(localeDirectory, 'index.js'),
+		path.join(path.join(__dirname, '../locale', `${locale}.js`)),
 		`
+${longMessagesSameAsFor ? '// Equal to "' + longMessagesSameAsFor + '".' + '\n' : ''}var long = ${JSON.stringify(localeMessages.long, null, '\t')}\n
+${shortMessagesSameAsFor ? '// Equal to "' + shortMessagesSameAsFor + '".' + '\n' : ''}var short = ${JSON.stringify(localeMessages.short, null, '\t')}\n
+${narrowMessagesSameAsFor ? '// Equal to "' + narrowMessagesSameAsFor + '".' + '\n' : ''}var narrow = ${JSON.stringify(localeMessages.narrow, null, '\t')}
+${quantify ? '\n' + (quantifySameAsFor ? '// Equal to "' + quantifySameAsFor + '".' + '\n' : '') + 'var quantify = ' + quantify + '\n' : ''}
 module.exports = {
-	${[
-	"locale: '" + locale + "'",
-	"long: require('" + createTimeLabels(locale, 'long', localeMessages) + "')",
-	"short: require('" + createTimeLabels(locale, 'short', localeMessages) + "')",
-	"narrow: require('" + createTimeLabels(locale, 'narrow', localeMessages) + "')",
-	quantifyDirectory && ("quantify: require('" + quantifyDirectory + "/quantify')")
-	]
-	.filter(_ => _)
-	.join(',\n\t')}
+	locale: "${locale}",
+	long: long,
+	short: short,
+	narrow: narrow${quantify ? ',\n\tquantify: quantify' : ''}
 }
 		`.trim()
 	)
-
-	// Remove all locales containing just `index.js`
-	// which means they're fully inherting from their parent locale.
-	for (const locale of getLocalesListGenerated()) {
-		const files = fs.readdirSync(path.join(__dirname, '../locale', locale))
-		if (files.length === 1 && files[0] === 'index.js') {
-			fs.removeSync(path.resolve(__dirname, '../locale', locale))
-		}
-	}
-
-	// Remove strange locales.
-	fs.removeSync(path.resolve(__dirname, '../locale/en-001'))
-	fs.removeSync(path.resolve(__dirname, '../locale/en-150'))
-	fs.removeSync(path.resolve(__dirname, '../locale/en-US-POSIX'))
-	fs.removeSync(path.resolve(__dirname, '../locale/es-419'))
 }
+
+// "Fully inheriting" locales are not written to disk instead.
+// // Remove all locales fully inherting from their parent locale.
+// for (const locale of getLocaleBundlesList()) {
+// 	if (findEqualParentLocaleBundle(locale)) {
+// 		removeLocaleBundle(locale)
+// 	}
+// }
+
+// Remove all locale directories.
+for (const locale of getLocalesListGenerated()) {
+	removeLocaleDirectory(locale)
+}
+
+// 	// Create `index.js` file in the locale directory.
+// 	fs.outputFileSync(
+// 		path.join(localeDirectory, 'index.js'),
+// 		`
+// module.exports = {
+// 	${[
+// 	"locale: '" + locale + "'",
+// 	"long: require('" + createTimeLabels(locale, 'long', localeMessages) + "')",
+// 	"short: require('" + createTimeLabels(locale, 'short', localeMessages) + "')",
+// 	"narrow: require('" + createTimeLabels(locale, 'narrow', localeMessages) + "')",
+// 	quantifyDirectory && ("quantify: require('" + quantifyDirectory + "/quantify')")
+// 	]
+// 	.filter(_ => _)
+// 	.join(',\n\t')}
+// }
+// 		`.trim()
+// 	)
+
+// // Remove all locales containing just `index.js`
+// // which means they're fully inherting from their parent locale.
+// for (const locale of getLocalesListGenerated()) {
+// 	const files = fs.readdirSync(path.join(__dirname, '../locale', locale))
+// 	if (files.length === 1 && files[0] === 'index.js') {
+// 		removeLocaleDirectory(locale)
+// 	}
+// }
+
+// // Remove strange locales.
+// removeLocaleDirectory('en-001')
+// removeLocaleDirectory('en-150')
+// removeLocaleDirectory('en-US-POSIX')
+// removeLocaleDirectory('es-419')
+
+// Remove strange locales.
+removeLocaleBundle('en-001')
+removeLocaleBundle('en-150')
+removeLocaleBundle('en-US-POSIX')
+removeLocaleBundle('es-419')
 
 /**
  * CLDR data always has relative time messages duplicated
@@ -159,7 +223,7 @@ function compactQuantifiersData(flavour) {
 }
 
 /**
- * Returns a list of all supported locales.
+ * Returns a list of available locale directories.
  * @return {string[]}
  */
 function getLocalesListGenerated() {
@@ -168,16 +232,26 @@ function getLocalesListGenerated() {
 }
 
 /**
+ * Returns a list of available locale bundles.
+ * @return {string[]}
+ */
+function getLocaleBundlesList() {
+	return fs.readdirSync(path.join(__dirname, '../locale'))
+		.filter(_ => fs.statSync(path.join(__dirname, '../locale', _)).isFile())
+		.map(_ => _.replace(/\.js$/, ''))
+}
+
+/**
  * Creates a file with the time messages
  * of a given style for a given locale.
  * @param  {string} locale
  * @param  {string} style
  * @param  {object} localeMessages — Time messages object containing all styles.
- * @return {object} The relative path to the time messages file.
+ * @return {string} The relative path to the time messages file.
  */
 function createTimeLabels(locale, style, localeMessages) {
 	const content = JSON.stringify(localeMessages[style], null, '\t')
-	// `sr-Cyrl-BA` -> `sr-Cyrl` -> `sr`.
+	// `sr-Cyrl-BA` -> `sr` -> `sr-Cyrl`.
 	const parentLocale = findParentLocaleHavingFile(locale, `${style}.json`, {
 		condition: (file) => fs.readFileSync(file, 'utf-8') === content
 	})
@@ -199,15 +273,15 @@ function createTimeLabels(locale, style, localeMessages) {
  * @return {string} [directory]
  */
 function findQuantifyDirectory(locale) {
-	// Look in parent locales' folders.
-	// Example: `sr-Cyrl-BA` -> `sr-Cyrl` -> `sr`.
-	const parentLocale = findParentLocaleHavingFile(locale, 'quantify.js')
-	if (parentLocale) {
-		return `../${parentLocale}`
-	}
 	// Look in this locale's folder.
 	if (fs.existsSync(path.join(__dirname, '../locale', locale, 'quantify.js'))) {
 		return '.'
+	}
+	// Look in parent locales' folders.
+	// Example: `sr-Cyrl-BA` -> `sr` -> `sr-Cyrl`.
+	const parentLocale = findParentLocaleHavingFile(locale, 'quantify.js')
+	if (parentLocale) {
+		return `../${parentLocale}`
 	}
 }
 
@@ -221,7 +295,7 @@ function findQuantifyDirectory(locale) {
  */
 function findFlavorDirectory(locale, flavour) {
 	// Look in parent locales' folders.
-	// Example: `sr-Cyrl-BA` -> `sr-Cyrl` -> `sr`.
+	// Example: `sr-Cyrl-BA` -> `sr` -> `sr-Cyrl`.
 	const parentLocale = findParentLocaleHavingFile(locale, `${flavour}.json`, { self: true })
 	if (parentLocale) {
 		if (parentLocale === locale) {
@@ -237,6 +311,8 @@ function findFlavorDirectory(locale, flavour) {
  * But their `quantify()` function is identical.
  * Therefore, it's only stored inside `ar` folder
  * and "ar-AE" locale reuses that file.
+ * Starts searching from the most common locale to the most specific locale.
+ * Example: `sr-Cyrl-BA` -> `sr` -> `sr-Cyrl`.
  * @param  {string} locale
  * @param  {string} fileName
  * @param  {object} [options]
@@ -264,4 +340,66 @@ function findParentLocaleHavingFile(locale, fileName, options = {}) {
 		}
 	}
 	return inheritFrom
+}
+
+/**
+ * Removes locale data directory.
+ * @param  {string} locale
+ */
+function removeLocaleDirectory(locale) {
+	fs.removeSync(path.resolve(__dirname, '../locale', locale))
+}
+
+/**
+ * Removes locale data bundle file.
+ * @param  {string} locale
+ */
+function removeLocaleBundle(locale) {
+	fs.removeSync(path.resolve(__dirname, '../locale', `${locale}.js`))
+}
+
+// /**
+//  * Finds a parent locale whose bundle is equal to that of the specified locale.
+//  * @param  {string} locale
+//  * @return {string} [parentLocale]
+//  */
+// function findEqualParentLocaleBundle(locale) {
+// 	const parts = locale.split('-')
+// 	parts.pop()
+// 	while (parts.length > 0) {
+// 		// `sr-Cyrl-BA` -> `sr-Cyrl` -> `sr`.
+// 		const parentLocale = parts.join('-')
+// 		if (fs.existsSync(path.resolve(__dirname, `../locale/${parentLocale}.js`))) {
+// 			// Read the contents of `index.js` and compare it to parent locale's `index.js`.
+// 			const content = fs.readFileSync(path.resolve(__dirname, `../locale/${locale}.js`), 'utf-8')
+// 			const parentContent = fs.readFileSync(path.resolve(__dirname, `../locale/${parentLocale}.js`), 'utf-8')
+// 			if (parentContent.replace(/locale: ".+?",/, '') === content.replace(/locale: ".+?",/, '')) {
+// 				return parentLocale
+// 			}
+// 		}
+// 		parts.pop()
+// 	}
+// }
+
+/**
+ * Finds a parent locale whose messages of a given style are equal to that of the specified locale.
+ * @param  {string} locale
+ * @return {string} [parentLocale]
+ */
+function findParentLocaleBundleHavingSameLabelsOfStyle(locale, messages, style) {
+	const parts = locale.split('-')
+	let length = 1
+	while (length < parts.length) {
+		// `sr-Cyrl-BA` -> `sr` -> `sr-Cyrl`.
+		const parentLocale = parts.slice(0, length).join('-')
+		if (fs.existsSync(path.resolve(__dirname, `../locale/${parentLocale}.js`))) {
+			// Compare parent locale messages to those of the given locale.
+			// const messages = require(path.resolve(__dirname, `../locale/${locale}.js`))
+			const parentLocaleMessages = require(path.resolve(__dirname, `../locale/${parentLocale}.js`))
+			if (isEqual(parentLocaleMessages[style], messages[style])) {
+				return parentLocale
+			}
+		}
+		length++
+	}
 }
