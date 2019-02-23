@@ -430,13 +430,8 @@ import en from "relative-time-format/locale/en.json"
 // Import English relative time messages.
 RelativeTimeFormat.addLocale(en)
 
-// Create a relative time formatter in your locale
-// with default values explicitly passed in.
-const rtf = new Intl.RelativeTimeFormat("en", {
-    localeMatcher: "best fit", // other values: "lookup"
-    numeric: "always", // other values: "auto"
-    style: "long", // other values: "short" or "narrow"
-})
+// Create a relative time formatter in your locale.
+const rtf = new Intl.RelativeTimeFormat("en")
 
 // Format relative time using negative value (-1).
 rtf.format(-1, "day")
