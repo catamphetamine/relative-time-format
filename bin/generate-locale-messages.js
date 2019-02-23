@@ -16,6 +16,18 @@ const LONG_STYLE_TRANSLATION_STUB = `{
 		"future": "+{0} y"
 	}`
 
+// `quantify` functions are not stored in JSON files because they're not strings
+// therefore all of them are stored in a separate `locale/quantify.js` file.
+// This file isn't big — it's about 5 kilobytes in size.
+// Alternatively, the pluralization rules for each locale could be stored
+// in their JSON files in a non-parsed form and later parsed via `make-plural` library.
+// But `make-plural` library itself is relatively big in size:
+// `make-plural.min.js` is about 6 kilobytes (https://unpkg.com/make-plural/).
+// So, it's more practical to bypass runtime `make-plural` pluralization rules compilation
+// and just include the already compiled pluarlization rules for all locales in the library code.
+const quantifyFunctions = {}
+const quantifyFunctionAliases = {}
+
 // Generate plurals first, then run this script.
 // Generating plurals creates locale folder structure.
 //
@@ -108,7 +120,23 @@ for (const locale of getLocalesListInCLDR())
 	if (quantifyDirectory) {
 		quantify = fs.readFileSync(path.join(__dirname, '../locale', locale, quantifyDirectory, 'quantify.js'), 'utf-8')
 		quantify = quantify.slice('module.exports='.length)
-		quantifySameAsFor = quantifyDirectory.slice('../'.length)
+		if (quantifyDirectory !== '.') {
+			quantifySameAsFor = quantifyDirectory.slice('../'.length)
+		}
+		if (!quantifySameAsFor) {
+			// If this quantify function is a duplicate of an already existing one
+			// then don't add its code to the list.
+			for (const _locale of Object.keys(quantifyFunctions)) {
+				if (quantifyFunctions[_locale] === quantify) {
+					// Just alias it.
+					quantifyFunctionAliases[locale] = _locale
+				}
+			}
+			// If this quantify function is not a duplicate than add its code to the list.
+			if (!quantifyFunctionAliases[locale]) {
+				quantifyFunctions[locale] = quantify
+			}
+		}
 	}
 
 	const longMessagesSameAsFor = findParentLocaleBundleHavingSameLabelsOfStyle(locale, localeMessages, 'long')
@@ -125,23 +153,47 @@ for (const locale of getLocalesListInCLDR())
 		continue
 	}
 
-	// Create `index.js` file in the locale directory.
+	// Create `${locale}.json` file in the "locales" directory.
 	fs.outputFileSync(
-		path.join(path.join(__dirname, '../locale', `${locale}.js`)),
+		path.join(path.join(__dirname, '../locale', `${locale}.json`)),
 		`
-${longMessagesSameAsFor ? '// Equal to "' + longMessagesSameAsFor + '".' + '\n' : ''}var long = ${JSON.stringify(localeMessages.long, null, '\t')}\n
-${shortMessagesSameAsFor ? '// Equal to "' + shortMessagesSameAsFor + '".' + '\n' : ''}var short = ${JSON.stringify(localeMessages.short, null, '\t')}\n
-${narrowMessagesSameAsFor ? '// Equal to "' + narrowMessagesSameAsFor + '".' + '\n' : ''}var narrow = ${JSON.stringify(localeMessages.narrow, null, '\t')}
-${quantify ? '\n' + (quantifySameAsFor ? '// Equal to "' + quantifySameAsFor + '".' + '\n' : '') + 'var quantify = ' + quantify + '\n' : ''}
-module.exports = {
-	locale: "${locale}",
-	long: long,
-	short: short,
-	narrow: narrow${quantify ? ',\n\tquantify: quantify' : ''}
+{
+	"locale": "${locale}",
+	${longMessagesSameAsFor ? '"longSource": "' + longMessagesSameAsFor + '",\n\t' : ''}"long": ${stringifyMessages(localeMessages.long)},
+	${shortMessagesSameAsFor ? '"shortSource": "' + shortMessagesSameAsFor + '",\n\t' : ''}"short": ${stringifyMessages(localeMessages.short)},
+	${narrowMessagesSameAsFor ? '"narrowSource": "' + narrowMessagesSameAsFor + '",\n\t' : ''}"narrow": ${stringifyMessages(localeMessages.narrow)}${quantifySameAsFor ? ',\n\t"quantify": "' + quantifySameAsFor + '"' : ''}
 }
 		`.trim()
 	)
+
+// 	// Create `${locale}.js` file in the "locales" directory.
+// 	fs.outputFileSync(
+// 		path.join(path.join(__dirname, '../locale', `${locale}.js`)),
+// 		`
+// ${longMessagesSameAsFor ? '// Equal to "' + longMessagesSameAsFor + '".' + '\n' : ''}var long = ${JSON.stringify(localeMessages.long, null, '\t')}\n
+// ${shortMessagesSameAsFor ? '// Equal to "' + shortMessagesSameAsFor + '".' + '\n' : ''}var short = ${JSON.stringify(localeMessages.short, null, '\t')}\n
+// ${narrowMessagesSameAsFor ? '// Equal to "' + narrowMessagesSameAsFor + '".' + '\n' : ''}var narrow = ${JSON.stringify(localeMessages.narrow, null, '\t')}
+// ${quantify ? '\n' + (quantifySameAsFor ? '// Equal to "' + quantifySameAsFor + '".' + '\n' : '') + 'var quantify = ' + quantify + '\n' : ''}
+// module.exports = {
+// 	locale: "${locale}",
+// 	long: long,
+// 	short: short,
+// 	narrow: narrow${quantify ? ',\n\tquantify: quantify' : ''}
+// }
+// 		`.trim()
+// 	)
 }
+
+// Output quantify functions for all locales.
+fs.outputFileSync(
+	path.join(__dirname, '../source/quantify.js'),
+	'var $ = {\n' +
+		Object.keys(quantifyFunctions).map(locale => `\t${locale}: ${quantifyFunctions[locale]}`).join(',\n') +
+		'\n}' + '\n\n' +
+		Object.keys(quantifyFunctionAliases).map(locale => `$.${locale} = $.${quantifyFunctionAliases[locale]}`).join('\n') +
+		'\n\n' +
+		'export default $'
+)
 
 // "Fully inheriting" locales are not written to disk instead.
 // // Remove all locales fully inherting from their parent locale.
@@ -392,14 +444,21 @@ function findParentLocaleBundleHavingSameLabelsOfStyle(locale, messages, style) 
 	while (length < parts.length) {
 		// `sr-Cyrl-BA` -> `sr` -> `sr-Cyrl`.
 		const parentLocale = parts.slice(0, length).join('-')
-		if (fs.existsSync(path.resolve(__dirname, `../locale/${parentLocale}.js`))) {
+		if (fs.existsSync(path.resolve(__dirname, `../locale/${parentLocale}.json`))) {
 			// Compare parent locale messages to those of the given locale.
-			// const messages = require(path.resolve(__dirname, `../locale/${locale}.js`))
-			const parentLocaleMessages = require(path.resolve(__dirname, `../locale/${parentLocale}.js`))
+			// const messages = require(path.resolve(__dirname, `../locale/${locale}.json`))
+			const parentLocaleMessages = require(path.resolve(__dirname, `../locale/${parentLocale}.json`))
 			if (isEqual(parentLocaleMessages[style], messages[style])) {
 				return parentLocale
 			}
 		}
 		length++
 	}
+}
+
+function stringifyMessages(messages) {
+	return JSON.stringify(messages, null, '\t')
+		.split('\n')
+		.map((_, i) => i === 0 ? _ : '\t' + _)
+		.join('\n')
 }

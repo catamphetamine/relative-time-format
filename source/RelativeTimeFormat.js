@@ -7,6 +7,8 @@ import {
 
 import resolveLocale from './resolveLocale'
 
+import quantifiers from './quantify'
+
 // Valid time units.
 export const UNITS = [
   "second",
@@ -236,7 +238,7 @@ export default class RelativeTimeFormat {
       return quantifierRules
     }
     // Quantify `value`.
-    const quantify = getLocaleData(this.locale).quantify
+    const quantify = quantifiers[this.locale]
     let quantifier = quantify && quantify(Math.abs(value))
     // There seems to be no such locale in CLDR
     // for which `quantify` is missing

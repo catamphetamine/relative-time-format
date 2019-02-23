@@ -1,6 +1,17 @@
 // import { isEqual } from 'lodash'
 
-import { UNITS } from '../RelativeTimeFormat'
+// Valid time units.
+// Copy-pasted from `RelativeTimeFormat.js`.
+export const UNITS = [
+  "second",
+  "minute",
+  "hour",
+  "day",
+  "week",
+  "month",
+  "quarter",
+  "year"
+]
 
 // Detects short and narrow flavours of labels (yr., mo., etc).
 // E.g. there are "month", "month-short", "month-narrow".
