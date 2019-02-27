@@ -431,7 +431,9 @@ import en from "relative-time-format/locale/en.json"
 RelativeTimeFormat.addLocale(en)
 
 // Create a relative time formatter in your locale.
-const rtf = new Intl.RelativeTimeFormat("en")
+const rtf = new RelativeTimeFormat("en", {
+  style: "long" // other values: "short" or "narrow"
+})
 
 // Format relative time using negative value (-1).
 rtf.format(-1, "day")
