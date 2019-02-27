@@ -1,6 +1,5 @@
 {
 	"locale": "qu-BO",
-	"longSource": "qu",
 	"long": {
 		"year": {
 			"previous": "qayna wata",
@@ -53,7 +52,6 @@
 			"future": "+{0} s"
 		}
 	},
-	"shortSource": "qu",
 	"short": {
 		"year": {
 			"previous": "qayna wata",
@@ -106,7 +104,6 @@
 			"future": "+{0} s"
 		}
 	},
-	"narrowSource": "qu",
 	"narrow": {
 		"year": {
 			"previous": "qayna wata",

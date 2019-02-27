@@ -210,6 +210,5 @@
 			"past": "pre {0} s.",
 			"future": "za {0} s."
 		}
-	},
-	"quantify": "sr"
+	}
 }

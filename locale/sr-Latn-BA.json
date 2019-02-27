@@ -1,6 +1,5 @@
 {
 	"locale": "sr-Latn-BA",
-	"longSource": "sr-Latn",
 	"long": {
 		"year": {
 			"previous": "prošle godine",
@@ -104,7 +103,6 @@
 			}
 		}
 	},
-	"shortSource": "sr-Latn",
 	"short": {
 		"year": {
 			"previous": "prošle god.",
@@ -159,7 +157,6 @@
 			"future": "za {0} sek."
 		}
 	},
-	"narrowSource": "sr-Latn",
 	"narrow": {
 		"year": {
 			"previous": "prošle g.",
@@ -213,6 +210,5 @@
 			"past": "pre {0} s.",
 			"future": "za {0} s."
 		}
-	},
-	"quantify": "sr"
+	}
 }

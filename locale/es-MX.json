@@ -227,6 +227,5 @@
 			"past": "hace {0} s",
 			"future": "+{0} s"
 		}
-	},
-	"quantify": "es"
+	}
 }

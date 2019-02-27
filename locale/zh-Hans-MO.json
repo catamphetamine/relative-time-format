@@ -54,7 +54,6 @@
 			"future": "{0}秒后"
 		}
 	},
-	"shortSource": "zh",
 	"short": {
 		"year": {
 			"previous": "去年",
@@ -109,7 +108,6 @@
 			"future": "{0}秒后"
 		}
 	},
-	"narrowSource": "zh",
 	"narrow": {
 		"year": {
 			"previous": "去年",

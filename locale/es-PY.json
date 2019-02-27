@@ -1,6 +1,5 @@
 {
 	"locale": "es-PY",
-	"longSource": "es",
 	"long": {
 		"year": {
 			"previous": "el año pasado",
@@ -222,6 +221,5 @@
 			"past": "hace {0} seg.",
 			"future": "dentro de {0} seg."
 		}
-	},
-	"quantify": "es"
+	}
 }
