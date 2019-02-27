@@ -238,7 +238,7 @@ export default class RelativeTimeFormat {
       return quantifierRules
     }
     // Quantify `value`.
-    const quantify = quantifiers[this.locale]
+    const quantify = quantifiers[getLanguageFromLanguageTag(this.locale)]
     let quantifier = quantify && quantify(Math.abs(value))
     // There seems to be no such locale in CLDR
     // for which `quantify` is missing
@@ -325,10 +325,10 @@ RelativeTimeFormat.getDefaultLocale = getDefaultLocale
  * // Returns "ar"
  * getLanguageFromLanguageTag("ar-u-nu-latn")
  */
-// export function getLanguageFromLanguageTag(languageTag) {
-//   const hyphenIndex = languageTag.indexOf('-')
-//   if (hyphenIndex > 0) {
-//     return languageTag.slice(0, hyphenIndex)
-//   }
-//   return languageTag
-// }
+function getLanguageFromLanguageTag(languageTag) {
+  const hyphenIndex = languageTag.indexOf('-')
+  if (hyphenIndex > 0) {
+    return languageTag.slice(0, hyphenIndex)
+  }
+  return languageTag
+}

@@ -1,8 +1,9 @@
-import ccp from '../locale/ccp'
-import de from '../locale/de'
-import en from '../locale/en'
-import ru from '../locale/ru'
-import to from '../locale/to'
+import ccp from '../locale/ccp.json'
+import de from '../locale/de.json'
+import en from '../locale/en.json'
+import ru from '../locale/ru.json'
+import to from '../locale/to.json'
+import ar_AE from '../locale/ar-AE.json'
 
 import RelativeTimeFormat from './RelativeTimeFormat'
 
@@ -11,6 +12,7 @@ RelativeTimeFormat.addLocale(de)
 RelativeTimeFormat.addLocale(en)
 RelativeTimeFormat.addLocale(ru)
 RelativeTimeFormat.addLocale(to)
+RelativeTimeFormat.addLocale(ar_AE)
 
 // Just so this function code is covered.
 RelativeTimeFormat.setDefaultLocale('en')
@@ -203,8 +205,16 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(() => RelativeTimeFormat.supportedLocalesOf(["en"], { localeMatcher: "eccentric" })).to.throw('Invalid "localeMatcher" option')
   })
 
-  it(`should quantify as "other" when no quantifier function is present for a locale`, () => {
+  it('should quantify as "other" when no quantifier function is present for a locale', () => {
     new RelativeTimeFormat("ccp").format(1, "minute").should.equal("1 𑄟𑄨𑄚𑄨𑄘𑄬")
+  })
+
+  it('should use quantify for a language of a specific locale', () => {
+    // Will use `quantify` for "ar" language.
+    new RelativeTimeFormat("ar-AE").format(-1, "year").should.equal("قبل سنة واحدة")
+    new RelativeTimeFormat("ar-AE").format(-2, "year").should.equal("قبل سنتين")
+    new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل 3 سنوات")
+    new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل 1.23 سنة")
   })
 
   it('should show resolved options', function() {
