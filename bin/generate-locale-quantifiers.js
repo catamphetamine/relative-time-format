@@ -4,7 +4,7 @@
 import CLDR from 'cldr-data'
 import plurals from 'make-plural'
 import MakePlural from 'make-plural/make-plural'
-import UglifyJS from 'uglify-js'
+// import UglifyJS from 'uglify-js'
 import path from 'path'
 import fs from 'fs-extra'
 
@@ -40,29 +40,18 @@ for (const locale of Object.keys(plurals)) {
 	)
 
 	// Pluralization function code
-	const functionCode = new MakePlurals(locale).toString('classify')
+	let code = new MakePlurals(locale).toString('classify')
 
-	// Minify pluralization function code
-	let { error, code } = UglifyJS.minify(functionCode)
+	// Minify the code.
+	code = minify(code)
 
-	if (error) {
-		throw error
+	if (code) {
+		// Write pluralization function to a file.
+		fs.outputFileSync(
+			path.join(__dirname, '../locale', locale, 'quantify.js'),
+			`module.exports=${code}`
+		)
 	}
-
-	// Strip function name.
-	code = code.replace('function classify(', 'function(')
-
-	// If quantifier always returns "other"
-	// it's as if it wasn't specified at all.
-	if (code === 'function(n){return"other"}') {
-		continue
-	}
-
-	// Write pluralization function to a file.
-	fs.outputFileSync(
-		path.join(__dirname, '../locale', locale, 'quantify.js'),
-		`module.exports=${code}`
-	)
 }
 
 /**
@@ -72,4 +61,24 @@ for (const locale of Object.keys(plurals)) {
 function listAllCLDRLocales() {
 	return fs.readdirSync(path.join(__dirname, '../node_modules/cldr-dates-full/main/'))
 		.filter(name => fs.statSync(path.join(__dirname, '../node_modules/cldr-dates-full/main', name)).isDirectory())
+}
+
+function minify(code) {
+	// Don't minify the code because it goes into `source/quantify.js`
+	// which is later minified by Rollup for web browsers.
+	return code
+
+	// Minify pluralization function code
+	const result = UglifyJS.minify(functionCode)
+	if (result.error) {
+		throw error
+	}
+	code = result.code
+	// If quantifier always returns "other"
+	// it's as if it wasn't specified at all.
+	if (code === 'function classify(n){return"other"}') {
+		return
+	}
+	// Strip function name.
+	return code.replace('function classify(', 'function(')
 }
