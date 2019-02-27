@@ -19,13 +19,15 @@ If you're not using a bundler then use a [standalone version from a CDN](#cdn).
 ## Use
 
 ```js
-import RelativeTimeFormat from 'relative-time-format'
-import en from 'relative-time-format/locale/en.json'
+import RelativeTimeFormat from "relative-time-format"
+import en from "relative-time-format/locale/en.json"
 
 RelativeTimeFormat.addLocale(en)
 
 // Returns "2 days ago"
-new RelativeTimeFormat('en').format(-2, 'day')
+new RelativeTimeFormat("en", {
+  style: "long" // other values: "short" or "narrow"
+}).format(-2, "day")
 ```
 
 ## Locales
