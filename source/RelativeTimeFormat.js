@@ -6,6 +6,7 @@ import {
 } from './LocaleDataStore'
 
 import resolveLocale from './resolveLocale'
+import getQuantifyLocale from './getQuantifyLocale'
 
 import quantifiers from './quantify'
 
@@ -238,7 +239,7 @@ export default class RelativeTimeFormat {
       return quantifierRules
     }
     // Quantify `value`.
-    const quantify = quantifiers[getLanguageFromLanguageTag(this.locale)]
+    const quantify = quantifiers[getQuantifyLocale(this.locale)]
     let quantifier = quantify && quantify(Math.abs(value))
     // There seems to be no such locale in CLDR
     // for which `quantify` is missing
@@ -314,21 +315,3 @@ RelativeTimeFormat.setDefaultLocale = setDefaultLocale
  * @return  {string} locale
  */
 RelativeTimeFormat.getDefaultLocale = getDefaultLocale
-
-/**
- * Extracts language from an IETF BCP 47 language tag.
- * @param {string} languageTag - IETF BCP 47 language tag.
- * @return {string}
- * @example
- * // Returns "he"
- * getLanguageFromLanguageTag("he-IL-u-ca-hebrew-tz-jeruslm")
- * // Returns "ar"
- * getLanguageFromLanguageTag("ar-u-nu-latn")
- */
-function getLanguageFromLanguageTag(languageTag) {
-  const hyphenIndex = languageTag.indexOf('-')
-  if (hyphenIndex > 0) {
-    return languageTag.slice(0, hyphenIndex)
-  }
-  return languageTag
-}

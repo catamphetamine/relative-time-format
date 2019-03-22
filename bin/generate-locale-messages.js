@@ -13,6 +13,7 @@ import CLDR from 'cldr-data'
 
 import extractRelativeTimeMessages from '../source/CLDR/extractRelativeTimeMessages'
 import getLocalesListInCLDR from '../source/CLDR/getLocalesList'
+import getQuantifyLocale from '../source/getQuantifyLocale'
 
 const MakePlurals = MakePlural.load(
 	CLDR('supplemental/plurals'),
@@ -43,51 +44,23 @@ const LONG_STYLE_TRANSLATION_STUB = `{
 const quantifyFunctions = {}
 const quantifyFunctionAliases = {}
 
-// Generate plurals first, then run this script.
-// Generating plurals creates locale folder structure.
-//
-// ```
-// npm run generate-locale-quantifiers
-// npm run generate-locale-messages
-// // npm run generate-load-all-locales
-// ````
 for (const locale of getLocalesListInCLDR()) {
-	if (
-		// Different variations of "en" language have `en/short.json` and `en/narrow.json`
-		// which differ from one another by a simple dot, e.g. `yr.` vs `yr`.
-		// To reduce the resulting bundle size this dot difference is considered unimportant.
-		locale.indexOf('en-') === 0 ||
-		// For "pt" language the relative time messages seem to be different
-		// from all other "pt-" variations which are identical to "pt-PT".
-		// Seems like a bug in CLDR.
-		// To reduce the resulting bundle size "pt" language is discarded
-		// and "pt-PT" is used instead. All other "pt-" variations
-		// seems to be identical to "pt-PT" so they're not included.
-		locale.indexOf('pt-') === 0
-	) {
-		continue
-	}
-
-	// "language" is the top-most parent locale of the `locale`.
-	const language = locale.split('-')[0]
-
+	// "pt" language is weird because there're the regular "pt" (Portuguese),
+	// the "pt-PT" (European Portuguese) and various "pt-XX"s.
+	//
 	// For "pt" language the relative time messages seem to be different
-	// from all other "pt-" variations which are identical to "pt-PT".
-	// Seems like a bug in CLDR.
-	// To reduce the resulting bundle size "pt" language is discarded
-	// and "pt-PT" is used instead. All other "pt-" variations
-	// seems to be identical to "pt-PT" so they're not included.
+	// from all other "pt-" variations which seem to be identical to "pt-PT".
 	//
-	// Also for "pt" language `quantify` is really weird and seems to be a "no op".
-	// Seems like a bug in CLDR data.
-	// So using "pt-PT"'s `quantify` instead.
-	//
-	const localeInCLDR = locale === 'pt' ? 'pt-PT' : locale
+	// Also, quantify function for "pt" language is different from "pt-PT".
+	// It's the only case when there's a quantify function for a locale
+	// instead of a language.
+	// http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html
+	// (See "pt" vs "pt_PT" there)
 
-	const cldrJsonPath = `cldr-dates-full/main/${localeInCLDR}/dateFields.json`
-	const localeDirectory = path.join(__dirname, '../locale', locale)
-	const languageDirectory = path.join(__dirname, '../locale', language)
+	// For English there're different variations of "en" language
+	// which differ from one another by a simple dot, e.g. "yr." vs "yr".
 
+	const cldrJsonPath = `cldr-dates-full/main/${locale}/dateFields.json`
 	const localeMessages = extractRelativeTimeMessages(require(cldrJsonPath))
 
 	// "long" messages are always present.
@@ -132,20 +105,20 @@ for (const locale of getLocalesListInCLDR()) {
 	}
 
 	// Get quantify function code.
-	const quantify = getQuantifyFunctionCode(language, locale)
-	// If quantify function is defined for this language then add it to `quantify.js`.
-	if (quantify && !quantifyFunctions[language]) {
+	const { quantify, locale: quantifyLocale } = getQuantifyFunctionCode(locale)
+	// If quantify function is defined for this locale then add it to `quantify.js`.
+	if (quantify && !quantifyFunctions[quantifyLocale]) {
 		// If this quantify function is a duplicate of an already existing one
 		// then don't add its code to the list.
-		for (const _locale of Object.keys(quantifyFunctions)) {
-			if (quantifyFunctions[_locale] === quantify) {
+		for (const locale of Object.keys(quantifyFunctions)) {
+			if (quantifyFunctions[locale] === quantify) {
 				// Just alias it.
-				quantifyFunctionAliases[language] = _locale
+				quantifyFunctionAliases[quantifyLocale] = locale
 			}
 		}
 		// If this quantify function is not a duplicate than add its code to the list.
-		if (!quantifyFunctionAliases[language]) {
-			quantifyFunctions[language] = quantify
+		if (!quantifyFunctionAliases[quantifyLocale]) {
+			quantifyFunctions[quantifyLocale] = quantify
 		}
 	}
 
@@ -179,7 +152,7 @@ fs.outputFileSync(
 		'var $ = {' + '\n' +
 		Object.keys(quantifyFunctions).map(locale => `\t${locale}: ${tabulate(quantifyFunctions[locale], 1).slice(1)}`).join(',\n') +
 		'\n}' + '\n\n' +
-		Object.keys(quantifyFunctionAliases).map(locale => `$.${locale} = $.${quantifyFunctionAliases[locale]}`).join('\n') +
+		Object.keys(quantifyFunctionAliases).map(locale => `$${locale.indexOf('-') > 0 ? '["' + locale + '"]' : '.' + locale} = $.${quantifyFunctionAliases[locale]}`).join('\n') +
 		'\n\n' +
 		'export default $'
 )
@@ -187,46 +160,30 @@ fs.outputFileSync(
 // Remove strange locales.
 removeLocaleBundle('en-001')
 removeLocaleBundle('en-150')
-removeLocaleBundle('en-US-POSIX')
-removeLocaleBundle('es-419')
 
-function getQuantifyFunctionCode(language, locale) {
-	// All pluralization functions are available for their respective languages
-	// except for Portuguese which has pluralizations defined for both "pt" and "pt-PT".
-	// The one for "pt" is correct: 0..1 — "one", rest — "other".
-	// The one for "pt-PT" is a weird one, so I'm just skipping it.
-	//
-	// function(n) {
-	//   var s = String(n).split('.'), v0 = !s[1];
-	//   return (n == 1 && v0) ? 'one' : 'other';
-	// }
-	//
-	// It says "if `n` is `1` AND it's an integer, then it's `one`, otherwise `other`".
-	// If `n` is `1` then it already means that it's an integer, so it's redundant at the very least.
-	// And in "pt" pluralization rules `0` also should be "one" but in "pt-PT" pluralization function it's "other".
-	// https://github.com/unicode-cldr/cldr-core/commit/c4bab967824090463b10d4f8662ea29cdd4ae3cf#r32876547
-	//
-	// Seems like a bug in CLDR data.
-	// The CLDR website page only lists "pt":
-	// http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html
-	if (locale === 'pt-PT') {
-		locale = 'pt'
-	}
-	// All locales supported by `make-plurals` are languages
-	// except for the "pt-PT" locale which is most likely a bug so it's ignored.
-	// Verifies that the pluralization rule for the locale is same as for the language.
-	// (just in case)
-	while (locale !== language) {
-		if (plurals.hasOwnProperty(locale)) {
-			throw new Error(`Different pluralization functions found for locale "${locale}" and language "${language}"`)
+// All locales supported by `make-plurals` are languages
+// except for the "pt-PT" locale which is a weird one
+// with Portuguese pluralization rules being different
+// for Europe (0 dia, 1.5 dia) and non-Europe (0 dias, 1.5 dias).
+function getQuantifyFunctionCode(locale) {
+	if (plurals.hasOwnProperty(locale)) {
+		const expectedLocale = getQuantifyLocale(locale)
+		if (locale !== expectedLocale) {
+			throw new Error(`Expected to find pluralization rules for "${expectedLocale}" locale but found them for "${locale}" locale`)
 		}
-		const parts = locale.split('-')
-		parts.pop()
-		locale = parts.join('-')
+		return {
+			locale,
+			quantify: new MakePlurals(locale).toString('classify')
+		}
 	}
-	if (plurals.hasOwnProperty(language)) {
-		return new MakePlurals(language).toString('classify')
+	const parts = locale.split('-')
+	parts.pop()
+	locale = parts.join('-')
+	if (locale) {
+		return getQuantifyFunctionCode(locale)
 	}
+	// Not found.
+	return {}
 }
 
 /**
@@ -261,7 +218,7 @@ function compactQuantifiersData(flavour) {
  * @param  {string} locale
  */
 function removeLocaleBundle(locale) {
-	fs.removeSync(path.resolve(__dirname, '../locale', `${locale}.js`))
+	fs.removeSync(path.resolve(__dirname, `../locale/${locale}.json`))
 }
 
 /**

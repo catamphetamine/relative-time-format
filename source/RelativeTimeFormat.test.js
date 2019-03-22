@@ -4,6 +4,8 @@ import en from '../locale/en.json'
 import ru from '../locale/ru.json'
 import to from '../locale/to.json'
 import ar_AE from '../locale/ar-AE.json'
+import pt from '../locale/pt.json'
+import pt_PT from '../locale/pt-PT.json'
 
 import RelativeTimeFormat from './RelativeTimeFormat'
 
@@ -13,6 +15,8 @@ RelativeTimeFormat.addLocale(en)
 RelativeTimeFormat.addLocale(ru)
 RelativeTimeFormat.addLocale(to)
 RelativeTimeFormat.addLocale(ar_AE)
+RelativeTimeFormat.addLocale(pt)
+RelativeTimeFormat.addLocale(pt_PT)
 
 // Just so this function code is covered.
 RelativeTimeFormat.setDefaultLocale('en')
@@ -215,6 +219,11 @@ describe('Intl.RelativeTimeFormat', () => {
     new RelativeTimeFormat("ar-AE").format(-2, "year").should.equal("قبل سنتين")
     new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل 3 سنوات")
     new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل 1.23 سنة")
+  })
+
+  it('should use correct quantify for Portuguese ("pt") and European Portuguese ("pt-PT")', () => {
+    new RelativeTimeFormat("pt").format(1.5, "day").should.equal("em 1.5 dia")
+    new RelativeTimeFormat("pt-PT").format(1.5, "day").should.equal("dentro de 1.5 dias")
   })
 
   it('should show resolved options', function() {

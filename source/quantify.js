@@ -291,6 +291,7 @@ $.nl = $.ast
 $.nn = $.af
 $.or = $.af
 $.ps = $.af
+$["pt-PT"] = $.ast
 $.sah = $.dz
 $.sd = $.af
 $.sk = $.cs
