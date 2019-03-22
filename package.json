@@ -32,8 +32,7 @@
     "nyc": "^13.3.0",
     "rimraf": "^2.5.0",
     "rollup": "^1.2.3",
-    "rollup-plugin-terser": "^4.0.4",
-    "uglify-js": "^3.3.5"
+    "rollup-plugin-terser": "^4.0.4"
   },
   "scripts": {
     "test": "mocha --bail --require @babel/register --require ./test/setup.js \"source/**/*.test.js\" \"test/**/*.test.js\"",
@@ -48,8 +47,7 @@
     "delete-locales": "rimraf ./locale/**/*",
     "create-locales-directory": "mkdirp locale",
     "generate-locale-messages": "babel-node bin/generate-locale-messages",
-    "generate-locale-quantifiers": "babel-node bin/generate-locale-quantifiers",
-    "generate-locales": "npm-run-all delete-locales create-locales-directory generate-locale-quantifiers generate-locale-messages"
+    "generate-locales": "npm-run-all delete-locales create-locales-directory generate-locale-messages"
   },
   "repository": {
     "type": "git",
