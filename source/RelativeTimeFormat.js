@@ -285,10 +285,12 @@ export default class RelativeTimeFormat {
    * @return {object[]}
    */
   formatNumberToParts(number) {
-    return this.numberFormat ? this.numberFormat.formatToParts(number) : {
-      type: "integer",
-      value: String(number)
-    }
+    return this.numberFormat && this.numberFormat.formatToParts ?
+      this.numberFormat.formatToParts(number) :
+      {
+        type: "integer",
+        value: String(number)
+      }
   }
 
   /**
