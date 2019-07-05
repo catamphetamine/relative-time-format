@@ -1,3 +1,10 @@
+/**
+ * Returns a `locale` for which `quantify()` function exists in `./quantify.js`.
+ * @param  {string} locale
+ * @return {string}
+ * @example
+ * getQuantifyLocale("ru-RU-Cyrl") // Returns "ru".
+ */
 export default function getQuantifyLocale(locale) {
 	// "pt" language is the only one having different pluralization rules
 	// for the one ("pt") (Portuguese) locale and the other ("pt-PT") (European Portuguese).

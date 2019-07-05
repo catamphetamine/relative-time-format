@@ -36,9 +36,14 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(() => new RelativeTimeFormat("en", { numeric: "sometimes" })).to.throw('Invalid "numeric" option')
   })
 
-  it('should require "unit" argument', () => {
+  it('should validate "unit" argument', () => {
     const rtf = new RelativeTimeFormat()
     expect(() => rtf.format(-1)).to.throw('"unit" argument is required')
+    expect(() => rtf.formatToParts(-1)).to.throw('"unit" argument is required')
+    expect(() => rtf.format(-1, 0)).to.throw('Invalid "unit" argument')
+    if (typeof Symbol !== 'undefined') {
+      expect(() => rtf.format(-1, Symbol())).to.throw('Invalid "unit" argument')
+    }
   })
 
   it('should use the passed "style" option', () => {
@@ -76,7 +81,15 @@ describe('Intl.RelativeTimeFormat', () => {
 
   it('should throw for non-finite numbers', () => {
     const rtf = new RelativeTimeFormat("en")
-    expect(() => rtf.format(-Infinity, "day")).to.throw("Invalid number")
+    // Test with `Number.isFinite`.
+    if (Number.isFinite) {
+      expect(() => rtf.format(-Infinity, "day")).to.throw("Invalid \"number\" argument")
+    }
+    // Test without `Number.isFinite`.
+    const isFinite = Number.isFinite
+    Number.isFinite = undefined
+    expect(rtf.format(-Infinity, "day")).to.equal("∞ days ago")
+    Number.isFinite = isFinite
   })
 
   it('should fall back to "other" quantifier if others have been removed as an optimization', () => {
@@ -90,7 +103,7 @@ describe('Intl.RelativeTimeFormat', () => {
 
   it('should throw if a time unit is unsupported', () => {
     const rtf = new RelativeTimeFormat("en")
-    expect(() => rtf.format(-1, "decade")).to.throw("Unknown time unit: decade")
+    expect(() => rtf.format(-1, "decade")).to.throw("Invalid \"unit\" argument: decade")
   })
 
   it('should format yesterday/today/tomorrow', () => {
@@ -198,6 +211,7 @@ describe('Intl.RelativeTimeFormat', () => {
     // in Node.js version 9.x.
     // In Node.js version 12.x it does have that method.
     if (Intl.NumberFormat.prototype.formatToParts) {
+      // Test with `Intl.NumberFormat.prototype.formatToParts`.
       expect(rtf.formatToParts(1000, "day")).to.deep.equal([
         { type: "literal", value: "in " },
         { type: "integer", value: "1", unit: "day" },
@@ -205,6 +219,15 @@ describe('Intl.RelativeTimeFormat', () => {
         { type: "integer", value: "000", unit: "day" },
         { type: "literal", value: " days" }
       ])
+      // Test without `Intl.NumberFormat.prototype.formatToParts`.
+      const numberFormat = rtf.numberFormat
+      rtf.numberFormat = undefined
+      expect(rtf.formatToParts(1000, "day")).to.deep.equal([
+        { type: "literal", value: "in " },
+        { type: "integer", value: "1000", unit: "day" },
+        { type: "literal", value: " days" }
+      ])
+      rtf.numberFormat = numberFormat
     }
 
     expect(rtf.formatToParts(100, "day")).to.deep.equal([

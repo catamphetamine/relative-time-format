@@ -18,14 +18,19 @@ export function setDefaultLocale(locale) {
   defaultLocale = locale
 }
 
-// export function isLocaleDataAvailable(locale) {
-//  return localesData.hasOwnProperty(locale)
-// }
-
+/**
+ * Gets locale data previously added by `addLocaleData()`.
+ * @return  {object} [localeData]
+ */
 export function getLocaleData(locale) {
 	return localesData[locale]
 }
 
+/**
+ * Adds locale data.
+ * Is called by `RelativeTimeFormat.addLocale(...)`.
+ * @param  {object} localeData
+ */
 export function addLocaleData(localeData) {
   if (!localeData) {
     throw new Error('No locale data passed')
@@ -36,6 +41,12 @@ export function addLocaleData(localeData) {
   lowercaseLocaleLookup[localeData.locale.toLowerCase()] = localeData.locale
 }
 
+/**
+ * Returns a locale for which locale data has been added
+ * via `RelativeTimeFormat.addLocale(...)`.
+ * @param  {string} locale
+ * @return {string} [locale]
+ */
 export function resolveLocale(locale) {
 	if (localesData[locale]) {
 		return locale

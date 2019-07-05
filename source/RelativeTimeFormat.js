@@ -7,7 +7,6 @@ import {
 
 import resolveLocale from './resolveLocale'
 import getQuantifyLocale from './getQuantifyLocale'
-import isNegativeZero from './isNegativeZero'
 
 import quantifiers from './quantify'
 
@@ -126,12 +125,8 @@ export default class RelativeTimeFormat {
    * // Returns "in 5 minutes"
    * rtf.format(5, "minute")
    */
-  format(number, unit) {
-    if (arguments.length < 2) {
-      throw new TypeError(`"unit" argument is required`)
-    }
-    number = parseNumber(number)
-    unit = parseUnit(unit)
+  format() {
+    const [number, unit] = parseFormatArgs(arguments)
     return this.getRule(number, unit).replace('{0}', this.formatNumber(Math.abs(number)))
   }
 
@@ -158,12 +153,8 @@ export default class RelativeTimeFormat {
    * // ]
    * rtf.formatToParts(100, "day")
    */
-  formatToParts(number, unit) {
-    if (arguments.length < 2) {
-      throw new TypeError(`"unit" argument is required`)
-    }
-    number = parseNumber(number)
-    unit = parseUnit(unit)
+  formatToParts() {
+    const [number, unit] = parseFormatArgs(arguments)
     const rule = this.getRule(number, unit)
     const valueIndex = rule.indexOf("{0}")
     // "yesterday"/"today"/"tomorrow".
@@ -180,10 +171,10 @@ export default class RelativeTimeFormat {
         value: rule.slice(0, valueIndex)
       })
     }
-    parts = parts.concat(this.formatNumberToParts(Math.abs(number)).map(part => {
-      part.unit = unit
-      return part
-    }))
+    parts = parts.concat(
+      this.formatNumberToParts(Math.abs(number))
+        .map(part => ({ ...part, unit }))
+    )
     if (valueIndex + "{0}".length < rule.length - 1) {
       parts.push({
         type: "literal",
@@ -249,7 +240,7 @@ export default class RelativeTimeFormat {
     // Choose either "past" or "future" based on time `value` sign.
     // If there's only "other" then it's being collapsed.
     // (the resulting bundle size optimization technique)
-    const quantifierRules = unitRules[value === 0 && isNegativeZero(value) || value < 0 ? "past" : "future"]
+    const quantifierRules = unitRules[isNegative(value) ? "past" : "future"]
     // Bundle size optimization technique.
     if (typeof quantifierRules === "string") {
       return quantifierRules
@@ -287,10 +278,10 @@ export default class RelativeTimeFormat {
   formatNumberToParts(number) {
     return this.numberFormat && this.numberFormat.formatToParts ?
       this.numberFormat.formatToParts(number) :
-      {
+      [{
         type: "integer",
         value: String(number)
-      }
+      }]
   }
 
   /**
@@ -350,30 +341,61 @@ RelativeTimeFormat.getDefaultLocale = getDefaultLocale
 // The specification allows units to be in plural form.
 // Convert plural to singular.
 // Example: "seconds" -> "second".
+const UNIT_ERROR = 'Invalid "unit" argument'
 function parseUnit(unit) {
   if (typeof unit === 'symbol') {
-    throw new TypeError(`"unit" can't be a Symbol`)
+    throw new TypeError(UNIT_ERROR)
   }
   if (typeof unit !== 'string') {
-    throw new RangeError(`"unit" must be a string: ${unit}`)
+    throw new RangeError(`${UNIT_ERROR}: ${unit}`)
   }
   if (unit[unit.length - 1] === 's') {
     unit = unit.slice(0, unit.length - 1)
   }
   if (UNITS.indexOf(unit) < 0) {
-    throw new RangeError(`Unknown time unit: ${unit}`)
+    throw new RangeError(`${UNIT_ERROR}: ${unit}`)
   }
   return unit
 }
 
+// Converts `value` to a `Number`.
 // The specification allows value to be a non-number.
 // For example, "-0" is supposed to be treated as `-0`.
+// Also checks if `value` is a finite number.
+const NUMBER_ERROR = 'Invalid "number" argument'
 function parseNumber(value) {
   value = Number(value)
   if (Number.isFinite) {
     if (!Number.isFinite(value)) {
-      throw new RangeError(`Invalid number: ${value}`)
+      throw new RangeError(`${NUMBER_ERROR}: ${value}`)
     }
   }
   return value
+}
+
+/**
+ * Tells `0` from `-0`.
+ * https://stackoverflow.com/questions/7223359/are-0-and-0-the-same
+ * @param  {number} number
+ * @return {Boolean}
+ * @example
+ * isNegativeZero(0); // false
+ * isNegativeZero(-0); // true
+ */
+function isNegativeZero(number) {
+  return 1 / number === -Infinity
+}
+
+function isNegative(number) {
+  return number < 0 || number === 0 && isNegativeZero(number)
+}
+
+function parseFormatArgs(args) {
+  if (args.length < 2) {
+    throw new TypeError(`"unit" argument is required`)
+  }
+  return [
+    parseNumber(args[0]),
+    parseUnit(args[1])
+  ]
 }
