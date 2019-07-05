@@ -153,18 +153,17 @@ export default class RelativeTimeFormat {
         value: rule
       }]
     }
-    const parts = []
+    let parts = []
     if (valueIndex > 0) {
       parts.push({
         type: "literal",
         value: rule.slice(0, valueIndex)
       })
     }
-    parts.push({
-      unit,
-      type: "integer",
-      value: this.formatNumber(Math.abs(value))
-    })
+    parts = parts.concat(this.formatNumberToParts(Math.abs(value)).map(part => {
+      part.unit = unit
+      return part
+    }))
     if (valueIndex + "{0}".length < rule.length - 1) {
       parts.push({
         type: "literal",
@@ -233,7 +232,7 @@ export default class RelativeTimeFormat {
     // Choose either "past" or "future" based on time `value` sign.
     // If there's only "other" then it's being collapsed.
     // (the resulting bundle size optimization technique)
-    const quantifierRules = unitRules[value <= 0 ? "past" : "future"]
+    const quantifierRules = unitRules[value < 0 ? "past" : "future"]
     // Bundle size optimization technique.
     if (typeof quantifierRules === "string") {
       return quantifierRules
@@ -260,6 +259,19 @@ export default class RelativeTimeFormat {
    */
   formatNumber(number) {
     return this.numberFormat ? this.numberFormat.format(number) : String(number)
+  }
+
+  /**
+   * Formats a number into a list of parts.
+   * Uses `Intl.NumberFormat` when available.
+   * @param  {number} number
+   * @return {object[]}
+   */
+  formatNumberToParts(number) {
+    return this.numberFormat ? this.numberFormat.formatToParts(number) : {
+      type: "integer",
+      value: String(number)
+    }
   }
 
   /**

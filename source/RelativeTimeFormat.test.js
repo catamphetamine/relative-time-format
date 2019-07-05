@@ -140,7 +140,7 @@ describe('Intl.RelativeTimeFormat', () => {
     // The algorithm should take local time into account.
 
     expect(rtf.format(-1, "day")).to.equal("1 day ago")
-    expect(rtf.format(0, "day")).to.equal("0 days ago")
+    expect(rtf.format(0, "day")).to.equal("in 0 days")
     expect(rtf.format(1, "day")).to.equal("in 1 day")
 
     en.long.day = enLongDay
@@ -163,6 +163,19 @@ describe('Intl.RelativeTimeFormat', () => {
 
   it('should format to parts', () => {
     let rtf = new RelativeTimeFormat("en")
+
+    // `Intl.NumberFormat` doesn't have `formatToParts()`
+    // in Node.js version 9.x.
+    // In Node.js version 12.x it does have that method.
+    if (Intl.NumberFormat.prototype.formatToParts) {
+      expect(rtf.formatToParts(1000, "day")).to.deep.equal([
+        { type: "literal", value: "in " },
+        { type: "integer", value: "1", unit: "day" },
+        { type: "group", value: ",", unit: "day" },
+        { type: "integer", value: "000", unit: "day" },
+        { type: "literal", value: " days" }
+      ])
+    }
 
     expect(rtf.formatToParts(100, "day")).to.deep.equal([
       { type: "literal", value: "in " },
