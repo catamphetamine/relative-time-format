@@ -166,6 +166,12 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(rtf.format(-2, "days")).to.equal("2 days ago")
   })
 
+  it('should support negative zero', () => {
+    const rtf = new RelativeTimeFormat()
+    expect(rtf.format(0, "days")).to.equal("in 0 days")
+    expect(rtf.format(-0, "days")).to.equal("0 days ago")
+  })
+
   it('should format to parts', () => {
     let rtf = new RelativeTimeFormat("en")
 

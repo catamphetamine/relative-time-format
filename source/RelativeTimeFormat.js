@@ -7,6 +7,7 @@ import {
 
 import resolveLocale from './resolveLocale'
 import getQuantifyLocale from './getQuantifyLocale'
+import isNegativeZero from './isNegativeZero'
 
 import quantifiers from './quantify'
 
@@ -237,7 +238,7 @@ export default class RelativeTimeFormat {
     // Choose either "past" or "future" based on time `value` sign.
     // If there's only "other" then it's being collapsed.
     // (the resulting bundle size optimization technique)
-    const quantifierRules = unitRules[value < 0 ? "past" : "future"]
+    const quantifierRules = unitRules[value === 0 && isNegativeZero(value) || value < 0 ? "past" : "future"]
     // Bundle size optimization technique.
     if (typeof quantifierRules === "string") {
       return quantifierRules
