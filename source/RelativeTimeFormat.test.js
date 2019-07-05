@@ -161,6 +161,11 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(rtf.format(-2, "day")).to.equal("2 days ago")
   })
 
+  it('should support plural units', () => {
+    const rtf = new RelativeTimeFormat()
+    expect(rtf.format(-2, "days")).to.equal("2 days ago")
+  })
+
   it('should format to parts', () => {
     let rtf = new RelativeTimeFormat("en")
 

@@ -184,6 +184,11 @@ export default class RelativeTimeFormat {
    * getRule(-2, "day")
    */
   getRule(value, unit) {
+    // Convert plural to singular.
+    // Example: "seconds" -> "second".
+    if (unit[unit.length - 1] === 's') {
+      unit = unit.slice(0, unit.length - 1)
+    }
     if (UNITS.indexOf(unit) < 0) {
       throw new RangeError(`Unknown time unit: ${unit}.`)
     }
