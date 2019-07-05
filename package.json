@@ -1,7 +1,7 @@
 {
   "name": "relative-time-format",
   "version": "1.0.0",
-  "description": "The best Intl.RelativeTimeFormat polyfill",
+  "description": "A convenient Intl.RelativeTimeFormat polyfill",
   "main": "index.commonjs.js",
   "module": "index.js",
   "sideEffects": false,

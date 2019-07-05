@@ -36,6 +36,12 @@ const STYLE_VALUES = [
   "narrow"
 ]
 
+// Valid values for the `localeMatcher` option.
+const LOCALE_MATCHER_VALUES = [
+  "lookup",
+  "best fit"
+]
+
 /**
  * Polyfill for `Intl.RelativeTimeFormat` proposal.
  * https://github.com/tc39/proposal-intl-relative-time
@@ -61,7 +67,7 @@ export default class RelativeTimeFormat {
     } = options
 
     // Set `numeric` option.
-    if (numeric) {
+    if (numeric !== undefined) {
       if (NUMERIC_VALUES.indexOf(numeric) < 0) {
         throw new RangeError(`Invalid "numeric" option: ${numeric}`)
       }
@@ -69,7 +75,7 @@ export default class RelativeTimeFormat {
     }
 
     // Set `style` option.
-    if (style) {
+    if (style !== undefined) {
       if (STYLE_VALUES.indexOf(style) < 0) {
         throw new RangeError(`Invalid "style" option: ${style}`)
       }
@@ -77,7 +83,10 @@ export default class RelativeTimeFormat {
     }
 
     // Set `localeMatcher` option.
-    if (localeMatcher) {
+    if (localeMatcher !== undefined) {
+      if (LOCALE_MATCHER_VALUES.indexOf(localeMatcher) < 0) {
+        throw new RangeError(`Invalid "localeMatcher" option: ${localeMatcher}`)
+      }
       this.localeMatcher = localeMatcher
     }
 
@@ -93,7 +102,7 @@ export default class RelativeTimeFormat {
       localeMatcher: this.localeMatcher
     })[0]
     if (!this.locale) {
-      throw new TypeError("No supported locale was found")
+      throw new Error("No supported locale was found")
     }
     this.locale = resolveLocale(this.locale, {
       localeMatcher: this.localeMatcher
@@ -106,8 +115,8 @@ export default class RelativeTimeFormat {
   }
 
   /**
-   * Formats time `value` in `units` (either in past or in future).
-   * @param {number} value - Time interval value.
+   * Formats time `number` in `units` (either in past or in future).
+   * @param {number} number - Time interval value.
    * @param {string} unit - Time interval measurement unit.
    * @return {string}
    * @throws {RangeError} If unit is not one of "second", "minute", "hour", "day", "week", "month", "quarter".
@@ -117,13 +126,18 @@ export default class RelativeTimeFormat {
    * // Returns "in 5 minutes"
    * rtf.format(5, "minute")
    */
-  format(value, unit) {
-    return this.getRule(value, unit).replace('{0}', this.formatNumber(Math.abs(value)))
+  format(number, unit) {
+    if (arguments.length < 2) {
+      throw new TypeError(`"unit" argument is required`)
+    }
+    number = parseNumber(number)
+    unit = parseUnit(unit)
+    return this.getRule(number, unit).replace('{0}', this.formatNumber(Math.abs(number)))
   }
 
   /**
-   * Formats time `value` in `units` (either in past or in future).
-   * @param {number} value - Time interval value.
+   * Formats time `number` in `units` (either in past or in future).
+   * @param {number} number - Time interval value.
    * @param {string} unit - Time interval measurement unit.
    * @return {Object[]} The parts (`{ type, value }`).
    * @throws {RangeError} If unit is not one of "second", "minute", "hour", "day", "week", "month", "quarter".
@@ -144,8 +158,13 @@ export default class RelativeTimeFormat {
    * // ]
    * rtf.formatToParts(100, "day")
    */
-  formatToParts(value, unit) {
-    const rule = this.getRule(value, unit)
+  formatToParts(number, unit) {
+    if (arguments.length < 2) {
+      throw new TypeError(`"unit" argument is required`)
+    }
+    number = parseNumber(number)
+    unit = parseUnit(unit)
+    const rule = this.getRule(number, unit)
     const valueIndex = rule.indexOf("{0}")
     // "yesterday"/"today"/"tomorrow".
     if (valueIndex < 0) {
@@ -161,7 +180,7 @@ export default class RelativeTimeFormat {
         value: rule.slice(0, valueIndex)
       })
     }
-    parts = parts.concat(this.formatNumberToParts(Math.abs(value)).map(part => {
+    parts = parts.concat(this.formatNumberToParts(Math.abs(number)).map(part => {
       part.unit = unit
       return part
     }))
@@ -185,14 +204,6 @@ export default class RelativeTimeFormat {
    * getRule(-2, "day")
    */
   getRule(value, unit) {
-    // Convert plural to singular.
-    // Example: "seconds" -> "second".
-    if (unit[unit.length - 1] === 's') {
-      unit = unit.slice(0, unit.length - 1)
-    }
-    if (UNITS.indexOf(unit) < 0) {
-      throw new RangeError(`Unknown time unit: ${unit}.`)
-    }
     // Get locale-specific time interval formatting rules
     // of a given `style` for the given value of measurement `unit`.
     //
@@ -333,3 +344,34 @@ RelativeTimeFormat.setDefaultLocale = setDefaultLocale
  * @return  {string} locale
  */
 RelativeTimeFormat.getDefaultLocale = getDefaultLocale
+
+// The specification allows units to be in plural form.
+// Convert plural to singular.
+// Example: "seconds" -> "second".
+function parseUnit(unit) {
+  if (typeof unit === 'symbol') {
+    throw new TypeError(`"unit" can't be a Symbol`)
+  }
+  if (typeof unit !== 'string') {
+    throw new RangeError(`"unit" must be a string: ${unit}`)
+  }
+  if (unit[unit.length - 1] === 's') {
+    unit = unit.slice(0, unit.length - 1)
+  }
+  if (UNITS.indexOf(unit) < 0) {
+    throw new RangeError(`Unknown time unit: ${unit}`)
+  }
+  return unit
+}
+
+// The specification allows value to be a non-number.
+// For example, "-0" is supposed to be treated as `-0`.
+function parseNumber(value) {
+  value = Number(value)
+  if (Number.isFinite) {
+    if (!Number.isFinite(value)) {
+      throw new RangeError(`Invalid number: ${value}`)
+    }
+  }
+  return value
+}

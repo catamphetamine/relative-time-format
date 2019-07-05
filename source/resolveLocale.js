@@ -1,5 +1,5 @@
 import {
-  getLocaleData
+  resolveLocale as resolveLocaleForData
 } from './LocaleDataStore'
 
 /**
@@ -44,16 +44,18 @@ export default function resolveLocale(locale, options = {}) {
  * resolveLocaleLookup("xx-Latn")
  */
 export function resolveLocaleLookup(locale) {
-  if (getLocaleData(locale)) {
-    return locale
+  const resolvedLocale = resolveLocaleForData(locale)
+  if (resolvedLocale) {
+    return resolvedLocale
   }
   // `sr-Cyrl-BA` -> `sr-Cyrl` -> `sr`.
   const parts = locale.split('-')
   while (locale.length > 1) {
     parts.pop()
     locale = parts.join('-')
-    if (getLocaleData(locale)) {
-      return locale
+    const resolvedLocale = resolveLocaleForData(locale)
+    if (resolvedLocale) {
+      return resolvedLocale
     }
   }
 }

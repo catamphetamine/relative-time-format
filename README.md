@@ -4,7 +4,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/relative-time-format.svg?style=flat-square)](https://www.npmjs.com/package/relative-time-format)
 [![coverage](https://img.shields.io/coveralls/catamphetamine/relative-time-format/master.svg?style=flat-square)](https://coveralls.io/r/catamphetamine/relative-time-format?branch=master)
 
-The best [`Intl.RelativeTimeFormat`](https://github.com/tc39/proposal-intl-relative-time) polyfill. No dependencies (doesn't require [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) or anything like that). Only `8.5 kB` in size (`2.7 kB` gzipped).
+A convenient [`Intl.RelativeTimeFormat`](https://github.com/tc39/proposal-intl-relative-time) polyfill. No dependencies (doesn't require [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) or anything like that). Only `8.5 kB` in size (`2.7 kB` gzipped).
 
 [See Demo](https://catamphetamine.github.io/relative-time-format/)
 
@@ -112,6 +112,10 @@ One can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdeliv
 ```
 
 where `[version]` is an npm package version range (for example, `0.2.x` or `^0.2.0`).
+
+## Test262
+
+There's a test suite of about 150 test cases for `Intl.RelativeTimeFormat` specification implementations. It's called "[Test262](https://github.com/tc39/test262/blob/master/test/intl402/RelativeTimeFormat/)". These tests check every possible imaginable aspect of formal correctness of a spec implementation including the weirdest cases imaginable like passing strings instead of numbers, passing objects having keys `0`, `1`, etc instead of arrays, passing objects with `toString()` method instead of a string, defining all class methods as special "non-enumerable" properties via `Object.defineProperty()` instead of the regular way everyone defines class methods in real life, and so on. Handling all these imaginary edge cases obscures and complicates the code itself, so this library not passing all of the "Test262" test cases is a conscious choice and is intentional to keep things simple: it passes the functional correctness part and skips the imaginary cases part.
 
 ## Contributing
 

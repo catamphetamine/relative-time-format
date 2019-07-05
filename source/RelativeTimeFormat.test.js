@@ -36,6 +36,11 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(() => new RelativeTimeFormat("en", { numeric: "sometimes" })).to.throw('Invalid "numeric" option')
   })
 
+  it('should require "unit" argument', () => {
+    const rtf = new RelativeTimeFormat()
+    expect(() => rtf.format(-1)).to.throw('"unit" argument is required')
+  })
+
   it('should use the passed "style" option', () => {
     const rtf = new RelativeTimeFormat("en", { style: "short" })
     expect(rtf.format(-1, "year")).to.equal("1 yr. ago")
@@ -69,6 +74,11 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(rtf.format(100, "day")).to.equal("in 100 days")
   })
 
+  it('should throw for non-finite numbers', () => {
+    const rtf = new RelativeTimeFormat("en")
+    expect(() => rtf.format(-Infinity, "day")).to.throw("Invalid number")
+  })
+
   it('should fall back to "other" quantifier if others have been removed as an optimization', () => {
     const rtf = new RelativeTimeFormat("ru")
     // `2` is classified as "few" in Russian.
@@ -80,7 +90,7 @@ describe('Intl.RelativeTimeFormat', () => {
 
   it('should throw if a time unit is unsupported', () => {
     const rtf = new RelativeTimeFormat("en")
-    expect(() => rtf.format(-1, "decade")).to.throw("Unknown time unit: decade.")
+    expect(() => rtf.format(-1, "decade")).to.throw("Unknown time unit: decade")
   })
 
   it('should format yesterday/today/tomorrow', () => {
@@ -168,8 +178,17 @@ describe('Intl.RelativeTimeFormat', () => {
 
   it('should support negative zero', () => {
     const rtf = new RelativeTimeFormat()
-    expect(rtf.format(0, "days")).to.equal("in 0 days")
-    expect(rtf.format(-0, "days")).to.equal("0 days ago")
+    expect(rtf.format(0, "day")).to.equal("in 0 days")
+    expect(rtf.format(-0, "day")).to.equal("0 days ago")
+    expect(rtf.formatToParts(-0, "second")).to.deep.equal([
+      { type: "integer", value: "0", unit: "second" },
+      { type: "literal", value: " seconds ago" }
+    ])
+  })
+
+  it('should support string numbers', () => {
+    const rtf = new RelativeTimeFormat()
+    expect(rtf.format("0", "day")).to.equal("in 0 days")
   })
 
   it('should format to parts', () => {

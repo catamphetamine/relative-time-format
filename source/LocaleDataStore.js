@@ -6,6 +6,10 @@ let defaultLocale = 'en'
 // their relative time formatter messages will be stored here.
 const localesData = {}
 
+// According to the spec BCP 47 language tags are case-insensitive.
+// https://tools.ietf.org/html/rfc5646
+const lowercaseLocaleLookup = {}
+
 export function getDefaultLocale() {
   return defaultLocale
 }
@@ -19,7 +23,7 @@ export function setDefaultLocale(locale) {
 // }
 
 export function getLocaleData(locale) {
-  return localesData[locale]
+	return localesData[locale]
 }
 
 export function addLocaleData(localeData) {
@@ -29,4 +33,14 @@ export function addLocaleData(localeData) {
   // This locale data is stored in a global variable
   // and later used when calling `.format(time)`.
   localesData[localeData.locale] = localeData
+  lowercaseLocaleLookup[localeData.locale.toLowerCase()] = localeData.locale
+}
+
+export function resolveLocale(locale) {
+	if (localesData[locale]) {
+		return locale
+	}
+	if (lowercaseLocaleLookup[locale.toLowerCase()]) {
+		return lowercaseLocaleLookup[locale.toLowerCase()]
+	}
 }
