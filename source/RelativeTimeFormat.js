@@ -101,9 +101,6 @@ export default class RelativeTimeFormat {
     if (!this.locale) {
       throw new Error("No supported locale was found")
     }
-    this.locale = resolveLocale(this.locale, {
-      localeMatcher: this.localeMatcher
-    })
 
     // Construct an `Intl.PluralRules` instance (polyfill).
     if (PluralRules.supportedLocalesOf(this.locale).length > 0) {
@@ -115,7 +112,14 @@ export default class RelativeTimeFormat {
     // Use `Intl.NumberFormat` for formatting numbers (when available).
     if (typeof Intl !== 'undefined' && Intl.NumberFormat) {
       this.numberFormat = new Intl.NumberFormat(this.locale)
+      this.numberingSystem = this.numberFormat.resolvedOptions().numberingSystem
+    } else {
+      this.numberingSystem = 'latn'
     }
+
+    this.locale = resolveLocale(this.locale, {
+      localeMatcher: this.localeMatcher
+    })
   }
 
   /**
@@ -276,11 +280,13 @@ export default class RelativeTimeFormat {
    * @return {object[]}
    */
   formatNumberToParts(number) {
+    // `Intl.NumberFormat.formatToParts()` is not present, for example,
+    // in Node.js 8.x while `Intl.NumberFormat` itself is present.
     return this.numberFormat && this.numberFormat.formatToParts ?
       this.numberFormat.formatToParts(number) :
       [{
         type: "integer",
-        value: String(number)
+        value: this.formatNumber(number)
       }]
   }
 
@@ -293,7 +299,8 @@ export default class RelativeTimeFormat {
     return {
       locale: this.locale,
       style: this.style,
-      numeric: this.numeric
+      numeric: this.numeric,
+      numberingSystem: this.numberingSystem
     }
   }
 }
@@ -316,6 +323,8 @@ RelativeTimeFormat.supportedLocalesOf = function(locales, options = {}) {
   // Convert `locales` to an array.
   if (typeof locales === 'string') {
     locales = [locales]
+  } else if (!Array.isArray(locales)) {
+    throw new TypeError('Invalid "locales" argument')
   }
   return locales.filter(locale => resolveLocale(locale, options))
 }

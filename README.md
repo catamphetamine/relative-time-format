@@ -29,7 +29,7 @@ RelativeTimeFormat.addLocale(en)
 
 // Returns "2 days ago"
 new RelativeTimeFormat("en", {
-  style: "long" // other values: "short" or "narrow"
+  style: "long" // "long" is the default. Other options: "short", "narrow".
 }).format(-2, "day")
 ```
 
@@ -118,8 +118,9 @@ where `[version]` is an npm package version range (for example, `0.2.x` or `^0.2
 
 ## Test262
 
-There's a test suite of about 150 test cases for `Intl.RelativeTimeFormat` specification implementations. It's called "[Test262](https://github.com/tc39/test262/blob/master/test/intl402/RelativeTimeFormat/)". These tests check every possible imaginable aspect of formal correctness of a spec implementation including the weirdest artificial cases imaginable like accepting strings instead of numbers, accepting objects having keys `0`, `1`, etc instead of arrays, accepting objects with `toString()` method instead of strings, defining all class methods as special "non-enumerable" properties via `Object.defineProperty()` instead of the regular way everyone defines class methods in real life, and so on. Handling all these formal edge cases would result in unnecessarily convoluted and less readable code and I'd prefer to keep things simple and elegant, so this library intentionally chose to not pass all of the "Test262" test cases while still passing most of them: it [passes](https://github.com/catamphetamine/Intl.RelativeTimeFormat-test262) the functional correctness part and skips the not-relevant-in-real-life cases part.
+There's a test suite of about 150 test cases for `Intl.RelativeTimeFormat` specification implementations. It's called "[Test262](https://github.com/tc39/test262/blob/master/test/intl402/RelativeTimeFormat/)". These tests check every possible imaginable aspect of formal correctness of a spec implementation including the weirdest artificial cases imaginable like accepting strings instead of numbers, accepting objects having keys `0`, `1`, etc instead of arrays, accepting objects with `toString()` method instead of strings, defining all class methods as special "non-enumerable" properties via `Object.defineProperty()` instead of the regular way everyone defines class methods in real life, and so on. Handling all these formal edge cases would result in an unnecessarily convoluted and less readable code and I'd prefer to keep things simple and elegant, so this library intentionally chose not to pass all of the "Test262" test cases while still passing most of them: it [passes](https://github.com/catamphetamine/Intl.RelativeTimeFormat-test262) the functional correctness part and skips the not-relevant-in-real-life cases part.
 
+<!--
 ## Contributing
 
 After cloning this repo, ensure dependencies are installed by running:
@@ -155,6 +156,7 @@ It will `build`, `test` and then create a `.tgz` archive which you can then inst
 ```sh
 npm install [package-name]-[version].tar.gz
 ```
+-->
 
 ## License
 

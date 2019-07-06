@@ -6,6 +6,7 @@ import to from '../locale/to.json'
 import ar_AE from '../locale/ar-AE.json'
 import pt from '../locale/pt.json'
 import pt_PT from '../locale/pt-PT.json'
+import zh from '../locale/zh.json'
 
 import RelativeTimeFormat from './RelativeTimeFormat'
 
@@ -17,6 +18,7 @@ RelativeTimeFormat.addLocale(to)
 RelativeTimeFormat.addLocale(ar_AE)
 RelativeTimeFormat.addLocale(pt)
 RelativeTimeFormat.addLocale(pt_PT)
+RelativeTimeFormat.addLocale(zh)
 
 // Just so this function code is covered.
 RelativeTimeFormat.setDefaultLocale('en')
@@ -283,6 +285,10 @@ describe('Intl.RelativeTimeFormat', () => {
     expect(RelativeTimeFormat.supportedLocalesOf('ru-XX')).to.deep.equal(['ru-XX'])
   })
 
+  it('"supportedLocalesOf" should throw when "locales" argument is not valid', () => {
+    expect(() => RelativeTimeFormat.supportedLocalesOf(123)).to.throw("Invalid \"locales\" argument")
+  })
+
   it('"supportedLocalesOf" should throw when "localeMatcher" option is not a valid one', () => {
     expect(() => RelativeTimeFormat.supportedLocalesOf(["en"], { localeMatcher: "eccentric" })).to.throw('Invalid "localeMatcher" option')
   })
@@ -304,11 +310,19 @@ describe('Intl.RelativeTimeFormat', () => {
     new RelativeTimeFormat("pt-PT").format(1.5, "day").should.equal("dentro de 1.5 dias")
   })
 
-  it('should show resolved options', function() {
+  it('should show resolved options', () => {
     expect(new RelativeTimeFormat('ru-XX', { timeZone: 'UTC' }).resolvedOptions()).to.deep.equal({
       locale: "ru",
       style: "long",
-      numeric: "always"
+      numeric: "always",
+      numberingSystem: "latn"
     })
   })
+
+  // Node.js 11.x seems to not support `zh-Hans-CN` on `Intl.NumberFormat` for some reason.
+  // it('should support non-"latn" numbering systems', () => {
+  //   // the nu extension key requests a numbering system, e.g. Chinese decimal
+  //   expect(new RelativeTimeFormat('zh-Hans-CN-u-nu-hanidec').format(-123456.789, "day")).to.equal("一二三,四五六.七八九")
+  //   expect(new RelativeTimeFormat('zh-Hans-CN').format(-123456.789, "day")).to.equal("123,456.789 days ago")
+  // })
 })
