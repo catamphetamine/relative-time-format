@@ -150,7 +150,7 @@
 	<body>
 		<a target="_blank" class="main" href="https://github.com/catamphetamine/relative-time-format"><code>relative-time-format</code></a>
 
-		<p>A polyfill for <a href="https://github.com/tc39/proposal-intl-relative-time" target="_blank"><code>Intl.RelativeTimeFormat</code></a></p>
+		<p>The most convenient polyfill for <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RelativeTimeFormat" target="_blank"><code>Intl.RelativeTimeFormat</code></a></p>
 
 		<div id="content"></div>
 
@@ -432,14 +432,14 @@ RelativeTimeFormat.addLocale(en)
 
 // Create a relative time formatter in your locale.
 const rtf = new RelativeTimeFormat("en", {
-  style: "long" // other values: "short" or "narrow"
+  style: "long" // "long" is the default. Other options: "short", "narrow".
 })
 
 // Format relative time using negative value (-1).
 rtf.format(-1, "day")
 // > "1 day ago"
 
-// Format relative time using positive  value (1).
+// Format relative time using positive value (1).
 rtf.format(1, "day")
 // > "in 1 day"
 `}
