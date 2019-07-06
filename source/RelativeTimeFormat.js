@@ -6,9 +6,7 @@ import {
 } from './LocaleDataStore'
 
 import resolveLocale from './resolveLocale'
-import getQuantifyLocale from './getQuantifyLocale'
-
-import quantifiers from './quantify'
+import PluralRules from './PluralRules'
 
 // Valid time units.
 export const UNITS = [
@@ -106,6 +104,13 @@ export default class RelativeTimeFormat {
     this.locale = resolveLocale(this.locale, {
       localeMatcher: this.localeMatcher
     })
+
+    // Construct an `Intl.PluralRules` instance (polyfill).
+    if (PluralRules.supportedLocalesOf(this.locale).length > 0) {
+      this.pluralRules = new PluralRules(this.locale)
+    } else {
+      console.warn(`"${this.locale}" locale is not supported`)
+    }
 
     // Use `Intl.NumberFormat` for formatting numbers (when available).
     if (typeof Intl !== 'undefined' && Intl.NumberFormat) {
@@ -213,50 +218,45 @@ export default class RelativeTimeFormat {
     // }
     // ```
     //
-    const unitRules = getLocaleData(this.locale)[this.style][unit]
+    const unitMessages = getLocaleData(this.locale)[this.style][unit]
     // Special case for "yesterday"/"today"/"tomorrow".
     if (this.numeric === "auto") {
       // "yesterday", "the day before yesterday", etc.
       if (value === -2 || value === -1) {
-        const message = unitRules[`previous${value === -1 ? '' : '-' + Math.abs(value)}`]
+        const message = unitMessages[`previous${value === -1 ? '' : '-' + Math.abs(value)}`]
         if (message) {
           return message
         }
       }
       // "tomorrow", "the day after tomorrow", etc.
       else if (value === 1 || value === 2) {
-        const message = unitRules[`next${value === 1 ? '' : '-' + Math.abs(value)}`]
+        const message = unitMessages[`next${value === 1 ? '' : '-' + Math.abs(value)}`]
         if (message) {
           return message
         }
       }
       // "today"
       else if (value === 0) {
-        if (unitRules.current) {
-          return unitRules.current
+        if (unitMessages.current) {
+          return unitMessages.current
         }
       }
     }
     // Choose either "past" or "future" based on time `value` sign.
     // If there's only "other" then it's being collapsed.
     // (the resulting bundle size optimization technique)
-    const quantifierRules = unitRules[isNegative(value) ? "past" : "future"]
+    const pluralizedMessages = unitMessages[isNegative(value) ? "past" : "future"]
     // Bundle size optimization technique.
-    if (typeof quantifierRules === "string") {
-      return quantifierRules
+    if (typeof pluralizedMessages === "string") {
+      return pluralizedMessages
     }
     // Quantify `value`.
-    const quantify = quantifiers[getQuantifyLocale(this.locale)]
-    let quantifier = quantify && quantify(Math.abs(value))
     // There seems to be no such locale in CLDR
-    // for which `quantify` is missing
-    // and still `past` and `future` messages
-    // contain something other than "other".
-    /* istanbul ignore next */
-    quantifier = quantifier || 'other'
+    // for which "plural rules" function is missing.
+    const quantifier = this.pluralRules && this.pluralRules.select(Math.abs(value)) || 'other'
     // "other" rule is supposed to be always present.
     // If only "other" rule is present then "rules" is not an object and is a string.
-    return quantifierRules[quantifier] || quantifierRules.other
+    return pluralizedMessages[quantifier] || pluralizedMessages.other
   }
 
   /**

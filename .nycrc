@@ -11,7 +11,7 @@
   ],
   "exclude": [
     "source/CLDR/getLocalesList.js",
-    "source/quantify.js",
+    "source/PluralRuleFunctions.js",
     "**/*.test.js"
   ],
   "sourceMap": false,

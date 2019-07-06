@@ -92,6 +92,18 @@ describe('Intl.RelativeTimeFormat', () => {
     Number.isFinite = isFinite
   })
 
+  it('should handle cases when no plural rules function is available for a locale', () => {
+    const rtf = new RelativeTimeFormat("en")
+    expect(rtf.format(-1, "second")).to.equal("1 second ago")
+    expect(rtf.format(-2, "second")).to.equal("2 seconds ago")
+    // Emulate a non-supported locale.
+    // There seems to be no such locale in CLDR
+    // for which "plural rules" function is missing.
+    rtf.pluralRules = undefined
+    expect(rtf.format(-1, "second")).to.equal("1 seconds ago")
+    expect(rtf.format(-2, "second")).to.equal("2 seconds ago")
+  })
+
   it('should fall back to "other" quantifier if others have been removed as an optimization', () => {
     const rtf = new RelativeTimeFormat("ru")
     // `2` is classified as "few" in Russian.

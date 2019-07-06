@@ -2,9 +2,10 @@
 
 [![npm version](https://img.shields.io/npm/v/relative-time-format.svg?style=flat-square)](https://www.npmjs.com/package/relative-time-format)
 [![npm downloads](https://img.shields.io/npm/dm/relative-time-format.svg?style=flat-square)](https://www.npmjs.com/package/relative-time-format)
+[![npm size](https://img.shields.io/bundlephobia/minzip/relative-time-format.svg?label=size)](https://www.npmjs.com/package/relative-time-format)
 [![coverage](https://img.shields.io/coveralls/catamphetamine/relative-time-format/master.svg?style=flat-square)](https://coveralls.io/r/catamphetamine/relative-time-format?branch=master)
 
-A convenient [`Intl.RelativeTimeFormat`](https://github.com/tc39/proposal-intl-relative-time) polyfill. No dependencies (doesn't require [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) or anything like that). Only `10.5 kB` in size (`3 kB` gzipped).
+The most convenient [`Intl.RelativeTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RelativeTimeFormat) polyfill. No dependencies (doesn't require [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) because it's already [built in](https://github.com/catamphetamine/relative-time-format/blob/master/source/PluralRules.js)).
 
 [See Demo](https://catamphetamine.github.io/relative-time-format/)
 
