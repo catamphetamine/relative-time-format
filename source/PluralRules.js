@@ -1,3 +1,7 @@
+// Importing `PluralRule` polyfill from a separate package
+// results in a bundle that is larger by 1kB for some reason.
+// export { default as default } from 'intl-plural-rules-polyfill/cardinal'
+
 import PluralRuleFunctions from "./PluralRuleFunctions"
 import getPluralRulesLocale from "./getPluralRulesLocale"
 
@@ -6,17 +10,18 @@ import getPluralRulesLocale from "./getPluralRulesLocale"
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules
  */
 export default class PluralRules {
-	constructor(locale) {
-		if (PluralRules.supportedLocalesOf(locale).length === 0) {
+	constructor(locale, options) {
+		const locales = PluralRules.supportedLocalesOf(locale)
+		if (locales.length === 0) {
 			throw new RangeError("Unsupported locale: " + locale)
 		}
-		this.quantify = PluralRuleFunctions[getPluralRulesLocale(locale)]
-	}
-	select(number, options) {
 		if (options && options.type !== "cardinal") {
 			throw new RangeError("Only \"cardinal\" \"type\" is supported")
 		}
-		return this.quantify(number)
+		this.$ = PluralRuleFunctions[getPluralRulesLocale(locales[0])]
+	}
+	select(number) {
+		return this.$(number)
 	}
 	static supportedLocalesOf(locales) {
 		if (typeof locales === "string") {

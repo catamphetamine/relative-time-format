@@ -5,8 +5,12 @@ describe('Intl.PluralRules', () => {
 		expect(() => new PluralRules('xx')).to.throw('Unsupported locale')
 	})
 
+	it('should validate "locale" format', () => {
+		expect(() => new PluralRules('-en')).to.throw('Invalid locale')
+	})
+
 	it('should validate "type" option', () => {
-		expect(() => new PluralRules('en').select(1, 'cardinal')).to.throw('Only "cardinal" "type" is supported')
+		expect(() => new PluralRules('en', { type: 'ordinal' })).to.throw('Only "cardinal" "type" is supported')
 	})
 
 	it('should quantify numbers', () => {

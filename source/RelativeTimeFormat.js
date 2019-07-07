@@ -7,6 +7,9 @@ import {
 
 import resolveLocale from './resolveLocale'
 import PluralRules from './PluralRules'
+// Importing `PluralRule` polyfill from a separate package
+// results in a bundle that is larger by 1kB for some reason.
+// import PluralRules from 'intl-plural-rules-polyfill/cardinal'
 
 // Valid time units.
 export const UNITS = [
@@ -346,6 +349,11 @@ RelativeTimeFormat.setDefaultLocale = setDefaultLocale
  * @return  {string} locale
  */
 RelativeTimeFormat.getDefaultLocale = getDefaultLocale
+
+/**
+ * Export `Intl.PluralRules` just in case it's used somewhere else.
+ */
+RelativeTimeFormat.PluralRules = PluralRules
 
 // The specification allows units to be in plural form.
 // Convert plural to singular.

@@ -31,7 +31,8 @@
     "npm-run-all": "^1.4.0",
     "nyc": "^13.3.0",
     "rimraf": "^2.5.0",
-    "rollup": "^1.2.3",
+    "rollup": "^1.16.6",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^4.0.4"
   },
   "scripts": {

@@ -26,10 +26,11 @@ export default function getPluralRulesLocale(locale) {
  * // Returns "ar"
  * getLanguageFromLanguageTag("ar-u-nu-latn")
  */
+const LANGUAGE_REG_EXP = /^([a-z0-9]+)/i
 function getLanguageFromLanguageTag(languageTag) {
-  const hyphenIndex = languageTag.indexOf('-')
-  if (hyphenIndex > 0) {
-    return languageTag.slice(0, hyphenIndex)
-  }
-  return languageTag
+	const match = languageTag.match(LANGUAGE_REG_EXP)
+	if (!match) {
+		throw new TypeError(`Invalid locale: ${languageTag}`)
+	}
+	return match[1]
 }
