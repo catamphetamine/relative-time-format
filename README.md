@@ -110,7 +110,7 @@ One can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdeliv
 <script>
   var en = ... // Somehow import `relative-time-format/locale/en.json`.
   RelativeTimeFormat.addLocale(en)
-  console.log(new RelativeTimeFormat('en').format(-1, 'days'))
+  console.log(new RelativeTimeFormat('en').format(-1, 'day'))
 </script>
 ```
 
