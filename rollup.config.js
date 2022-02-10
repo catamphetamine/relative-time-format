@@ -14,7 +14,7 @@ export default {
   output: {
     format: 'umd',
     name: 'RelativeTimeFormat',
-    file: 'bundle/relative-time-format.js',
+    file: 'bundle/polyfill.js',
     sourcemap: true
   }
 }

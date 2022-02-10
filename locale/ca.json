@@ -196,9 +196,9 @@
 			"future": "d’aquí a {0} trim."
 		},
 		"month": {
-			"previous": "mes passat",
+			"previous": "el mes passat",
 			"current": "aquest mes",
-			"next": "mes vinent",
+			"next": "el mes que ve",
 			"past": {
 				"one": "fa {0} mes",
 				"other": "fa {0} mesos"
@@ -209,9 +209,9 @@
 			}
 		},
 		"week": {
-			"previous": "setm. passada",
+			"previous": "la setm. passada",
 			"current": "aquesta setm.",
-			"next": "setm. vinent",
+			"next": "la setm. que ve",
 			"past": "fa {0} setm.",
 			"future": "d’aquí a {0} setm."
 		},

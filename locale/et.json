@@ -56,9 +56,9 @@
 	},
 	"short": {
 		"year": {
-			"previous": "eelmine aasta",
-			"current": "käesolev aasta",
-			"next": "järgmine aasta",
+			"previous": "eelmine a",
+			"current": "käesolev a",
+			"next": "järgmine a",
 			"past": "{0} a eest",
 			"future": "{0} a pärast"
 		},
@@ -70,16 +70,16 @@
 			"future": "{0} kv pärast"
 		},
 		"month": {
-			"previous": "eelmine kuu",
-			"current": "käesolev kuu",
-			"next": "järgmine kuu",
+			"previous": "eelm. kuu",
+			"current": "see kuu",
+			"next": "järgm. kuu",
 			"past": "{0} kuu eest",
 			"future": "{0} kuu pärast"
 		},
 		"week": {
-			"previous": "eelmine nädal",
-			"current": "käesolev nädal",
-			"next": "järgmine nädal",
+			"previous": "eelm. näd",
+			"current": "see näd",
+			"next": "järgm. näd",
 			"past": "{0} näd eest",
 			"future": "{0} näd pärast"
 		},
@@ -110,9 +110,9 @@
 	},
 	"narrow": {
 		"year": {
-			"previous": "eelmine aasta",
-			"current": "käesolev aasta",
-			"next": "järgmine aasta",
+			"previous": "eelm. a",
+			"current": "see a",
+			"next": "järgm. a",
 			"past": "{0} a eest",
 			"future": "{0} a pärast"
 		},
@@ -124,16 +124,16 @@
 			"future": "{0} kv pärast"
 		},
 		"month": {
-			"previous": "eelmine kuu",
-			"current": "käesolev kuu",
-			"next": "järgmine kuu",
+			"previous": "eelm. k",
+			"current": "see k",
+			"next": "järgm. k",
 			"past": "{0} k eest",
 			"future": "{0} k pärast"
 		},
 		"week": {
-			"previous": "eelmine nädal",
-			"current": "käesolev nädal",
-			"next": "järgmine nädal",
+			"previous": "eelm. n",
+			"current": "see n",
+			"next": "järgm. n",
 			"past": "{0} näd eest",
 			"future": "{0} näd pärast"
 		},

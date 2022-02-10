@@ -5,8 +5,14 @@
 			"previous": "par",
 			"current": "îsal",
 			"next": "sala piştî",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"past": {
+				"one": "berî {0} salê",
+				"other": "berî {0} salan"
+			},
+			"future": {
+				"one": "di salekê de",
+				"other": "di {0} salan de"
+			}
 		},
 		"quarter": {
 			"previous": "last quarter",
@@ -16,16 +22,16 @@
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "meha borî",
+			"current": "vê mehê",
+			"next": "meha were",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
+			"previous": "hefteya borî",
+			"current": "vê hefteyê",
+			"next": "hefteya were",
 			"past": "-{0} w",
 			"future": "+{0} w"
 		},
@@ -56,9 +62,15 @@
 		"year": {
 			"previous": "par",
 			"current": "îsal",
-			"next": "sala piştî",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"next": "sala bê",
+			"past": {
+				"one": "berî salekê",
+				"other": "berî {0} salan"
+			},
+			"future": {
+				"one": "piştî salekê",
+				"other": "piştî {0} salan"
+			}
 		},
 		"quarter": {
 			"previous": "last quarter",
@@ -68,16 +80,16 @@
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "meha br.",
+			"current": "vê mehê",
+			"next": "meha bê",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
+			"previous": "hft. borî",
+			"current": "vê hft.",
+			"next": "hft. bê",
 			"past": "-{0} w",
 			"future": "+{0} w"
 		},
@@ -108,9 +120,15 @@
 		"year": {
 			"previous": "par",
 			"current": "îsal",
-			"next": "sala piştî",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"next": "sala bê",
+			"past": {
+				"one": "berî salekê",
+				"other": "berî {0} salan"
+			},
+			"future": {
+				"one": "piştî salekê",
+				"other": "piştî {0} salan"
+			}
 		},
 		"quarter": {
 			"previous": "last quarter",
@@ -120,16 +138,16 @@
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "meha br.",
+			"current": "vê mehê",
+			"next": "meha bê",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
+			"previous": "hft. borî",
+			"current": "vê hft.",
+			"next": "hft. bê",
 			"past": "-{0} w",
 			"future": "+{0} w"
 		},

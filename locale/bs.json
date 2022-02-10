@@ -20,10 +20,7 @@
 			"previous": "posljednji kvartal",
 			"current": "ovaj kvartal",
 			"next": "sljedeći kvartal",
-			"past": {
-				"one": "prije {0} kvartal",
-				"other": "prije {0} kvartala"
-			},
+			"past": "prije {0} kvartala",
 			"future": {
 				"one": "za {0} kvartal",
 				"other": "za {0} kvartala"

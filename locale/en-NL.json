@@ -102,9 +102,9 @@
 	},
 	"short": {
 		"year": {
-			"previous": "last yr.",
-			"current": "this yr.",
-			"next": "next yr.",
+			"previous": "last yr",
+			"current": "this yr",
+			"next": "next yr",
 			"past": "{0} yr ago",
 			"future": "in {0} yr"
 		},
@@ -116,16 +116,16 @@
 			"future": "in {0} qtr"
 		},
 		"month": {
-			"previous": "last mo.",
-			"current": "this mo.",
-			"next": "next mo.",
+			"previous": "last mo",
+			"current": "this mo",
+			"next": "next mo",
 			"past": "{0} mo ago",
 			"future": "in {0} mo"
 		},
 		"week": {
-			"previous": "last wk.",
-			"current": "this wk.",
-			"next": "next wk.",
+			"previous": "last wk",
+			"current": "this wk",
+			"next": "next wk",
 			"past": "{0} wk ago",
 			"future": "in {0} wk"
 		},
@@ -160,9 +160,9 @@
 	},
 	"narrow": {
 		"year": {
-			"previous": "last yr.",
-			"current": "this yr.",
-			"next": "next yr.",
+			"previous": "last yr",
+			"current": "this yr",
+			"next": "next yr",
 			"past": "{0} yr ago",
 			"future": "in {0} yr"
 		},
@@ -174,16 +174,16 @@
 			"future": "in {0} qtr"
 		},
 		"month": {
-			"previous": "last mo.",
-			"current": "this mo.",
-			"next": "next mo.",
+			"previous": "last mo",
+			"current": "this mo",
+			"next": "next mo",
 			"past": "{0} mo ago",
 			"future": "in {0} mo"
 		},
 		"week": {
-			"previous": "last wk.",
-			"current": "this wk.",
-			"next": "next wk.",
+			"previous": "last wk",
+			"current": "this wk",
+			"next": "next wk",
 			"past": "{0} wk ago",
 			"future": "in {0} wk"
 		},

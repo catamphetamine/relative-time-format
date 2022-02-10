@@ -4,7 +4,7 @@
 		"year": {
 			"previous": "پروسږکال",
 			"current": "سږکال",
-			"next": "بل کال",
+			"next": "راتلونکی کال",
 			"past": {
 				"one": "{0} کال مخکې",
 				"other": "{0} کاله مخکې"
@@ -15,54 +15,93 @@
 			}
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"previous": "ورستۍ ربع",
+			"current": "دا ربع",
+			"next": "راتلونکې ربع",
+			"past": {
+				"one": "{0} ربع مخکې",
+				"other": "{0} ربعې مخکې"
+			},
+			"future": {
+				"one": "په {0} ربع کې",
+				"other": "په {0} ربعو کې"
+			}
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
-			"past": "-{0} m",
-			"future": "+{0} m"
+			"previous": "تېره مياشت",
+			"current": "دا مياشت",
+			"next": "راتلونکې مياشت",
+			"past": {
+				"one": "{0} مياشت مخکې",
+				"other": "{0} مياشتې مخکې"
+			},
+			"future": {
+				"one": "په {0} مياشت کې",
+				"other": "په {0} مياشتو کې"
+			}
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
-			"past": "-{0} w",
-			"future": "+{0} w"
+			"previous": "تيره اونۍ",
+			"current": "دا اونۍ",
+			"next": "راتلونکې اونۍ",
+			"past": "{0} اونۍ مخکې",
+			"future": {
+				"one": "په {0} اونۍ کې",
+				"other": "په {0} اونيو کې"
+			}
 		},
 		"day": {
-			"previous": "yesterday",
-			"current": "today",
-			"next": "tomorrow",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"previous": "پرون",
+			"current": "نن",
+			"next": "سبا",
+			"past": {
+				"one": "{0} ورځ مخکې",
+				"other": "{0} ورځې مخکې"
+			},
+			"future": {
+				"one": "په {0} ورځ کې",
+				"other": "په {0} ورځو کې"
+			}
 		},
 		"hour": {
-			"current": "this hour",
-			"past": "-{0} h",
-			"future": "+{0} h"
+			"current": "دا ساعت",
+			"past": {
+				"one": "{0} ساعت مخکې",
+				"other": "{0} ساعتونه مخکې"
+			},
+			"future": {
+				"one": "په {0} ساعت کې",
+				"other": "په {0} ساعتو کې"
+			}
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "دا دقيقه",
+			"past": {
+				"one": "{0} دقيقه مخکې",
+				"other": "{0} دقيقې مخکې"
+			},
+			"future": {
+				"one": "په {0} دقيقه کې",
+				"other": "په {0} دقيقو کې"
+			}
 		},
 		"second": {
-			"current": "now",
-			"past": "-{0} s",
-			"future": "+{0} s"
+			"current": "اوس",
+			"past": {
+				"one": "{0} ثانيه مخکې",
+				"other": "{0} ثانيې مخکې"
+			},
+			"future": {
+				"one": "په {0} ثانيه کې",
+				"other": "په {0} ثانيو کې"
+			}
 		}
 	},
 	"short": {
 		"year": {
-			"previous": "پروسږکال",
-			"current": "سږکال",
-			"next": "بل کال",
+			"previous": "تېر کال",
+			"current": "سږ کال",
+			"next": "روتلونکی کال",
 			"past": {
 				"one": "{0} کال مخکې",
 				"other": "{0} کاله مخکې"
@@ -73,54 +112,66 @@
 			}
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"previous": "ورستۍ ربع",
+			"current": "دا ربع",
+			"next": "راتلونکې ربع",
+			"past": {
+				"one": "{0} ربع مخکې",
+				"other": "{0} ربعې مخکې"
+			},
+			"future": {
+				"one": "په {0} ربع کې",
+				"other": "په {0} ربعو کې"
+			}
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
-			"past": "-{0} m",
-			"future": "+{0} m"
+			"previous": "تېره مياشت",
+			"current": "دا مياشت",
+			"next": "راتلونکې مياشت",
+			"past": "{0} مياشت مخکې",
+			"future": "په {0} مياشت کې"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
-			"past": "-{0} w",
-			"future": "+{0} w"
+			"previous": "تېره اونۍ",
+			"current": "دا اونۍ",
+			"next": "راتلونکې اونۍ",
+			"past": "{0} اونۍ مخکې",
+			"future": "په {0} اونۍ کې"
 		},
 		"day": {
-			"previous": "yesterday",
-			"current": "today",
-			"next": "tomorrow",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"previous": "پرون",
+			"current": "نن",
+			"next": "سبا",
+			"past": {
+				"one": "{0} ورځ مخکې",
+				"other": "{0} ورځې مخکې"
+			},
+			"future": {
+				"one": "په {0} ورځ کې",
+				"other": "په {0} ورځو کې"
+			}
 		},
 		"hour": {
-			"current": "this hour",
-			"past": "-{0} h",
-			"future": "+{0} h"
+			"current": "دا ساعت",
+			"past": "{0} ساعت مخکې",
+			"future": "په {0} ساعت کې"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "دا دقيقه",
+			"past": "{0} دقيقه مخکې",
+			"future": "په {0} دقيقه کې"
 		},
 		"second": {
-			"current": "now",
-			"past": "-{0} s",
-			"future": "+{0} s"
+			"current": "اوس",
+			"past": "{0} ثانيه مخکې",
+			"future": "په {0} ثانيه کې"
 		}
 	},
 	"narrow": {
 		"year": {
-			"previous": "پروسږکال",
-			"current": "سږکال",
-			"next": "بل کال",
+			"previous": "تير کال",
+			"current": "سږ کال",
+			"next": "راتلونکی کال",
 			"past": {
 				"one": "{0} کال مخکې",
 				"other": "{0} کاله مخکې"
@@ -131,47 +182,59 @@
 			}
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"previous": "ورستۍ ربع",
+			"current": "دا ربع",
+			"next": "راتلونکې ربع",
+			"past": {
+				"one": "{0} ربع مخکې",
+				"other": "{0} ربعې مخکې"
+			},
+			"future": {
+				"one": "په {0} ربع کې",
+				"other": "په {0} ربعو کې"
+			}
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
-			"past": "-{0} m",
-			"future": "+{0} m"
+			"previous": "تېره مياشت",
+			"current": "دا مياشت",
+			"next": "راتلونکې مياشت",
+			"past": "{0} مياشت مخکې",
+			"future": "په {0} مياشت کې"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
-			"past": "-{0} w",
-			"future": "+{0} w"
+			"previous": "تېره اونۍ",
+			"current": "دا اونۍ",
+			"next": "راتلونکې اونۍ",
+			"past": "{0} اونۍ مخکې",
+			"future": "په {0} اونۍ کې"
 		},
 		"day": {
-			"previous": "yesterday",
-			"current": "today",
-			"next": "tomorrow",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"previous": "پرون",
+			"current": "نن",
+			"next": "سبا",
+			"past": {
+				"one": "{0} ورځ مخکې",
+				"other": "{0} ورځې مخکې"
+			},
+			"future": {
+				"one": "په {0} ورځ کې",
+				"other": "په {0} ورځو کې"
+			}
 		},
 		"hour": {
-			"current": "this hour",
-			"past": "-{0} h",
-			"future": "+{0} h"
+			"current": "دا ساعت",
+			"past": "{0} ساعت مخکې",
+			"future": "په {0} ساعت کې"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "دا دقيقه",
+			"past": "{0} دقيقه مخکې",
+			"future": "په {0} دقيقه کې"
 		},
 		"second": {
-			"current": "now",
-			"past": "-{0} s",
-			"future": "+{0} s"
+			"current": "اوس",
+			"past": "{0} ثانيه کې",
+			"future": "په {0} ثانيه کې"
 		}
 	}
 }

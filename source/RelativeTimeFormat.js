@@ -58,11 +58,13 @@ export default class RelativeTimeFormat {
    * @param {string} [options.style="long"] - One of: "long", "short", "narrow".
    * @param {string} [options.numeric="always"] - (Version >= 2) One of: "always", "auto".
    * @param {string} [options.localeMatcher="lookup"] - One of: "lookup", "best fit". Currently only "lookup" is supported.
+   * @param {boolean} [options.styleFallback] - If "style" is missing from locale data then fall back to an existing one (for example, "long"). Is used in `javascript-time-ago`.
    */
   constructor(locales = [], options = {}) {
     const {
       numeric,
       style,
+      styleFallback,
       localeMatcher
     } = options
 
@@ -76,7 +78,7 @@ export default class RelativeTimeFormat {
 
     // Set `style` option.
     if (style !== undefined) {
-      if (STYLE_VALUES.indexOf(style) < 0) {
+      if (STYLE_VALUES.indexOf(style) < 0 && !styleFallback) {
         throw new RangeError(`Invalid "style" option: ${style}`)
       }
       this.style = style
@@ -123,6 +125,17 @@ export default class RelativeTimeFormat {
     this.locale = resolveLocale(this.locale, {
       localeMatcher: this.localeMatcher
     })
+
+    // Fall back to another style if `style` is not supported for the `locale`.
+    if (styleFallback) {
+      const styles = Object.keys(getLocaleData(this.locale))
+      for (const style of [this.style, ...STYLE_VALUES, styles[0]]) {
+        if (styles.indexOf(style) >= 0) {
+          this.style = style
+          break
+        }
+      }
+    }
   }
 
   /**
@@ -146,10 +159,10 @@ export default class RelativeTimeFormat {
    * Formats time `number` in `units` (either in past or in future).
    * @param {number} number - Time interval value.
    * @param {string} unit - Time interval measurement unit.
-   * @return {Object[]} The parts (`{ type, value }`).
+   * @return {Object[]} The parts (`{ type, value, unit? }`).
    * @throws {RangeError} If unit is not one of "second", "minute", "hour", "day", "week", "month", "quarter".
    * @example
-   * // Version 1.
+   * // Version 1 (deprecated).
    * // Returns [
    * //   { type: "literal", value: "in " },
    * //   { type: "day", value: "100" },
@@ -226,6 +239,11 @@ export default class RelativeTimeFormat {
     // ```
     //
     const unitMessages = getLocaleData(this.locale)[this.style][unit]
+    // Bundle size optimization technique for styles like
+    // "tiny" in `javascript-time-ago`: "1m", "2h", "3d"...
+    if (typeof unitMessages === 'string') {
+      return unitMessages
+    }
     // Special case for "yesterday"/"today"/"tomorrow".
     if (this.numeric === "auto") {
       // "yesterday", "the day before yesterday", etc.
@@ -253,7 +271,8 @@ export default class RelativeTimeFormat {
     // If there's only "other" then it's being collapsed.
     // (the resulting bundle size optimization technique)
     const pluralizedMessages = unitMessages[isNegative(value) ? "past" : "future"]
-    // Bundle size optimization technique.
+    // Bundle size optimization technique for styles like "narrow"
+    // having messages like "in {0} d." or "{0} d. ago".
     if (typeof pluralizedMessages === "string") {
       return pluralizedMessages
     }

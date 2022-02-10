@@ -4,21 +4,22 @@ import { isEqual } from 'lodash'
 
 // `make-plural` library converts CLDR pluralization rules into javascript code.
 // https://github.com/eemeli/make-plural
-import MakePlural from 'make-plural/make-plural'
-import plurals from 'make-plural'
+import { Compiler } from 'make-plural-compiler'
+import * as Plurals from 'make-plural/plurals'
 
 // CLDR packages should be periodically updated as they release new versions.
-// `npm install cldr-data@latest cldr-dates-full@latest --save-dev`
-import CLDR from 'cldr-data'
+// `npm install cldr-core@latest cldr-dates-full@latest --save-dev`
+import plurals from 'cldr-core/supplemental/plurals.json'
+// import ordinals from 'cldr-core/supplemental/ordinals.json'
 
 import extractRelativeTimeMessages from '../source/CLDR/extractRelativeTimeMessages'
 import getLocalesListInCLDR from '../source/CLDR/getLocalesList'
 import getPluralRulesLocale from '../source/getPluralRulesLocale'
 
-const MakePlurals = MakePlural.load(
-	CLDR('supplemental/plurals'),
+Compiler.load(
+	plurals,
 	// Ordinals aren't needed for relative date/time formatting
-	// CLDR('supplemental/ordinals')
+	// ordinals
 )
 
 // CLDR replaces missing translations with an English stub.
@@ -32,6 +33,14 @@ const LONG_STYLE_TRANSLATION_STUB = `{
 		"future": "+{0} y"
 	}`
 
+// Extra time formatting styles.
+const ADDITIONAL_STYLES = [
+	'short-time',
+	'long-time',
+	'now',
+	'tiny'
+]
+
 // "Plural rules" functions are not stored in JSON files because they're not strings
 // therefore all of them are stored in a separate `locale/PluralRuleFunctions.js` file.
 // This file isn't big — it's about 5 kilobytes in size (minified).
@@ -43,6 +52,8 @@ const LONG_STYLE_TRANSLATION_STUB = `{
 // and just include the already compiled pluarlization rules for all locales in the library code.
 const pluralRuleFunctions = {}
 const pluralRuleFunctionAliases = {}
+
+const localesListInMakePlurals = Object.keys(Plurals)
 
 for (const locale of getLocalesListInCLDR()) {
 	// "pt" language is weird because there're the regular "pt" (Portuguese),
@@ -70,7 +81,7 @@ for (const locale of getLocalesListInCLDR()) {
 
 	// If there are no translations for a locale then skip it.
 	if (JSON.stringify(localeMessages.long, null, '\t').indexOf(LONG_STYLE_TRANSLATION_STUB) === 0) {
-		// console.log(`No translation for "${locale}". Skipping.`)
+		console.log(`Locale "${locale}" doesn't have translated messages. Skipping.`)
 		continue
 	}
 
@@ -100,7 +111,7 @@ for (const locale of getLocalesListInCLDR()) {
 	if (longMessagesSameAsFor &&
 		longMessagesSameAsFor === shortMessagesSameAsFor &&
 		longMessagesSameAsFor === narrowMessagesSameAsFor) {
-		// console.log(`Locale "${locale}" fully inherits from "${longMessagesSameAsFor}". Skipping.`)
+		console.log(`Locale "${locale}" fully inherits from "${longMessagesSameAsFor}". Skipping.`)
 		continue
 	}
 
@@ -122,17 +133,37 @@ for (const locale of getLocalesListInCLDR()) {
 		}
 	}
 
+	const styles = ['long', 'short', 'narrow']
+
+	// Find all "extra" time formatting styles for the `locale`.
+	// For example, finds `tiny.json` for `ko` (Korean).
+	for (const style of ADDITIONAL_STYLES) {
+		const styleData = findStyle(locale, style)
+		if (styleData) {
+			styles.push(style)
+			localeMessages[style] = styleData
+		}
+	}
+
+	for (const style of styles) {
+		// Create `${locale}/${style}.json` files in the "locales/${locale}" directory.
+		fs.outputFileSync(
+			path.join(path.join(__dirname, '../locale', locale, `${style}.json`)),
+			JSON.stringify({
+				locale,
+				style,
+				...localeMessages[style]
+			}, null, '\t')
+		)
+	}
+
 	// Create `${locale}.json` file in the "locales" directory.
 	fs.outputFileSync(
 		path.join(path.join(__dirname, '../locale', `${locale}.json`)),
-		`
-{
-	"locale": "${locale}",
-	"long": ${stringifyMessages(localeMessages.long)},
-	"short": ${stringifyMessages(localeMessages.short)},
-	"narrow": ${stringifyMessages(localeMessages.narrow)}
-}
-		`.trim()
+		JSON.stringify({
+			locale,
+			...localeMessages
+		}, null, '\t')
 	)
 }
 
@@ -166,14 +197,14 @@ fs.outputFileSync(
 // with Portuguese pluralization rules being different
 // for Europe (0 dia, 1.5 dia) and non-Europe (0 dias, 1.5 dias).
 function getPluralRuleFunctionCode(locale) {
-	if (plurals.hasOwnProperty(locale)) {
+	if (Plurals.hasOwnProperty(locale)) {
 		const expectedLocale = getPluralRulesLocale(locale)
 		if (locale !== expectedLocale) {
 			throw new Error(`Expected to find pluralization rules for "${expectedLocale}" locale but found them for "${locale}" locale`)
 		}
 		return {
 			locale,
-			quantify: new MakePlurals(locale).toString('classify')
+			quantify: new Compiler(locale).compile().toString()
 		}
 	}
 	const parts = locale.split('-')
@@ -261,4 +292,16 @@ function convertSpacesToTabs(text) {
 		text = spacesToTabs
 	}
 	return text
+}
+
+/**
+ * Returns a given "style" (short, long, narrow) labels if the file exists.
+ * @param  {string} locale
+ * @param  {string} style
+ * @return {object} [json]
+ */
+function findStyle(locale, style) {
+	if (fs.existsSync(path.join(__dirname, '../locale-more-styles', locale, `${style}.json`))) {
+		return require(path.join(__dirname, '../locale-more-styles', locale, `${style}.json`))
+	}
 }

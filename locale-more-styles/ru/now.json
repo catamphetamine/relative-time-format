@@ -1,0 +1,8 @@
+{
+	"locale": "ru",
+	"style": "now",
+	"now": {
+		"past": "только что",
+		"future": "сейчас"
+	}
+}

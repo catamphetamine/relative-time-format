@@ -104,9 +104,9 @@
 	},
 	"short": {
 		"year": {
-			"previous": "ano pasado",
+			"previous": "o ano pasado",
 			"current": "este ano",
-			"next": "seguinte ano",
+			"next": "o próximo ano",
 			"past": {
 				"one": "hai {0} ano",
 				"other": "hai {0} anos"
@@ -124,9 +124,9 @@
 			"future": "en {0} trim."
 		},
 		"month": {
-			"previous": "m. pasado",
-			"current": "este m.",
-			"next": "m. seguinte",
+			"previous": "o mes pasado",
+			"current": "este mes",
+			"next": "o próximo mes",
 			"past": {
 				"one": "hai {0} mes",
 				"other": "hai {0} meses"
@@ -137,9 +137,9 @@
 			}
 		},
 		"week": {
-			"previous": "sem. pasada",
+			"previous": "a sem. pasada",
 			"current": "esta sem.",
-			"next": "sem. seguinte",
+			"next": "a próxima sem.",
 			"past": "hai {0} sem.",
 			"future": "en {0} sem."
 		},
@@ -176,9 +176,9 @@
 	},
 	"narrow": {
 		"year": {
-			"previous": "ano pasado",
+			"previous": "o ano pas.",
 			"current": "este ano",
-			"next": "seguinte ano",
+			"next": "o próx. ano",
 			"past": {
 				"one": "hai {0} ano",
 				"other": "hai {0} anos"
@@ -196,9 +196,9 @@
 			"future": "en {0} trim."
 		},
 		"month": {
-			"previous": "m. pasado",
-			"current": "este m.",
-			"next": "m. seguinte",
+			"previous": "o mes pas.",
+			"current": "este mes",
+			"next": "o próx. mes",
 			"past": {
 				"one": "hai {0} mes",
 				"other": "hai {0} meses"
@@ -209,9 +209,9 @@
 			}
 		},
 		"week": {
-			"previous": "sem. pasada",
+			"previous": "a sem. pas.",
 			"current": "esta sem.",
-			"next": "sem. seguinte",
+			"next": "a próx. sem.",
 			"past": "hai {0} sem.",
 			"future": "en {0} sem."
 		},

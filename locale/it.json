@@ -137,9 +137,9 @@
 			}
 		},
 		"week": {
-			"previous": "settimana scorsa",
-			"current": "questa settimana",
-			"next": "settimana prossima",
+			"previous": "sett. scorsa",
+			"current": "questa sett.",
+			"next": "sett. prossima",
 			"past": "{0} sett. fa",
 			"future": "tra {0} sett."
 		},
@@ -170,14 +170,8 @@
 		},
 		"second": {
 			"current": "ora",
-			"past": {
-				"one": "{0} s fa",
-				"other": "{0} sec. fa"
-			},
-			"future": {
-				"one": "tra {0} s",
-				"other": "tra {0} sec."
-			}
+			"past": "{0} sec. fa",
+			"future": "tra {0} sec."
 		}
 	},
 	"narrow": {
@@ -215,9 +209,9 @@
 			}
 		},
 		"week": {
-			"previous": "settimana scorsa",
-			"current": "questa settimana",
-			"next": "settimana prossima",
+			"previous": "sett. scorsa",
+			"current": "questa sett.",
+			"next": "sett. prossima",
 			"past": "{0} sett. fa",
 			"future": "tra {0} sett."
 		},

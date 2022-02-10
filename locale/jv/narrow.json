@@ -1,0 +1,54 @@
+{
+	"locale": "jv",
+	"style": "narrow",
+	"year": {
+		"previous": "taun wingi",
+		"current": "taun iki",
+		"next": "taun ngarep",
+		"past": "{0} taun kepungkur",
+		"future": "ing {0} taun"
+	},
+	"quarter": {
+		"previous": "triwulan wingi",
+		"current": "triwulan iki",
+		"next": "triwulan ngarep",
+		"past": "{0} triwulan kepungkur",
+		"future": "ing {0} triwulan"
+	},
+	"month": {
+		"previous": "sasi wingi",
+		"current": "sasi iki",
+		"next": "sasi ngarep",
+		"past": "{0} sasi kepungkur",
+		"future": "ing {0} sasi"
+	},
+	"week": {
+		"previous": "pkn wingi",
+		"current": "pkn iki",
+		"next": "pkn ngarep",
+		"past": "{0} pekan kepungkur",
+		"future": "ing {0} pekan"
+	},
+	"day": {
+		"previous": "wingi",
+		"current": "dino iki",
+		"next": "sesuk",
+		"past": "{0} dino kepungkur",
+		"future": "ing {0} dina"
+	},
+	"hour": {
+		"current": "jam iki",
+		"past": "{0} jam kepungkur",
+		"future": "ing {0} jam"
+	},
+	"minute": {
+		"current": "menit iki",
+		"past": "{0} menit kepungkur",
+		"future": "ing {0} menit"
+	},
+	"second": {
+		"current": "saiki",
+		"past": "{0} detik kepungkur",
+		"future": "ing {0} detik"
+	}
+}

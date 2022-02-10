@@ -1,3 +1,14 @@
+1.0.6 / 27.09.2021
+==================
+
+  * Added locale data `*.json` files:
+
+```js
+import en from "relative-time-format/locale/en.json"
+```
+
+  * Added TypeScript "typings".
+
 1.0.0 / 22.06.2019
 ==================
 

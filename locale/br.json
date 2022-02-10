@@ -91,7 +91,7 @@
 			}
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ar munut-mañ",
 			"past": {
 				"two": "{0} vunut zo",
 				"many": "{0} a vunutoù zo",
@@ -143,17 +143,11 @@
 			}
 		},
 		"week": {
-			"previous": "ar sizhun diaraok",
-			"current": "ar sizhun-mañ",
-			"next": "ar sizhun a zeu",
-			"past": {
-				"many": "{0} a sizhunioù zo",
-				"other": "{0} sizhun zo"
-			},
-			"future": {
-				"many": "a-benn {0} a sizhunioù",
-				"other": "a-benn {0} sizhun"
-			}
+			"previous": "ar sizh. diaraok",
+			"current": "ar sizh.-mañ",
+			"next": "ar sizh. a zeu",
+			"past": "{0} sizh. zo",
+			"future": "a-benn {0} sizh."
 		},
 		"day": {
 			"previous": "decʼh",
@@ -169,7 +163,7 @@
 			"future": "a-benn {0} e"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ar munut-mañ",
 			"past": "{0} min zo",
 			"future": "a-benn {0} min"
 		},
@@ -195,24 +189,18 @@
 			"future": "+{0} trim."
 		},
 		"month": {
-			"previous": "ar miz diaraok",
-			"current": "ar miz-mañ",
-			"next": "ar miz a zeu",
+			"previous": "ar m. diaraok",
+			"current": "ar m.-mañ",
+			"next": "ar m. a zeu",
 			"past": "-{0} miz",
 			"future": "+{0} miz"
 		},
 		"week": {
-			"previous": "ar sizhun diaraok",
-			"current": "ar sizhun-mañ",
-			"next": "ar sizhun a zeu",
-			"past": {
-				"many": "{0} a sizhunioù zo",
-				"other": "{0} sizhun zo"
-			},
-			"future": {
-				"many": "a-benn {0} a sizhunioù",
-				"other": "a-benn {0} sizhun"
-			}
+			"previous": "ar sizh. diaraok",
+			"current": "ar sizh.-mañ",
+			"next": "ar sizh. a zeu",
+			"past": "{0} sizh. zo",
+			"future": "a-benn {0} sizh."
 		},
 		"day": {
 			"previous": "decʼh",
@@ -228,7 +216,7 @@
 			"future": "+{0} h"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ar munut-mañ",
 			"past": "-{0} min",
 			"future": "+{0} min"
 		},

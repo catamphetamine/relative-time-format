@@ -1,0 +1,66 @@
+{
+	"locale": "so",
+	"style": "short",
+	"year": {
+		"previous": "Sannadkii hore",
+		"current": "Sannadkan",
+		"next": "Sannadka danbe",
+		"past": {
+			"one": "{0} snd khr",
+			"other": "{0} Snd khr"
+		},
+		"future": "{0} snd"
+	},
+	"quarter": {
+		"previous": "Rubucii ugu dambeeyay",
+		"current": "Rubucan",
+		"next": "Rubuca xiga",
+		"past": "{0} rbc khr",
+		"future": "{0} rbc"
+	},
+	"month": {
+		"previous": "Bishii hore",
+		"current": "Bishan",
+		"next": "Bisha danbe",
+		"past": "{0} bil khr",
+		"future": "{0} bil"
+	},
+	"week": {
+		"previous": "Toddobaadkii hore",
+		"current": "Usbuucan",
+		"next": "Toddobaadka danbe",
+		"past": "{0} tdbd khr",
+		"future": "{0} tdbd"
+	},
+	"day": {
+		"previous": "Shalay",
+		"current": "Maanta",
+		"next": "Berri",
+		"past": {
+			"one": "{0} mln khr",
+			"other": "{0} mlmd khr"
+		},
+		"future": {
+			"one": "{0} mln",
+			"other": "{0} mlmd"
+		}
+	},
+	"hour": {
+		"current": "Saacadan",
+		"past": "{0} scd khr",
+		"future": "{0} scd"
+	},
+	"minute": {
+		"current": "Daqiiqadan",
+		"past": {
+			"one": "{0} dqqd khr",
+			"other": "{0} daqiiqadood kahor"
+		},
+		"future": "{0} dqqd"
+	},
+	"second": {
+		"current": "Iminka",
+		"past": "{0} ilbrqsi khr",
+		"future": "{0} ilbrqsi"
+	}
+}

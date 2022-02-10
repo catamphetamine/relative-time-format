@@ -125,9 +125,9 @@
 			"future": "dentro de {0} m"
 		},
 		"week": {
-			"previous": "la semana pasada",
-			"current": "esta semana",
-			"next": "la próxima semana",
+			"previous": "sem. ant.",
+			"current": "esta sem.",
+			"next": "próx. sem.",
 			"past": "hace {0} sem.",
 			"future": "dentro de {0} sem."
 		},
@@ -137,14 +137,8 @@
 			"current": "hoy",
 			"next": "mañana",
 			"next-2": "pasado mañana",
-			"past": {
-				"one": "hace {0} día",
-				"other": "hace {0} días"
-			},
-			"future": {
-				"one": "dentro de {0} día",
-				"other": "dentro de {0} días"
-			}
+			"past": "hace {0} d",
+			"future": "dentro de {0} d"
 		},
 		"hour": {
 			"current": "esta hora",
@@ -185,9 +179,9 @@
 			"future": "dentro de {0} m"
 		},
 		"week": {
-			"previous": "la semana pasada",
-			"current": "esta semana",
-			"next": "la próxima semana",
+			"previous": "sem. ant.",
+			"current": "esta sem.",
+			"next": "próx. sem.",
 			"past": "hace {0} sem.",
 			"future": "dentro de {0} sem."
 		},
@@ -197,14 +191,8 @@
 			"current": "hoy",
 			"next": "mañana",
 			"next-2": "pasado mañana",
-			"past": {
-				"one": "hace {0} día",
-				"other": "hace {0} días"
-			},
-			"future": {
-				"one": "dentro de {0} día",
-				"other": "dentro de {0} días"
-			}
+			"past": "hace {0} d",
+			"future": "dentro de {0} d"
 		},
 		"hour": {
 			"current": "esta hora",
@@ -221,5 +209,15 @@
 			"past": "hace {0} s",
 			"future": "dentro de {0} s"
 		}
+	},
+	"tiny": {
+		"year": "{0}año",
+		"month": "{0}mes",
+		"week": "{0}sem.",
+		"day": "{0}d",
+		"hour": "{0}h",
+		"minute": "{0}m",
+		"second": "{0}s",
+		"now": "ahora"
 	}
 }

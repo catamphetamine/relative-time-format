@@ -92,9 +92,9 @@
 	},
 	"short": {
 		"year": {
-			"previous": "verlede jaar",
-			"current": "hierdie jaar",
-			"next": "volgende jaar",
+			"previous": "verlede j.",
+			"current": "hierdie j.",
+			"next": "volgende j.",
 			"past": "{0} j. gelede",
 			"future": "oor {0} j."
 		},
@@ -106,16 +106,16 @@
 			"future": "oor {0} kw."
 		},
 		"month": {
-			"previous": "verlede maand",
-			"current": "vandeesmaand",
-			"next": "volgende maand",
+			"previous": "verlede md.",
+			"current": "hierdie md.",
+			"next": "volgende md.",
 			"past": "{0} md. gelede",
 			"future": "oor {0} md."
 		},
 		"week": {
-			"previous": "verlede week",
-			"current": "hierdie week",
-			"next": "volgende week",
+			"previous": "verlede w.",
+			"current": "hierdie w.",
+			"next": "volgende w.",
 			"past": "{0} w. gelede",
 			"future": "oor {0} w."
 		},
@@ -152,9 +152,9 @@
 	},
 	"narrow": {
 		"year": {
-			"previous": "verlede jaar",
-			"current": "hierdie jaar",
-			"next": "volgende jaar",
+			"previous": "verlede j.",
+			"current": "hierdie j.",
+			"next": "volgende j.",
 			"past": "{0} j. gelede",
 			"future": "oor {0} j."
 		},
@@ -166,16 +166,16 @@
 			"future": "oor {0} kw."
 		},
 		"month": {
-			"previous": "verlede maand",
-			"current": "vandeesmaand",
-			"next": "volgende maand",
+			"previous": "verlede md.",
+			"current": "hierdie md.",
+			"next": "volgende md.",
 			"past": "{0} md. gelede",
 			"future": "oor {0} md."
 		},
 		"week": {
-			"previous": "verlede week",
-			"current": "hierdie week",
-			"next": "volgende week",
+			"previous": "verlede w.",
+			"current": "hierdie w.",
+			"next": "volgende w.",
 			"past": "{0} w. gelede",
 			"future": "oor {0} w."
 		},

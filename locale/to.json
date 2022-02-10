@@ -39,12 +39,12 @@
 			"future": "ʻi he ʻaho ʻe {0}"
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "ko e houa ʻeni",
 			"past": "houa ʻe {0} kuoʻosi",
 			"future": "ʻi he houa ʻe {0}"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ko e miniti ʻeni",
 			"past": "miniti ʻe {0} kuoʻosi",
 			"future": "ʻi he miniti ʻe {0}"
 		},
@@ -93,12 +93,12 @@
 			"future": "ʻi he ʻaho ʻe {0}"
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "ko e houa ʻeni",
 			"past": "houa ʻe {0} kuoʻosi",
 			"future": "ʻi he houa ʻe {0}"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ko e miniti ʻeni",
 			"past": "miniti ʻe {0} kuoʻosi",
 			"future": "ʻi he miniti ʻe {0}"
 		},
@@ -147,12 +147,12 @@
 			"future": "ʻi he ʻaho ʻe {0}"
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "ko e houa ʻeni",
 			"past": "houa ʻe {0} kuoʻosi",
 			"future": "ʻi he houa ʻe {0}"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ko e miniti ʻeni",
 			"past": "miniti ʻe {0} kuoʻosi",
 			"future": "ʻi he miniti ʻe {0}"
 		},

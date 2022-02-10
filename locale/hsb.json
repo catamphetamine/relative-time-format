@@ -18,9 +18,9 @@
 			}
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
+			"previous": "zašły kwartal",
+			"current": "tutón kwartal",
+			"next": "přichodny kwartal",
 			"past": {
 				"one": "před {0} kwartalom",
 				"two": "před {0} kwartalomaj",
@@ -82,7 +82,7 @@
 			}
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "w tutej hodźinje",
 			"past": {
 				"one": "před {0} hodźinu",
 				"two": "před {0} hodźinomaj",
@@ -96,7 +96,7 @@
 			}
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "w tutej mjeńšinje",
 			"past": {
 				"one": "před {0} minutu",
 				"two": "před {0} minutomaj",
@@ -110,7 +110,7 @@
 			}
 		},
 		"second": {
-			"current": "now",
+			"current": "nětko",
 			"past": {
 				"one": "před {0} sekundu",
 				"two": "před {0} sekundomaj",
@@ -126,37 +126,37 @@
 	},
 	"short": {
 		"year": {
-			"previous": "loni",
-			"current": "lětsa",
-			"next": "klětu",
+			"previous": "lon.",
+			"current": "lěts.",
+			"next": "klět.",
 			"past": "před {0} l.",
 			"future": "za {0} l."
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
+			"previous": "zašły kwartal",
+			"current": "tutón kwartal",
+			"next": "přichodny kwartal",
 			"past": "před {0} kwart.",
 			"future": "za {0} kwart."
 		},
 		"month": {
-			"previous": "zašły měsac",
-			"current": "tutón měsac",
-			"next": "přichodny měsac",
+			"previous": "zašł. měsac",
+			"current": "tut. měsac",
+			"next": "přichodn. měsac",
 			"past": "před {0} měs.",
 			"future": "za {0} měs."
 		},
 		"week": {
-			"previous": "zašły tydźeń",
-			"current": "tutón tydźeń",
-			"next": "přichodny tydźeń",
+			"previous": "zašł. tydźeń",
+			"current": "tut. tydźeń",
+			"next": "přichodn. tydźeń",
 			"past": "před {0} tydź.",
 			"future": "za {0} tydź."
 		},
 		"day": {
-			"previous": "wčera",
-			"current": "dźensa",
-			"next": "jutře",
+			"previous": "wčer.",
+			"current": "dźens.",
+			"next": "jutř.",
 			"past": "před {0} dnj.",
 			"future": {
 				"one": "za {0} dźeń",
@@ -165,69 +165,69 @@
 			}
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "w tutej hodźinje",
 			"past": "před {0} hodź.",
 			"future": "za {0} hodź."
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "w tutej mjeńšinje",
 			"past": "před {0} min.",
 			"future": "za {0} min."
 		},
 		"second": {
-			"current": "now",
+			"current": "nětko",
 			"past": "před {0} sek.",
 			"future": "za {0} sek."
 		}
 	},
 	"narrow": {
 		"year": {
-			"previous": "loni",
-			"current": "lětsa",
-			"next": "klětu",
+			"previous": "lo.",
+			"current": "lět.",
+			"next": "klě.",
 			"past": "před {0} l.",
 			"future": "za {0} l."
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
+			"previous": "zašły kwartal",
+			"current": "tutón kwartal",
+			"next": "přichodny kwartal",
 			"past": "před {0} kw.",
 			"future": "za {0} kw."
 		},
 		"month": {
-			"previous": "zašły měsac",
-			"current": "tutón měsac",
-			"next": "přichodny měsac",
+			"previous": "zaš. měsac",
+			"current": "tu. měsac",
+			"next": "přich. měsac",
 			"past": "před {0} měs.",
 			"future": "za {0} měs."
 		},
 		"week": {
-			"previous": "zašły tydźeń",
-			"current": "tutón tydźeń",
-			"next": "přichodny tydźeń",
+			"previous": "zaš. tydźeń",
+			"current": "tu. tydźeń",
+			"next": "přich. tydźeń",
 			"past": "před {0} tydź.",
 			"future": "za {0} tydź."
 		},
 		"day": {
-			"previous": "wčera",
-			"current": "dźensa",
-			"next": "jutře",
+			"previous": "wč.",
+			"current": "dźe.",
+			"next": "jut.",
 			"past": "před {0} d",
 			"future": "za {0} d"
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "w tutej hodźinje",
 			"past": "před {0} h",
 			"future": "za {0} h"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "w tutej mjeńšinje",
 			"past": "před {0} m",
 			"future": "za {0} m"
 		},
 		"second": {
-			"current": "now",
+			"current": "nětko",
 			"past": "před {0} s",
 			"future": "za {0} s"
 		}

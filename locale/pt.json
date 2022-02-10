@@ -120,10 +120,7 @@
 			"previous": "último trimestre",
 			"current": "este trimestre",
 			"next": "próximo trimestre",
-			"past": {
-				"one": "há {0} trim.",
-				"other": "{0} trim. atrás"
-			},
+			"past": "há {0} trim.",
 			"future": "em {0} trim."
 		},
 		"month": {
@@ -184,7 +181,7 @@
 			"next": "próximo ano",
 			"past": {
 				"one": "há {0} ano",
-				"other": "{0} anos atrás"
+				"other": "há {0} anos"
 			},
 			"future": {
 				"one": "em {0} ano",

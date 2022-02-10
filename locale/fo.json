@@ -106,16 +106,16 @@
 			"future": "um {0} ársfj."
 		},
 		"month": {
-			"previous": "seinasta mánað",
-			"current": "henda mánaðin",
-			"next": "næsta mánað",
+			"previous": "seinasta mnð.",
+			"current": "henda mnð.",
+			"next": "næsta mnð.",
 			"past": "{0} mnð. síðan",
 			"future": "um {0} mnð."
 		},
 		"week": {
-			"previous": "seinastu viku",
-			"current": "hesu viku",
-			"next": "næstu viku",
+			"previous": "seinastu vi.",
+			"current": "hesu vi.",
+			"next": "næstu vi.",
 			"past": "{0} vi. síðan",
 			"future": "um {0} vi."
 		},
@@ -160,16 +160,16 @@
 			"future": "um {0} ársfj."
 		},
 		"month": {
-			"previous": "seinasta mánað",
-			"current": "henda mánaðin",
-			"next": "næsta mánað",
+			"previous": "seinasta mnð.",
+			"current": "henda mnð.",
+			"next": "næsta mnð.",
 			"past": "{0} mnð. síðan",
 			"future": "um {0} mnð."
 		},
 		"week": {
-			"previous": "seinastu viku",
-			"current": "hesu viku",
-			"next": "næstu viku",
+			"previous": "seinastu v.",
+			"current": "hesu v.",
+			"next": "næstu v.",
 			"past": "{0} v. síðan",
 			"future": "um {0} v."
 		},

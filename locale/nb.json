@@ -149,14 +149,14 @@
 			"previous": "i fjor",
 			"current": "i år",
 			"next": "neste år",
-			"past": "–{0} år",
+			"past": "-{0} år",
 			"future": "+{0} år"
 		},
 		"quarter": {
 			"previous": "forrige kv.",
 			"current": "dette kv.",
 			"next": "neste kv.",
-			"past": "–{0} kv.",
+			"past": "-{0} kv.",
 			"future": "+{0} kv."
 		},
 		"month": {

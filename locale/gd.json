@@ -24,10 +24,10 @@
 			"current": "an cairteal seo",
 			"next": "an ath-chairteal",
 			"past": {
-				"one": "o chionn {0} chairteil",
-				"two": "o chionn {0} chairteil",
-				"few": "o chionn {0} cairtealan",
-				"other": "o chionn {0} cairteil"
+				"one": "{0} chairteal air ais",
+				"two": "{0} chairteal air ais",
+				"few": "{0} cairtealan air ais",
+				"other": "{0} cairteal air ais"
 			},
 			"future": {
 				"one": "an ceann {0} chairteil",

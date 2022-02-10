@@ -63,9 +63,9 @@
 			"future": "{0} yıl sonra"
 		},
 		"quarter": {
-			"previous": "geçen çeyrek",
-			"current": "bu çeyrek",
-			"next": "gelecek çeyrek",
+			"previous": "geçen çyr.",
+			"current": "bu çyr.",
+			"next": "gelecek çyr.",
 			"past": "{0} çyr. önce",
 			"future": "{0} çyr. sonra"
 		},
@@ -77,9 +77,9 @@
 			"future": "{0} ay sonra"
 		},
 		"week": {
-			"previous": "geçen hafta",
-			"current": "bu hafta",
-			"next": "gelecek hafta",
+			"previous": "geçen hf.",
+			"current": "bu hf.",
+			"next": "gelecek hf.",
 			"past": "{0} hf. önce",
 			"future": "{0} hf. sonra"
 		},
@@ -117,9 +117,9 @@
 			"future": "{0} yıl sonra"
 		},
 		"quarter": {
-			"previous": "geçen çeyrek",
-			"current": "bu çeyrek",
-			"next": "gelecek çeyrek",
+			"previous": "geçen çyr.",
+			"current": "bu çyr.",
+			"next": "gelecek çyr.",
 			"past": "{0} çyr. önce",
 			"future": "{0} çyr. sonra"
 		},
@@ -131,9 +131,9 @@
 			"future": "{0} ay sonra"
 		},
 		"week": {
-			"previous": "geçen hafta",
-			"current": "bu hafta",
-			"next": "gelecek hafta",
+			"previous": "geçen hf.",
+			"current": "bu hf.",
+			"next": "gelecek hf.",
 			"past": "{0} hf. önce",
 			"future": "{0} hf. sonra"
 		},

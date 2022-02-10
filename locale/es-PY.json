@@ -125,9 +125,9 @@
 			"future": "dentro de {0} m"
 		},
 		"week": {
-			"previous": "la semana pasada",
-			"current": "esta semana",
-			"next": "la próxima semana",
+			"previous": "sem. pas.",
+			"current": "esta sem.",
+			"next": "próx. sem.",
 			"past": "hace {0} sem.",
 			"future": "dentro de {0} sem."
 		},
@@ -185,9 +185,9 @@
 			"future": "dentro de {0} m"
 		},
 		"week": {
-			"previous": "la semana pasada",
-			"current": "esta semana",
-			"next": "la próxima semana",
+			"previous": "sem. pas.",
+			"current": "esta sem.",
+			"next": "próx. sem.",
 			"past": "hace {0} sem.",
 			"future": "dentro de {0} sem."
 		},

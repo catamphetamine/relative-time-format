@@ -1,0 +1,8 @@
+{
+	"locale": "en",
+	"style": "now",
+	"now": {
+		"future": "in a moment",
+		"past": "just now"
+	}
+}

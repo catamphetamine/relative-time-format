@@ -1,5 +1,5 @@
 import RelativeTimeFormat from '../index'
-import en from '../locale/en'
+import en from '../locale/en.json'
 
 RelativeTimeFormat.addLocale(en)
 

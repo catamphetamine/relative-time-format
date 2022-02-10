@@ -84,10 +84,10 @@
 			"future": "sau {0} tuần nữa"
 		},
 		"day": {
-			"previous": "Hôm qua",
+			"previous": "hôm qua",
 			"previous-2": "Hôm kia",
-			"current": "Hôm nay",
-			"next": "Ngày mai",
+			"current": "hôm nay",
+			"next": "ngày mai",
 			"next-2": "Ngày kia",
 			"past": "{0} ngày trước",
 			"future": "sau {0} ngày nữa"
@@ -138,10 +138,10 @@
 			"future": "sau {0} tuần nữa"
 		},
 		"day": {
-			"previous": "Hôm qua",
+			"previous": "hôm qua",
 			"previous-2": "Hôm kia",
-			"current": "Hôm nay",
-			"next": "Ngày mai",
+			"current": "hôm nay",
+			"next": "ngày mai",
 			"next-2": "Ngày kia",
 			"past": "{0} ngày trước",
 			"future": "sau {0} ngày nữa"

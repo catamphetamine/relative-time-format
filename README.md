@@ -5,9 +5,13 @@
 [![npm size](https://img.shields.io/bundlephobia/minzip/relative-time-format.svg?label=size)](https://www.npmjs.com/package/relative-time-format)
 [![coverage](https://img.shields.io/coveralls/catamphetamine/relative-time-format/master.svg?style=flat-square)](https://coveralls.io/r/catamphetamine/relative-time-format?branch=master)
 
-A convenient [`Intl.RelativeTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RelativeTimeFormat) polyfill.
+This library consists of three parts:
 
-No dependencies (doesn't require [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) because it's already [built in](https://github.com/catamphetamine/relative-time-format/blob/master/source/PluralRuleFunctions.js)).
+* A convenient [`Intl.RelativeTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RelativeTimeFormat) polyfill. No dependencies (doesn't require [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) because it's already [built in](https://github.com/catamphetamine/relative-time-format/blob/master/source/PluralRuleFunctions.js)).
+
+* A high-level relative time formatting library.
+
+* A React component for relative time formatting.
 
 [See Demo](https://catamphetamine.github.io/relative-time-format/)
 
@@ -64,11 +68,10 @@ The `locale` folder is generated from CLDR data by running:
 npm run generate-locales
 ```
 
-Locale data is extracted from `cldr-data` (quantifiers) and `cldr-dates-full` (relative time messages) packages which usually get some updates once or twice a year.
+Locale data is extracted from `cldr-core` (quantifiers) and `cldr-dates-full` (relative time messages) packages which usually get some updates once or twice a year.
 
 ```sh
-npm install cldr-data@latest cldr-dates-full@latest make-plural@latest --save-dev
-npm run generate-locales
+npm run update-locales
 ```
 
 ## Higher-level API
@@ -79,7 +82,7 @@ npm run generate-locales
 import TimeAgo from 'javascript-time-ago'
 
 // Load locale-specific relative date/time formatting rules.
-import en from 'javascript-time-ago/locale/en'
+import en from 'javascript-time-ago/locale/en.json'
 
 // Add locale-specific relative date/time formatting rules.
 TimeAgo.addLocale(en)
@@ -105,12 +108,12 @@ timeAgo.format(Date.now() - 24 * 60 * 60 * 1000)
 One can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdelivr.net](https://jsdelivr.net)
 
 ```html
-<script src="https://unpkg.com/relative-time-format@[version]/bundle/relative-time-format.js"></script>
+<script src="https://unpkg.com/relative-time-format@[version]/bundle/polyfill.js"></script>
 
 <script>
   var en = ... // Somehow import `relative-time-format/locale/en.json`.
   RelativeTimeFormat.addLocale(en)
-  console.log(new RelativeTimeFormat('en').format(-1, 'day'))
+  console.log(new RelativeTimeFormat('en').format(-1, 'days'))
 </script>
 ```
 
@@ -119,6 +122,10 @@ where `[version]` is an npm package version range (for example, `0.2.x` or `^0.2
 ## Test262
 
 There's a test suite of about 150 test cases for `Intl.RelativeTimeFormat` specification implementations. It's called "[Test262](https://github.com/tc39/test262/blob/master/test/intl402/RelativeTimeFormat/)". These tests check every possible imaginable aspect of formal correctness of a spec implementation including the weirdest artificial cases imaginable like accepting strings instead of numbers, accepting objects having keys `0`, `1`, etc instead of arrays, accepting objects with `toString()` method instead of strings, defining all class methods as special "non-enumerable" properties via `Object.defineProperty()` instead of the regular way everyone defines class methods in real life, and so on. Handling all these formal edge cases would result in an unnecessarily convoluted and less readable code and I'd prefer to keep things simple and elegant, so this library intentionally chose not to pass all of the "Test262" test cases while still passing most of them: it [passes](https://github.com/catamphetamine/Intl.RelativeTimeFormat-test262) the functional correctness part and skips the not-relevant-in-real-life cases part.
+
+## TypeScript
+
+This library comes with TypeScript "typings". If you happen to find any bugs in those, create an issue.
 
 <!--
 ## Contributing

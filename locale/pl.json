@@ -154,16 +154,16 @@
 			"future": "za {0} kw."
 		},
 		"month": {
-			"previous": "w zeszłym miesiącu",
-			"current": "w tym miesiącu",
-			"next": "w przyszłym miesiącu",
+			"previous": "w zeszłym mies.",
+			"current": "w tym mies.",
+			"next": "w przyszłym mies.",
 			"past": "{0} mies. temu",
 			"future": "za {0} mies."
 		},
 		"week": {
-			"previous": "w zeszłym tygodniu",
-			"current": "w tym tygodniu",
-			"next": "w przyszłym tygodniu",
+			"previous": "w zeszłym tyg.",
+			"current": "w tym tyg.",
+			"next": "w przyszłym tyg.",
 			"past": {
 				"one": "{0} tydz. temu",
 				"other": "{0} tyg. temu"
@@ -234,16 +234,16 @@
 			"future": "za {0} kw."
 		},
 		"month": {
-			"previous": "w zeszłym miesiącu",
-			"current": "w tym miesiącu",
-			"next": "w przyszłym miesiącu",
+			"previous": "w zeszłym mies.",
+			"current": "w tym mies.",
+			"next": "w przyszłym mies.",
 			"past": "{0} mies. temu",
 			"future": "za {0} mies."
 		},
 		"week": {
-			"previous": "w zeszłym tygodniu",
-			"current": "w tym tygodniu",
-			"next": "w przyszłym tygodniu",
+			"previous": "w zeszłym tyg.",
+			"current": "w tym tyg.",
+			"next": "w przyszłym tyg.",
 			"past": {
 				"one": "{0} tydz. temu",
 				"other": "{0} tyg. temu"
@@ -254,9 +254,9 @@
 			}
 		},
 		"day": {
-			"previous": "wczoraj",
+			"previous": "wcz.",
 			"previous-2": "przedwczoraj",
-			"current": "dzisiaj",
+			"current": "dziś",
 			"next": "jutro",
 			"next-2": "pojutrze",
 			"past": {

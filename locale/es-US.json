@@ -4,7 +4,7 @@
 		"year": {
 			"previous": "el año pasado",
 			"current": "este año",
-			"next": "el año próximo",
+			"next": "el próximo año",
 			"past": {
 				"one": "hace {0} año",
 				"other": "hace {0} años"
@@ -30,7 +30,7 @@
 		"month": {
 			"previous": "el mes pasado",
 			"current": "este mes",
-			"next": "el mes próximo",
+			"next": "el próximo mes",
 			"past": {
 				"one": "hace {0} mes",
 				"other": "hace {0} meses"
@@ -43,7 +43,7 @@
 		"week": {
 			"previous": "la semana pasada",
 			"current": "esta semana",
-			"next": "la semana próxima",
+			"next": "la próxima semana",
 			"past": {
 				"one": "hace {0} semana",
 				"other": "hace {0} semanas"
@@ -125,9 +125,9 @@
 			"future": "dentro de {0} m"
 		},
 		"week": {
-			"previous": "la semana pasada",
-			"current": "esta semana",
-			"next": "la semana próxima",
+			"previous": "sem. pasada",
+			"current": "esta sem.",
+			"next": "próxima sem.",
 			"past": "hace {0} sem.",
 			"future": "dentro de {0} sem."
 		},
@@ -185,9 +185,9 @@
 			"future": "dentro de {0} m"
 		},
 		"week": {
-			"previous": "la semana pasada",
-			"current": "esta semana",
-			"next": "la semana próxima",
+			"previous": "sem. pasada",
+			"current": "esta sem.",
+			"next": "próxima sem.",
 			"past": "hace {0} sem.",
 			"future": "dentro de {0} sem."
 		},

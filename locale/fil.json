@@ -266,7 +266,7 @@
 		"hour": {
 			"current": "ngayong oras",
 			"past": {
-				"one": "{0} oras nakalipas",
+				"one": "{0} oras ang nakalipas",
 				"other": "{0} (na) oras nakalipas"
 			},
 			"future": {
@@ -288,7 +288,7 @@
 		"second": {
 			"current": "ngayon",
 			"past": {
-				"one": "{0} seg. nakalipas",
+				"one": "{0} seg. ang nakalipas",
 				"other": "{0} (na) seg. nakalipas"
 			},
 			"future": {

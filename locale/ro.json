@@ -230,7 +230,7 @@
 		},
 		"week": {
 			"previous": "săpt. trecută",
-			"current": "săptămâna aceasta",
+			"current": "săpt. aceasta",
 			"next": "săpt. viitoare",
 			"past": "-{0} săpt.",
 			"future": "+{0} săpt."

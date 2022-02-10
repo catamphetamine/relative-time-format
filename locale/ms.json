@@ -77,14 +77,14 @@
 			"future": "dlm {0} bln"
 		},
 		"week": {
-			"previous": "mng lepas",
-			"current": "mng ini",
-			"next": "mng depan",
+			"previous": "mgu lepas",
+			"current": "mgu ini",
+			"next": "mgu depan",
 			"past": "{0} mgu lalu",
 			"future": "dlm {0} mgu"
 		},
 		"day": {
-			"previous": "semlm",
+			"previous": "semalam",
 			"previous-2": "kelmarin",
 			"current": "hari ini",
 			"next": "esok",
@@ -131,9 +131,9 @@
 			"future": "dlm {0} bln"
 		},
 		"week": {
-			"previous": "mng lepas",
-			"current": "mng ini",
-			"next": "mng depan",
+			"previous": "mgu lepas",
+			"current": "mgu ini",
+			"next": "mgu depan",
 			"past": "{0} mgu lalu",
 			"future": "dlm {0} mgu"
 		},

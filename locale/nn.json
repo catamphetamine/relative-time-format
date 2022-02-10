@@ -84,16 +84,16 @@
 			"future": "om {0} år"
 		},
 		"quarter": {
-			"previous": "førre kvartal",
-			"current": "dette kvartalet",
-			"next": "neste kvartal",
+			"previous": "forrige kv.",
+			"current": "dette kv.",
+			"next": "neste kv.",
 			"past": "for {0} kv. sidan",
 			"future": "om {0} kv."
 		},
 		"month": {
-			"previous": "førre månad",
-			"current": "denne månaden",
-			"next": "neste månad",
+			"previous": "førre md.",
+			"current": "denne md.",
+			"next": "neste md.",
 			"past": "for {0} md. sidan",
 			"future": "om {0} md."
 		},
@@ -106,10 +106,10 @@
 		},
 		"day": {
 			"previous": "i går",
-			"previous-2": "i førgår",
+			"previous-2": "i forgårs",
 			"current": "i dag",
 			"next": "i morgon",
-			"next-2": "i overmorgon",
+			"next-2": "i overmorgen",
 			"past": "for {0} d. sidan",
 			"future": "om {0} d."
 		},
@@ -124,7 +124,7 @@
 			"future": "om {0} min"
 		},
 		"second": {
-			"current": "no",
+			"current": "nå",
 			"past": "for {0} sek sidan",
 			"future": "om {0} sek"
 		}
@@ -138,16 +138,16 @@
 			"future": "om {0} år"
 		},
 		"quarter": {
-			"previous": "førre kvartal",
-			"current": "dette kvartalet",
-			"next": "neste kvartal",
+			"previous": "forrige kv.",
+			"current": "dette kv.",
+			"next": "neste kv.",
 			"past": "–{0} kv.",
 			"future": "+{0} kv."
 		},
 		"month": {
-			"previous": "førre månad",
-			"current": "denne månaden",
-			"next": "neste månad",
+			"previous": "førre md.",
+			"current": "denne md.",
+			"next": "neste md.",
 			"past": "–{0} md.",
 			"future": "+{0} md."
 		},
@@ -160,10 +160,10 @@
 		},
 		"day": {
 			"previous": "i går",
-			"previous-2": "i førgår",
+			"previous-2": "-2 d.",
 			"current": "i dag",
 			"next": "i morgon",
-			"next-2": "i overmorgon",
+			"next-2": "+2 d.",
 			"past": "–{0} d.",
 			"future": "+{0} d."
 		},
@@ -178,7 +178,7 @@
 			"future": "+{0} min"
 		},
 		"second": {
-			"current": "no",
+			"current": "nå",
 			"past": {
 				"one": "–{0} s",
 				"other": "–{0} s"

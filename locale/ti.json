@@ -16,7 +16,7 @@
 			"future": "ኣብ {0} ርብዒ"
 		},
 		"month": {
-			"previous": "last month",
+			"previous": "ዝሓለፈ ወርሒ",
 			"current": "ህሉው ወርሒ",
 			"next": "ዝመጽእ ወርሒ",
 			"past": "ቅድሚ {0} ወርሒ",
@@ -74,7 +74,7 @@
 			"future": "ኣብ {0} ርብዒ"
 		},
 		"month": {
-			"previous": "last month",
+			"previous": "ዝሓለፈ ወርሒ",
 			"current": "ህሉው ወርሒ",
 			"next": "ዝመጽእ ወርሒ",
 			"past": "ቅድሚ {0} ወርሒ",
@@ -126,7 +126,7 @@
 			"future": "ኣብ {0} ርብዒ"
 		},
 		"month": {
-			"previous": "last month",
+			"previous": "ዝሓለፈ ወርሒ",
 			"current": "ህሉው ወርሒ",
 			"next": "ዝመጽእ ወርሒ",
 			"past": "ቅድሚ {0} ወርሒ",

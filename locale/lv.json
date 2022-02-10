@@ -104,9 +104,9 @@
 	},
 	"short": {
 		"year": {
-			"previous": "pagājušajā gadā",
-			"current": "šajā gadā",
-			"next": "nākamajā gadā",
+			"previous": "pag. gadā",
+			"current": "šajā g.",
+			"next": "nāk. gadā",
 			"past": "pirms {0} g.",
 			"future": "pēc {0} g."
 		},
@@ -118,16 +118,16 @@
 			"future": "pēc {0} cet."
 		},
 		"month": {
-			"previous": "pagājušajā mēnesī",
-			"current": "šajā mēnesī",
-			"next": "nākamajā mēnesī",
+			"previous": "pag. mēn.",
+			"current": "šajā mēn.",
+			"next": "nāk. mēn.",
 			"past": "pirms {0} mēn.",
 			"future": "pēc {0} mēn."
 		},
 		"week": {
-			"previous": "pagājušajā nedēļā",
-			"current": "šajā nedēļā",
-			"next": "nākamajā nedēļā",
+			"previous": "pag. ned.",
+			"current": "šajā ned.",
+			"next": "nāk. ned.",
 			"past": "pirms {0} ned.",
 			"future": "pēc {0} ned."
 		},
@@ -164,9 +164,9 @@
 	},
 	"narrow": {
 		"year": {
-			"previous": "pagājušajā gadā",
-			"current": "šajā gadā",
-			"next": "nākamajā gadā",
+			"previous": "pag. gadā",
+			"current": "šajā g.",
+			"next": "nāk. gadā",
 			"past": "pirms {0} g.",
 			"future": "pēc {0} g."
 		},
@@ -178,16 +178,16 @@
 			"future": "pēc {0} cet."
 		},
 		"month": {
-			"previous": "pagājušajā mēnesī",
-			"current": "šajā mēnesī",
-			"next": "nākamajā mēnesī",
+			"previous": "pag. mēn.",
+			"current": "šajā mēn.",
+			"next": "nāk. mēn.",
 			"past": "pirms {0} mēn.",
 			"future": "pēc {0} mēn."
 		},
 		"week": {
-			"previous": "pagājušajā nedēļā",
-			"current": "šajā nedēļā",
-			"next": "nākamajā nedēļā",
+			"previous": "pag. ned.",
+			"current": "šajā ned.",
+			"next": "nāk. ned.",
 			"past": "pirms {0} ned.",
 			"future": "pēc {0} ned."
 		},

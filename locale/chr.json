@@ -93,9 +93,9 @@
 	},
 	"short": {
 		"year": {
-			"previous": "ᎡᏘ ᏥᎨᏒ",
-			"current": "ᎯᎠ ᏧᏕᏘᏴᏒᏘ",
-			"next": "ᎡᏘᏴᎢ",
+			"previous": "ᎡᏘ. ᏥᎨᏒ",
+			"current": "ᎯᎠ ᏧᏕᏘᏴᏒᏘ.",
+			"next": "ᎡᏘᏴᎢ.",
 			"past": "{0} ᎤᏕ. ᏥᎨᏒ",
 			"future": "ᎾᎿ {0} ᎤᏕ."
 		},
@@ -107,16 +107,16 @@
 			"future": "ᎾᎿ {0} ᎩᏄᏘ."
 		},
 		"month": {
-			"previous": "ᎧᎸᎢ ᏥᎨᏒ",
-			"current": "ᎯᎠ ᎧᎸᎢ",
-			"next": "ᏔᎵᏁ ᎧᎸᎢ",
+			"previous": "ᎧᎸ. ᏥᎨᏒ",
+			"current": "ᎯᎠ ᎧᎸ.",
+			"next": "ᎯᎠ ᎧᎸ.",
 			"past": "{0} ᎧᎸ. ᏥᎨᏒ",
 			"future": "ᎾᎿ {0} ᎧᎸ."
 		},
 		"week": {
-			"previous": "ᏥᏛᎵᏱᎵᏒᎢ",
-			"current": "ᎯᎠ ᎠᎵᎵᏌ",
-			"next": "ᏐᏆᎴᏅᎲ",
+			"previous": "ᏥᏛᎵᏱᎵᏒᎢ.",
+			"current": "ᎯᎠ ᎠᎵᎵᏌ.",
+			"next": "ᏐᏆᎴᏅᎲ.",
 			"past": "{0} ᏒᎾ. ᏥᎨᏒ",
 			"future": "ᎾᎿ {0} ᏒᎾ."
 		},
@@ -151,9 +151,9 @@
 	},
 	"narrow": {
 		"year": {
-			"previous": "ᎡᏘ ᏥᎨᏒ",
-			"current": "ᎯᎠ ᏧᏕᏘᏴᏒᏘ",
-			"next": "ᎡᏘᏴᎢ",
+			"previous": "ᎡᏘ. ᏥᎨᏒ",
+			"current": "ᎯᎠ ᏧᏕᏘᏴᏒᏘ.",
+			"next": "ᎡᏘᏴᎢ.",
 			"past": "{0} ᎤᏕ. ᏥᎨᏒ",
 			"future": "ᎾᎿ {0} ᎤᏕ."
 		},
@@ -165,16 +165,16 @@
 			"future": "ᎾᎿ {0} ᎩᏄᏘ."
 		},
 		"month": {
-			"previous": "ᎧᎸᎢ ᏥᎨᏒ",
-			"current": "ᎯᎠ ᎧᎸᎢ",
-			"next": "ᏔᎵᏁ ᎧᎸᎢ",
+			"previous": "ᎧᎸ. ᏥᎨᏒ",
+			"current": "ᎯᎠ ᎧᎸ.",
+			"next": "ᏔᎵᏁ ᎧᎸ.",
 			"past": "{0} ᎧᎸ. ᏥᎨᏒ",
 			"future": "ᎾᎿ {0} ᎧᎸ."
 		},
 		"week": {
-			"previous": "ᏥᏛᎵᏱᎵᏒᎢ",
-			"current": "ᎯᎠ ᎠᎵᎵᏌ",
-			"next": "ᏐᏆᎴᏅᎲ",
+			"previous": "ᏥᏛᎵᏱᎵᏒᎢ.",
+			"current": "ᎯᎠ ᎠᎵᎵᏌ.",
+			"next": "ᏐᏆᎴᏅᎲ.",
 			"past": "{0} ᏒᎾ. ᏥᎨᏒ",
 			"future": "ᎾᎿ {0} ᏒᎾ."
 		},

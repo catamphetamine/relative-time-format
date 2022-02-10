@@ -173,9 +173,9 @@
 			"future": "za {0} kv."
 		},
 		"month": {
-			"previous": "prošlog m.",
-			"current": "ovog m.",
-			"next": "sledećeg m.",
+			"previous": "prošlog mes.",
+			"current": "ovog mes.",
+			"next": "sledećeg mes.",
 			"past": "pre {0} m.",
 			"future": "za {0} m."
 		},

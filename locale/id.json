@@ -18,7 +18,7 @@
 		"month": {
 			"previous": "bulan lalu",
 			"current": "bulan ini",
-			"next": "bulan berikutnya",
+			"next": "bulan depan",
 			"past": "{0} bulan yang lalu",
 			"future": "dalam {0} bulan"
 		},
@@ -56,36 +56,36 @@
 	},
 	"short": {
 		"year": {
-			"previous": "tahun lalu",
-			"current": "tahun ini",
-			"next": "tahun depan",
+			"previous": "thn lalu",
+			"current": "thn ini",
+			"next": "thn depan",
 			"past": "{0} thn lalu",
 			"future": "dlm {0} thn"
 		},
 		"quarter": {
-			"previous": "Kuartal lalu",
-			"current": "kuartal ini",
-			"next": "kuartal berikutnya",
+			"previous": "krtl lalu",
+			"current": "krtl ini",
+			"next": "krtl berikutnya",
 			"past": "{0} krtl. lalu",
 			"future": "dlm {0} krtl."
 		},
 		"month": {
-			"previous": "bulan lalu",
-			"current": "bulan ini",
-			"next": "bulan berikutnya",
+			"previous": "bln lalu",
+			"current": "bln ini",
+			"next": "bln berikutnya",
 			"past": "{0} bln lalu",
 			"future": "dlm {0} bln"
 		},
 		"week": {
-			"previous": "minggu lalu",
-			"current": "minggu ini",
-			"next": "minggu depan",
+			"previous": "mgg lalu",
+			"current": "mgg ini",
+			"next": "mgg depan",
 			"past": "{0} mgg lalu",
 			"future": "dlm {0} mgg"
 		},
 		"day": {
 			"previous": "kemarin",
-			"previous-2": "kemarin dulu",
+			"previous-2": "selumbari",
 			"current": "hari ini",
 			"next": "besok",
 			"next-2": "lusa",
@@ -98,7 +98,7 @@
 			"future": "dalam {0} jam"
 		},
 		"minute": {
-			"current": "menit ini",
+			"current": "mnt ini",
 			"past": "{0} mnt lalu",
 			"future": "dlm {0} mnt"
 		},
@@ -110,36 +110,36 @@
 	},
 	"narrow": {
 		"year": {
-			"previous": "tahun lalu",
-			"current": "tahun ini",
-			"next": "tahun depan",
+			"previous": "thn lalu",
+			"current": "thn ini",
+			"next": "thn depan",
 			"past": "{0} thn lalu",
 			"future": "dlm {0} thn"
 		},
 		"quarter": {
-			"previous": "Kuartal lalu",
-			"current": "kuartal ini",
-			"next": "kuartal berikutnya",
+			"previous": "krtl lalu",
+			"current": "krtl ini",
+			"next": "krtl berikutnya",
 			"past": "{0} krtl. lalu",
 			"future": "dlm {0} krtl."
 		},
 		"month": {
-			"previous": "bulan lalu",
-			"current": "bulan ini",
-			"next": "bulan berikutnya",
+			"previous": "bln lalu",
+			"current": "bln ini",
+			"next": "bln berikutnya",
 			"past": "{0} bln lalu",
 			"future": "dlm {0} bln"
 		},
 		"week": {
-			"previous": "minggu lalu",
-			"current": "minggu ini",
-			"next": "minggu depan",
+			"previous": "mgg lalu",
+			"current": "mgg ini",
+			"next": "mgg depan",
 			"past": "{0} mgg lalu",
 			"future": "dlm {0} mgg"
 		},
 		"day": {
 			"previous": "kemarin",
-			"previous-2": "kemarin dulu",
+			"previous-2": "selumbari",
 			"current": "hari ini",
 			"next": "besok",
 			"next-2": "lusa",
@@ -152,7 +152,7 @@
 			"future": "dalam {0} jam"
 		},
 		"minute": {
-			"current": "menit ini",
+			"current": "mnt ini",
 			"past": "{0} mnt lalu",
 			"future": "dlm {0} mnt"
 		},

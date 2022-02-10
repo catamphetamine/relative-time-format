@@ -10,6 +10,17 @@ import zh from '../locale/zh.json'
 
 import RelativeTimeFormat from './RelativeTimeFormat'
 
+en.tiny = {
+  "year": "{0}yr",
+  "month": "{0}mo",
+  "week": "{0}wk",
+  "day": "{0}d",
+  "hour": "{0}h",
+  "minute": "{0}m",
+  "second": "{0}s",
+  "now": "now"
+}
+
 RelativeTimeFormat.addLocale(ccp)
 RelativeTimeFormat.addLocale(de)
 RelativeTimeFormat.addLocale(en)
@@ -21,6 +32,7 @@ RelativeTimeFormat.addLocale(pt_PT)
 RelativeTimeFormat.addLocale(zh)
 
 // Just so this function code is covered.
+// It's "en" by default.
 RelativeTimeFormat.setDefaultLocale('en')
 
 describe('Intl.RelativeTimeFormat', () => {
@@ -294,20 +306,20 @@ describe('Intl.RelativeTimeFormat', () => {
   })
 
   it('should quantify as "other" when no quantifier function is present for a locale', () => {
-    new RelativeTimeFormat("ccp").format(1, "minute").should.equal("1 𑄟𑄨𑄚𑄨𑄘𑄬")
+    new RelativeTimeFormat("ccp").format(1, "quarter").should.equal("𑄷 𑄖𑄨𑄚𑄟𑄏𑄬")
   })
 
   it('should use quantify for a language of a specific locale', () => {
     // Will use `quantify` for "ar" language.
     new RelativeTimeFormat("ar-AE").format(-1, "year").should.equal("قبل سنة واحدة")
     new RelativeTimeFormat("ar-AE").format(-2, "year").should.equal("قبل سنتين")
-    new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل 3 سنوات")
-    new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل 1.23 سنة")
+    new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل ٣ سنوات")
+    new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل ١٫٢٣ سنة")
   })
 
   it('should use correct quantify for Portuguese ("pt") and European Portuguese ("pt-PT")', () => {
-    new RelativeTimeFormat("pt").format(1.5, "day").should.equal("em 1.5 dia")
-    new RelativeTimeFormat("pt-PT").format(1.5, "day").should.equal("dentro de 1.5 dias")
+    new RelativeTimeFormat("pt").format(1.5, "day").should.equal("em 1,5 dia")
+    new RelativeTimeFormat("pt-PT").format(1.5, "day").should.equal("dentro de 1,5 dias")
   })
 
   it('should show resolved options', () => {
@@ -317,6 +329,14 @@ describe('Intl.RelativeTimeFormat', () => {
       numeric: "always",
       numberingSystem: "latn"
     })
+  })
+
+  it('should support "tiny" style (for `javascript-time-ago`)', () => {
+    expect(new RelativeTimeFormat("en", { style: "tiny", styleFallback: true }).format(-1, "day")).to.equal("1d")
+  })
+
+  it('should fall back to "long" style (for `javascript-time-ago`)', () => {
+    expect(new RelativeTimeFormat("en", { style: "exotic", styleFallback: true }).format(-1, "day")).to.equal("1 day ago")
   })
 
   // Node.js 11.x seems to not support `zh-Hans-CN` on `Intl.NumberFormat` for some reason.

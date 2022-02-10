@@ -4,7 +4,7 @@
 		"year": {
 			"previous": "昨年",
 			"current": "今年",
-			"next": "翌年",
+			"next": "来年",
 			"past": "{0} 年前",
 			"future": "{0} 年後"
 		},
@@ -18,14 +18,14 @@
 		"month": {
 			"previous": "先月",
 			"current": "今月",
-			"next": "翌月",
+			"next": "来月",
 			"past": "{0} か月前",
 			"future": "{0} か月後"
 		},
 		"week": {
 			"previous": "先週",
 			"current": "今週",
-			"next": "翌週",
+			"next": "来週",
 			"past": "{0} 週間前",
 			"future": "{0} 週間後"
 		},
@@ -58,7 +58,7 @@
 		"year": {
 			"previous": "昨年",
 			"current": "今年",
-			"next": "翌年",
+			"next": "来年",
 			"past": "{0} 年前",
 			"future": "{0} 年後"
 		},
@@ -72,14 +72,14 @@
 		"month": {
 			"previous": "先月",
 			"current": "今月",
-			"next": "翌月",
+			"next": "来月",
 			"past": "{0} か月前",
 			"future": "{0} か月後"
 		},
 		"week": {
 			"previous": "先週",
 			"current": "今週",
-			"next": "翌週",
+			"next": "来週",
 			"past": "{0} 週間前",
 			"future": "{0} 週間後"
 		},
@@ -112,7 +112,7 @@
 		"year": {
 			"previous": "昨年",
 			"current": "今年",
-			"next": "翌年",
+			"next": "来年",
 			"past": "{0}年前",
 			"future": "{0}年後"
 		},
@@ -126,14 +126,14 @@
 		"month": {
 			"previous": "先月",
 			"current": "今月",
-			"next": "翌月",
+			"next": "来月",
 			"past": "{0}か月前",
 			"future": "{0}か月後"
 		},
 		"week": {
 			"previous": "先週",
 			"current": "今週",
-			"next": "翌週",
+			"next": "来週",
 			"past": "{0}週間前",
 			"future": "{0}週間後"
 		},

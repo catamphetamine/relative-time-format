@@ -3,7 +3,7 @@
 	"long": {
 		"year": {
 			"previous": "anuraidh",
-			"current": "an bhliain seo",
+			"current": "i mbliana",
 			"next": "an bhliain seo chugainn",
 			"past": {
 				"one": "{0} bhliain ó shin",
@@ -73,12 +73,10 @@
 		"hour": {
 			"current": "an uair seo",
 			"past": {
-				"few": "{0} huaire an chloig ó shin",
 				"many": "{0} n-uaire an chloig ó shin",
 				"other": "{0} uair an chloig ó shin"
 			},
 			"future": {
-				"few": "i gceann {0} huaire an chloig",
 				"many": "i gceann {0} n-uaire an chloig",
 				"other": "i gceann {0} uair an chloig"
 			}
@@ -105,7 +103,7 @@
 	"short": {
 		"year": {
 			"previous": "anuraidh",
-			"current": "an bhl. seo",
+			"current": "i mbl.",
 			"next": "an bhl. seo chugainn",
 			"past": {
 				"one": "{0} bhl. ó shin",
@@ -197,7 +195,7 @@
 	"narrow": {
 		"year": {
 			"previous": "anuraidh",
-			"current": "an bhl. seo",
+			"current": "i mbl.",
 			"next": "an bhl. seo chugainn",
 			"past": {
 				"one": "-{0} bhl.",

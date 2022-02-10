@@ -180,9 +180,9 @@
 			"future": "in {0} qtr"
 		},
 		"month": {
-			"previous": "last mth",
-			"current": "this mth",
-			"next": "next mth",
+			"previous": "last mo",
+			"current": "this mo",
+			"next": "next mo",
 			"past": "{0} mo ago",
 			"future": "in {0} mo"
 		},

@@ -227,5 +227,70 @@
 			"past": "{0} sec. ago",
 			"future": "in {0} sec."
 		}
+	},
+	"short-time": {
+		"year": "{0} yr.",
+		"month": "{0} mo.",
+		"week": "{0} wk.",
+		"day": {
+			"one": "{0} day",
+			"other": "{0} days"
+		},
+		"hour": "{0} hr.",
+		"minute": "{0} min.",
+		"second": "{0} sec.",
+		"now": "now"
+	},
+	"long-time": {
+		"year": {
+			"one": "{0} year",
+			"other": "{0} years"
+		},
+		"month": {
+			"one": "{0} month",
+			"other": "{0} months"
+		},
+		"week": {
+			"one": "{0} week",
+			"other": "{0} weeks"
+		},
+		"day": {
+			"one": "{0} day",
+			"other": "{0} days"
+		},
+		"hour": {
+			"one": "{0} hour",
+			"other": "{0} hours"
+		},
+		"minute": {
+			"one": "{0} minute",
+			"other": "{0} minutes"
+		},
+		"second": {
+			"one": "{0} second",
+			"other": "{0} seconds"
+		},
+		"now": {
+			"future": "in a moment",
+			"past": "just now"
+		}
+	},
+	"now": {
+		"locale": "en",
+		"style": "now",
+		"now": {
+			"future": "in a moment",
+			"past": "just now"
+		}
+	},
+	"tiny": {
+		"year": "{0}yr",
+		"month": "{0}mo",
+		"week": "{0}wk",
+		"day": "{0}d",
+		"hour": "{0}h",
+		"minute": "{0}m",
+		"second": "{0}s",
+		"now": "now"
 	}
 }
