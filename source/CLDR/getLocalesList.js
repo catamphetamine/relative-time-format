@@ -6,6 +6,6 @@ import path from 'path'
  * @return {string[]}
  */
 export default function getLocalesList() {
-	return fs.readdirSync(path.join(__dirname, '../../node_modules/cldr-dates-full/main/'))
-		.filter(name => fs.statSync(path.join(__dirname, '../../node_modules/cldr-dates-full/main', name)).isDirectory())
+	return fs.readdirSync(path.resolve('./node_modules/cldr-dates-full/main/'))
+		.filter(name => fs.statSync(path.join('./node_modules/cldr-dates-full/main', name)).isDirectory())
 }

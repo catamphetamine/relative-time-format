@@ -1,3 +1,5 @@
+import RelativeTimeFormat from './RelativeTimeFormat.js'
+
 import ccp from '../locale/ccp.json'
 import de from '../locale/de.json'
 import en from '../locale/en.json'
@@ -7,8 +9,6 @@ import ar_AE from '../locale/ar-AE.json'
 import pt from '../locale/pt.json'
 import pt_PT from '../locale/pt-PT.json'
 import zh from '../locale/zh.json'
-
-import RelativeTimeFormat from './RelativeTimeFormat'
 
 en.tiny = {
   "year": "{0}yr",

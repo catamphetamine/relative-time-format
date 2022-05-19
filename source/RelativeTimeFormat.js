@@ -3,10 +3,10 @@ import {
   setDefaultLocale,
   getLocaleData,
   addLocaleData
-} from './LocaleDataStore'
+} from './LocaleDataStore.js'
 
-import resolveLocale from './resolveLocale'
-import PluralRules from './PluralRules'
+import resolveLocale from './resolveLocale.js'
+import PluralRules from './PluralRules.js'
 // Importing `PluralRule` polyfill from a separate package
 // results in a bundle that is larger by 1kB for some reason.
 // import PluralRules from 'intl-plural-rules-polyfill/cardinal'
@@ -48,10 +48,6 @@ const LOCALE_MATCHER_VALUES = [
  * https://github.com/tc39/proposal-intl-relative-time/issues/55
  */
 export default class RelativeTimeFormat {
-  numeric = "always"
-  style = "long"
-  localeMatcher = "lookup"
-
   /**
    * @param {(string|string[])} [locales] - Preferred locales (or locale).
    * @param {Object} [options] - Formatting options.
@@ -67,6 +63,10 @@ export default class RelativeTimeFormat {
       styleFallback,
       localeMatcher
     } = options
+
+    this.numeric = "always"
+    this.style = "long"
+    this.localeMatcher = "lookup"
 
     // Set `numeric` option.
     if (numeric !== undefined) {

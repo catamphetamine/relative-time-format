@@ -193,6 +193,7 @@ $.as = $.am
 $.az = $.af
 $.bg = $.af
 $.bn = $.am
+$.brx = $.af
 $.ca = $.ast
 $.ce = $.af
 $.chr = $.af

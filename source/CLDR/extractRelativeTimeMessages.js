@@ -1,5 +1,3 @@
-// import { isEqual } from 'lodash'
-
 // Valid time units.
 // Copy-pasted from `RelativeTimeFormat.js`.
 export const UNITS = [

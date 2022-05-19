@@ -1,6 +1,6 @@
 import {
   resolveLocale as resolveLocaleForData
-} from './LocaleDataStore'
+} from './LocaleDataStore.js'
 
 /**
  * Resolves a locale to a supported one (if any).

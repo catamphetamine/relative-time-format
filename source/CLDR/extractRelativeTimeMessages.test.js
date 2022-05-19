@@ -1,5 +1,4 @@
-import extractRelativeTimeMessages from './extractRelativeTimeMessages'
-import { short as englishShort, long as englishLong } from '../../locale/en'
+import extractRelativeTimeMessages from './extractRelativeTimeMessages.js'
 
 describe('CLDR', () => {
 	it('should parse Unicode CLDR locale data', () => {

@@ -1,1 +1,1 @@
-export { default } from './modules/RelativeTimeFormat'
+export { default } from './modules/RelativeTimeFormat.js'

@@ -1,4 +1,4 @@
-import PluralRules from './PluralRules'
+import PluralRules from './PluralRules.js'
 
 describe('Intl.PluralRules', () => {
 	it('should validate "locales" argument', () => {

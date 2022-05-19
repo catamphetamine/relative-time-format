@@ -1,5 +1,5 @@
-import resolveLocale from './resolveLocale'
-import { addLocaleData, getLocaleData } from './LocaleDataStore'
+import resolveLocale from './resolveLocale.js'
+import { addLocaleData, getLocaleData } from './LocaleDataStore.js'
 
 describe('resolveLocale', () => {
   it('should resolve locale', () => {

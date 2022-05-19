@@ -1,4 +1,6 @@
-import RelativeTimeFormat from '../index'
+import RelativeTimeFormat from '../index.js'
+import Library from '../index.cjs'
+
 import en from '../locale/en.json'
 
 RelativeTimeFormat.addLocale(en)
@@ -9,7 +11,6 @@ describe(`exports`, () => {
 	})
 
 	it(`should export CommonJS`, () => {
-		const Library = require('../index.commonjs')
 		Library.default.addLocale(en)
 		new Library.default('en').format(1, 'day').should.be.a('string')
 	})

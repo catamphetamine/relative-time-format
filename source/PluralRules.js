@@ -2,8 +2,8 @@
 // results in a bundle that is larger by 1kB for some reason.
 // export { default as default } from 'intl-plural-rules-polyfill/cardinal'
 
-import PluralRuleFunctions from "./PluralRuleFunctions"
-import getPluralRulesLocale from "./getPluralRulesLocale"
+import PluralRuleFunctions from "./PluralRuleFunctions.js"
+import getPluralRulesLocale from "./getPluralRulesLocale.js"
 
 /**
  * `Intl.PluralRules` polyfill.
