@@ -603,6 +603,7 @@
     "cldr-dates-full": "^41.0.0",
     "cross-env": "^7.0.3",
     "fs-extra": "^10.1.0",
+    "handlebars": "^4.5.3",
     "istanbul": "^1.1.0-alpha.1",
     "lodash-es": "^4.17.21",
     "make-plural": "^7.1.0",
