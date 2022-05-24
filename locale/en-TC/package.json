@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-TC",
+	"main": "../en-TC.json",
+	"module": "../en-TC.json.js",
+	"types": "../en-TC.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-TC.json.d.ts",
+			"import": "../en-TC.json.js",
+			"require": "../en-TC.json"
+		}
+	},
+	"sideEffects": false
+}

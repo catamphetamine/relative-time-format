@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/hi-Latn",
+	"main": "../hi-Latn.json",
+	"module": "../hi-Latn.json.js",
+	"types": "../hi-Latn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../hi-Latn.json.d.ts",
+			"import": "../hi-Latn.json.js",
+			"require": "../hi-Latn.json"
+		}
+	},
+	"sideEffects": false
+}

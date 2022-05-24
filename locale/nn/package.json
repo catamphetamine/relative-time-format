@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/nn",
+	"main": "../nn.json",
+	"module": "../nn.json.js",
+	"types": "../nn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../nn.json.d.ts",
+			"import": "../nn.json.js",
+			"require": "../nn.json"
+		}
+	},
+	"sideEffects": false
+}

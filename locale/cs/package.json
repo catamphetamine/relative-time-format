@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/cs",
+	"main": "../cs.json",
+	"module": "../cs.json.js",
+	"types": "../cs.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../cs.json.d.ts",
+			"import": "../cs.json.js",
+			"require": "../cs.json"
+		}
+	},
+	"sideEffects": false
+}

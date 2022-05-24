@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-SZ",
+	"main": "../en-SZ.json",
+	"module": "../en-SZ.json.js",
+	"types": "../en-SZ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-SZ.json.d.ts",
+			"import": "../en-SZ.json.js",
+			"require": "../en-SZ.json"
+		}
+	},
+	"sideEffects": false
+}

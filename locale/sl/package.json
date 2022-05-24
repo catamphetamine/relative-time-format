@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sl",
+	"main": "../sl.json",
+	"module": "../sl.json.js",
+	"types": "../sl.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sl.json.d.ts",
+			"import": "../sl.json.js",
+			"require": "../sl.json"
+		}
+	},
+	"sideEffects": false
+}

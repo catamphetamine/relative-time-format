@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-IE",
+	"main": "../en-IE.json",
+	"module": "../en-IE.json.js",
+	"types": "../en-IE.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-IE.json.d.ts",
+			"import": "../en-IE.json.js",
+			"require": "../en-IE.json"
+		}
+	},
+	"sideEffects": false
+}

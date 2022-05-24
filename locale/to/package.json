@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/to",
+	"main": "../to.json",
+	"module": "../to.json.js",
+	"types": "../to.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../to.json.d.ts",
+			"import": "../to.json.js",
+			"require": "../to.json"
+		}
+	},
+	"sideEffects": false
+}

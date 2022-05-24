@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ia",
+	"main": "../ia.json",
+	"module": "../ia.json.js",
+	"types": "../ia.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ia.json.d.ts",
+			"import": "../ia.json.js",
+			"require": "../ia.json"
+		}
+	},
+	"sideEffects": false
+}

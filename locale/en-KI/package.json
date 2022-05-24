@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-KI",
+	"main": "../en-KI.json",
+	"module": "../en-KI.json.js",
+	"types": "../en-KI.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-KI.json.d.ts",
+			"import": "../en-KI.json.js",
+			"require": "../en-KI.json"
+		}
+	},
+	"sideEffects": false
+}

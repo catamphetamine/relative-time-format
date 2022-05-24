@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/qu",
+	"main": "../qu.json",
+	"module": "../qu.json.js",
+	"types": "../qu.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../qu.json.d.ts",
+			"import": "../qu.json.js",
+			"require": "../qu.json"
+		}
+	},
+	"sideEffects": false
+}

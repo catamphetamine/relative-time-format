@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sq",
+	"main": "../sq.json",
+	"module": "../sq.json.js",
+	"types": "../sq.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sq.json.d.ts",
+			"import": "../sq.json.js",
+			"require": "../sq.json"
+		}
+	},
+	"sideEffects": false
+}

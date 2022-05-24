@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-ZW",
+	"main": "../en-ZW.json",
+	"module": "../en-ZW.json.js",
+	"types": "../en-ZW.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-ZW.json.d.ts",
+			"import": "../en-ZW.json.js",
+			"require": "../en-ZW.json"
+		}
+	},
+	"sideEffects": false
+}

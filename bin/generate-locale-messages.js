@@ -286,7 +286,7 @@ function writeLocaleData(locale, { pluralRuleFunctions, pluralRuleFunctionAliase
 	}
 
 	for (const style of styles) {
-		// Create `${locale}/${style}.json` files in the "locales/${locale}" directory.
+		// Create `${locale}/${style}.json` file in the "locales/${locale}" directory.
 		fs.outputFileSync(
 			path.join('./locale', locale, `${style}.json`),
 			JSON.stringify({
@@ -294,6 +294,37 @@ function writeLocaleData(locale, { pluralRuleFunctions, pluralRuleFunctionAliase
 				style,
 				...localeMessages[style]
 			}, null, '\t')
+		)
+
+		// Create `${locale}/${style}.json.js` file in the "locales/${locale}" directory.
+		//
+		// Stupid Node.js can't even `import` JSON files.
+		// https://stackoverflow.com/questions/72348042/typeerror-err-unknown-file-extension-unknown-file-extension-json-for-node
+		// Using a `*.json.js` duplicate file workaround.
+		//
+		fs.outputFileSync(
+			path.join('./locale', locale, `${style}.json.js`),
+			'export default ' + JSON.stringify({
+				locale,
+				style,
+				...localeMessages[style]
+			}, null, '\t')
+		)
+
+		// Create `${locale}/${style}.json.d.ts` file in the "locales/${locale}" directory.
+		fs.outputFileSync(
+			path.join('./locale', locale, `${style}.json.d.ts`),
+			`
+import { Labels } from '../../index';
+
+type LocaleLabelsForStyle = Labels & {
+	locale: '${locale}';
+	style: '${style}';
+};
+
+declare const localeLabels: LocaleLabelsForStyle;
+export default localeLabels;
+			`.trim()
 		)
 	}
 
@@ -303,6 +334,52 @@ function writeLocaleData(locale, { pluralRuleFunctions, pluralRuleFunctionAliase
 		JSON.stringify({
 			locale,
 			...localeMessages
+		}, null, '\t')
+	)
+
+	// Create `${locale}.json.js` file in the "locales" directory.
+	//
+	// Stupid Node.js can't even `import` JSON files.
+	// https://stackoverflow.com/questions/72348042/typeerror-err-unknown-file-extension-unknown-file-extension-json-for-node
+	// Using a `*.json.js` duplicate file workaround.
+	//
+	fs.outputFileSync(
+		path.join('./locale', `${locale}.json.js`),
+		'export default ' + JSON.stringify({
+			locale,
+			...localeMessages
+		}, null, '\t')
+	)
+
+	// Create `${locale}.json.d.ts` file in the "locales" directory.
+	fs.outputFileSync(
+		path.join('./locale', `${locale}.json.d.ts`),
+		`
+import { LocaleData } from '../index';
+
+declare const localeData: LocaleData;
+export default localeData;
+		`.trim()
+	)
+
+	// Create `${locale}/package.json` file in the "locales/${locale}" directory.
+	fs.outputFileSync(
+		path.join('./locale', locale, 'package.json'),
+		JSON.stringify({
+			private: true,
+			name: `relative-time-format/locale/${locale}`,
+			main: `../${locale}.json`,
+			module: `../${locale}.json.js`,
+			types: `../${locale}.json.d.ts`,
+			type: 'module',
+			exports: {
+				'.': {
+					types: `../${locale}.json.d.ts`,
+					import: `../${locale}.json.js`,
+					require: `../${locale}.json`
+				}
+			},
+			sideEffects: false
 		}, null, '\t')
 	)
 }
@@ -349,11 +426,24 @@ function addLocaleExports(ALL_LOCALES) {
 	packageJson.exports = {
 		...packageJson.exports,
 		...ALL_LOCALES.reduce((all, locale) => {
-			all[`./locale/${locale}.json`] = `./locale/${locale}.json`
+			all[`./locale/${locale}.json`] = {
+				types: `./locale/${locale}.json.d.ts`,
+				import: `./locale/${locale}.json.js`,
+				require: `./locale/${locale}.json`
+			}
+			all[`./locale/${locale}`] = {
+				types: `./locale/${locale}.json.d.ts`,
+				import: `./locale/${locale}.json.js`,
+				require: `./locale/${locale}.json`
+			}
 			return all
 		}, {})
 	}
 
 	// Save `package.json` file.
 	fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2) + '\n', 'utf8')
+}
+
+function getStyleVariableName(style) {
+	return style.replace(/[a-zA-Z_\d]/g, '_')
 }

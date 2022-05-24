@@ -331,12 +331,11 @@ describe('Intl.RelativeTimeFormat', () => {
     })
   })
 
-  it('should support "tiny" style (for `javascript-time-ago`)', () => {
-    expect(new RelativeTimeFormat("en", { style: "tiny", styleFallback: true }).format(-1, "day")).to.equal("1d")
-  })
-
-  it('should fall back to "long" style (for `javascript-time-ago`)', () => {
-    expect(new RelativeTimeFormat("en", { style: "exotic", styleFallback: true }).format(-1, "day")).to.equal("1 day ago")
+  it('should support short labels definition (like the ones used `javascript-time-ago`) (not used)', () => {
+    const originalNarrowSecondLabels = en.narrow.second
+    en.narrow.second = '{0}s'
+    expect(new RelativeTimeFormat("en", { style: "narrow" }).format(-1, "second")).to.equal("1s")
+    en.narrow.second = originalNarrowSecondLabels
   })
 
   // Node.js 11.x seems to not support `zh-Hans-CN` on `Intl.NumberFormat` for some reason.

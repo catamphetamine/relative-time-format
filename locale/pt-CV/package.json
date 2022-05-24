@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/pt-CV",
+	"main": "../pt-CV.json",
+	"module": "../pt-CV.json.js",
+	"types": "../pt-CV.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../pt-CV.json.d.ts",
+			"import": "../pt-CV.json.js",
+			"require": "../pt-CV.json"
+		}
+	},
+	"sideEffects": false
+}

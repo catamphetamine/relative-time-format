@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ce",
+	"main": "../ce.json",
+	"module": "../ce.json.js",
+	"types": "../ce.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ce.json.d.ts",
+			"import": "../ce.json.js",
+			"require": "../ce.json"
+		}
+	},
+	"sideEffects": false
+}

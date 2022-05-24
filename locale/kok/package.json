@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/kok",
+	"main": "../kok.json",
+	"module": "../kok.json.js",
+	"types": "../kok.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../kok.json.d.ts",
+			"import": "../kok.json.js",
+			"require": "../kok.json"
+		}
+	},
+	"sideEffects": false
+}

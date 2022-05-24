@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-NZ",
+	"main": "../en-NZ.json",
+	"module": "../en-NZ.json.js",
+	"types": "../en-NZ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-NZ.json.d.ts",
+			"import": "../en-NZ.json.js",
+			"require": "../en-NZ.json"
+		}
+	},
+	"sideEffects": false
+}

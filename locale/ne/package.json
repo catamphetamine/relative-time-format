@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ne",
+	"main": "../ne.json",
+	"module": "../ne.json.js",
+	"types": "../ne.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ne.json.d.ts",
+			"import": "../ne.json.js",
+			"require": "../ne.json"
+		}
+	},
+	"sideEffects": false
+}

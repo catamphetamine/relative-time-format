@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-HK",
+	"main": "../en-HK.json",
+	"module": "../en-HK.json.js",
+	"types": "../en-HK.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-HK.json.d.ts",
+			"import": "../en-HK.json.js",
+			"require": "../en-HK.json"
+		}
+	},
+	"sideEffects": false
+}

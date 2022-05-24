@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ha",
+	"main": "../ha.json",
+	"module": "../ha.json.js",
+	"types": "../ha.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ha.json.d.ts",
+			"import": "../ha.json.js",
+			"require": "../ha.json"
+		}
+	},
+	"sideEffects": false
+}

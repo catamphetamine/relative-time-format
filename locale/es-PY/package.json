@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-PY",
+	"main": "../es-PY.json",
+	"module": "../es-PY.json.js",
+	"types": "../es-PY.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-PY.json.d.ts",
+			"import": "../es-PY.json.js",
+			"require": "../es-PY.json"
+		}
+	},
+	"sideEffects": false
+}

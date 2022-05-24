@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-AR",
+	"main": "../es-AR.json",
+	"module": "../es-AR.json.js",
+	"types": "../es-AR.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-AR.json.d.ts",
+			"import": "../es-AR.json.js",
+			"require": "../es-AR.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ast",
+	"main": "../ast.json",
+	"module": "../ast.json.js",
+	"types": "../ast.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ast.json.d.ts",
+			"import": "../ast.json.js",
+			"require": "../ast.json"
+		}
+	},
+	"sideEffects": false
+}

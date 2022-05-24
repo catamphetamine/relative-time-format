@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/pt-GW",
+	"main": "../pt-GW.json",
+	"module": "../pt-GW.json.js",
+	"types": "../pt-GW.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../pt-GW.json.d.ts",
+			"import": "../pt-GW.json.js",
+			"require": "../pt-GW.json"
+		}
+	},
+	"sideEffects": false
+}

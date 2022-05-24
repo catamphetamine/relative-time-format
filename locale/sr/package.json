@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sr",
+	"main": "../sr.json",
+	"module": "../sr.json.js",
+	"types": "../sr.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sr.json.d.ts",
+			"import": "../sr.json.js",
+			"require": "../sr.json"
+		}
+	},
+	"sideEffects": false
+}

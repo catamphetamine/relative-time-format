@@ -27,7 +27,7 @@ If you're not using a bundler then use a [standalone version from a CDN](#cdn).
 
 ```js
 import RelativeTimeFormat from "relative-time-format"
-import en from "relative-time-format/locale/en.json"
+import en from "relative-time-format/locale/en"
 
 RelativeTimeFormat.addLocale(en)
 
@@ -82,7 +82,7 @@ npm run update-locales
 import TimeAgo from 'javascript-time-ago'
 
 // Load locale-specific relative date/time formatting rules.
-import en from 'javascript-time-ago/locale/en.json'
+import en from 'javascript-time-ago/locale/en'
 
 // Add locale-specific relative date/time formatting rules.
 TimeAgo.addLocale(en)
@@ -111,7 +111,7 @@ One can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdeliv
 <script src="https://unpkg.com/relative-time-format@[version]/bundle/polyfill.js"></script>
 
 <script>
-  var en = ... // Somehow import `relative-time-format/locale/en.json`.
+  var en = ... // Somehow import `relative-time-format/locale/en`.
   RelativeTimeFormat.addLocale(en)
   console.log(new RelativeTimeFormat('en').format(-1, 'days'))
 </script>

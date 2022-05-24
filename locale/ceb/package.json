@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ceb",
+	"main": "../ceb.json",
+	"module": "../ceb.json.js",
+	"types": "../ceb.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ceb.json.d.ts",
+			"import": "../ceb.json.js",
+			"require": "../ceb.json"
+		}
+	},
+	"sideEffects": false
+}

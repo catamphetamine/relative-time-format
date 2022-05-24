@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/pt-GQ",
+	"main": "../pt-GQ.json",
+	"module": "../pt-GQ.json.js",
+	"types": "../pt-GQ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../pt-GQ.json.d.ts",
+			"import": "../pt-GQ.json.js",
+			"require": "../pt-GQ.json"
+		}
+	},
+	"sideEffects": false
+}

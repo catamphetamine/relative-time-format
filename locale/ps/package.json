@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ps",
+	"main": "../ps.json",
+	"module": "../ps.json.js",
+	"types": "../ps.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ps.json.d.ts",
+			"import": "../ps.json.js",
+			"require": "../ps.json"
+		}
+	},
+	"sideEffects": false
+}

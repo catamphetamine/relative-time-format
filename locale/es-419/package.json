@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-419",
+	"main": "../es-419.json",
+	"module": "../es-419.json.js",
+	"types": "../es-419.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-419.json.d.ts",
+			"import": "../es-419.json.js",
+			"require": "../es-419.json"
+		}
+	},
+	"sideEffects": false
+}

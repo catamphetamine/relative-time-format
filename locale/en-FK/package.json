@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-FK",
+	"main": "../en-FK.json",
+	"module": "../en-FK.json.js",
+	"types": "../en-FK.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-FK.json.d.ts",
+			"import": "../en-FK.json.js",
+			"require": "../en-FK.json"
+		}
+	},
+	"sideEffects": false
+}

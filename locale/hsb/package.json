@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/hsb",
+	"main": "../hsb.json",
+	"module": "../hsb.json.js",
+	"types": "../hsb.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../hsb.json.d.ts",
+			"import": "../hsb.json.js",
+			"require": "../hsb.json"
+		}
+	},
+	"sideEffects": false
+}

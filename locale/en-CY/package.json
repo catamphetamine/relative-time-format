@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-CY",
+	"main": "../en-CY.json",
+	"module": "../en-CY.json.js",
+	"types": "../en-CY.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-CY.json.d.ts",
+			"import": "../en-CY.json.js",
+			"require": "../en-CY.json"
+		}
+	},
+	"sideEffects": false
+}

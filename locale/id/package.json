@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/id",
+	"main": "../id.json",
+	"module": "../id.json.js",
+	"types": "../id.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../id.json.d.ts",
+			"import": "../id.json.js",
+			"require": "../id.json"
+		}
+	},
+	"sideEffects": false
+}

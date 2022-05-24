@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-PG",
+	"main": "../en-PG.json",
+	"module": "../en-PG.json.js",
+	"types": "../en-PG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-PG.json.d.ts",
+			"import": "../en-PG.json.js",
+			"require": "../en-PG.json"
+		}
+	},
+	"sideEffects": false
+}

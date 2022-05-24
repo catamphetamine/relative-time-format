@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ti",
+	"main": "../ti.json",
+	"module": "../ti.json.js",
+	"types": "../ti.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ti.json.d.ts",
+			"import": "../ti.json.js",
+			"require": "../ti.json"
+		}
+	},
+	"sideEffects": false
+}

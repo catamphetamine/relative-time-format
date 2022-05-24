@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-BO",
+	"main": "../es-BO.json",
+	"module": "../es-BO.json.js",
+	"types": "../es-BO.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-BO.json.d.ts",
+			"import": "../es-BO.json.js",
+			"require": "../es-BO.json"
+		}
+	},
+	"sideEffects": false
+}

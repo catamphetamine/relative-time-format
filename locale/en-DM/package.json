@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-DM",
+	"main": "../en-DM.json",
+	"module": "../en-DM.json.js",
+	"types": "../en-DM.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-DM.json.d.ts",
+			"import": "../en-DM.json.js",
+			"require": "../en-DM.json"
+		}
+	},
+	"sideEffects": false
+}

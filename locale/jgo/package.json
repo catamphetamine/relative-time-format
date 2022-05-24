@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/jgo",
+	"main": "../jgo.json",
+	"module": "../jgo.json.js",
+	"types": "../jgo.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../jgo.json.d.ts",
+			"import": "../jgo.json.js",
+			"require": "../jgo.json"
+		}
+	},
+	"sideEffects": false
+}

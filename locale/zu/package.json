@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/zu",
+	"main": "../zu.json",
+	"module": "../zu.json.js",
+	"types": "../zu.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../zu.json.d.ts",
+			"import": "../zu.json.js",
+			"require": "../zu.json"
+		}
+	},
+	"sideEffects": false
+}

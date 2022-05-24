@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-GB",
+	"main": "../en-GB.json",
+	"module": "../en-GB.json.js",
+	"types": "../en-GB.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-GB.json.d.ts",
+			"import": "../en-GB.json.js",
+			"require": "../en-GB.json"
+		}
+	},
+	"sideEffects": false
+}

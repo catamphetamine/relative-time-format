@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sr-Latn-BA",
+	"main": "../sr-Latn-BA.json",
+	"module": "../sr-Latn-BA.json.js",
+	"types": "../sr-Latn-BA.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sr-Latn-BA.json.d.ts",
+			"import": "../sr-Latn-BA.json.js",
+			"require": "../sr-Latn-BA.json"
+		}
+	},
+	"sideEffects": false
+}

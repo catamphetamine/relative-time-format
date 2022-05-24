@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/brx",
+	"main": "../brx.json",
+	"module": "../brx.json.js",
+	"types": "../brx.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../brx.json.d.ts",
+			"import": "../brx.json.js",
+			"require": "../brx.json"
+		}
+	},
+	"sideEffects": false
+}

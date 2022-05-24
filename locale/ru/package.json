@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ru",
+	"main": "../ru.json",
+	"module": "../ru.json.js",
+	"types": "../ru.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ru.json.d.ts",
+			"import": "../ru.json.js",
+			"require": "../ru.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-BZ",
+	"main": "../en-BZ.json",
+	"module": "../en-BZ.json.js",
+	"types": "../en-BZ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-BZ.json.d.ts",
+			"import": "../en-BZ.json.js",
+			"require": "../en-BZ.json"
+		}
+	},
+	"sideEffects": false
+}

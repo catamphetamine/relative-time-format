@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-MW",
+	"main": "../en-MW.json",
+	"module": "../en-MW.json.js",
+	"types": "../en-MW.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-MW.json.d.ts",
+			"import": "../en-MW.json.js",
+			"require": "../en-MW.json"
+		}
+	},
+	"sideEffects": false
+}

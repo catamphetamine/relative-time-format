@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/lo",
+	"main": "../lo.json",
+	"module": "../lo.json.js",
+	"types": "../lo.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../lo.json.d.ts",
+			"import": "../lo.json.js",
+			"require": "../lo.json"
+		}
+	},
+	"sideEffects": false
+}

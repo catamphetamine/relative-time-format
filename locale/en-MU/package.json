@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-MU",
+	"main": "../en-MU.json",
+	"module": "../en-MU.json.js",
+	"types": "../en-MU.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-MU.json.d.ts",
+			"import": "../en-MU.json.js",
+			"require": "../en-MU.json"
+		}
+	},
+	"sideEffects": false
+}

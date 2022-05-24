@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/zh-Hant",
+	"main": "../zh-Hant.json",
+	"module": "../zh-Hant.json.js",
+	"types": "../zh-Hant.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../zh-Hant.json.d.ts",
+			"import": "../zh-Hant.json.js",
+			"require": "../zh-Hant.json"
+		}
+	},
+	"sideEffects": false
+}

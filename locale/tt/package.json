@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/tt",
+	"main": "../tt.json",
+	"module": "../tt.json.js",
+	"types": "../tt.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../tt.json.d.ts",
+			"import": "../tt.json.js",
+			"require": "../tt.json"
+		}
+	},
+	"sideEffects": false
+}

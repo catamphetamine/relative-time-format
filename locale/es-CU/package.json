@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-CU",
+	"main": "../es-CU.json",
+	"module": "../es-CU.json.js",
+	"types": "../es-CU.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-CU.json.d.ts",
+			"import": "../es-CU.json.js",
+			"require": "../es-CU.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/gl",
+	"main": "../gl.json",
+	"module": "../gl.json.js",
+	"types": "../gl.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../gl.json.d.ts",
+			"import": "../gl.json.js",
+			"require": "../gl.json"
+		}
+	},
+	"sideEffects": false
+}

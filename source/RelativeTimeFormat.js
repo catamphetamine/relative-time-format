@@ -54,13 +54,11 @@ export default class RelativeTimeFormat {
    * @param {string} [options.style="long"] - One of: "long", "short", "narrow".
    * @param {string} [options.numeric="always"] - (Version >= 2) One of: "always", "auto".
    * @param {string} [options.localeMatcher="lookup"] - One of: "lookup", "best fit". Currently only "lookup" is supported.
-   * @param {boolean} [options.styleFallback] - If "style" is missing from locale data then fall back to an existing one (for example, "long"). Is used in `javascript-time-ago`.
    */
   constructor(locales = [], options = {}) {
     const {
       numeric,
       style,
-      styleFallback,
       localeMatcher
     } = options
 
@@ -78,7 +76,7 @@ export default class RelativeTimeFormat {
 
     // Set `style` option.
     if (style !== undefined) {
-      if (STYLE_VALUES.indexOf(style) < 0 && !styleFallback) {
+      if (STYLE_VALUES.indexOf(style) < 0) {
         throw new RangeError(`Invalid "style" option: ${style}`)
       }
       this.style = style
@@ -125,17 +123,6 @@ export default class RelativeTimeFormat {
     this.locale = resolveLocale(this.locale, {
       localeMatcher: this.localeMatcher
     })
-
-    // Fall back to another style if `style` is not supported for the `locale`.
-    if (styleFallback) {
-      const styles = Object.keys(getLocaleData(this.locale))
-      for (const style of [this.style, ...STYLE_VALUES, styles[0]]) {
-        if (styles.indexOf(style) >= 0) {
-          this.style = style
-          break
-        }
-      }
-    }
   }
 
   /**

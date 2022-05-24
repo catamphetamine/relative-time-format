@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ku",
+	"main": "../ku.json",
+	"module": "../ku.json.js",
+	"types": "../ku.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ku.json.d.ts",
+			"import": "../ku.json.js",
+			"require": "../ku.json"
+		}
+	},
+	"sideEffects": false
+}

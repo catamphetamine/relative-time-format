@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ur-IN",
+	"main": "../ur-IN.json",
+	"module": "../ur-IN.json.js",
+	"types": "../ur-IN.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ur-IN.json.d.ts",
+			"import": "../ur-IN.json.js",
+			"require": "../ur-IN.json"
+		}
+	},
+	"sideEffects": false
+}

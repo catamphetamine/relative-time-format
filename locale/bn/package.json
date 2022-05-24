@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/bn",
+	"main": "../bn.json",
+	"module": "../bn.json.js",
+	"types": "../bn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../bn.json.d.ts",
+			"import": "../bn.json.js",
+			"require": "../bn.json"
+		}
+	},
+	"sideEffects": false
+}

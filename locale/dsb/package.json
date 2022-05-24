@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/dsb",
+	"main": "../dsb.json",
+	"module": "../dsb.json.js",
+	"types": "../dsb.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../dsb.json.d.ts",
+			"import": "../dsb.json.js",
+			"require": "../dsb.json"
+		}
+	},
+	"sideEffects": false
+}

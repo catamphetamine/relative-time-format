@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/pt-MZ",
+	"main": "../pt-MZ.json",
+	"module": "../pt-MZ.json.js",
+	"types": "../pt-MZ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../pt-MZ.json.d.ts",
+			"import": "../pt-MZ.json.js",
+			"require": "../pt-MZ.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ig",
+	"main": "../ig.json",
+	"module": "../ig.json.js",
+	"types": "../ig.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ig.json.d.ts",
+			"import": "../ig.json.js",
+			"require": "../ig.json"
+		}
+	},
+	"sideEffects": false
+}

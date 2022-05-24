@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/hu",
+	"main": "../hu.json",
+	"module": "../hu.json.js",
+	"types": "../hu.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../hu.json.d.ts",
+			"import": "../hu.json.js",
+			"require": "../hu.json"
+		}
+	},
+	"sideEffects": false
+}

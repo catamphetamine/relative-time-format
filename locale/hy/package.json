@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/hy",
+	"main": "../hy.json",
+	"module": "../hy.json.js",
+	"types": "../hy.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../hy.json.d.ts",
+			"import": "../hy.json.js",
+			"require": "../hy.json"
+		}
+	},
+	"sideEffects": false
+}

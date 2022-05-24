@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/vi",
+	"main": "../vi.json",
+	"module": "../vi.json.js",
+	"types": "../vi.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../vi.json.d.ts",
+			"import": "../vi.json.js",
+			"require": "../vi.json"
+		}
+	},
+	"sideEffects": false
+}

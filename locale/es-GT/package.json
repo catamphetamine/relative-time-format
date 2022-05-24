@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-GT",
+	"main": "../es-GT.json",
+	"module": "../es-GT.json.js",
+	"types": "../es-GT.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-GT.json.d.ts",
+			"import": "../es-GT.json.js",
+			"require": "../es-GT.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-VU",
+	"main": "../en-VU.json",
+	"module": "../en-VU.json.js",
+	"types": "../en-VU.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-VU.json.d.ts",
+			"import": "../en-VU.json.js",
+			"require": "../en-VU.json"
+		}
+	},
+	"sideEffects": false
+}

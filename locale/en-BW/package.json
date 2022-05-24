@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-BW",
+	"main": "../en-BW.json",
+	"module": "../en-BW.json.js",
+	"types": "../en-BW.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-BW.json.d.ts",
+			"import": "../en-BW.json.js",
+			"require": "../en-BW.json"
+		}
+	},
+	"sideEffects": false
+}

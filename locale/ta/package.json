@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ta",
+	"main": "../ta.json",
+	"module": "../ta.json.js",
+	"types": "../ta.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ta.json.d.ts",
+			"import": "../ta.json.js",
+			"require": "../ta.json"
+		}
+	},
+	"sideEffects": false
+}

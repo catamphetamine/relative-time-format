@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-TV",
+	"main": "../en-TV.json",
+	"module": "../en-TV.json.js",
+	"types": "../en-TV.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-TV.json.d.ts",
+			"import": "../en-TV.json.js",
+			"require": "../en-TV.json"
+		}
+	},
+	"sideEffects": false
+}

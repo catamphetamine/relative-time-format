@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-ZM",
+	"main": "../en-ZM.json",
+	"module": "../en-ZM.json.js",
+	"types": "../en-ZM.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-ZM.json.d.ts",
+			"import": "../en-ZM.json.js",
+			"require": "../en-ZM.json"
+		}
+	},
+	"sideEffects": false
+}

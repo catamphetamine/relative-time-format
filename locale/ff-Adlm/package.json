@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ff-Adlm",
+	"main": "../ff-Adlm.json",
+	"module": "../ff-Adlm.json.js",
+	"types": "../ff-Adlm.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ff-Adlm.json.d.ts",
+			"import": "../ff-Adlm.json.js",
+			"require": "../ff-Adlm.json"
+		}
+	},
+	"sideEffects": false
+}

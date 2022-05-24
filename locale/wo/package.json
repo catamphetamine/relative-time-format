@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/wo",
+	"main": "../wo.json",
+	"module": "../wo.json.js",
+	"types": "../wo.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../wo.json.d.ts",
+			"import": "../wo.json.js",
+			"require": "../wo.json"
+		}
+	},
+	"sideEffects": false
+}

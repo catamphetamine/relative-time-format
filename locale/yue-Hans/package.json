@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/yue-Hans",
+	"main": "../yue-Hans.json",
+	"module": "../yue-Hans.json.js",
+	"types": "../yue-Hans.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../yue-Hans.json.d.ts",
+			"import": "../yue-Hans.json.js",
+			"require": "../yue-Hans.json"
+		}
+	},
+	"sideEffects": false
+}

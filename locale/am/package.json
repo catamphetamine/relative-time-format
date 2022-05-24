@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/am",
+	"main": "../am.json",
+	"module": "../am.json.js",
+	"types": "../am.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../am.json.d.ts",
+			"import": "../am.json.js",
+			"require": "../am.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-FM",
+	"main": "../en-FM.json",
+	"module": "../en-FM.json.js",
+	"types": "../en-FM.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-FM.json.d.ts",
+			"import": "../en-FM.json.js",
+			"require": "../en-FM.json"
+		}
+	},
+	"sideEffects": false
+}

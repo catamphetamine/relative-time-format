@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-PR",
+	"main": "../es-PR.json",
+	"module": "../es-PR.json.js",
+	"types": "../es-PR.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-PR.json.d.ts",
+			"import": "../es-PR.json.js",
+			"require": "../es-PR.json"
+		}
+	},
+	"sideEffects": false
+}

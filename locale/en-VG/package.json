@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-VG",
+	"main": "../en-VG.json",
+	"module": "../en-VG.json.js",
+	"types": "../en-VG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-VG.json.d.ts",
+			"import": "../en-VG.json.js",
+			"require": "../en-VG.json"
+		}
+	},
+	"sideEffects": false
+}

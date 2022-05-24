@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-PA",
+	"main": "../es-PA.json",
+	"module": "../es-PA.json.js",
+	"types": "../es-PA.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-PA.json.d.ts",
+			"import": "../es-PA.json.js",
+			"require": "../es-PA.json"
+		}
+	},
+	"sideEffects": false
+}

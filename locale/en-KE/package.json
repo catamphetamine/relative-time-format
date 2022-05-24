@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-KE",
+	"main": "../en-KE.json",
+	"module": "../en-KE.json.js",
+	"types": "../en-KE.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-KE.json.d.ts",
+			"import": "../en-KE.json.js",
+			"require": "../en-KE.json"
+		}
+	},
+	"sideEffects": false
+}

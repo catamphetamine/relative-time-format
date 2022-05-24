@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ksh",
+	"main": "../ksh.json",
+	"module": "../ksh.json.js",
+	"types": "../ksh.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ksh.json.d.ts",
+			"import": "../ksh.json.js",
+			"require": "../ksh.json"
+		}
+	},
+	"sideEffects": false
+}

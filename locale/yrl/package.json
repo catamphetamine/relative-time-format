@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/yrl",
+	"main": "../yrl.json",
+	"module": "../yrl.json.js",
+	"types": "../yrl.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../yrl.json.d.ts",
+			"import": "../yrl.json.js",
+			"require": "../yrl.json"
+		}
+	},
+	"sideEffects": false
+}

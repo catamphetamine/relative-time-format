@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-IL",
+	"main": "../en-IL.json",
+	"module": "../en-IL.json.js",
+	"types": "../en-IL.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-IL.json.d.ts",
+			"import": "../en-IL.json.js",
+			"require": "../en-IL.json"
+		}
+	},
+	"sideEffects": false
+}

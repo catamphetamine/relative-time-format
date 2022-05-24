@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ga",
+	"main": "../ga.json",
+	"module": "../ga.json.js",
+	"types": "../ga.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ga.json.d.ts",
+			"import": "../ga.json.js",
+			"require": "../ga.json"
+		}
+	},
+	"sideEffects": false
+}

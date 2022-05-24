@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-CX",
+	"main": "../en-CX.json",
+	"module": "../en-CX.json.js",
+	"types": "../en-CX.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-CX.json.d.ts",
+			"import": "../en-CX.json.js",
+			"require": "../en-CX.json"
+		}
+	},
+	"sideEffects": false
+}

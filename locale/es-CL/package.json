@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-CL",
+	"main": "../es-CL.json",
+	"module": "../es-CL.json.js",
+	"types": "../es-CL.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-CL.json.d.ts",
+			"import": "../es-CL.json.js",
+			"require": "../es-CL.json"
+		}
+	},
+	"sideEffects": false
+}

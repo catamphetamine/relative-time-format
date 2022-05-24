@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-NF",
+	"main": "../en-NF.json",
+	"module": "../en-NF.json.js",
+	"types": "../en-NF.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-NF.json.d.ts",
+			"import": "../en-NF.json.js",
+			"require": "../en-NF.json"
+		}
+	},
+	"sideEffects": false
+}

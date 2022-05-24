@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/fil",
+	"main": "../fil.json",
+	"module": "../fil.json.js",
+	"types": "../fil.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../fil.json.d.ts",
+			"import": "../fil.json.js",
+			"require": "../fil.json"
+		}
+	},
+	"sideEffects": false
+}

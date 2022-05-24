@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-NG",
+	"main": "../en-NG.json",
+	"module": "../en-NG.json.js",
+	"types": "../en-NG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-NG.json.d.ts",
+			"import": "../en-NG.json.js",
+			"require": "../en-NG.json"
+		}
+	},
+	"sideEffects": false
+}

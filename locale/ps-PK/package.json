@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ps-PK",
+	"main": "../ps-PK.json",
+	"module": "../ps-PK.json.js",
+	"types": "../ps-PK.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ps-PK.json.d.ts",
+			"import": "../ps-PK.json.js",
+			"require": "../ps-PK.json"
+		}
+	},
+	"sideEffects": false
+}

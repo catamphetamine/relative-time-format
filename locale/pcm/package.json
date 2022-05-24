@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/pcm",
+	"main": "../pcm.json",
+	"module": "../pcm.json.js",
+	"types": "../pcm.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../pcm.json.d.ts",
+			"import": "../pcm.json.js",
+			"require": "../pcm.json"
+		}
+	},
+	"sideEffects": false
+}

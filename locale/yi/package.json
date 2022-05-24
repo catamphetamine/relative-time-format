@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/yi",
+	"main": "../yi.json",
+	"module": "../yi.json.js",
+	"types": "../yi.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../yi.json.d.ts",
+			"import": "../yi.json.js",
+			"require": "../yi.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sv",
+	"main": "../sv.json",
+	"module": "../sv.json.js",
+	"types": "../sv.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sv.json.d.ts",
+			"import": "../sv.json.js",
+			"require": "../sv.json"
+		}
+	},
+	"sideEffects": false
+}

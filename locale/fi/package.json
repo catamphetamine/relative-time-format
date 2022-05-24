@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/fi",
+	"main": "../fi.json",
+	"module": "../fi.json.js",
+	"types": "../fi.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../fi.json.d.ts",
+			"import": "../fi.json.js",
+			"require": "../fi.json"
+		}
+	},
+	"sideEffects": false
+}

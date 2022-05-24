@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-PE",
+	"main": "../es-PE.json",
+	"module": "../es-PE.json.js",
+	"types": "../es-PE.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-PE.json.d.ts",
+			"import": "../es-PE.json.js",
+			"require": "../es-PE.json"
+		}
+	},
+	"sideEffects": false
+}

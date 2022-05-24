@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/no",
+	"main": "../no.json",
+	"module": "../no.json.js",
+	"types": "../no.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../no.json.d.ts",
+			"import": "../no.json.js",
+			"require": "../no.json"
+		}
+	},
+	"sideEffects": false
+}

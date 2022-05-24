@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-MX",
+	"main": "../es-MX.json",
+	"module": "../es-MX.json.js",
+	"types": "../es-MX.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-MX.json.d.ts",
+			"import": "../es-MX.json.js",
+			"require": "../es-MX.json"
+		}
+	},
+	"sideEffects": false
+}

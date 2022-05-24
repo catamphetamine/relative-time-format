@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-AI",
+	"main": "../en-AI.json",
+	"module": "../en-AI.json.js",
+	"types": "../en-AI.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-AI.json.d.ts",
+			"import": "../en-AI.json.js",
+			"require": "../en-AI.json"
+		}
+	},
+	"sideEffects": false
+}

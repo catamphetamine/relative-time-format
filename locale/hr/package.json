@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/hr",
+	"main": "../hr.json",
+	"module": "../hr.json.js",
+	"types": "../hr.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../hr.json.d.ts",
+			"import": "../hr.json.js",
+			"require": "../hr.json"
+		}
+	},
+	"sideEffects": false
+}

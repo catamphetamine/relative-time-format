@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/tr",
+	"main": "../tr.json",
+	"module": "../tr.json.js",
+	"types": "../tr.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../tr.json.d.ts",
+			"import": "../tr.json.js",
+			"require": "../tr.json"
+		}
+	},
+	"sideEffects": false
+}

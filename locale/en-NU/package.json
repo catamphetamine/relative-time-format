@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-NU",
+	"main": "../en-NU.json",
+	"module": "../en-NU.json.js",
+	"types": "../en-NU.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-NU.json.d.ts",
+			"import": "../en-NU.json.js",
+			"require": "../en-NU.json"
+		}
+	},
+	"sideEffects": false
+}

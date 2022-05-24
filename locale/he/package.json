@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/he",
+	"main": "../he.json",
+	"module": "../he.json.js",
+	"types": "../he.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../he.json.d.ts",
+			"import": "../he.json.js",
+			"require": "../he.json"
+		}
+	},
+	"sideEffects": false
+}

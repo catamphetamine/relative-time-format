@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-SG",
+	"main": "../en-SG.json",
+	"module": "../en-SG.json.js",
+	"types": "../en-SG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-SG.json.d.ts",
+			"import": "../en-SG.json.js",
+			"require": "../en-SG.json"
+		}
+	},
+	"sideEffects": false
+}

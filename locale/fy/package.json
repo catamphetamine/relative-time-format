@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/fy",
+	"main": "../fy.json",
+	"module": "../fy.json.js",
+	"types": "../fy.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../fy.json.d.ts",
+			"import": "../fy.json.js",
+			"require": "../fy.json"
+		}
+	},
+	"sideEffects": false
+}

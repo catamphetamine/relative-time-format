@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-SI",
+	"main": "../en-SI.json",
+	"module": "../en-SI.json.js",
+	"types": "../en-SI.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-SI.json.d.ts",
+			"import": "../en-SI.json.js",
+			"require": "../en-SI.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/mn",
+	"main": "../mn.json",
+	"module": "../mn.json.js",
+	"types": "../mn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../mn.json.d.ts",
+			"import": "../mn.json.js",
+			"require": "../mn.json"
+		}
+	},
+	"sideEffects": false
+}

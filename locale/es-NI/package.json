@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-NI",
+	"main": "../es-NI.json",
+	"module": "../es-NI.json.js",
+	"types": "../es-NI.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-NI.json.d.ts",
+			"import": "../es-NI.json.js",
+			"require": "../es-NI.json"
+		}
+	},
+	"sideEffects": false
+}

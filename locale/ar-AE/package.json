@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ar-AE",
+	"main": "../ar-AE.json",
+	"module": "../ar-AE.json.js",
+	"types": "../ar-AE.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ar-AE.json.d.ts",
+			"import": "../ar-AE.json.js",
+			"require": "../ar-AE.json"
+		}
+	},
+	"sideEffects": false
+}

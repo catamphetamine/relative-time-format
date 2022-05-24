@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-PW",
+	"main": "../en-PW.json",
+	"module": "../en-PW.json.js",
+	"types": "../en-PW.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-PW.json.d.ts",
+			"import": "../en-PW.json.js",
+			"require": "../en-PW.json"
+		}
+	},
+	"sideEffects": false
+}

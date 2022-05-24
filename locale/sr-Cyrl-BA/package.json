@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sr-Cyrl-BA",
+	"main": "../sr-Cyrl-BA.json",
+	"module": "../sr-Cyrl-BA.json.js",
+	"types": "../sr-Cyrl-BA.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sr-Cyrl-BA.json.d.ts",
+			"import": "../sr-Cyrl-BA.json.js",
+			"require": "../sr-Cyrl-BA.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/dz",
+	"main": "../dz.json",
+	"module": "../dz.json.js",
+	"types": "../dz.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../dz.json.d.ts",
+			"import": "../dz.json.js",
+			"require": "../dz.json"
+		}
+	},
+	"sideEffects": false
+}

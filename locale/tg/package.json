@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/tg",
+	"main": "../tg.json",
+	"module": "../tg.json.js",
+	"types": "../tg.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../tg.json.d.ts",
+			"import": "../tg.json.js",
+			"require": "../tg.json"
+		}
+	},
+	"sideEffects": false
+}

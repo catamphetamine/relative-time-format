@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ko",
+	"main": "../ko.json",
+	"module": "../ko.json.js",
+	"types": "../ko.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ko.json.d.ts",
+			"import": "../ko.json.js",
+			"require": "../ko.json"
+		}
+	},
+	"sideEffects": false
+}

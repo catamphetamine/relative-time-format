@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ccp",
+	"main": "../ccp.json",
+	"module": "../ccp.json.js",
+	"types": "../ccp.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ccp.json.d.ts",
+			"import": "../ccp.json.js",
+			"require": "../ccp.json"
+		}
+	},
+	"sideEffects": false
+}

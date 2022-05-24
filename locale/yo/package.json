@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/yo",
+	"main": "../yo.json",
+	"module": "../yo.json.js",
+	"types": "../yo.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../yo.json.d.ts",
+			"import": "../yo.json.js",
+			"require": "../yo.json"
+		}
+	},
+	"sideEffects": false
+}

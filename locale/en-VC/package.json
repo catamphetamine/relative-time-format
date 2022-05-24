@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-VC",
+	"main": "../en-VC.json",
+	"module": "../en-VC.json.js",
+	"types": "../en-VC.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-VC.json.d.ts",
+			"import": "../en-VC.json.js",
+			"require": "../en-VC.json"
+		}
+	},
+	"sideEffects": false
+}

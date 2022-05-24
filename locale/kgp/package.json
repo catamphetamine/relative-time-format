@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/kgp",
+	"main": "../kgp.json",
+	"module": "../kgp.json.js",
+	"types": "../kgp.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../kgp.json.d.ts",
+			"import": "../kgp.json.js",
+			"require": "../kgp.json"
+		}
+	},
+	"sideEffects": false
+}

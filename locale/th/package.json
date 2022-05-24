@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/th",
+	"main": "../th.json",
+	"module": "../th.json.js",
+	"types": "../th.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../th.json.d.ts",
+			"import": "../th.json.js",
+			"require": "../th.json"
+		}
+	},
+	"sideEffects": false
+}

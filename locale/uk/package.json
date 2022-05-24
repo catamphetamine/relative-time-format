@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/uk",
+	"main": "../uk.json",
+	"module": "../uk.json.js",
+	"types": "../uk.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../uk.json.d.ts",
+			"import": "../uk.json.js",
+			"require": "../uk.json"
+		}
+	},
+	"sideEffects": false
+}

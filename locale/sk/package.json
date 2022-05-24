@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sk",
+	"main": "../sk.json",
+	"module": "../sk.json.js",
+	"types": "../sk.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sk.json.d.ts",
+			"import": "../sk.json.js",
+			"require": "../sk.json"
+		}
+	},
+	"sideEffects": false
+}

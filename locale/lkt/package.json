@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/lkt",
+	"main": "../lkt.json",
+	"module": "../lkt.json.js",
+	"types": "../lkt.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../lkt.json.d.ts",
+			"import": "../lkt.json.js",
+			"require": "../lkt.json"
+		}
+	},
+	"sideEffects": false
+}

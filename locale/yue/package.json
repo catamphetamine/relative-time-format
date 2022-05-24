@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/yue",
+	"main": "../yue.json",
+	"module": "../yue.json.js",
+	"types": "../yue.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../yue.json.d.ts",
+			"import": "../yue.json.js",
+			"require": "../yue.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/uz",
+	"main": "../uz.json",
+	"module": "../uz.json.js",
+	"types": "../uz.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../uz.json.d.ts",
+			"import": "../uz.json.js",
+			"require": "../uz.json"
+		}
+	},
+	"sideEffects": false
+}

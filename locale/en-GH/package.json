@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-GH",
+	"main": "../en-GH.json",
+	"module": "../en-GH.json.js",
+	"types": "../en-GH.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-GH.json.d.ts",
+			"import": "../en-GH.json.js",
+			"require": "../en-GH.json"
+		}
+	},
+	"sideEffects": false
+}

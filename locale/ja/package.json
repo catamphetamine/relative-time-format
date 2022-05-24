@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ja",
+	"main": "../ja.json",
+	"module": "../ja.json.js",
+	"types": "../ja.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ja.json.d.ts",
+			"import": "../ja.json.js",
+			"require": "../ja.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/lt",
+	"main": "../lt.json",
+	"module": "../lt.json.js",
+	"types": "../lt.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../lt.json.d.ts",
+			"import": "../lt.json.js",
+			"require": "../lt.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/mni",
+	"main": "../mni.json",
+	"module": "../mni.json.js",
+	"types": "../mni.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../mni.json.d.ts",
+			"import": "../mni.json.js",
+			"require": "../mni.json"
+		}
+	},
+	"sideEffects": false
+}

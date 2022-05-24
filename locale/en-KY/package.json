@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-KY",
+	"main": "../en-KY.json",
+	"module": "../en-KY.json.js",
+	"types": "../en-KY.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-KY.json.d.ts",
+			"import": "../en-KY.json.js",
+			"require": "../en-KY.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/se-FI",
+	"main": "../se-FI.json",
+	"module": "../se-FI.json.js",
+	"types": "../se-FI.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../se-FI.json.d.ts",
+			"import": "../se-FI.json.js",
+			"require": "../se-FI.json"
+		}
+	},
+	"sideEffects": false
+}

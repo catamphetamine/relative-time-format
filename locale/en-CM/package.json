@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-CM",
+	"main": "../en-CM.json",
+	"module": "../en-CM.json.js",
+	"types": "../en-CM.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-CM.json.d.ts",
+			"import": "../en-CM.json.js",
+			"require": "../en-CM.json"
+		}
+	},
+	"sideEffects": false
+}

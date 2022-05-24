@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/mk",
+	"main": "../mk.json",
+	"module": "../mk.json.js",
+	"types": "../mk.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../mk.json.d.ts",
+			"import": "../mk.json.js",
+			"require": "../mk.json"
+		}
+	},
+	"sideEffects": false
+}

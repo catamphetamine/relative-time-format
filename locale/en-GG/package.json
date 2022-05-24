@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-GG",
+	"main": "../en-GG.json",
+	"module": "../en-GG.json.js",
+	"types": "../en-GG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-GG.json.d.ts",
+			"import": "../en-GG.json.js",
+			"require": "../en-GG.json"
+		}
+	},
+	"sideEffects": false
+}

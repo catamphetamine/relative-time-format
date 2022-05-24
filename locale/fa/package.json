@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/fa",
+	"main": "../fa.json",
+	"module": "../fa.json.js",
+	"types": "../fa.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../fa.json.d.ts",
+			"import": "../fa.json.js",
+			"require": "../fa.json"
+		}
+	},
+	"sideEffects": false
+}

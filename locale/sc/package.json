@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sc",
+	"main": "../sc.json",
+	"module": "../sc.json.js",
+	"types": "../sc.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sc.json.d.ts",
+			"import": "../sc.json.js",
+			"require": "../sc.json"
+		}
+	},
+	"sideEffects": false
+}

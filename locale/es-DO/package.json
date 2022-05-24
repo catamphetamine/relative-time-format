@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-DO",
+	"main": "../es-DO.json",
+	"module": "../es-DO.json.js",
+	"types": "../es-DO.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-DO.json.d.ts",
+			"import": "../es-DO.json.js",
+			"require": "../es-DO.json"
+		}
+	},
+	"sideEffects": false
+}

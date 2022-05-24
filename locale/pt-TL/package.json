@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/pt-TL",
+	"main": "../pt-TL.json",
+	"module": "../pt-TL.json.js",
+	"types": "../pt-TL.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../pt-TL.json.d.ts",
+			"import": "../pt-TL.json.js",
+			"require": "../pt-TL.json"
+		}
+	},
+	"sideEffects": false
+}

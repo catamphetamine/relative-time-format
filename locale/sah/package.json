@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sah",
+	"main": "../sah.json",
+	"module": "../sah.json.js",
+	"types": "../sah.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sah.json.d.ts",
+			"import": "../sah.json.js",
+			"require": "../sah.json"
+		}
+	},
+	"sideEffects": false
+}

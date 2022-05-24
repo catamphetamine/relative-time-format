@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-DG",
+	"main": "../en-DG.json",
+	"module": "../en-DG.json.js",
+	"types": "../en-DG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-DG.json.d.ts",
+			"import": "../en-DG.json.js",
+			"require": "../en-DG.json"
+		}
+	},
+	"sideEffects": false
+}

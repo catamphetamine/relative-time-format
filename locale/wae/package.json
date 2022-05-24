@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/wae",
+	"main": "../wae.json",
+	"module": "../wae.json.js",
+	"types": "../wae.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../wae.json.d.ts",
+			"import": "../wae.json.js",
+			"require": "../wae.json"
+		}
+	},
+	"sideEffects": false
+}

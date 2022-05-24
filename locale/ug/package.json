@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ug",
+	"main": "../ug.json",
+	"module": "../ug.json.js",
+	"types": "../ug.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ug.json.d.ts",
+			"import": "../ug.json.js",
+			"require": "../ug.json"
+		}
+	},
+	"sideEffects": false
+}

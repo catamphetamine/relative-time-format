@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/nl",
+	"main": "../nl.json",
+	"module": "../nl.json.js",
+	"types": "../nl.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../nl.json.d.ts",
+			"import": "../nl.json.js",
+			"require": "../nl.json"
+		}
+	},
+	"sideEffects": false
+}

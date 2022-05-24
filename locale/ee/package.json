@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ee",
+	"main": "../ee.json",
+	"module": "../ee.json.js",
+	"types": "../ee.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ee.json.d.ts",
+			"import": "../ee.json.js",
+			"require": "../ee.json"
+		}
+	},
+	"sideEffects": false
+}

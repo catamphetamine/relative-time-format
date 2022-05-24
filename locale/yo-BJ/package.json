@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/yo-BJ",
+	"main": "../yo-BJ.json",
+	"module": "../yo-BJ.json.js",
+	"types": "../yo-BJ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../yo-BJ.json.d.ts",
+			"import": "../yo-BJ.json.js",
+			"require": "../yo-BJ.json"
+		}
+	},
+	"sideEffects": false
+}

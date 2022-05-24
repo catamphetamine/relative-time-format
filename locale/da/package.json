@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/da",
+	"main": "../da.json",
+	"module": "../da.json.js",
+	"types": "../da.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../da.json.d.ts",
+			"import": "../da.json.js",
+			"require": "../da.json"
+		}
+	},
+	"sideEffects": false
+}

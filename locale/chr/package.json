@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/chr",
+	"main": "../chr.json",
+	"module": "../chr.json.js",
+	"types": "../chr.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../chr.json.d.ts",
+			"import": "../chr.json.js",
+			"require": "../chr.json"
+		}
+	},
+	"sideEffects": false
+}

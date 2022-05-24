@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-KN",
+	"main": "../en-KN.json",
+	"module": "../en-KN.json.js",
+	"types": "../en-KN.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-KN.json.d.ts",
+			"import": "../en-KN.json.js",
+			"require": "../en-KN.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-AG",
+	"main": "../en-AG.json",
+	"module": "../en-AG.json.js",
+	"types": "../en-AG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-AG.json.d.ts",
+			"import": "../en-AG.json.js",
+			"require": "../en-AG.json"
+		}
+	},
+	"sideEffects": false
+}

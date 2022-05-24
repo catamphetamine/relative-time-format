@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-IM",
+	"main": "../en-IM.json",
+	"module": "../en-IM.json.js",
+	"types": "../en-IM.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-IM.json.d.ts",
+			"import": "../en-IM.json.js",
+			"require": "../en-IM.json"
+		}
+	},
+	"sideEffects": false
+}

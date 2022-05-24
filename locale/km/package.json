@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/km",
+	"main": "../km.json",
+	"module": "../km.json.js",
+	"types": "../km.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../km.json.d.ts",
+			"import": "../km.json.js",
+			"require": "../km.json"
+		}
+	},
+	"sideEffects": false
+}

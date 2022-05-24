@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sw",
+	"main": "../sw.json",
+	"module": "../sw.json.js",
+	"types": "../sw.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sw.json.d.ts",
+			"import": "../sw.json.js",
+			"require": "../sw.json"
+		}
+	},
+	"sideEffects": false
+}

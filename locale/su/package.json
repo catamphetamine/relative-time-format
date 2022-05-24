@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/su",
+	"main": "../su.json",
+	"module": "../su.json.js",
+	"types": "../su.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../su.json.d.ts",
+			"import": "../su.json.js",
+			"require": "../su.json"
+		}
+	},
+	"sideEffects": false
+}

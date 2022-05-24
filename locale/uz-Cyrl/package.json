@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/uz-Cyrl",
+	"main": "../uz-Cyrl.json",
+	"module": "../uz-Cyrl.json.js",
+	"types": "../uz-Cyrl.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../uz-Cyrl.json.d.ts",
+			"import": "../uz-Cyrl.json.js",
+			"require": "../uz-Cyrl.json"
+		}
+	},
+	"sideEffects": false
+}

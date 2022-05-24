@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/af",
+	"main": "../af.json",
+	"module": "../af.json.js",
+	"types": "../af.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../af.json.d.ts",
+			"import": "../af.json.js",
+			"require": "../af.json"
+		}
+	},
+	"sideEffects": false
+}

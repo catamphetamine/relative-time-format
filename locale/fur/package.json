@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/fur",
+	"main": "../fur.json",
+	"module": "../fur.json.js",
+	"types": "../fur.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../fur.json.d.ts",
+			"import": "../fur.json.js",
+			"require": "../fur.json"
+		}
+	},
+	"sideEffects": false
+}

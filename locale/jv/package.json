@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/jv",
+	"main": "../jv.json",
+	"module": "../jv.json.js",
+	"types": "../jv.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../jv.json.d.ts",
+			"import": "../jv.json.js",
+			"require": "../jv.json"
+		}
+	},
+	"sideEffects": false
+}

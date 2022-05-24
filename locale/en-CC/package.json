@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-CC",
+	"main": "../en-CC.json",
+	"module": "../en-CC.json.js",
+	"types": "../en-CC.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-CC.json.d.ts",
+			"import": "../en-CC.json.js",
+			"require": "../en-CC.json"
+		}
+	},
+	"sideEffects": false
+}

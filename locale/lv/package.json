@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/lv",
+	"main": "../lv.json",
+	"module": "../lv.json.js",
+	"types": "../lv.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../lv.json.d.ts",
+			"import": "../lv.json.js",
+			"require": "../lv.json"
+		}
+	},
+	"sideEffects": false
+}

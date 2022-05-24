@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/fr-CA",
+	"main": "../fr-CA.json",
+	"module": "../fr-CA.json.js",
+	"types": "../fr-CA.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../fr-CA.json.d.ts",
+			"import": "../fr-CA.json.js",
+			"require": "../fr-CA.json"
+		}
+	},
+	"sideEffects": false
+}

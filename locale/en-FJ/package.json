@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-FJ",
+	"main": "../en-FJ.json",
+	"module": "../en-FJ.json.js",
+	"types": "../en-FJ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-FJ.json.d.ts",
+			"import": "../en-FJ.json.js",
+			"require": "../en-FJ.json"
+		}
+	},
+	"sideEffects": false
+}

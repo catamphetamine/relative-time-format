@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/or",
+	"main": "../or.json",
+	"module": "../or.json.js",
+	"types": "../or.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../or.json.d.ts",
+			"import": "../or.json.js",
+			"require": "../or.json"
+		}
+	},
+	"sideEffects": false
+}

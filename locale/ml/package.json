@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ml",
+	"main": "../ml.json",
+	"module": "../ml.json.js",
+	"types": "../ml.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ml.json.d.ts",
+			"import": "../ml.json.js",
+			"require": "../ml.json"
+		}
+	},
+	"sideEffects": false
+}

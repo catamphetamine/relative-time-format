@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-SX",
+	"main": "../en-SX.json",
+	"module": "../en-SX.json.js",
+	"types": "../en-SX.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-SX.json.d.ts",
+			"import": "../en-SX.json.js",
+			"require": "../en-SX.json"
+		}
+	},
+	"sideEffects": false
+}

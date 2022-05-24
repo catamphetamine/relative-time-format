@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/rm",
+	"main": "../rm.json",
+	"module": "../rm.json.js",
+	"types": "../rm.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../rm.json.d.ts",
+			"import": "../rm.json.js",
+			"require": "../rm.json"
+		}
+	},
+	"sideEffects": false
+}

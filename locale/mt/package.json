@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/mt",
+	"main": "../mt.json",
+	"module": "../mt.json.js",
+	"types": "../mt.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../mt.json.d.ts",
+			"import": "../mt.json.js",
+			"require": "../mt.json"
+		}
+	},
+	"sideEffects": false
+}

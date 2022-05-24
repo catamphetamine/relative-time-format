@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-EC",
+	"main": "../es-EC.json",
+	"module": "../es-EC.json.js",
+	"types": "../es-EC.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-EC.json.d.ts",
+			"import": "../es-EC.json.js",
+			"require": "../es-EC.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/lb",
+	"main": "../lb.json",
+	"module": "../lb.json.js",
+	"types": "../lb.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../lb.json.d.ts",
+			"import": "../lb.json.js",
+			"require": "../lb.json"
+		}
+	},
+	"sideEffects": false
+}

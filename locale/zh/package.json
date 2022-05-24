@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/zh",
+	"main": "../zh.json",
+	"module": "../zh.json.js",
+	"types": "../zh.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../zh.json.d.ts",
+			"import": "../zh.json.js",
+			"require": "../zh.json"
+		}
+	},
+	"sideEffects": false
+}

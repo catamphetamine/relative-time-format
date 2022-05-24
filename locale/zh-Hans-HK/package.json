@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/zh-Hans-HK",
+	"main": "../zh-Hans-HK.json",
+	"module": "../zh-Hans-HK.json.js",
+	"types": "../zh-Hans-HK.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../zh-Hans-HK.json.d.ts",
+			"import": "../zh-Hans-HK.json.js",
+			"require": "../zh-Hans-HK.json"
+		}
+	},
+	"sideEffects": false
+}

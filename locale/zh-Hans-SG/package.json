@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/zh-Hans-SG",
+	"main": "../zh-Hans-SG.json",
+	"module": "../zh-Hans-SG.json.js",
+	"types": "../zh-Hans-SG.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../zh-Hans-SG.json.d.ts",
+			"import": "../zh-Hans-SG.json.js",
+			"require": "../zh-Hans-SG.json"
+		}
+	},
+	"sideEffects": false
+}

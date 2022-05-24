@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/es-HN",
+	"main": "../es-HN.json",
+	"module": "../es-HN.json.js",
+	"types": "../es-HN.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../es-HN.json.d.ts",
+			"import": "../es-HN.json.js",
+			"require": "../es-HN.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-MS",
+	"main": "../en-MS.json",
+	"module": "../en-MS.json.js",
+	"types": "../en-MS.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-MS.json.d.ts",
+			"import": "../en-MS.json.js",
+			"require": "../en-MS.json"
+		}
+	},
+	"sideEffects": false
+}
