@@ -48,7 +48,7 @@ export type LocaleMatcher = 'lookup' | 'best fit';
 
 export class PluralRules {
   constructor(locale: Locale | Locale[], options?: { type?: 'cardinal' });
-  select(number: number);
+  select(number: number): Count;
   static supportedLocalesOf(locale: Locale | Locale[]): Locale[];
 }
 
