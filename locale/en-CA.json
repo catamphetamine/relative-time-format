@@ -257,14 +257,8 @@
 			"previous": "yesterday",
 			"current": "today",
 			"next": "tomorrow",
-			"past": {
-				"one": "{0} day ago",
-				"other": "{0} days ago"
-			},
-			"future": {
-				"one": "in {0} day",
-				"other": "in {0} days"
-			}
+			"past": "{0}d ago",
+			"future": "in {0}d"
 		},
 		"hour": {
 			"current": "this hour",

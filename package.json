@@ -1,6 +1,6 @@
 {
   "name": "relative-time-format",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A convenient Intl.RelativeTimeFormat polyfill",
   "main": "index.cjs",
   "module": "index.js",
@@ -61,6 +61,16 @@
       "types": "./locale/am.json.d.ts",
       "import": "./locale/am.json.js",
       "require": "./locale/am.json"
+    },
+    "./locale/ann.json": {
+      "types": "./locale/ann.json.d.ts",
+      "import": "./locale/ann.json.js",
+      "require": "./locale/ann.json"
+    },
+    "./locale/ann": {
+      "types": "./locale/ann.json.d.ts",
+      "import": "./locale/ann.json.js",
+      "require": "./locale/ann.json"
     },
     "./locale/ar.json": {
       "types": "./locale/ar.json.d.ts",
@@ -462,6 +472,26 @@
       "import": "./locale/bg.json.js",
       "require": "./locale/bg.json"
     },
+    "./locale/bgc.json": {
+      "types": "./locale/bgc.json.d.ts",
+      "import": "./locale/bgc.json.js",
+      "require": "./locale/bgc.json"
+    },
+    "./locale/bgc": {
+      "types": "./locale/bgc.json.d.ts",
+      "import": "./locale/bgc.json.js",
+      "require": "./locale/bgc.json"
+    },
+    "./locale/bho.json": {
+      "types": "./locale/bho.json.d.ts",
+      "import": "./locale/bho.json.js",
+      "require": "./locale/bho.json"
+    },
+    "./locale/bho": {
+      "types": "./locale/bho.json.d.ts",
+      "import": "./locale/bho.json.js",
+      "require": "./locale/bho.json"
+    },
     "./locale/bm.json": {
       "types": "./locale/bm.json.d.ts",
       "import": "./locale/bm.json.js",
@@ -701,6 +731,16 @@
       "types": "./locale/cs.json.d.ts",
       "import": "./locale/cs.json.js",
       "require": "./locale/cs.json"
+    },
+    "./locale/cv.json": {
+      "types": "./locale/cv.json.d.ts",
+      "import": "./locale/cv.json.js",
+      "require": "./locale/cv.json"
+    },
+    "./locale/cv": {
+      "types": "./locale/cv.json.d.ts",
+      "import": "./locale/cv.json.js",
+      "require": "./locale/cv.json"
     },
     "./locale/cy.json": {
       "types": "./locale/cy.json.d.ts",
@@ -3072,6 +3112,16 @@
       "import": "./locale/fr-YT.json.js",
       "require": "./locale/fr-YT.json"
     },
+    "./locale/frr.json": {
+      "types": "./locale/frr.json.d.ts",
+      "import": "./locale/frr.json.js",
+      "require": "./locale/frr.json"
+    },
+    "./locale/frr": {
+      "types": "./locale/frr.json.d.ts",
+      "import": "./locale/frr.json.js",
+      "require": "./locale/frr.json"
+    },
     "./locale/fur.json": {
       "types": "./locale/fur.json.d.ts",
       "import": "./locale/fur.json.js",
@@ -3892,6 +3942,16 @@
       "import": "./locale/mas-TZ.json.js",
       "require": "./locale/mas-TZ.json"
     },
+    "./locale/mdf.json": {
+      "types": "./locale/mdf.json.d.ts",
+      "import": "./locale/mdf.json.js",
+      "require": "./locale/mdf.json"
+    },
+    "./locale/mdf": {
+      "types": "./locale/mdf.json.d.ts",
+      "import": "./locale/mdf.json.js",
+      "require": "./locale/mdf.json"
+    },
     "./locale/mer.json": {
       "types": "./locale/mer.json.d.ts",
       "import": "./locale/mer.json.js",
@@ -4302,6 +4362,26 @@
       "import": "./locale/nyn.json.js",
       "require": "./locale/nyn.json"
     },
+    "./locale/oc.json": {
+      "types": "./locale/oc.json.d.ts",
+      "import": "./locale/oc.json.js",
+      "require": "./locale/oc.json"
+    },
+    "./locale/oc": {
+      "types": "./locale/oc.json.d.ts",
+      "import": "./locale/oc.json.js",
+      "require": "./locale/oc.json"
+    },
+    "./locale/oc-ES.json": {
+      "types": "./locale/oc-ES.json.d.ts",
+      "import": "./locale/oc-ES.json.js",
+      "require": "./locale/oc-ES.json"
+    },
+    "./locale/oc-ES": {
+      "types": "./locale/oc-ES.json.d.ts",
+      "import": "./locale/oc-ES.json.js",
+      "require": "./locale/oc-ES.json"
+    },
     "./locale/om.json": {
       "types": "./locale/om.json.d.ts",
       "import": "./locale/om.json.js",
@@ -4391,6 +4471,16 @@
       "types": "./locale/pcm.json.d.ts",
       "import": "./locale/pcm.json.js",
       "require": "./locale/pcm.json"
+    },
+    "./locale/pis.json": {
+      "types": "./locale/pis.json.d.ts",
+      "import": "./locale/pis.json.js",
+      "require": "./locale/pis.json"
+    },
+    "./locale/pis": {
+      "types": "./locale/pis.json.d.ts",
+      "import": "./locale/pis.json.js",
+      "require": "./locale/pis.json"
     },
     "./locale/pl.json": {
       "types": "./locale/pl.json.d.ts",
@@ -4571,6 +4661,16 @@
       "types": "./locale/qu-EC.json.d.ts",
       "import": "./locale/qu-EC.json.js",
       "require": "./locale/qu-EC.json"
+    },
+    "./locale/raj.json": {
+      "types": "./locale/raj.json.d.ts",
+      "import": "./locale/raj.json.js",
+      "require": "./locale/raj.json"
+    },
+    "./locale/raj": {
+      "types": "./locale/raj.json.d.ts",
+      "import": "./locale/raj.json.js",
+      "require": "./locale/raj.json"
     },
     "./locale/rm.json": {
       "types": "./locale/rm.json.d.ts",
@@ -4931,6 +5031,16 @@
       "types": "./locale/smn.json.d.ts",
       "import": "./locale/smn.json.js",
       "require": "./locale/smn.json"
+    },
+    "./locale/sms.json": {
+      "types": "./locale/sms.json.d.ts",
+      "import": "./locale/sms.json.js",
+      "require": "./locale/sms.json"
+    },
+    "./locale/sms": {
+      "types": "./locale/sms.json.d.ts",
+      "import": "./locale/sms.json.js",
+      "require": "./locale/sms.json"
     },
     "./locale/sn.json": {
       "types": "./locale/sn.json.d.ts",
@@ -5321,6 +5431,16 @@
       "types": "./locale/to.json.d.ts",
       "import": "./locale/to.json.js",
       "require": "./locale/to.json"
+    },
+    "./locale/tok.json": {
+      "types": "./locale/tok.json.d.ts",
+      "import": "./locale/tok.json.js",
+      "require": "./locale/tok.json"
+    },
+    "./locale/tok": {
+      "types": "./locale/tok.json.d.ts",
+      "import": "./locale/tok.json.js",
+      "require": "./locale/tok.json"
     },
     "./locale/tr.json": {
       "types": "./locale/tr.json.d.ts",
@@ -5754,10 +5874,10 @@
     }
   },
   "sideEffects": false,
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.12",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "@babel/plugin-transform-destructuring": "^7.17.12",
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.17.12",
@@ -5766,8 +5886,8 @@
     "babel-loader": "^8.2.5",
     "babel-plugin-istanbul": "^6.1.1",
     "chai": "^4.3.6",
-    "cldr-core": "^41.0.0",
-    "cldr-dates-full": "^41.0.0",
+    "cldr-core": "^42.0.0",
+    "cldr-dates-full": "^42.0.0",
     "cross-env": "^7.0.3",
     "fs-extra": "^10.1.0",
     "handlebars": "^4.5.3",

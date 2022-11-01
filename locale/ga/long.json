@@ -13,7 +13,7 @@
 			"other": "{0} bliain ó shin"
 		},
 		"future": {
-			"one": "i gceann {0} bhliain",
+			"one": "i gceann {0} bliana",
 			"two": "i gceann {0} bhliain",
 			"few": "i gceann {0} bliana",
 			"many": "i gceann {0} mbliana",
@@ -55,6 +55,7 @@
 			"other": "{0} seachtain ó shin"
 		},
 		"future": {
+			"one": "i gceann {0} seachtaine",
 			"two": "i gceann {0} sheachtain",
 			"few": "i gceann {0} seachtaine",
 			"many": "i gceann {0} seachtaine",
@@ -73,11 +74,11 @@
 	"hour": {
 		"current": "an uair seo",
 		"past": {
-			"many": "{0} n-uaire an chloig ó shin",
+			"many": "{0} n-uair an chloig ó shin",
 			"other": "{0} uair an chloig ó shin"
 		},
 		"future": {
-			"many": "i gceann {0} n-uaire an chloig",
+			"many": "i gceann {0} n-uair an chloig",
 			"other": "i gceann {0} uair an chloig"
 		}
 	},

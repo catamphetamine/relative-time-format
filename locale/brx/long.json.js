@@ -5,50 +5,50 @@ export default {
 		"previous": "थांनाय बोसोर",
 		"current": "बे बोसोर",
 		"next": "फैगौ बोसोर",
-		"past": "-{0} y",
-		"future": "+{0} y"
+		"past": "{0} बोसोर सिगां",
+		"future": "{0} बोसोरआव"
 	},
 	"quarter": {
-		"previous": "last quarter",
-		"current": "this quarter",
-		"next": "next quarter",
-		"past": "-{0} Q",
-		"future": "+{0} Q"
+		"previous": "थांनाय खोन्दोसे",
+		"current": "बे खोन्दोसे",
+		"next": "फैगौ खोन्दोसे",
+		"past": "{0} खोन्दोसे सिगां",
+		"future": "{0} खोन्दोसेआव"
 	},
 	"month": {
 		"previous": "थांनाय दान",
 		"current": "बे दान",
 		"next": "फैगौ दान",
-		"past": "-{0} m",
-		"future": "+{0} m"
+		"past": "{0} दान सिगां",
+		"future": "{0} दानाव"
 	},
 	"week": {
 		"previous": "थांनाय सप्थाह",
 		"current": "बे सप्थाह",
 		"next": "फैगौ सप्थाह",
-		"past": "-{0} w",
-		"future": "+{0} w"
+		"past": "{0} सप्थाह सिगां",
+		"future": "{0} सप्थाहयाव"
 	},
 	"day": {
 		"previous": "मैया",
 		"current": "दिनै",
 		"next": "गाबोन",
-		"past": "-{0} d",
-		"future": "+{0} d"
+		"past": "{0} सान सिगां",
+		"future": "{0} सानाव"
 	},
 	"hour": {
-		"current": "this hour",
-		"past": "-{0} h",
-		"future": "+{0} h"
+		"current": "बे घन्टा",
+		"past": "{0} घन्टा सिगां",
+		"future": "{0} घन्टायाव"
 	},
 	"minute": {
-		"current": "this minute",
-		"past": "-{0} min",
-		"future": "+{0} min"
+		"current": "बे मिनिट",
+		"past": "{0} मिनिट सिगां",
+		"future": "{0} मिनिटआव"
 	},
 	"second": {
-		"current": "now",
-		"past": "-{0} s",
-		"future": "+{0} s"
+		"current": "दा",
+		"past": "{0} सेकेण्ड सिगां",
+		"future": "{0} सेकेण्डआव"
 	}
 }

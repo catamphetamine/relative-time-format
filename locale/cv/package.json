@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/cv",
+	"main": "../cv.json",
+	"module": "../cv.json.js",
+	"types": "../cv.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../cv.json.d.ts",
+			"import": "../cv.json.js",
+			"require": "../cv.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -42,18 +42,18 @@ export default {
 		}
 	},
 	"week": {
-		"previous": "prethodne nedelje",
-		"current": "ove nedjelje",
-		"next": "naredne nedelje",
+		"previous": "prošle sedmice",
+		"current": "ove sedmice",
+		"next": "sljedeće sedmice",
 		"past": {
-			"one": "prije {0} nedjelje",
-			"few": "prije {0} nedjelje",
-			"other": "prije {0} nedjelja"
+			"one": "prije {0} sedmice",
+			"few": "prije {0} sedmice",
+			"other": "prije {0} sedmica"
 		},
 		"future": {
-			"one": "za {0} nedjelju",
-			"few": "za {0} nedjelje",
-			"other": "za {0} nedjelja"
+			"one": "za {0} sedmicu",
+			"few": "za {0} sedmice",
+			"other": "za {0} sedmica"
 		}
 	},
 	"day": {

@@ -12,14 +12,8 @@ export default {
 		"previous": "vorig kwartaal",
 		"current": "dit kwartaal",
 		"next": "volgend kwartaal",
-		"past": {
-			"one": "{0} kwartaal geleden",
-			"other": "{0} kwartalen geleden"
-		},
-		"future": {
-			"one": "over {0} kw.",
-			"other": "over {0} kwartalen"
-		}
+		"past": "{0} kw. geleden",
+		"future": "over {0} kw."
 	},
 	"month": {
 		"previous": "vorige maand",

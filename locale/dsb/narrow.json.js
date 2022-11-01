@@ -16,14 +16,14 @@ export default {
 		"future": "za {0} kw."
 	},
 	"month": {
-		"previous": "slě. mjasec",
+		"previous": "zajź. mjasec",
 		"current": "te. mjasec",
 		"next": "pśid. mjasec",
 		"past": "pśed {0} mjas.",
 		"future": "za {0} mjas."
 	},
 	"week": {
-		"previous": "slě. tyźeń",
+		"previous": "zajź. tyźeń",
 		"current": "te. tyźeń",
 		"next": "pśid. tyźeń",
 		"past": "pśed {0} tyź.",

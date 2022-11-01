@@ -2,9 +2,9 @@ export default {
 	"locale": "mk",
 	"style": "long",
 	"year": {
-		"previous": "минатата година",
+		"previous": "лани",
 		"current": "оваа година",
-		"next": "следната година",
+		"next": "догодина",
 		"past": {
 			"one": "пред {0} година",
 			"other": "пред {0} години"

@@ -34,7 +34,7 @@ export default {
 			}
 		},
 		"month": {
-			"previous": "slědny mjasec",
+			"previous": "zajźony mjasec",
 			"current": "ten mjasec",
 			"next": "pśiducy mjasec",
 			"past": {
@@ -50,7 +50,7 @@ export default {
 			}
 		},
 		"week": {
-			"previous": "slědny tyźeń",
+			"previous": "zajźony tyźeń",
 			"current": "ten tyźeń",
 			"next": "pśiducy tyźeń",
 			"past": {
@@ -140,14 +140,14 @@ export default {
 			"future": "za {0} kwart."
 		},
 		"month": {
-			"previous": "slěd. mjasec",
+			"previous": "zajź. mjasec",
 			"current": "tot. mjasec",
 			"next": "pśiduc. mjasec",
 			"past": "pśed {0} mjas.",
 			"future": "za {0} mjas."
 		},
 		"week": {
-			"previous": "slěd. tyźeń",
+			"previous": "zajź. tyźeń",
 			"current": "tot. tyźeń",
 			"next": "pśiduc. tyźeń",
 			"past": "pśed {0} tyź.",
@@ -196,14 +196,14 @@ export default {
 			"future": "za {0} kw."
 		},
 		"month": {
-			"previous": "slě. mjasec",
+			"previous": "zajź. mjasec",
 			"current": "te. mjasec",
 			"next": "pśid. mjasec",
 			"past": "pśed {0} mjas.",
 			"future": "za {0} mjas."
 		},
 		"week": {
-			"previous": "slě. tyźeń",
+			"previous": "zajź. tyźeń",
 			"current": "te. tyźeń",
 			"next": "pśid. tyźeń",
 			"past": "pśed {0} tyź.",

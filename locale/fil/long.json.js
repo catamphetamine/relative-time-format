@@ -5,53 +5,29 @@ export default {
 		"previous": "nakaraang taon",
 		"current": "ngayong taon",
 		"next": "susunod na taon",
-		"past": {
-			"one": "{0} taon ang nakalipas",
-			"other": "{0} (na) taon ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} taon",
-			"other": "sa {0} (na) taon"
-		}
+		"past": "{0} taon ang nakalipas",
+		"future": "sa {0} taon"
 	},
 	"quarter": {
 		"previous": "nakaraang quarter",
 		"current": "ngayong quarter",
 		"next": "susunod na quarter",
-		"past": {
-			"one": "{0} quarter ang nakalipas",
-			"other": "{0} (na) quarter ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} quarter",
-			"other": "sa {0} (na) quarter"
-		}
+		"past": "{0} quarter ang nakalipas",
+		"future": "sa {0} quarter"
 	},
 	"month": {
 		"previous": "nakaraang buwan",
 		"current": "ngayong buwan",
 		"next": "susunod na buwan",
-		"past": {
-			"one": "{0} buwan ang nakalipas",
-			"other": "{0} (na) buwan ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} buwan",
-			"other": "sa {0} (na) buwan"
-		}
+		"past": "{0} buwan ang nakalipas",
+		"future": "sa {0} buwan"
 	},
 	"week": {
 		"previous": "nakalipas na linggo",
 		"current": "sa linggong ito",
 		"next": "susunod na linggo",
-		"past": {
-			"one": "{0} linggo ang nakalipas",
-			"other": "{0} (na) linggo ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} linggo",
-			"other": "sa {0} (na) linggo"
-		}
+		"past": "{0} linggo ang nakalipas",
+		"future": "sa {0} linggo"
 	},
 	"day": {
 		"previous": "kahapon",
@@ -59,46 +35,22 @@ export default {
 		"current": "ngayong araw",
 		"next": "bukas",
 		"next-2": "Samakalawa",
-		"past": {
-			"one": "{0} araw ang nakalipas",
-			"other": "{0} (na) araw ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} araw",
-			"other": "sa {0} (na) araw"
-		}
+		"past": "{0} araw ang nakalipas",
+		"future": "sa {0} araw"
 	},
 	"hour": {
 		"current": "ngayong oras",
-		"past": {
-			"one": "{0} oras ang nakalipas",
-			"other": "{0} (na) oras ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} oras",
-			"other": "sa {0} (na) oras"
-		}
+		"past": "{0} oras ang nakalipas",
+		"future": "sa {0} oras"
 	},
 	"minute": {
 		"current": "sa minutong ito",
-		"past": {
-			"one": "{0} minuto ang nakalipas",
-			"other": "{0} (na) minuto ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} minuto",
-			"other": "sa {0} (na) minuto"
-		}
+		"past": "{0} minuto ang nakalipas",
+		"future": "sa {0} minuto"
 	},
 	"second": {
 		"current": "ngayon",
-		"past": {
-			"one": "{0} segundo ang nakalipas",
-			"other": "{0} (na) segundo ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} segundo",
-			"other": "sa {0} (na) segundo"
-		}
+		"past": "{0} segundo ang nakalipas",
+		"future": "sa {0} segundo"
 	}
 }

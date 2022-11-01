@@ -42,18 +42,18 @@
 			}
 		},
 		"week": {
-			"previous": "prethodne nedelje",
-			"current": "ove nedjelje",
-			"next": "naredne nedelje",
+			"previous": "prošle sedmice",
+			"current": "ove sedmice",
+			"next": "sljedeće sedmice",
 			"past": {
-				"one": "prije {0} nedjelje",
-				"few": "prije {0} nedjelje",
-				"other": "prije {0} nedjelja"
+				"one": "prije {0} sedmice",
+				"few": "prije {0} sedmice",
+				"other": "prije {0} sedmica"
 			},
 			"future": {
-				"one": "za {0} nedjelju",
-				"few": "za {0} nedjelje",
-				"other": "za {0} nedjelja"
+				"one": "za {0} sedmicu",
+				"few": "za {0} sedmice",
+				"other": "za {0} sedmica"
 			}
 		},
 		"day": {
@@ -126,11 +126,11 @@
 			"future": "za {0} mjes."
 		},
 		"week": {
-			"previous": "prošle ned.",
-			"current": "ove ned.",
-			"next": "sledeće ned.",
-			"past": "prije {0} ned.",
-			"future": "za {0} ned."
+			"previous": "prošle sedm.",
+			"current": "ove sedm.",
+			"next": "sljedeće sedm.",
+			"past": "prije {0} sedm.",
+			"future": "za {0} sedm."
 		},
 		"day": {
 			"previous": "juče",
@@ -180,11 +180,11 @@
 			"future": "za {0} m."
 		},
 		"week": {
-			"previous": "prošle n.",
-			"current": "ove n.",
-			"next": "sljedeće n.",
-			"past": "prije {0} n.",
-			"future": "za {0} n."
+			"previous": "prošle s.",
+			"current": "ove s.",
+			"next": "sljedeće s.",
+			"past": "prije {0} s.",
+			"future": "za {0} s."
 		},
 		"day": {
 			"previous": "juče",

@@ -46,8 +46,16 @@ export default {
 		"previous": "an tscht. seo caite",
 		"current": "an tscht. seo",
 		"next": "an tscht. seo chugainn",
-		"past": "-{0} scht.",
-		"future": "+{0} scht."
+		"past": {
+			"two": "{0} shcht. ó shin",
+			"few": "{0} shcht. ó shin",
+			"other": "-{0} scht."
+		},
+		"future": {
+			"two": "i gceann {0} shcht.",
+			"few": "i gceann {0} shcht.",
+			"other": "+{0} scht."
+		}
 	},
 	"day": {
 		"previous": "inné",

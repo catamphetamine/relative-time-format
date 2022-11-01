@@ -5,37 +5,22 @@
 		"previous": "nakaraang taon",
 		"current": "ngayong taon",
 		"next": "susunod na taon",
-		"past": {
-			"one": "{0} taon ang nakalipas",
-			"other": "{0} (na) taon ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} taon",
-			"other": "sa {0} (na) taon"
-		}
+		"past": "{0} taon ang nakalipas",
+		"future": "sa {0} taon"
 	},
 	"quarter": {
 		"previous": "nakaraang quarter",
 		"current": "ngayong quarter",
 		"next": "susunod na quarter",
-		"past": {
-			"one": "{0} quarter ang nakalipas",
-			"other": "{0} (na) quarter ang nakalipas"
-		},
-		"future": "sa {0} (na) quarter"
+		"past": "{0} quarter ang nakalipas",
+		"future": "sa {0} quarter"
 	},
 	"month": {
 		"previous": "nakaraang buwan",
 		"current": "ngayong buwan",
 		"next": "susunod na buwan",
-		"past": {
-			"one": "{0} buwan ang nakalipas",
-			"other": "{0} (na) buwan ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} buwan",
-			"other": "sa {0} (na) buwan"
-		}
+		"past": "{0} buwan ang nakalipas",
+		"future": "sa {0} buwan"
 	},
 	"week": {
 		"previous": "nakaraang linggo",
@@ -45,10 +30,7 @@
 			"one": "{0} linggo ang nakalipas",
 			"other": "{0} (na) linggo ang nakalipas"
 		},
-		"future": {
-			"one": "sa {0} linggo",
-			"other": "sa {0} (na) linggo"
-		}
+		"future": "sa {0} linggo"
 	},
 	"day": {
 		"previous": "kahapon",
@@ -56,15 +38,18 @@
 		"current": "ngayong araw",
 		"next": "bukas",
 		"next-2": "Samakalawa",
-		"past": "{0} (na) araw ang nakalipas",
-		"future": "sa {0} (na) araw"
+		"past": {
+			"one": "{0} araw ang nakalipas",
+			"other": "{0} (na) araw ang nakalipas"
+		},
+		"future": {
+			"one": "sa {0} (na) araw",
+			"other": "sa {0} araw"
+		}
 	},
 	"hour": {
 		"current": "ngayong oras",
-		"past": {
-			"one": "{0} oras ang nakalipas",
-			"other": "{0} (na) oras ang nakalipas"
-		},
+		"past": "{0} oras ang nakalipas",
 		"future": {
 			"one": "sa {0} oras",
 			"other": "sa {0} (na) oras"
@@ -72,24 +57,12 @@
 	},
 	"minute": {
 		"current": "sa minutong ito",
-		"past": {
-			"one": "{0} min. ang nakalipas",
-			"other": "{0} (na) min. ang nakalipas"
-		},
-		"future": {
-			"one": "sa {0} min.",
-			"other": "sa {0} (na) min."
-		}
+		"past": "{0} min. ang nakalipas",
+		"future": "sa {0} min."
 	},
 	"second": {
 		"current": "ngayon",
-		"past": {
-			"one": "{0} seg. ang nakalipas",
-			"other": "{0} (na) seg. nakalipas"
-		},
-		"future": {
-			"one": "sa {0} seg.",
-			"other": "sa {0} (na) seg."
-		}
+		"past": "{0} seg. ang nakalipas",
+		"future": "sa {0} seg."
 	}
 }

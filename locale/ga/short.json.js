@@ -35,7 +35,7 @@ export default {
 			"other": "{0} mí ó shin"
 		},
 		"future": {
-			"one": "i gceann {0} mhí",
+			"one": "i gceann {0} míosa",
 			"two": "i gceann {0} mhí",
 			"few": "i gceann {0} mhí",
 			"other": "i gceann {0} mí"
@@ -45,9 +45,14 @@ export default {
 		"previous": "an tscht. seo caite",
 		"current": "an tscht. seo",
 		"next": "an tscht. seo chugainn",
-		"past": "{0} scht. ó shin",
+		"past": {
+			"two": "{0} shcht. ó shin",
+			"few": "{0} shcht. ó shin",
+			"other": "{0} scht. ó shin"
+		},
 		"future": {
 			"two": "i gceann {0} shcht.",
+			"few": "i gceann {0} shcht.",
 			"other": "i gceann {0} scht."
 		}
 	},

@@ -34,7 +34,7 @@ export default {
 		}
 	},
 	"month": {
-		"previous": "slědny mjasec",
+		"previous": "zajźony mjasec",
 		"current": "ten mjasec",
 		"next": "pśiducy mjasec",
 		"past": {
@@ -50,7 +50,7 @@ export default {
 		}
 	},
 	"week": {
-		"previous": "slědny tyźeń",
+		"previous": "zajźony tyźeń",
 		"current": "ten tyźeń",
 		"next": "pśiducy tyźeń",
 		"past": {

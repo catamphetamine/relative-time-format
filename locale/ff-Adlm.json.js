@@ -164,7 +164,7 @@ export default {
 			}
 		},
 		"hour": {
-			"current": "𞤲𞥋𞤣𞤭𞥅 𞤯𞤮𞤮 𞤲𞥋𞤶𞤢𞤥𞤲𞥋𞤣𞤭",
+			"current": "𞤐𞤣𞤭𞥅 𞤲𞤶𞤢𞤥𞤲𞤣𞤭",
 			"past": {
 				"one": "{0} 𞤶𞤢. 𞤱𞤵𞤤𞤭𞥅𞤲𞥋𞤣𞤭",
 				"other": "{0} 𞤶𞤢. 𞤱𞤵𞤤𞤭𞥅𞤯𞤭"
@@ -172,7 +172,7 @@ export default {
 			"future": "𞤲𞥋𞤣𞤫𞤪 {0} 𞤶𞤢."
 		},
 		"minute": {
-			"current": "𞤲𞥋𞤣𞤫𞥅 𞤯𞤮𞤮 𞤸𞤮𞤶𞤮𞤥𞤪𞤫",
+			"current": "𞤲𞤣𞤫𞥅 𞤸𞤮𞤶𞤮𞤥𞤢𞥄𞤪𞤫",
 			"past": {
 				"one": "{0} 𞤸𞤮𞤶. 𞤱𞤵𞤤𞤭𞥅𞤲𞥋𞤣𞤫",
 				"other": "{0} 𞤳𞤮𞤶. 𞤱𞤵𞤤𞤭𞥅𞤯𞤫"
@@ -252,7 +252,7 @@ export default {
 			}
 		},
 		"hour": {
-			"current": "𞤲𞥋𞤣𞤭𞥅 𞤯𞤮𞤮 𞤲𞥋𞤶𞤢𞤥𞤲𞥋𞤣𞤭",
+			"current": "𞤐𞤣𞤭𞥅 𞤲𞤶𞤢𞤥𞤲𞤣𞤭",
 			"past": {
 				"one": "{0} 𞤶𞤢. 𞤱𞤵𞤤𞤭𞥅𞤲𞥋𞤣𞤭",
 				"other": "{0} 𞤶𞤢. 𞤱𞤵𞤤𞤭𞥅𞤯𞤭"
@@ -260,7 +260,7 @@ export default {
 			"future": "𞤲𞥋𞤣𞤫𞤪 {0} 𞤶𞤢."
 		},
 		"minute": {
-			"current": "𞤲𞥋𞤣𞤫𞥅 𞤯𞤮𞤮 𞤸𞤮𞤶𞤮𞤥𞤪𞤫",
+			"current": "𞤐𞤣𞤫𞥅 𞤸𞤮𞤶𞤮𞤥𞤢𞥄𞤪𞤫",
 			"past": {
 				"one": "{0} 𞤸𞤮𞤶. 𞤱𞤵𞤤𞤭𞥅𞤲𞥋𞤣𞤫",
 				"other": "{0} 𞤸𞤮𞤶. 𞤱𞤵𞤤𞤭𞥅𞤯𞤫"

@@ -23,11 +23,11 @@ export default {
 		"future": "za {0} m."
 	},
 	"week": {
-		"previous": "prošle n.",
-		"current": "ove n.",
-		"next": "sljedeće n.",
-		"past": "prije {0} n.",
-		"future": "za {0} n."
+		"previous": "prošle s.",
+		"current": "ove s.",
+		"next": "sljedeće s.",
+		"past": "prije {0} s.",
+		"future": "za {0} s."
 	},
 	"day": {
 		"previous": "juče",

@@ -2,32 +2,32 @@
 	"locale": "hi-Latn",
 	"style": "narrow",
 	"year": {
-		"previous": "last yr",
-		"current": "this yr",
-		"next": "next yr",
-		"past": "{0} yr ago",
-		"future": "in {0} yr"
+		"previous": "last yr.",
+		"current": "is yr.",
+		"next": "next yr.",
+		"past": "{0}y pahle",
+		"future": "{0}y mein"
 	},
 	"quarter": {
 		"previous": "last qtr.",
 		"current": "this qtr.",
 		"next": "next qtr.",
-		"past": "{0} qtr ago",
-		"future": "in {0} qtr"
+		"past": "{0}q pahle",
+		"future": "{0}q mein"
 	},
 	"month": {
-		"previous": "last mo",
-		"current": "this mo",
-		"next": "next mo",
-		"past": "{0} mo ago",
-		"future": "in {0} mo"
+		"previous": "last mo.",
+		"current": "is mo.",
+		"next": "next mo.",
+		"past": "{0}mo pahle",
+		"future": "{0}mo mein"
 	},
 	"week": {
 		"previous": "last wk",
-		"current": "this wk",
+		"current": "is wk",
 		"next": "next wk",
-		"past": "{0} wk ago",
-		"future": "in {0} wk"
+		"past": "{0}w pahle",
+		"future": "{0}w mein"
 	},
 	"day": {
 		"previous": "kal",
@@ -35,28 +35,22 @@
 		"current": "aaj",
 		"next": "aane wala kal",
 		"next-2": "aane wala parson",
-		"past": {
-			"one": "{0} day ago",
-			"other": "{0} days ago"
-		},
-		"future": {
-			"one": "in {0} day",
-			"other": "in {0} days"
-		}
+		"past": "{0} din pahle",
+		"future": "{0} din mein"
 	},
 	"hour": {
-		"current": "yeh ghanta",
-		"past": "{0} hr ago",
-		"future": "in {0} hr"
+		"current": "yah ghanta",
+		"past": "{0}hr pahle",
+		"future": "{0}hr mein"
 	},
 	"minute": {
-		"current": "yeh minute",
-		"past": "{0} min ago",
-		"future": "in {0} min"
+		"current": "yah minute",
+		"past": "{0} min. pahle",
+		"future": "{0} min. mein"
 	},
 	"second": {
 		"current": "now",
-		"past": "{0} sec ago",
-		"future": "in {0} sec"
+		"past": "{0}s pahle",
+		"future": "{0}s mein"
 	}
 }

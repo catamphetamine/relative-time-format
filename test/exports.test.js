@@ -1,7 +1,7 @@
 import RelativeTimeFormat from '../index.js'
 import Library from '../index.cjs'
 
-import en from '../locale/en.json'
+import en from '../locale/en.json' assert { type: 'json' }
 
 RelativeTimeFormat.addLocale(en)
 

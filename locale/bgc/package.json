@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/bgc",
+	"main": "../bgc.json",
+	"module": "../bgc.json.js",
+	"types": "../bgc.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../bgc.json.d.ts",
+			"import": "../bgc.json.js",
+			"require": "../bgc.json"
+		}
+	},
+	"sideEffects": false
+}

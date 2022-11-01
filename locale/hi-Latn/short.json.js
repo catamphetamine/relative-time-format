@@ -2,32 +2,38 @@ export default {
 	"locale": "hi-Latn",
 	"style": "short",
 	"year": {
-		"previous": "last yr",
-		"current": "this yr",
-		"next": "next yr",
-		"past": "{0} yr ago",
-		"future": "in {0} yr"
+		"previous": "last yr.",
+		"current": "is yr.",
+		"next": "next yr.",
+		"past": "{0} yr. pahle",
+		"future": "{0} yr. mein"
 	},
 	"quarter": {
 		"previous": "last qtr.",
 		"current": "this qtr.",
 		"next": "next qtr.",
-		"past": "{0} qtr ago",
-		"future": "in {0} qtr"
+		"past": {
+			"one": "{0} qtr. pahle",
+			"other": "{0} qtrs. pahle"
+		},
+		"future": {
+			"one": "{0} qtr. mein",
+			"other": "{0} qtrs. mein"
+		}
 	},
 	"month": {
 		"previous": "last mo",
-		"current": "this mo",
+		"current": "is mo",
 		"next": "next mo",
-		"past": "{0} mo ago",
-		"future": "in {0} mo"
+		"past": "{0} mo. pahle",
+		"future": "{0} mo. mein"
 	},
 	"week": {
-		"previous": "last wk",
-		"current": "this wk",
-		"next": "next wk",
-		"past": "{0} wk ago",
-		"future": "in {0} wk"
+		"previous": "last wk.",
+		"current": "is wk.",
+		"next": "next wk.",
+		"past": "{0} wk. pahle",
+		"future": "{0} wk. mein"
 	},
 	"day": {
 		"previous": "kal",
@@ -35,28 +41,25 @@ export default {
 		"current": "aaj",
 		"next": "aane wala kal",
 		"next-2": "aane wala parson",
-		"past": {
-			"one": "{0} day ago",
-			"other": "{0} days ago"
-		},
-		"future": {
-			"one": "in {0} day",
-			"other": "in {0} days"
-		}
+		"past": "{0} din pahle",
+		"future": "{0} din mein"
 	},
 	"hour": {
-		"current": "yeh ghanta",
-		"past": "{0} hr ago",
-		"future": "in {0} hr"
+		"current": "yah ghanta",
+		"past": {
+			"one": "{0} hr pahle",
+			"other": "{0} hr mein"
+		},
+		"future": "{0} hr mein"
 	},
 	"minute": {
-		"current": "yeh minute",
-		"past": "{0} min ago",
-		"future": "in {0} min"
+		"current": "yah minute",
+		"past": "{0} min. pahle",
+		"future": "{0} min. mein"
 	},
 	"second": {
 		"current": "now",
-		"past": "{0} sec ago",
-		"future": "in {0} sec"
+		"past": "{0} sec. pahle",
+		"future": "{0} sec. mein"
 	}
 }

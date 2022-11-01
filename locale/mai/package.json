@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/mai",
+	"main": "../mai.json",
+	"module": "../mai.json.js",
+	"types": "../mai.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../mai.json.d.ts",
+			"import": "../mai.json.js",
+			"require": "../mai.json"
+		}
+	},
+	"sideEffects": false
+}

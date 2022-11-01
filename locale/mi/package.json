@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/mi",
+	"main": "../mi.json",
+	"module": "../mi.json.js",
+	"types": "../mi.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../mi.json.d.ts",
+			"import": "../mi.json.js",
+			"require": "../mi.json"
+		}
+	},
+	"sideEffects": false
+}

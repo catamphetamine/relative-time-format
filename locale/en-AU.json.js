@@ -213,7 +213,7 @@ export default {
 			"current": "this qtr.",
 			"next": "next qtr.",
 			"past": {
-				"one": "in {0} qtr ago",
+				"one": "{0} qtr ago",
 				"other": "{0} qtrs ago"
 			},
 			"future": {

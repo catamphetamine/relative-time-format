@@ -16,14 +16,14 @@
 		"future": "za {0} kwart."
 	},
 	"month": {
-		"previous": "slěd. mjasec",
+		"previous": "zajź. mjasec",
 		"current": "tot. mjasec",
 		"next": "pśiduc. mjasec",
 		"past": "pśed {0} mjas.",
 		"future": "za {0} mjas."
 	},
 	"week": {
-		"previous": "slěd. tyźeń",
+		"previous": "zajź. tyźeń",
 		"current": "tot. tyźeń",
 		"next": "pśiduc. tyźeń",
 		"past": "pśed {0} tyź.",

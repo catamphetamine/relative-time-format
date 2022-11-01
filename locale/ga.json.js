@@ -13,7 +13,7 @@ export default {
 				"other": "{0} bliain ó shin"
 			},
 			"future": {
-				"one": "i gceann {0} bhliain",
+				"one": "i gceann {0} bliana",
 				"two": "i gceann {0} bhliain",
 				"few": "i gceann {0} bliana",
 				"many": "i gceann {0} mbliana",
@@ -55,6 +55,7 @@ export default {
 				"other": "{0} seachtain ó shin"
 			},
 			"future": {
+				"one": "i gceann {0} seachtaine",
 				"two": "i gceann {0} sheachtain",
 				"few": "i gceann {0} seachtaine",
 				"many": "i gceann {0} seachtaine",
@@ -73,11 +74,11 @@ export default {
 		"hour": {
 			"current": "an uair seo",
 			"past": {
-				"many": "{0} n-uaire an chloig ó shin",
+				"many": "{0} n-uair an chloig ó shin",
 				"other": "{0} uair an chloig ó shin"
 			},
 			"future": {
-				"many": "i gceann {0} n-uaire an chloig",
+				"many": "i gceann {0} n-uair an chloig",
 				"other": "i gceann {0} uair an chloig"
 			}
 		},
@@ -135,7 +136,7 @@ export default {
 				"other": "{0} mí ó shin"
 			},
 			"future": {
-				"one": "i gceann {0} mhí",
+				"one": "i gceann {0} míosa",
 				"two": "i gceann {0} mhí",
 				"few": "i gceann {0} mhí",
 				"other": "i gceann {0} mí"
@@ -145,9 +146,14 @@ export default {
 			"previous": "an tscht. seo caite",
 			"current": "an tscht. seo",
 			"next": "an tscht. seo chugainn",
-			"past": "{0} scht. ó shin",
+			"past": {
+				"two": "{0} shcht. ó shin",
+				"few": "{0} shcht. ó shin",
+				"other": "{0} scht. ó shin"
+			},
 			"future": {
 				"two": "i gceann {0} shcht.",
+				"few": "i gceann {0} shcht.",
 				"other": "i gceann {0} scht."
 			}
 		},
@@ -238,8 +244,16 @@ export default {
 			"previous": "an tscht. seo caite",
 			"current": "an tscht. seo",
 			"next": "an tscht. seo chugainn",
-			"past": "-{0} scht.",
-			"future": "+{0} scht."
+			"past": {
+				"two": "{0} shcht. ó shin",
+				"few": "{0} shcht. ó shin",
+				"other": "-{0} scht."
+			},
+			"future": {
+				"two": "i gceann {0} shcht.",
+				"few": "i gceann {0} shcht.",
+				"other": "+{0} scht."
+			}
 		},
 		"day": {
 			"previous": "inné",

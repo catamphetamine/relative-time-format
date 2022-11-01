@@ -45,6 +45,12 @@ var $ = {
 			: v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12 || i100 > 14) || (f10 >= 2 && f10 <= 4) && (f100 < 12 || f100 > 14) ? 'few'
 			: 'other';
 	},
+	ca: (n) => {
+		const s = String(n).split('.'), i = s[0], v0 = !s[1], i1000000 = i.slice(-6);
+		return n == 1 && v0 ? 'one'
+			: i != 0 && i1000000 == 0 && v0 ? 'many'
+			: 'other';
+	},
 	ceb: (n) => {
 		const s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1], i10 = i.slice(-1), f10 = f.slice(-1);
 		return v0 && (i == 1 || i == 2 || i == 3) || v0 && i10 != 4 && i10 != 6 && i10 != 9 || !v0 && f10 != 4 && f10 != 6 && f10 != 9 ? 'one' : 'other';
@@ -103,21 +109,14 @@ var $ = {
 			: 'other';
 	},
 	he: (n) => {
-		const s = String(n).split('.'), i = s[0], v0 = !s[1], t0 = Number(s[0]) == n, n10 = t0 && s[0].slice(-1);
-		return n == 1 && v0 ? 'one'
+		const s = String(n).split('.'), i = s[0], v0 = !s[1];
+		return i == 1 && v0 || i == 0 && !v0 ? 'one'
 			: i == 2 && v0 ? 'two'
-			: v0 && (n < 0 || n > 10) && t0 && n10 == 0 ? 'many'
 			: 'other';
 	},
 	is: (n) => {
-		const s = String(n).split('.'), i = s[0], t0 = Number(s[0]) == n, i10 = i.slice(-1), i100 = i.slice(-2);
-		return t0 && i10 == 1 && i100 != 11 || !t0 ? 'one' : 'other';
-	},
-	it: (n) => {
-		const s = String(n).split('.'), i = s[0], v0 = !s[1], i1000000 = i.slice(-6);
-		return n == 1 && v0 ? 'one'
-			: i != 0 && i1000000 == 0 && v0 ? 'many'
-			: 'other';
+		const s = String(n).split('.'), i = s[0], t = (s[1] || '').replace(/0+$/, ''), t0 = Number(s[0]) == n, i10 = i.slice(-1), i100 = i.slice(-2);
+		return t0 && i10 == 1 && i100 != 11 || t % 10 == 1 && t % 100 != 11 ? 'one' : 'other';
 	},
 	ksh: (n) => n == 0 ? 'zero'
 			: n == 1 ? 'one'
@@ -142,7 +141,8 @@ var $ = {
 	mt: (n) => {
 		const s = String(n).split('.'), t0 = Number(s[0]) == n, n100 = t0 && s[0].slice(-2);
 		return n == 1 ? 'one'
-			: n == 0 || (n100 >= 2 && n100 <= 10) ? 'few'
+			: n == 2 ? 'two'
+			: n == 0 || (n100 >= 3 && n100 <= 10) ? 'few'
 			: (n100 >= 11 && n100 <= 19) ? 'many'
 			: 'other';
 	},
@@ -163,7 +163,7 @@ var $ = {
 	ro: (n) => {
 		const s = String(n).split('.'), v0 = !s[1], t0 = Number(s[0]) == n, n100 = t0 && s[0].slice(-2);
 		return n == 1 && v0 ? 'one'
-			: !v0 || n == 0 || (n100 >= 2 && n100 <= 19) ? 'few'
+			: !v0 || n == 0 || n != 1 && (n100 >= 1 && n100 <= 19) ? 'few'
 			: 'other';
 	},
 	ru: (n) => {
@@ -194,7 +194,6 @@ $.az = $.af
 $.bg = $.af
 $.bn = $.am
 $.brx = $.af
-$.ca = $.ast
 $.ce = $.af
 $.chr = $.af
 $.de = $.ast
@@ -220,6 +219,7 @@ $.hy = $.ff
 $.ia = $.ast
 $.id = $.dz
 $.ig = $.dz
+$.it = $.ca
 $.ja = $.dz
 $.jgo = $.af
 $.jv = $.dz
@@ -230,6 +230,7 @@ $.kl = $.af
 $.km = $.dz
 $.kn = $.am
 $.ko = $.dz
+$.ks = $.af
 $.ku = $.af
 $.ky = $.af
 $.lb = $.af
@@ -273,6 +274,7 @@ $.uz = $.af
 $.vi = $.dz
 $.wae = $.af
 $.wo = $.dz
+$.xh = $.af
 $.yi = $.ast
 $.yo = $.dz
 $.yue = $.dz

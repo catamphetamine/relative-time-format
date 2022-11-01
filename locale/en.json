@@ -169,63 +169,51 @@
 			"previous": "last yr.",
 			"current": "this yr.",
 			"next": "next yr.",
-			"past": "{0} yr. ago",
-			"future": "in {0} yr."
+			"past": "{0}y ago",
+			"future": "in {0}y"
 		},
 		"quarter": {
 			"previous": "last qtr.",
 			"current": "this qtr.",
 			"next": "next qtr.",
-			"past": {
-				"one": "{0} qtr. ago",
-				"other": "{0} qtrs. ago"
-			},
-			"future": {
-				"one": "in {0} qtr.",
-				"other": "in {0} qtrs."
-			}
+			"past": "{0}q ago",
+			"future": "in {0}q"
 		},
 		"month": {
 			"previous": "last mo.",
 			"current": "this mo.",
 			"next": "next mo.",
-			"past": "{0} mo. ago",
-			"future": "in {0} mo."
+			"past": "{0}mo ago",
+			"future": "in {0}mo"
 		},
 		"week": {
 			"previous": "last wk.",
 			"current": "this wk.",
 			"next": "next wk.",
-			"past": "{0} wk. ago",
-			"future": "in {0} wk."
+			"past": "{0}w ago",
+			"future": "in {0}w"
 		},
 		"day": {
 			"previous": "yesterday",
 			"current": "today",
 			"next": "tomorrow",
-			"past": {
-				"one": "{0} day ago",
-				"other": "{0} days ago"
-			},
-			"future": {
-				"one": "in {0} day",
-				"other": "in {0} days"
-			}
+			"past": "{0}d ago",
+			"future": "in {0}d"
 		},
 		"hour": {
 			"current": "this hour",
-			"past": "{0} hr. ago",
-			"future": "in {0} hr."
+			"past": "{0}h ago",
+			"future": "in {0}h"
 		},
 		"minute": {
 			"current": "this minute",
-			"past": "{0} min. ago",
-			"future": "in {0} min."
+			"past": "{0}m ago",
+			"future": "in {0}m"
 		},
 		"second": {
 			"current": "now",
-			"past": "{0} sec. ago",
-			"future": "in {0} sec."
+			"past": "{0}s ago",
+			"future": "in {0}s"
 		}
 	}
 }

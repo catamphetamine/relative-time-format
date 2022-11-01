@@ -1,14 +1,14 @@
 import RelativeTimeFormat from './RelativeTimeFormat.js'
 
-import ccp from '../locale/ccp.json'
-import de from '../locale/de.json'
-import en from '../locale/en.json'
-import ru from '../locale/ru.json'
-import to from '../locale/to.json'
-import ar_AE from '../locale/ar-AE.json'
-import pt from '../locale/pt.json'
-import pt_PT from '../locale/pt-PT.json'
-import zh from '../locale/zh.json'
+import ccp from '../locale/ccp.json' assert { type: 'json' }
+import de from '../locale/de.json' assert { type: 'json' }
+import en from '../locale/en.json' assert { type: 'json' }
+import ru from '../locale/ru.json' assert { type: 'json' }
+import to from '../locale/to.json' assert { type: 'json' }
+import ar_AE from '../locale/ar-AE.json' assert { type: 'json' }
+import pt from '../locale/pt.json' assert { type: 'json' }
+import pt_PT from '../locale/pt-PT.json' assert { type: 'json' }
+import zh from '../locale/zh.json' assert { type: 'json' }
 
 en.tiny = {
   "year": "{0}yr",
@@ -313,8 +313,18 @@ describe('Intl.RelativeTimeFormat', () => {
     // Will use `quantify` for "ar" language.
     new RelativeTimeFormat("ar-AE").format(-1, "year").should.equal("قبل سنة واحدة")
     new RelativeTimeFormat("ar-AE").format(-2, "year").should.equal("قبل سنتين")
-    new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل ٣ سنوات")
-    new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل ١٫٢٣ سنة")
+
+    // Uses local digits:
+    // new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل ٣ سنوات")
+
+    // Uses generic ANSI 0-9 digits:
+    new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل 3 سنوات")
+
+    // Uses local digits:
+    // new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل ١٫٢٣ سنة")
+
+    // Uses generic ANSI 0-9 digits:
+    new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل 1.23 سنة")
   })
 
   it('should use correct quantify for Portuguese ("pt") and European Portuguese ("pt-PT")', () => {

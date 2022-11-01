@@ -5,28 +5,28 @@ export default {
 		"previous": "pichhla saal",
 		"current": "is saal",
 		"next": "agla saal",
-		"past": "{0} saal pehle",
+		"past": "{0} saal pahle",
 		"future": "{0} saal mein"
 	},
 	"quarter": {
 		"previous": "last quarter",
-		"current": "this quarter",
+		"current": "is quarter",
 		"next": "next quarter",
 		"past": {
-			"one": "{0} quarter ago",
-			"other": "{0} quarters ago"
+			"one": "{0} quarter pahle",
+			"other": "{0} quarters pahle"
 		},
 		"future": {
-			"one": "in {0} quarter",
-			"other": "in {0} quarters"
+			"one": "{0} quarter mein",
+			"other": "{0} quarters mein"
 		}
 	},
 	"month": {
-		"previous": "pichhla mahina",
-		"current": "is mahine",
-		"next": "agla mahina",
-		"past": "{0} mahine pehle",
-		"future": "{0} mahine mein"
+		"previous": "pichhla maheena",
+		"current": "yah maheena",
+		"next": "agla maheena",
+		"past": "{0} maheene pahle",
+		"future": "{0} maheene mein"
 	},
 	"week": {
 		"previous": "pichhla hafta",
@@ -45,18 +45,18 @@ export default {
 		"future": "{0} din mein"
 	},
 	"hour": {
-		"current": "yeh ghanta",
-		"past": "{0} ghante pehle",
+		"current": "yah ghanta",
+		"past": "{0} ghante pahle",
 		"future": "{0} ghante mein"
 	},
 	"minute": {
-		"current": "yeh minute",
-		"past": "{0} minute pehle",
+		"current": "yah minute",
+		"past": "{0} minute pahle",
 		"future": "{0} minute mein"
 	},
 	"second": {
 		"current": "abhi",
-		"past": "{0} second pehle",
+		"past": "{0} second pahle",
 		"future": "{0} second mein"
 	}
 }

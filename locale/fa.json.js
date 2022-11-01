@@ -36,7 +36,7 @@ export default {
 			"next": "فردا",
 			"next-2": "پس‌فردا",
 			"past": "{0} روز پیش",
-			"future": "{0} روز بعد"
+			"future": "{0} روز دیگر"
 		},
 		"hour": {
 			"current": "همین ساعت",
@@ -90,7 +90,7 @@ export default {
 			"next": "فردا",
 			"next-2": "پس‌فردا",
 			"past": "{0} روز پیش",
-			"future": "{0} روز بعد"
+			"future": "{0} روز دیگر"
 		},
 		"hour": {
 			"current": "همین ساعت",

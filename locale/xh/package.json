@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/xh",
+	"main": "../xh.json",
+	"module": "../xh.json.js",
+	"types": "../xh.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../xh.json.d.ts",
+			"import": "../xh.json.js",
+			"require": "../xh.json"
+		}
+	},
+	"sideEffects": false
+}
