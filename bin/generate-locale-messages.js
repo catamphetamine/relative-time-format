@@ -27,12 +27,11 @@ const LONG_STYLE_TRANSLATION_STUB = `{
 		"future": "+{0} y"
 	}`
 
-// Extra time formatting styles.
-const ADDITIONAL_STYLES = [
-	'short-time',
-	'long-time',
-	'now',
-	'tiny'
+// Additional locales that're not present in CLDR data.
+const OTHER_LOCALES = [
+	// Esperanto.
+	// https://gitlab.com/catamphetamine/relative-time-format/-/merge_requests/1
+	'eo'
 ]
 
 // "Plural rules" functions are not stored in JSON files because they're not strings
@@ -63,6 +62,20 @@ for (const locale of ALL_LOCALES) {
 		pluralRuleFunctions,
 		pluralRuleFunctionAliases
 	})
+}
+
+for (const locale of OTHER_LOCALES) {
+	if (ALL_LOCALES[locale]) {
+		throw new Error(`Locale "${locale}" is already present in CLDR data. Remove it from "OTHER_LOCALES" list.`);
+	}
+
+	const localeMessages = {
+		short: readJsonFromFile(path.resolve(`./locale-other/${locale}/short.json`)),
+		narrow: readJsonFromFile(path.resolve(`./locale-other/${locale}/narrow.json`)),
+		long: readJsonFromFile(path.resolve(`./locale-other/${locale}/long.json`))
+	}
+
+	writeLocaleFiles(locale, localeMessages)
 }
 
 addLocaleExports(ALL_LOCALES)
@@ -273,19 +286,18 @@ function writeLocaleData(locale, { pluralRuleFunctions, pluralRuleFunctionAliase
 		}
 	}
 
+	writeLocaleFiles(locale, localeMessages)
+}
+
+function writeLocaleFiles(locale, localeMessages) {
 	const styles = ['long', 'short', 'narrow']
 
-	// Find all "extra" time formatting styles for the `locale`.
-	// For example, finds `tiny.json` for `ko` (Korean).
-	for (const style of ADDITIONAL_STYLES) {
-		const styleData = findStyle(locale, style)
-		if (styleData) {
-			styles.push(style)
-			localeMessages[style] = styleData
-		}
-	}
-
 	for (const style of styles) {
+		// Validate that messages are present for this style for the locale.
+		if (!localeMessages[style]) {
+			throw new Error(`"${style}" messages not found for locale "${locale}"`);
+		}
+
 		// Create `${locale}/${style}.json` file in the "locales/${locale}" directory.
 		fs.outputFileSync(
 			path.join('./locale', locale, `${style}.json`),

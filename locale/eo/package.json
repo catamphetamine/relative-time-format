@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/eo",
+	"main": "../eo.json",
+	"module": "../eo.json.js",
+	"types": "../eo.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../eo.json.d.ts",
+			"import": "../eo.json.js",
+			"require": "../eo.json"
+		}
+	},
+	"sideEffects": false
+}
