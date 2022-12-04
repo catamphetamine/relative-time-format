@@ -186,7 +186,13 @@ var $ = {
 			: v0 && i100 == 2 ? 'two'
 			: v0 && (i100 == 3 || i100 == 4) || !v0 ? 'few'
 			: 'other';
-	}
+	},
+	kab: (n) => {
+		const s = String(n).split('.'), i = s[0], v0 = !s[1], i1000000 = i.slice(-6);
+		return n >= 0 && n < 2 ? 'one'
+			: i != 0 && i1000000 == 0 && v0 ? 'many'
+			: 'other';
+	},
 }
 
 $.as = $.am

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/kab",
+	"main": "../kab.json",
+	"module": "../kab.json.js",
+	"types": "../kab.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../kab.json.d.ts",
+			"import": "../kab.json.js",
+			"require": "../kab.json"
+		}
+	},
+	"sideEffects": false
+}
