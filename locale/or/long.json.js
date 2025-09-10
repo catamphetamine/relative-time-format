@@ -10,7 +10,7 @@ export default {
 	},
 	"quarter": {
 		"previous": "ଗତ ତ୍ରୟମାସ",
-		"current": "ଗତ ତ୍ରୟମାସ",
+		"current": "ଏହି ତ୍ରୟମାସ",
 		"next": "ଆଗାମୀ ତ୍ରୟମାସ",
 		"past": "{0} ତ୍ରୟମାସ ପୂର୍ବେ",
 		"future": "{0} ତ୍ରୟମାସରେ"

@@ -1,0 +1,159 @@
+{
+	"locale": "blo",
+	"long": {
+		"year": {
+			"previous": "gaja gaboŋoka",
+			"current": "gaja ŋgaɖe",
+			"next": "gaja gafɔlɩ",
+			"past": "-{0} y",
+			"future": "+{0} y"
+		},
+		"quarter": {
+			"previous": "ɩŋɔrɩriu ɩboŋoka",
+			"current": "ɩŋɔrɩriu nnɖe",
+			"next": "ɩŋɔrɩriu ɩfɔlɩ",
+			"past": "-{0} Q",
+			"future": "+{0} Q"
+		},
+		"month": {
+			"previous": "aŋɔrɔ aboŋoka",
+			"current": "aŋɔrɔ nnɖe",
+			"next": "aŋɔrɔ afɔlɩ",
+			"past": "-{0} m",
+			"future": "+{0} m"
+		},
+		"week": {
+			"previous": "bɔkɔɩ aboŋoka",
+			"current": "bɔkɔɩ nnɖe",
+			"next": "bɔkɔɩ afɔlɩ",
+			"past": "-{0} w",
+			"future": "+{0} w"
+		},
+		"day": {
+			"previous": "galaɩ",
+			"current": "ʊrɔŋ",
+			"next": "gacǝŋ",
+			"past": "-{0} d",
+			"future": "+{0} d"
+		},
+		"hour": {
+			"current": "gakɔŋkɔŋɔ̀ ŋgaɖe",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "gʊnaŋa ŋgʊɖe",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "nnyǝmǝ",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	},
+	"short": {
+		"year": {
+			"previous": "gj. boŋo",
+			"current": "gj. ɖe",
+			"next": "gj. fɔlɩ",
+			"past": "-{0} y",
+			"future": "+{0} y"
+		},
+		"quarter": {
+			"previous": "ɩŋɔrɩriu ɩboŋoka",
+			"current": "ɩŋɔrɩriu nnɖe",
+			"next": "ɩŋɔrɩriu ɩfɔlɩ",
+			"past": "-{0} Q",
+			"future": "+{0} Q"
+		},
+		"month": {
+			"previous": "aŋ. boŋo",
+			"current": "aŋ. ɖe",
+			"next": "aŋ. fɔlɩ",
+			"past": "-{0} m",
+			"future": "+{0} m"
+		},
+		"week": {
+			"previous": "bk. boŋo",
+			"current": "bk. ɖe",
+			"next": "bk. fɔlɩ",
+			"past": "-{0} w",
+			"future": "+{0} w"
+		},
+		"day": {
+			"previous": "galaɩ",
+			"current": "ʊrɔŋ",
+			"next": "gacǝŋ",
+			"past": "-{0} d",
+			"future": "+{0} d"
+		},
+		"hour": {
+			"current": "gakɔŋkɔŋɔ̀ ŋgaɖe",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "gʊnaŋa ŋgʊɖe",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "nnyǝmǝ",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	},
+	"narrow": {
+		"year": {
+			"previous": "gj boŋo",
+			"current": "gj ɖe",
+			"next": "gj fɔlɩ",
+			"past": "-{0} y",
+			"future": "+{0} y"
+		},
+		"quarter": {
+			"previous": "ɩŋɔrɩriu ɩboŋoka",
+			"current": "ɩŋɔrɩriu nnɖe",
+			"next": "ɩŋɔrɩriu ɩfɔlɩ",
+			"past": "-{0} Q",
+			"future": "+{0} Q"
+		},
+		"month": {
+			"previous": "aŋ boŋo",
+			"current": "aŋ ɖe",
+			"next": "aŋ fɔlɩ",
+			"past": "-{0} m",
+			"future": "+{0} m"
+		},
+		"week": {
+			"previous": "bk boŋo",
+			"current": "bk ɖe",
+			"next": "bk fɔlɩ",
+			"past": "-{0} w",
+			"future": "+{0} w"
+		},
+		"day": {
+			"previous": "galaɩ",
+			"current": "ʊrɔŋ",
+			"next": "gacǝŋ",
+			"past": "-{0} d",
+			"future": "+{0} d"
+		},
+		"hour": {
+			"current": "gakɔŋkɔŋɔ̀ ŋgaɖe",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "gʊnaŋa ŋgʊɖe",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "nnyǝmǝ",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	}
+}

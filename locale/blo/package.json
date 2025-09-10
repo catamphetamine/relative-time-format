@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/blo",
+	"main": "../blo.json",
+	"module": "../blo.json.js",
+	"types": "../blo.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../blo.json.d.ts",
+			"import": "../blo.json.js",
+			"require": "../blo.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-ID",
+	"main": "../en-ID.json",
+	"module": "../en-ID.json.js",
+	"types": "../en-ID.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-ID.json.d.ts",
+			"import": "../en-ID.json.js",
+			"require": "../en-ID.json"
+		}
+	},
+	"sideEffects": false
+}

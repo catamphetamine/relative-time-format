@@ -50,7 +50,7 @@ export default {
 	},
 	"second": {
 		"current": "এখন",
-		"past": "{0} সেকেন্ড পূর্বে",
+		"past": "{0} সেকেন্ড আগে",
 		"future": "{0} সেকেন্ডে"
 	}
 }

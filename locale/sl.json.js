@@ -150,16 +150,16 @@ export default {
 			"future": "čez {0} četrtl."
 		},
 		"month": {
-			"previous": "prejšnji mesec",
-			"current": "ta mesec",
-			"next": "naslednji mesec",
+			"previous": "prejšnji mes.",
+			"current": "ta mes.",
+			"next": "naslednji mes.",
 			"past": "pred {0} mes.",
 			"future": "čez {0} mes."
 		},
 		"week": {
-			"previous": "prejšnji teden",
-			"current": "ta teden",
-			"next": "naslednji teden",
+			"previous": "prejšnji ted.",
+			"current": "ta ted.",
+			"next": "naslednji ted.",
 			"past": "pred {0} ted.",
 			"future": "čez {0} ted."
 		},
@@ -230,16 +230,16 @@ export default {
 			"future": "čez {0} četr."
 		},
 		"month": {
-			"previous": "prejšnji mesec",
-			"current": "ta mesec",
-			"next": "naslednji mesec",
+			"previous": "prej. mes.",
+			"current": "ta mes.",
+			"next": "nasl. mes.",
 			"past": "pred {0} mes.",
 			"future": "čez {0} mes."
 		},
 		"week": {
-			"previous": "prejšnji teden",
-			"current": "ta teden",
-			"next": "naslednji teden",
+			"previous": "prej. ted.",
+			"current": "ta ted.",
+			"next": "nasl. ted.",
 			"past": "pred {0} ted.",
 			"future": "čez {0} ted."
 		},

@@ -4,7 +4,7 @@ export default {
 		"year": {
 			"previous": "Afọ gara aga",
 			"current": "Afọ a",
-			"next": "Afọ ọzọ",
+			"next": "Afọ na-abịa",
 			"past": "-{0} y",
 			"future": "+{0} y"
 		},
@@ -12,13 +12,13 @@ export default {
 			"previous": "Nkejị keanọ gara aga",
 			"current": "nkejị keanọ a",
 			"next": "nkejị keanọ na abịa",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"past": "Nkejị keanọ {0} gara aga",
+			"future": "Nkejị keanọ {0}"
 		},
 		"month": {
 			"previous": "Ọnwa gara aga",
 			"current": "Ọnwa a",
-			"next": "Ọnwa ọzọ",
+			"next": "Ọnwa na-abịa",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
@@ -56,7 +56,7 @@ export default {
 		"year": {
 			"previous": "Afọ gara aga",
 			"current": "Afọ a",
-			"next": "Afọ ọzọ",
+			"next": "afọ na-abịa",
 			"past": "-{0} y",
 			"future": "+{0} y"
 		},
@@ -64,13 +64,13 @@ export default {
 			"previous": "Nkejị keanọ gara aga",
 			"current": "nkejị keanọ a",
 			"next": "nkejị keanọ na abịa",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"past": "Nkejị keanọ {0} gara aga",
+			"future": "Nkejị keanọ {0}"
 		},
 		"month": {
 			"previous": "Ọnwa gara aga",
 			"current": "Ọnwa a",
-			"next": "Ọnwa ọzọ",
+			"next": "Ọnwa na-abịa",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
@@ -85,8 +85,8 @@ export default {
 			"previous": "Ụnyaahụ",
 			"current": "Taata",
 			"next": "Echi",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"past": "n’ụbọchị {0} gara aga",
+			"future": "n’ụbọchị {0}"
 		},
 		"hour": {
 			"current": "elekere a",
@@ -108,21 +108,21 @@ export default {
 		"year": {
 			"previous": "Afọ gara aga",
 			"current": "Afọ a",
-			"next": "Afọ ọzọ",
-			"past": "-{0} y",
+			"next": "afọ na-abịa",
+			"past": "Afọ {0} gara aga",
 			"future": "+{0} y"
 		},
 		"quarter": {
 			"previous": "Nkejị keanọ gara aga",
 			"current": "nkejị keanọ a",
 			"next": "nkejị keanọ na abịa",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"past": "Nkejị keanọ {0} gara aga",
+			"future": "Nkejị keanọ {0}"
 		},
 		"month": {
 			"previous": "Ọnwa gara aga",
 			"current": "Ọnwa a",
-			"next": "Ọnwa ọzọ",
+			"next": "Ọnwa na-abịa",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
@@ -137,8 +137,8 @@ export default {
 			"previous": "Ụnyaahụ",
 			"current": "Taata",
 			"next": "Echi",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"past": "n’ụbọchị {0} gara aga",
+			"future": "n’ụbọchị {0}"
 		},
 		"hour": {
 			"current": "elekere a",

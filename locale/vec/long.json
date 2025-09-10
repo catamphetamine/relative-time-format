@@ -1,0 +1,99 @@
+{
+	"locale": "vec",
+	"style": "long",
+	"year": {
+		"previous": "l’ano pasà",
+		"current": "‘st’ano",
+		"next": "l’ano che vien",
+		"past": {
+			"one": "che’l ze {0} ano",
+			"other": "che i ze {0} ani"
+		},
+		"future": {
+			"one": "tenpo {0} ano",
+			"other": "tenpo {0} ani"
+		}
+	},
+	"quarter": {
+		"previous": "el trimestre pasà",
+		"current": "‘sto trimestre",
+		"next": "el trimestre che vien",
+		"past": {
+			"one": "che’l ze {0} trimestre",
+			"other": "che i ze {0} trimestri"
+		},
+		"future": {
+			"one": "tenpo {0} trimestre",
+			"other": "tenpo {0} trimestri"
+		}
+	},
+	"month": {
+		"previous": "el meze pasà",
+		"current": "‘sto meze",
+		"next": "el meze che vien",
+		"past": {
+			"one": "che’l ze {0} meze",
+			"other": "che i ze {0} mezi"
+		},
+		"future": {
+			"one": "tenpo {0} meze",
+			"other": "tenpo {0} mezi"
+		}
+	},
+	"week": {
+		"previous": "la setemana pasada",
+		"current": "‘sta setemana",
+		"next": "la setemana che vien",
+		"past": {
+			"one": "che la ze {0} setemana",
+			"other": "che le ze {0} setemane"
+		},
+		"future": {
+			"one": "tenpo {0} setemana",
+			"other": "tenpo {0} setemane"
+		}
+	},
+	"day": {
+		"previous": "jeri",
+		"current": "uncó",
+		"next": "doman",
+		"past": {
+			"one": "che’l ze {0} dì",
+			"other": "che i ze {0} dì"
+		},
+		"future": "tenpo {0} dì"
+	},
+	"hour": {
+		"current": "‘sta ora",
+		"past": {
+			"one": "che la ze {0} ora",
+			"other": "che le ze {0} ore"
+		},
+		"future": {
+			"one": "tenpo {0} ora",
+			"other": "tenpo {0} ore"
+		}
+	},
+	"minute": {
+		"current": "‘sto menuto",
+		"past": {
+			"one": "che’l ze {0} menuto",
+			"other": "che i ze {0} menuti"
+		},
+		"future": {
+			"one": "tenpo {0} menuto",
+			"other": "tenpo {0} menuti"
+		}
+	},
+	"second": {
+		"current": "deso",
+		"past": {
+			"one": "che’l ze {0} segondo",
+			"other": "che i ze {0} segondi"
+		},
+		"future": {
+			"one": "tenpo {0} segondo",
+			"other": "tenpo {0} segondi"
+		}
+	}
+}

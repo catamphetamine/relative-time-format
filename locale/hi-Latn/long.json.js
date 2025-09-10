@@ -32,7 +32,7 @@ export default {
 		"previous": "pichhla hafta",
 		"current": "is hafte",
 		"next": "agla hafta",
-		"past": "{0} hafte pehle",
+		"past": "{0} hafte pahle",
 		"future": "{0} hafte mein"
 	},
 	"day": {
@@ -41,7 +41,7 @@ export default {
 		"current": "aaj",
 		"next": "aane wala kal",
 		"next-2": "aane wala parson",
-		"past": "{0} din pehle",
+		"past": "{0} din pahle",
 		"future": "{0} din mein"
 	},
 	"hour": {

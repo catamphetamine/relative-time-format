@@ -5,7 +5,10 @@ export default {
 		"previous": "á síðasta ári",
 		"current": "á þessu ári",
 		"next": "á næsta ári",
-		"past": "fyrir {0} árum",
+		"past": {
+			"one": "fyrir {0} ári",
+			"other": "fyrir {0} árum"
+		},
 		"future": "eftir {0} ár"
 	},
 	"quarter": {

@@ -133,7 +133,7 @@ export default {
 		},
 		"day": {
 			"previous": "ayer",
-			"previous-2": "anteayer",
+			"previous-2": "antier",
 			"current": "hoy",
 			"next": "mañana",
 			"next-2": "pasado mañana",
@@ -193,7 +193,7 @@ export default {
 		},
 		"day": {
 			"previous": "ayer",
-			"previous-2": "anteayer",
+			"previous-2": "antier",
 			"current": "hoy",
 			"next": "mañana",
 			"next-2": "pasado mañana",

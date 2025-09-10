@@ -10,6 +10,7 @@
 
 var $ = {
 	af: (n) => n == 1 ? 'one' : 'other',
+	ak: (n) => (n == 0 || n == 1) ? 'one' : 'other',
 	am: (n) => n >= 0 && n <= 1 ? 'one' : 'other',
 	ar: (n) => {
 		const s = String(n).split('.'), t0 = Number(s[0]) == n, n100 = t0 && s[0].slice(-2);
@@ -31,6 +32,9 @@ var $ = {
 			: t0 && n10 == 0 || (n10 >= 5 && n10 <= 9) || (n100 >= 11 && n100 <= 14) ? 'many'
 			: 'other';
 	},
+	blo: (n) => n == 0 ? 'zero'
+			: n == 1 ? 'one'
+			: 'other',
 	br: (n) => {
 		const s = String(n).split('.'), t0 = Number(s[0]) == n, n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2), n1000000 = t0 && s[0].slice(-6);
 		return n10 == 1 && n100 != 11 && n100 != 71 && n100 != 91 ? 'one'
@@ -118,9 +122,6 @@ var $ = {
 		const s = String(n).split('.'), i = s[0], t = (s[1] || '').replace(/0+$/, ''), t0 = Number(s[0]) == n, i10 = i.slice(-1), i100 = i.slice(-2);
 		return t0 && i10 == 1 && i100 != 11 || t % 10 == 1 && t % 100 != 11 ? 'one' : 'other';
 	},
-	ksh: (n) => n == 0 ? 'zero'
-			: n == 1 ? 'one'
-			: 'other',
 	lt: (n) => {
 		const s = String(n).split('.'), f = s[1] || '', t0 = Number(s[0]) == n, n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2);
 		return n10 == 1 && (n100 < 11 || n100 > 19) ? 'one'
@@ -146,7 +147,6 @@ var $ = {
 			: (n100 >= 11 && n100 <= 19) ? 'many'
 			: 'other';
 	},
-	pa: (n) => (n == 0 || n == 1) ? 'one' : 'other',
 	pl: (n) => {
 		const s = String(n).split('.'), i = s[0], v0 = !s[1], i10 = i.slice(-1), i100 = i.slice(-2);
 		return n == 1 && v0 ? 'one'
@@ -191,12 +191,14 @@ var $ = {
 
 $.as = $.am
 $.az = $.af
+$.bal = $.af
 $.bg = $.af
 $.bn = $.am
 $.brx = $.af
 $.ce = $.af
 $.chr = $.af
 $.de = $.ast
+$.doi = $.am
 $.ee = $.af
 $.el = $.af
 $.en = $.ast
@@ -219,6 +221,7 @@ $.hy = $.ff
 $.ia = $.ast
 $.id = $.dz
 $.ig = $.dz
+$.ii = $.dz
 $.it = $.ca
 $.ja = $.dz
 $.jgo = $.af
@@ -231,6 +234,7 @@ $.km = $.dz
 $.kn = $.am
 $.ko = $.dz
 $.ks = $.af
+$.ksh = $.blo
 $.ku = $.af
 $.ky = $.af
 $.lb = $.af
@@ -246,7 +250,10 @@ $.ne = $.af
 $.nl = $.ast
 $.nn = $.af
 $.no = $.af
+$.nqo = $.dz
+$.om = $.af
 $.or = $.af
+$.pa = $.ak
 $.pcm = $.am
 $.ps = $.af
 $.rm = $.af
@@ -260,17 +267,20 @@ $.sr = $.bs
 $.su = $.dz
 $.sv = $.ast
 $.sw = $.ast
+$.syr = $.af
 $.ta = $.af
 $.te = $.af
 $.th = $.dz
-$.ti = $.pa
+$.ti = $.ak
 $.tk = $.af
+$.tn = $.af
 $.to = $.dz
 $.tr = $.af
 $.ug = $.af
 $.uk = $.ru
 $.ur = $.ast
 $.uz = $.af
+$.vec = $.ca
 $.vi = $.dz
 $.wae = $.af
 $.wo = $.dz

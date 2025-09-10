@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/rhg",
+	"main": "../rhg.json",
+	"module": "../rhg.json.js",
+	"types": "../rhg.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../rhg.json.d.ts",
+			"import": "../rhg.json.js",
+			"require": "../rhg.json"
+		}
+	},
+	"sideEffects": false
+}

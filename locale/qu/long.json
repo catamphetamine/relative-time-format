@@ -12,43 +12,43 @@
 		"previous": "qayna kimsa killa",
 		"current": "kunan kimsa killa",
 		"next": "hamuq kimsa killa",
-		"past": "-{0} Q",
-		"future": "+{0} Q"
+		"past": "{0} qipa kimsa killa",
+		"future": "{0} kimsa killapi"
 	},
 	"month": {
 		"previous": "qayna killa",
 		"current": "kunan killa",
 		"next": "hamuq killa",
-		"past": "-{0} m",
-		"future": "+{0} m"
+		"past": "{0} qipa killa",
+		"future": "{0} killapi"
 	},
 	"week": {
 		"previous": "qayna semana",
 		"current": "kunan semana",
 		"next": "hamuq semana",
-		"past": "-{0} w",
-		"future": "+{0} w"
+		"past": "{0} qipa semana",
+		"future": "{0} semanapi"
 	},
 	"day": {
 		"previous": "qayna punchaw",
 		"current": "kunan punchaw",
 		"next": "paqarin",
-		"past": "-{0} d",
-		"future": "+{0} d"
+		"past": "{0} qipa punchaw",
+		"future": "{0} punchawpi"
 	},
 	"hour": {
 		"current": "kay hora",
-		"past": "-{0} h",
-		"future": "+{0} h"
+		"past": "{0} qipa ura",
+		"future": "{0} urapi"
 	},
 	"minute": {
 		"current": "kay minuto",
-		"past": "-{0} min",
-		"future": "+{0} min"
+		"past": "{0} qipa minutu",
+		"future": "{0} minutupi"
 	},
 	"second": {
 		"current": "now",
-		"past": "-{0} s",
-		"future": "+{0} s"
+		"past": "{0} qipa segundu",
+		"future": "{0} segundupi"
 	}
 }

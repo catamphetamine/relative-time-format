@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/bal-Latn",
+	"main": "../bal-Latn.json",
+	"module": "../bal-Latn.json.js",
+	"types": "../bal-Latn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../bal-Latn.json.d.ts",
+			"import": "../bal-Latn.json.js",
+			"require": "../bal-Latn.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/vec",
+	"main": "../vec.json",
+	"module": "../vec.json.js",
+	"types": "../vec.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../vec.json.d.ts",
+			"import": "../vec.json.js",
+			"require": "../vec.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -33,11 +33,11 @@ export default {
 		"previous": "inanahi",
 		"current": "i tēnei rā",
 		"next": "āpōpō",
-		"past": "-{0} r.",
-		"future": "+{0} r"
+		"past": "-{0} rā",
+		"future": "+{0} rā"
 	},
 	"hour": {
-		"current": "i tēnei hāora",
+		"current": "i tēnei haora",
 		"past": "-{0} h.",
 		"future": "+{0} h."
 	},

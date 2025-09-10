@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/tn",
+	"main": "../tn.json",
+	"module": "../tn.json.js",
+	"types": "../tn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../tn.json.d.ts",
+			"import": "../tn.json.js",
+			"require": "../tn.json"
+		}
+	},
+	"sideEffects": false
+}

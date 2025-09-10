@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ak",
+	"main": "../ak.json",
+	"module": "../ak.json.js",
+	"types": "../ak.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ak.json.d.ts",
+			"import": "../ak.json.js",
+			"require": "../ak.json"
+		}
+	},
+	"sideEffects": false
+}

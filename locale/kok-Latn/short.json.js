@@ -1,0 +1,54 @@
+export default {
+	"locale": "kok-Latn",
+	"style": "short",
+	"year": {
+		"previous": "fattlem voros",
+		"current": "hem voros",
+		"next": "fuddlem voros",
+		"past": "{0} vorsam adim",
+		"future": "{0} vorsanim"
+	},
+	"quarter": {
+		"previous": "fattlem timho.",
+		"current": "hem timho.",
+		"next": "fuddlem timho.",
+		"past": "{0} timho. adim",
+		"future": "{0} timhoinalleanim"
+	},
+	"month": {
+		"previous": "fattlo mho.",
+		"current": "ho mho.",
+		"next": "fuddlo mho.",
+		"past": "{0} mho. adim",
+		"future": "{0} mhoineanim"
+	},
+	"week": {
+		"previous": "fattlo suman",
+		"current": "ho suman",
+		"next": "fuddlo suman",
+		"past": "{0} suman adim",
+		"future": "{0} sumananim"
+	},
+	"day": {
+		"previous": "kal",
+		"current": "aiz",
+		"next": "faleam",
+		"past": "{0} dis adim",
+		"future": "{0} disanim"
+	},
+	"hour": {
+		"current": "hem vor",
+		"past": "{0} voram adim",
+		"future": "{0} voranim"
+	},
+	"minute": {
+		"current": "ho min.",
+		"past": "{0} min. adim",
+		"future": "{0} min."
+	},
+	"second": {
+		"current": "atam",
+		"past": "{0} sek. adim",
+		"future": "{0} sekondanim"
+	}
+}

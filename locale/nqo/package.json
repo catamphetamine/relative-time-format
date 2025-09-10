@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/nqo",
+	"main": "../nqo.json",
+	"module": "../nqo.json.js",
+	"types": "../nqo.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../nqo.json.d.ts",
+			"import": "../nqo.json.js",
+			"require": "../nqo.json"
+		}
+	},
+	"sideEffects": false
+}

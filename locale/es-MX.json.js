@@ -106,7 +106,7 @@ export default {
 		"year": {
 			"previous": "el año pasado",
 			"current": "este año",
-			"next": "el próximo año",
+			"next": "el año próximo",
 			"past": "hace {0} a",
 			"future": "en {0} a"
 		},
@@ -123,7 +123,7 @@ export default {
 		"month": {
 			"previous": "el mes pasado",
 			"current": "este mes",
-			"next": "el próximo mes",
+			"next": "el mes próximo",
 			"past": "hace {0} m",
 			"future": "en {0} m"
 		},
@@ -172,7 +172,7 @@ export default {
 		"year": {
 			"previous": "el año pasado",
 			"current": "este año",
-			"next": "el próximo año",
+			"next": "el año próximo",
 			"past": "hace {0} a",
 			"future": "en {0} a"
 		},
@@ -186,16 +186,16 @@ export default {
 		"month": {
 			"previous": "el mes pasado",
 			"current": "este mes",
-			"next": "el próximo mes",
+			"next": "el mes próximo",
 			"past": "hace {0} m",
-			"future": "dentro de {0} m"
+			"future": "en {0} m"
 		},
 		"week": {
 			"previous": "sem. pas.",
 			"current": "esta sem.",
 			"next": "próx. sem.",
 			"past": "hace {0} sem.",
-			"future": "dentro de {0} sem."
+			"future": "en {0} sem."
 		},
 		"day": {
 			"previous": "ayer",
@@ -208,14 +208,17 @@ export default {
 				"other": "hace {0} días"
 			},
 			"future": {
-				"one": "dentro de {0} día",
+				"one": "en {0} día",
 				"other": "en {0} días"
 			}
 		},
 		"hour": {
 			"current": "esta hora",
 			"past": "hace {0} h",
-			"future": "dentro de {0} h"
+			"future": {
+				"one": "en {0} h",
+				"other": "en {0} n"
+			}
 		},
 		"minute": {
 			"current": "este minuto",
@@ -225,7 +228,7 @@ export default {
 		"second": {
 			"current": "ahora",
 			"past": "hace {0} s",
-			"future": "dentro de {0} s"
+			"future": "en {0} s"
 		}
 	}
 }

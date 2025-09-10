@@ -8,11 +8,10 @@
 		"past": {
 			"one": "blwyddyn yn ôl",
 			"two": "{0} flynedd yn ôl",
-			"few": "{0} blynedd yn ôl",
-			"many": "{0} blynedd yn ôl",
 			"other": "{0} o flynyddoedd yn ôl"
 		},
 		"future": {
+			"zero": "ymhen {0} o flynyddoedd",
 			"one": "ymhen blwyddyn",
 			"two": "ymhen {0} flynedd",
 			"few": "ymhen {0} blynedd",

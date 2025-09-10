@@ -17,7 +17,7 @@ export default {
 		},
 		"month": {
 			"previous": "förra månaden",
-			"current": "denna månad",
+			"current": "den här månaden",
 			"next": "nästa månad",
 			"past": {
 				"one": "för {0} månad sedan",

@@ -131,8 +131,8 @@ export default {
 			"previous": "last mo",
 			"current": "this mo",
 			"next": "next mo",
-			"past": "{0} mo. ago",
-			"future": "in {0} mo."
+			"past": "{0} mo ago",
+			"future": "in {0} mo"
 		},
 		"week": {
 			"previous": "last wk",
@@ -174,22 +174,22 @@ export default {
 		"minute": {
 			"current": "this minute",
 			"past": {
-				"one": "{0} min. ago",
+				"one": "{0} min ago",
 				"other": "{0} mins ago"
 			},
 			"future": {
-				"one": "in {0} min.",
+				"one": "in {0} min",
 				"other": "in {0} mins"
 			}
 		},
 		"second": {
 			"current": "now",
 			"past": {
-				"one": "{0} sec. ago",
+				"one": "{0} sec ago",
 				"other": "{0} secs ago"
 			},
 			"future": {
-				"one": "in {0} sec.",
+				"one": "in {0} sec",
 				"other": "in {0} secs"
 			}
 		}
@@ -225,8 +225,8 @@ export default {
 			"previous": "last mo",
 			"current": "this mo",
 			"next": "next mo",
-			"past": "{0} mo. ago",
-			"future": "in {0} mo."
+			"past": "{0} mo ago",
+			"future": "in {0} mo"
 		},
 		"week": {
 			"previous": "last wk",
@@ -268,22 +268,22 @@ export default {
 		"minute": {
 			"current": "this minute",
 			"past": {
-				"one": "{0} min. ago",
+				"one": "{0} min ago",
 				"other": "{0} mins ago"
 			},
 			"future": {
-				"one": "in {0} min.",
+				"one": "in {0} min",
 				"other": "in {0} mins"
 			}
 		},
 		"second": {
 			"current": "now",
 			"past": {
-				"one": "{0} sec. ago",
+				"one": "{0} sec ago",
 				"other": "{0} secs ago"
 			},
 			"future": {
-				"one": "in {0} sec.",
+				"one": "in {0} sec",
 				"other": "in {0} secs"
 			}
 		}

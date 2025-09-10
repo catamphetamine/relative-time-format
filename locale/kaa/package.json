@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/kaa",
+	"main": "../kaa.json",
+	"module": "../kaa.json.js",
+	"types": "../kaa.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../kaa.json.d.ts",
+			"import": "../kaa.json.js",
+			"require": "../kaa.json"
+		}
+	},
+	"sideEffects": false
+}

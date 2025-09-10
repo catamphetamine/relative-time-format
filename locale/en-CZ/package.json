@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-CZ",
+	"main": "../en-CZ.json",
+	"module": "../en-CZ.json.js",
+	"types": "../en-CZ.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-CZ.json.d.ts",
+			"import": "../en-CZ.json.js",
+			"require": "../en-CZ.json"
+		}
+	},
+	"sideEffects": false
+}

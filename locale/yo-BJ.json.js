@@ -2,11 +2,11 @@ export default {
 	"locale": "yo-BJ",
 	"long": {
 		"year": {
-			"previous": "Èshín",
-			"current": "Ɔdúnǹí",
+			"previous": "Èshí",
+			"current": "Ɔdún yìí",
 			"next": "Àmɔ́dún",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"past": "{0} Ɔdún sɛ́yìn",
+			"future": "ní {0} Ɔdún"
 		},
 		"quarter": {
 			"previous": "last quarter",
@@ -39,17 +39,17 @@ export default {
 			"future": "+{0} d"
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "wákàtí yìí",
 			"past": "-{0} h",
 			"future": "+{0} h"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ìshɛ́jú yìí",
 			"past": "-{0} min",
 			"future": "+{0} min"
 		},
 		"second": {
-			"current": "now",
+			"current": "nísinsìyí",
 			"past": "-{0} s",
 			"future": "+{0} s"
 		}
@@ -59,8 +59,8 @@ export default {
 			"previous": "Ɔdún tó kɔjá",
 			"current": "Ɔdún yìí",
 			"next": "Ɔdún tó ńbɔ̀",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"past": "Ɔdún {0} sɛ́yìn",
+			"future": "ní {0} Ɔdún"
 		},
 		"quarter": {
 			"previous": "last quarter",
@@ -93,17 +93,17 @@ export default {
 			"future": "+{0} d"
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "wákàtí yìí",
 			"past": "-{0} h",
 			"future": "+{0} h"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ìshɛ́jú yìí",
 			"past": "-{0} min",
 			"future": "+{0} min"
 		},
 		"second": {
-			"current": "now",
+			"current": "nísinsìyí",
 			"past": "-{0} s",
 			"future": "+{0} s"
 		}
@@ -113,8 +113,8 @@ export default {
 			"previous": "Ɔdún tó kɔjá",
 			"current": "Ɔdún yìí",
 			"next": "Ɔdún tó ńbɔ̀",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"past": "Ɔdún {0} sɛ́yìn",
+			"future": "ní {0} Ɔdún"
 		},
 		"quarter": {
 			"previous": "last quarter",
@@ -147,17 +147,17 @@ export default {
 			"future": "+{0} d"
 		},
 		"hour": {
-			"current": "this hour",
+			"current": "wákàtí yìí",
 			"past": "-{0} h",
 			"future": "+{0} h"
 		},
 		"minute": {
-			"current": "this minute",
+			"current": "ìshɛ́jú yìí",
 			"past": "-{0} min",
 			"future": "+{0} min"
 		},
 		"second": {
-			"current": "now",
+			"current": "nísinsìyí",
 			"past": "-{0} s",
 			"future": "+{0} s"
 		}

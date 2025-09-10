@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/lld",
+	"main": "../lld.json",
+	"module": "../lld.json.js",
+	"types": "../lld.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../lld.json.d.ts",
+			"import": "../lld.json.js",
+			"require": "../lld.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/csw",
+	"main": "../csw.json",
+	"module": "../csw.json.js",
+	"types": "../csw.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../csw.json.d.ts",
+			"import": "../csw.json.js",
+			"require": "../csw.json"
+		}
+	},
+	"sideEffects": false
+}

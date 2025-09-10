@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/xnr",
+	"main": "../xnr.json",
+	"module": "../xnr.json.js",
+	"types": "../xnr.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../xnr.json.d.ts",
+			"import": "../xnr.json.js",
+			"require": "../xnr.json"
+		}
+	},
+	"sideEffects": false
+}

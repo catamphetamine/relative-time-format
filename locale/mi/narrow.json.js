@@ -37,9 +37,9 @@ export default {
 		"future": "+{0} r"
 	},
 	"hour": {
-		"current": "i tēnei hāora",
-		"past": "-{0} h.",
-		"future": "+{0} h."
+		"current": "i tēnei haora",
+		"past": "-{0} h",
+		"future": "+{0} h"
 	},
 	"minute": {
 		"current": "i tēnei meneti",

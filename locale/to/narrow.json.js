@@ -2,9 +2,9 @@ export default {
 	"locale": "to",
 	"style": "narrow",
 	"year": {
-		"previous": "taʻu kuoʻosi",
-		"current": "taʻú ni",
-		"next": "taʻu kahaʻu",
+		"previous": "t.ʻosi",
+		"current": "t.ni",
+		"next": "t.haʻu",
 		"past": "taʻu ʻe {0} kuoʻosi",
 		"future": "ʻi he taʻu ʻe {0}"
 	},
@@ -16,24 +16,24 @@ export default {
 		"future": "ʻi he kuata ʻe {0}"
 	},
 	"month": {
-		"previous": "māhina kuoʻosi",
-		"current": "māhiná ni",
-		"next": "māhina kahaʻu",
+		"previous": "mh.ʻosi",
+		"current": "mh.ni",
+		"next": "mh.haʻu",
 		"past": "māhina ʻe {0} kuoʻosi",
 		"future": "ʻi he māhina ʻe {0}"
 	},
 	"week": {
-		"previous": "uike kuoʻosi",
-		"current": "uiké ni",
-		"next": "uike kahaʻu",
+		"previous": "ui.ʻosi",
+		"current": "ui.ni",
+		"next": "ui.haʻu",
 		"past": "uike ʻe {0} kuoʻosi",
 		"future": "ʻi he uike ʻe {0}"
 	},
 	"day": {
-		"previous": "ʻaneafi",
-		"previous-2": "ʻaneheafi",
-		"current": "ʻahó ni",
-		"next": "ʻapongipongi",
+		"previous": "ʻane",
+		"previous-2": "ʻahn",
+		"current": "ʻa.ni",
+		"next": "ʻapo",
 		"next-2": "ʻahepongipongi",
 		"past": "ʻaho ʻe {0} kuoʻosi",
 		"future": "ʻi he ʻaho ʻe {0}"

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ht",
+	"main": "../ht.json",
+	"module": "../ht.json.js",
+	"types": "../ht.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ht.json.d.ts",
+			"import": "../ht.json.js",
+			"require": "../ht.json"
+		}
+	},
+	"sideEffects": false
+}

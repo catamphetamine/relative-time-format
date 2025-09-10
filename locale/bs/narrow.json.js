@@ -54,7 +54,10 @@ export default {
 	"minute": {
 		"current": "ova minuta",
 		"past": "prije {0} min.",
-		"future": "za {0} min."
+		"future": {
+			"one": "za {0} min",
+			"other": "za {0} min."
+		}
 	},
 	"second": {
 		"current": "sada",

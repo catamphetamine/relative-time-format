@@ -2,9 +2,9 @@ export default {
 	"locale": "ti",
 	"style": "short",
 	"year": {
-		"previous": "ዓሚ",
+		"previous": "ዝሓለፈ ዓመት",
 		"current": "ሎሚ ዓመት",
-		"next": "ንዓመታ",
+		"next": "ዝመጽእ ዓመት",
 		"past": {
 			"one": "ቅድሚ -{0} ዓ",
 			"other": "ቅድሚ {0} ዓ"

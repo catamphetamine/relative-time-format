@@ -2,9 +2,9 @@ export default {
 	"locale": "ti",
 	"long": {
 		"year": {
-			"previous": "ዓሚ",
+			"previous": "ዝሓለፈ ዓመት",
 			"current": "ሎሚ ዓመት",
-			"next": "ንዓመታ",
+			"next": "ዝመጽእ ዓመት",
 			"past": "ቅድሚ {0} ዓ",
 			"future": "ኣብ {0} ዓ"
 		},
@@ -57,9 +57,9 @@ export default {
 	},
 	"short": {
 		"year": {
-			"previous": "ዓሚ",
+			"previous": "ዝሓለፈ ዓመት",
 			"current": "ሎሚ ዓመት",
-			"next": "ንዓመታ",
+			"next": "ዝመጽእ ዓመት",
 			"past": {
 				"one": "ቅድሚ -{0} ዓ",
 				"other": "ቅድሚ {0} ዓ"
@@ -112,9 +112,9 @@ export default {
 	},
 	"narrow": {
 		"year": {
-			"previous": "ዓሚ",
+			"previous": "ዝሓለፈ ዓመት",
 			"current": "ሎሚ ዓመት",
-			"next": "ንዓመታ",
+			"next": "ዝመጽእ ዓመት",
 			"past": "ቅድሚ {0} ዓ",
 			"future": "ኣብ {0} ዓ"
 		},

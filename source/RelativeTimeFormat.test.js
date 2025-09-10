@@ -1,14 +1,14 @@
 import RelativeTimeFormat from './RelativeTimeFormat.js'
 
-import ccp from '../locale/ccp.json' assert { type: 'json' }
-import de from '../locale/de.json' assert { type: 'json' }
-import en from '../locale/en.json' assert { type: 'json' }
-import ru from '../locale/ru.json' assert { type: 'json' }
-import to from '../locale/to.json' assert { type: 'json' }
-import ar_AE from '../locale/ar-AE.json' assert { type: 'json' }
-import pt from '../locale/pt.json' assert { type: 'json' }
-import pt_PT from '../locale/pt-PT.json' assert { type: 'json' }
-import zh from '../locale/zh.json' assert { type: 'json' }
+import ccp from '../locale/ccp.json' with { type: 'json' }
+import de from '../locale/de.json' with { type: 'json' }
+import en from '../locale/en.json' with { type: 'json' }
+import ru from '../locale/ru.json' with { type: 'json' }
+import to from '../locale/to.json' with { type: 'json' }
+import ar_AE from '../locale/ar-AE.json' with { type: 'json' }
+import pt from '../locale/pt.json' with { type: 'json' }
+import pt_PT from '../locale/pt-PT.json' with { type: 'json' }
+import zh from '../locale/zh.json' with { type: 'json' }
 
 en.tiny = {
   "year": "{0}yr",

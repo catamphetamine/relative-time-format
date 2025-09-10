@@ -8,11 +8,10 @@ export default {
 			"past": {
 				"one": "blwyddyn yn ôl",
 				"two": "{0} flynedd yn ôl",
-				"few": "{0} blynedd yn ôl",
-				"many": "{0} blynedd yn ôl",
 				"other": "{0} o flynyddoedd yn ôl"
 			},
 			"future": {
+				"zero": "ymhen {0} o flynyddoedd",
 				"one": "ymhen blwyddyn",
 				"two": "ymhen {0} flynedd",
 				"few": "ymhen {0} blynedd",
@@ -99,18 +98,16 @@ export default {
 			"current": "eleni",
 			"next": "blwyddyn nesaf",
 			"past": {
-				"zero": "{0} o flynyddoedd yn ôl",
+				"one": "{0} bl. yn ôl",
 				"two": "{0} flynedd yn ôl",
-				"few": "{0} blynedd yn ôl",
-				"many": "{0} blynedd yn ôl",
-				"other": "{0} bl. yn ôl"
+				"other": "{0} o flynyddoedd yn ôl"
 			},
 			"future": {
 				"one": "ymhen blwyddyn",
 				"two": "ymhen {0} flynedd",
 				"few": "ymhen {0} blynedd",
 				"many": "ymhen {0} blynedd",
-				"other": "ymhen {0} mlynedd"
+				"other": "ymhen {0} o flynyddoedd"
 			}
 		},
 		"quarter": {
@@ -235,19 +232,16 @@ export default {
 			"current": "eleni",
 			"next": "bl. nesaf",
 			"past": {
-				"zero": "{0} o flynyddoedd yn ôl",
 				"one": "blwyddyn yn ôl",
 				"two": "{0} flynedd yn ôl",
-				"few": "{0} blynedd yn ôl",
-				"many": "{0} blynedd yn ôl",
-				"other": "{0} bl. yn ôl"
+				"other": "{0} o flynyddoedd yn ôl"
 			},
 			"future": {
 				"one": "ymhen bl.",
 				"two": "ymhen {0} flynedd",
 				"few": "ymhen {0} blynedd",
 				"many": "ymhen {0} blynedd",
-				"other": "ymhen {0} mlynedd"
+				"other": "ymhen {0} o flynyddoedd"
 			}
 		},
 		"quarter": {

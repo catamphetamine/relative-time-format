@@ -16,9 +16,9 @@ export default {
 		"future": "+{0} Q"
 	},
 	"month": {
-		"previous": "پٔتِم ریتھۍ",
-		"current": "یٕہ ریتھۍ",
-		"next": "نو ریتھۍ",
+		"previous": "پٔتِم ریتھؠ",
+		"current": "یٕہ ریتھؠ",
+		"next": "نو ریتھؠ",
 		"past": "-{0} m",
 		"future": "+{0} m"
 	},

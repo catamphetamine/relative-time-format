@@ -114,7 +114,7 @@
 		"quarter": {
 			"previous": "prošlog kvartala",
 			"current": "ovog kvartala",
-			"next": "sledećeg kvartala",
+			"next": "sljedećeg kvartala",
 			"past": "prije {0} kv.",
 			"future": "za {0} kv."
 		},
@@ -168,7 +168,7 @@
 		"quarter": {
 			"previous": "prošlog kvartala",
 			"current": "ovog kvartala",
-			"next": "sledećeg kvartala",
+			"next": "sljedećeg kvartala",
 			"past": "prije {0} kv.",
 			"future": "za {0} kv."
 		},

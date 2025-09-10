@@ -1,0 +1,81 @@
+export default {
+	"locale": "bal-Latn",
+	"style": "short",
+	"year": {
+		"previous": "Pári",
+		"current": "Embarán",
+		"next": "Démay sál",
+		"past": {
+			"one": "Gwastagén {0} sál",
+			"other": "{0} sálá pésar"
+		},
+		"future": {
+			"one": "Áókén {0} sál",
+			"other": "Áókén {0} sálá"
+		}
+	},
+	"quarter": {
+		"previous": "Sálay gwastagén chárek",
+		"current": "Sálay é chárek",
+		"next": "Sálay démay chárek",
+		"past": {
+			"one": "Sálay {0} cháreká pésar",
+			"other": "Sálay {0} chárká pésar"
+		},
+		"future": "Áókén {0} chárek"
+	},
+	"month": {
+		"previous": "gwastagén máh",
+		"current": "É máh",
+		"next": "Démay máh",
+		"past": "{0} máhá pésar",
+		"future": "{0} máhá"
+	},
+	"week": {
+		"previous": "gwastagén haptag",
+		"current": "é haptag",
+		"next": "démay haptag",
+		"past": {
+			"one": "gwastagén haptag",
+			"other": "gwastagén {0} haptag"
+		},
+		"future": {
+			"one": "démay haptag",
+			"other": "démay {0} haptag"
+		}
+	},
+	"day": {
+		"previous": "zi",
+		"current": "maróchi",
+		"next": "bándá",
+		"past": "{0} róchá pésar",
+		"future": {
+			"one": "{0} róchá",
+			"other": "{0} róchá rand"
+		}
+	},
+	"hour": {
+		"current": "É sáhat",
+		"past": "{0} ganthahá pésar",
+		"future": {
+			"one": "Ganthahéá",
+			"other": "{0} ganthahá rand"
+		}
+	},
+	"minute": {
+		"current": "é damán",
+		"past": "{0} meletthá pésar",
+		"future": {
+			"one": "meletthéá",
+			"other": "{0} meletthá rand"
+		}
+	},
+	"second": {
+		"current": "annun",
+		"past": "{0} sekendhá pésar",
+		"future": {
+			"one": "sekendhá",
+			"other": "{0} sekendhá rand"
+		}
+	}
+}

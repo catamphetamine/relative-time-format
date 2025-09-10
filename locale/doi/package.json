@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/doi",
+	"main": "../doi.json",
+	"module": "../doi.json.js",
+	"types": "../doi.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../doi.json.d.ts",
+			"import": "../doi.json.js",
+			"require": "../doi.json"
+		}
+	},
+	"sideEffects": false
+}

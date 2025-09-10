@@ -2,9 +2,9 @@
 	"locale": "ti",
 	"style": "narrow",
 	"year": {
-		"previous": "ዓሚ",
+		"previous": "ዝሓለፈ ዓመት",
 		"current": "ሎሚ ዓመት",
-		"next": "ንዓመታ",
+		"next": "ዝመጽእ ዓመት",
 		"past": "ቅድሚ {0} ዓ",
 		"future": "ኣብ {0} ዓ"
 	},

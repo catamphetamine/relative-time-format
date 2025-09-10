@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ii",
+	"main": "../ii.json",
+	"module": "../ii.json.js",
+	"types": "../ii.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ii.json.d.ts",
+			"import": "../ii.json.js",
+			"require": "../ii.json"
+		}
+	},
+	"sideEffects": false
+}

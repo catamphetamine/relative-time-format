@@ -49,7 +49,7 @@ export default {
 		"future": "om {0} min"
 	},
 	"second": {
-		"current": "nå",
+		"current": "no",
 		"past": "for {0} sek sidan",
 		"future": "om {0} sek"
 	}

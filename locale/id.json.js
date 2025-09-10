@@ -149,7 +149,7 @@ export default {
 		"hour": {
 			"current": "jam ini",
 			"past": "{0} jam lalu",
-			"future": "dalam {0} jam"
+			"future": "dlm {0} jam"
 		},
 		"minute": {
 			"current": "mnt ini",

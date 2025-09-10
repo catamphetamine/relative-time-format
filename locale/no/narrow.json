@@ -26,8 +26,8 @@
 		"previous": "forrige uke",
 		"current": "denne uken",
 		"next": "neste uke",
-		"past": "-{0} u.",
-		"future": "+{0} u."
+		"past": "for {0} u. siden",
+		"future": "om {0} u."
 	},
 	"day": {
 		"previous": "i går",

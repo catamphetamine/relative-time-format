@@ -1,0 +1,60 @@
+export default {
+	"locale": "om",
+	"style": "short",
+	"year": {
+		"previous": "wg. darbe",
+		"current": "wg. kana",
+		"next": "wg. dhufu",
+		"past": "wg. {0} dura",
+		"future": "wg. {0} keessatti"
+	},
+	"quarter": {
+		"previous": "kr. darbe",
+		"current": "kr. kana",
+		"next": "kr. dhufu",
+		"past": "kr. {0} darbe",
+		"future": "kr. {0} keessatti"
+	},
+	"month": {
+		"previous": "ji. darbe",
+		"current": "ji. kana",
+		"next": "ji. dhufu",
+		"past": "ji. {0} darbe",
+		"future": "ji. {0} keessatti"
+	},
+	"week": {
+		"previous": "tr. darbe",
+		"current": "tr. kana",
+		"next": "tr. dhufu",
+		"past": "tr. {0} darbe",
+		"future": "tr. {0} keessatti"
+	},
+	"day": {
+		"previous": "kaleessa",
+		"current": "har’a",
+		"next": "boru",
+		"past": {
+			"one": "guyyaa {0} darbe",
+			"other": "guyyoota {0} darban"
+		},
+		"future": {
+			"one": "guyyaa {0} keessatti",
+			"other": "guyyoota {0} keessatti"
+		}
+	},
+	"hour": {
+		"current": "sa’aatii kana",
+		"past": "sa. {0} darbe",
+		"future": "sa. {0} keessatti"
+	},
+	"minute": {
+		"current": "daqiiqaa kana",
+		"past": "daq. {0} darbe",
+		"future": "daq. {0} keessatti"
+	},
+	"second": {
+		"current": "amma",
+		"past": "sek. {0} darbe",
+		"future": "sek. {0} keessatti"
+	}
+}

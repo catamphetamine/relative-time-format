@@ -1,0 +1,159 @@
+{
+	"locale": "doi",
+	"long": {
+		"year": {
+			"previous": "पिछला ब’रा",
+			"current": "एह् ब’रा",
+			"next": "अगला ब’रा",
+			"past": "-{0} y",
+			"future": "+{0} y"
+		},
+		"quarter": {
+			"previous": "आखरी त्रमाही",
+			"current": "एह् त्रमाही",
+			"next": "अगली त्रमाही",
+			"past": "-{0} Q",
+			"future": "+{0} Q"
+		},
+		"month": {
+			"previous": "पिछला म्हीना/पिछले म्हीनै",
+			"current": "एह् म्हीना/इस म्हीनै",
+			"next": "अगला म्हीना/अगले म्हीनै",
+			"past": "-{0} m",
+			"future": "+{0} m"
+		},
+		"week": {
+			"previous": "पिछला हफ्ता/पिछले हफ्तै",
+			"current": "एह् हफ्ता/इस हफ्तै",
+			"next": "अगला हफ्ता/अगले हफ्तै",
+			"past": "-{0} w",
+			"future": "+{0} w"
+		},
+		"day": {
+			"previous": "जंदा कल",
+			"current": "अज्ज",
+			"next": "औंदे कल",
+			"past": "-{0} d",
+			"future": "+{0} d"
+		},
+		"hour": {
+			"current": "एह् घैंटा/ इस घैंटे",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "एह् मिंट/ इस मिंट",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "हून/इसलै",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	},
+	"short": {
+		"year": {
+			"previous": "पिछला ब’रा/पिछले ब’रै",
+			"current": "एह् ब’रा/इस ब’रै",
+			"next": "अगला ब’रा/अगले ब’रै",
+			"past": "-{0} y",
+			"future": "+{0} y"
+		},
+		"quarter": {
+			"previous": "आखरी त्रमाही",
+			"current": "एह् त्रमाही",
+			"next": "अगली त्रमाही",
+			"past": "-{0} Q",
+			"future": "+{0} Q"
+		},
+		"month": {
+			"previous": "पिछला म्हीना/पिछले म्हीनै",
+			"current": "एह् म्हीना/इस म्हीनै",
+			"next": "अगला म्हीना/अगले म्हीनै",
+			"past": "-{0} m",
+			"future": "+{0} m"
+		},
+		"week": {
+			"previous": "पिछला हफ्ता/पिछले हफ्तै",
+			"current": "एह् हफ्ता/इस हफ्तै",
+			"next": "अगला हफ्ता/अगले हफ्तै",
+			"past": "-{0} w",
+			"future": "+{0} w"
+		},
+		"day": {
+			"previous": "जंदा कल",
+			"current": "अज्ज",
+			"next": "औंदे कल",
+			"past": "-{0} d",
+			"future": "+{0} d"
+		},
+		"hour": {
+			"current": "एह् घैंटा/ इस घैंटे",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "एह् मिंट/ इस मिंट",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "हून/इसलै",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	},
+	"narrow": {
+		"year": {
+			"previous": "पिछला ब’रा",
+			"current": "एह् ब’रा",
+			"next": "अगला ब’रा",
+			"past": "-{0} y",
+			"future": "+{0} y"
+		},
+		"quarter": {
+			"previous": "आखरी त्रमाही",
+			"current": "एह् त्रमाही",
+			"next": "अगली त्रमाही",
+			"past": "-{0} Q",
+			"future": "+{0} Q"
+		},
+		"month": {
+			"previous": "पिछला म्हीना/पिछले म्हीनै",
+			"current": "एह् म्हीना/इस म्हीनै",
+			"next": "अगला म्हीना/अगले म्हीनै",
+			"past": "-{0} m",
+			"future": "+{0} m"
+		},
+		"week": {
+			"previous": "पिछला हफ्ता/पिछले हफ्तै",
+			"current": "एह् हफ्ता/इस हफ्तै",
+			"next": "अगला हफ्ता/अगले हफ्तै",
+			"past": "-{0} w",
+			"future": "+{0} w"
+		},
+		"day": {
+			"previous": "जंदा कल",
+			"current": "अज्ज",
+			"next": "औंदे कल",
+			"past": "-{0} d",
+			"future": "+{0} d"
+		},
+		"hour": {
+			"current": "एह् घैंटा/ इस घैंटे",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "एह् मिंट/ इस मिंट",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "हून/इसलै",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	}
+}

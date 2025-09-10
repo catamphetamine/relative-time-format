@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/be-tarask",
+	"main": "../be-tarask.json",
+	"module": "../be-tarask.json.js",
+	"types": "../be-tarask.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../be-tarask.json.d.ts",
+			"import": "../be-tarask.json.js",
+			"require": "../be-tarask.json"
+		}
+	},
+	"sideEffects": false
+}

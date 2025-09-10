@@ -5,50 +5,50 @@ export default {
 		"previous": "i tērā tau",
 		"current": "i tēnei tau",
 		"next": "ā tērā tau",
-		"past": "i te {0} tau",
+		"past": "i te {0} tau i mua",
 		"future": "ā te {0} tau"
 	},
 	"quarter": {
 		"previous": "hauwhā whakamutunga",
 		"current": "tēnei hauwhā",
 		"next": "tērā hauwhā",
-		"past": "-{0} hwh",
-		"future": "+{0} hwh"
+		"past": "-{0} hauwhā i mua",
+		"future": "+{0} hauwhā"
 	},
 	"month": {
 		"previous": "i tērā marama",
 		"current": "i tēnei marama",
 		"next": "ā tērā marama",
-		"past": "-{0} m",
-		"future": "+{0} m"
+		"past": "-{0} marama i mua",
+		"future": "+{0} marama"
 	},
 	"week": {
 		"previous": "i tērā wiki",
 		"current": "i tēnei wiki",
 		"next": "ā tērā wiki",
-		"past": "-{0} w",
-		"future": "+{0} w"
+		"past": "-{0} wiki i mua",
+		"future": "+{0} wiki"
 	},
 	"day": {
 		"previous": "inanahi",
 		"current": "i tēnei rā",
 		"next": "āpōpō",
-		"past": "-{0} r.",
-		"future": "+{0} r."
+		"past": "-{0} rā i mua",
+		"future": "+{0} rā"
 	},
 	"hour": {
-		"current": "i tēnei hāora",
-		"past": "-{0} h",
-		"future": "+{0} h"
+		"current": "i tēnei haora",
+		"past": "-{0} haora i mua",
+		"future": "+{0} haora"
 	},
 	"minute": {
 		"current": "i tēnei meneti",
-		"past": "-{0} men",
-		"future": "+{0} men"
+		"past": "-{0} meneti i mua",
+		"future": "+{0} meneti"
 	},
 	"second": {
 		"current": "ināianei",
-		"past": "-{0} h",
-		"future": "+{0} h"
+		"past": "-{0} hēkona i mua",
+		"future": "+{0} hēkona"
 	}
 }

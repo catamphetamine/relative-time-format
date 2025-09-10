@@ -26,8 +26,8 @@ export default {
 		"previous": "førre veke",
 		"current": "denne veka",
 		"next": "neste veke",
-		"past": "–{0} v.",
-		"future": "+{0} v."
+		"past": "for {0} v. sidan",
+		"future": "om {0} v."
 	},
 	"day": {
 		"previous": "i går",
@@ -49,7 +49,7 @@ export default {
 		"future": "+{0} min"
 	},
 	"second": {
-		"current": "nå",
+		"current": "no",
 		"past": {
 			"one": "–{0} s",
 			"other": "–{0} s"

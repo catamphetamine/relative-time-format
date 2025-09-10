@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ms-Arab",
+	"main": "../ms-Arab.json",
+	"module": "../ms-Arab.json.js",
+	"types": "../ms-Arab.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ms-Arab.json.d.ts",
+			"import": "../ms-Arab.json.js",
+			"require": "../ms-Arab.json"
+		}
+	},
+	"sideEffects": false
+}

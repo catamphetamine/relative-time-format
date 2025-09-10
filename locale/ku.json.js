@@ -2,9 +2,9 @@ export default {
 	"locale": "ku",
 	"long": {
 		"year": {
-			"previous": "par",
+			"previous": "sala borî",
 			"current": "îsal",
-			"next": "sala piştî",
+			"next": "sala bê",
 			"past": {
 				"one": "berî {0} salê",
 				"other": "berî {0} salan"
@@ -15,30 +15,30 @@ export default {
 			}
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
+			"previous": "çaryeka dawî",
+			"current": "ev çaryek",
+			"next": "çaryeka were",
 			"past": "-{0} Q",
 			"future": "+{0} Q"
 		},
 		"month": {
 			"previous": "meha borî",
-			"current": "vê mehê",
-			"next": "meha were",
+			"current": "ev meh",
+			"next": "meha bê",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
 			"previous": "hefteya borî",
-			"current": "vê hefteyê",
-			"next": "hefteya were",
+			"current": "ev hefte",
+			"next": "hefteya bê",
 			"past": "-{0} w",
 			"future": "+{0} w"
 		},
 		"day": {
 			"previous": "duh",
 			"current": "îro",
-			"next": "sibe",
+			"next": "sibê",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},
@@ -48,47 +48,50 @@ export default {
 			"future": "+{0} h"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "vê deqeyê",
+			"past": {
+				"one": "berî {0} deqeyê",
+				"other": "berî {0} deqeyan"
+			},
+			"future": {
+				"one": "di {0} deqeyê de",
+				"other": "di {0} deqeyan de"
+			}
 		},
 		"second": {
-			"current": "now",
+			"current": "vêga",
 			"past": "-{0} s",
 			"future": "+{0} s"
 		}
 	},
 	"short": {
 		"year": {
-			"previous": "par",
+			"previous": "sala borî",
 			"current": "îsal",
 			"next": "sala bê",
 			"past": {
 				"one": "berî salekê",
 				"other": "berî {0} salan"
 			},
-			"future": {
-				"one": "piştî salekê",
-				"other": "piştî {0} salan"
-			}
+			"future": "piştî {0} salan"
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
+			"previous": "çaryeka dawî",
+			"current": "ev çaryek",
+			"next": "çaryeka were",
 			"past": "-{0} Q",
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "meha br.",
-			"current": "vê mehê",
+			"previous": "meha borî",
+			"current": "ev meh",
 			"next": "meha bê",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
 			"previous": "hft. borî",
-			"current": "vê hft.",
+			"current": "ev hft.",
 			"next": "hft. bê",
 			"past": "-{0} w",
 			"future": "+{0} w"
@@ -96,7 +99,7 @@ export default {
 		"day": {
 			"previous": "duh",
 			"current": "îro",
-			"next": "sibe",
+			"next": "sibê",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},
@@ -106,47 +109,47 @@ export default {
 			"future": "+{0} h"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "vê deqeyê",
+			"past": "berî {0} dq.",
+			"future": {
+				"one": "di {0} dq. de",
+				"other": "di {0} dq de"
+			}
 		},
 		"second": {
-			"current": "now",
+			"current": "vêga",
 			"past": "-{0} s",
 			"future": "+{0} s"
 		}
 	},
 	"narrow": {
 		"year": {
-			"previous": "par",
+			"previous": "sala borî",
 			"current": "îsal",
 			"next": "sala bê",
 			"past": {
 				"one": "berî salekê",
 				"other": "berî {0} salan"
 			},
-			"future": {
-				"one": "piştî salekê",
-				"other": "piştî {0} salan"
-			}
+			"future": "piştî {0} salan"
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
+			"previous": "çaryeka dawî",
+			"current": "ev çaryek",
+			"next": "çaryeka were",
 			"past": "-{0} Q",
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "meha br.",
-			"current": "vê mehê",
+			"previous": "meha borî",
+			"current": "ev meh",
 			"next": "meha bê",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
 			"previous": "hft. borî",
-			"current": "vê hft.",
+			"current": "ev hft.",
 			"next": "hft. bê",
 			"past": "-{0} w",
 			"future": "+{0} w"
@@ -154,7 +157,7 @@ export default {
 		"day": {
 			"previous": "duh",
 			"current": "îro",
-			"next": "sibe",
+			"next": "sibê",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},
@@ -164,12 +167,18 @@ export default {
 			"future": "+{0} h"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "vê deqeyê",
+			"past": {
+				"one": "berî {0} dq.",
+				"other": "berî {0} d."
+			},
+			"future": {
+				"one": "di {0} dq de",
+				"other": "di {0}dq de"
+			}
 		},
 		"second": {
-			"current": "now",
+			"current": "vêga",
 			"past": "-{0} s",
 			"future": "+{0} s"
 		}

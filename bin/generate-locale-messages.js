@@ -9,8 +9,8 @@ import * as Plurals from 'make-plural/plurals'
 
 // CLDR packages should be periodically updated as they release new versions.
 // `npm install cldr-core@latest cldr-dates-full@latest --save-dev`
-import plurals from 'cldr-core/supplemental/plurals.json' assert { type: 'json' }
-// import ordinals from 'cldr-core/supplemental/ordinals.json' assert { type: 'json' }
+import plurals from 'cldr-core/supplemental/plurals.json' with { type: 'json' }
+// import ordinals from 'cldr-core/supplemental/ordinals.json' with { type: 'json' }
 
 import extractRelativeTimeMessages from '../source/CLDR/extractRelativeTimeMessages.js'
 import getLocalesListInCLDR from '../source/CLDR/getLocalesList.js'

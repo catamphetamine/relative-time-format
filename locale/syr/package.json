@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/syr",
+	"main": "../syr.json",
+	"module": "../syr.json.js",
+	"types": "../syr.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../syr.json.d.ts",
+			"import": "../syr.json.js",
+			"require": "../syr.json"
+		}
+	},
+	"sideEffects": false
+}

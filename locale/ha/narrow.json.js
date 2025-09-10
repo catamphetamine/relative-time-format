@@ -5,7 +5,10 @@ export default {
 		"previous": "bara",
 		"current": "bana",
 		"next": "badi",
-		"past": "shekara da suka gabata {0}",
+		"past": {
+			"one": "shekara {0} da ta gabata",
+			"other": "shekaru {0} da suka gabata"
+		},
 		"future": {
 			"one": "a shekarar {0}",
 			"other": "a shekaru {0}"
@@ -15,10 +18,7 @@ export default {
 		"previous": "kwatan karshe",
 		"current": "wannan kwatan",
 		"next": "kwata na gaba",
-		"past": {
-			"one": "kwata da suka gabata {0}",
-			"other": "kwatas da suka gabata {0}"
-		},
+		"past": "kwata {0} da suka gabata",
 		"future": {
 			"one": "a cikin kwata {0}",
 			"other": "a cikin kwatas {0}"
@@ -28,45 +28,63 @@ export default {
 		"previous": "watan da ya gabata",
 		"current": "wannan watan",
 		"next": "wata na gaba",
-		"past": "watan da ya gabata {0}",
+		"past": {
+			"one": "wata {0} da ya gabata",
+			"other": "watanni {0} da suka gabata"
+		},
 		"future": "a cikin watan {0}"
 	},
 	"week": {
 		"previous": "satin da ya gabata",
 		"current": "wannan satin",
 		"next": "sati na gaba",
-		"past": {
-			"one": "mako da suka gabata {0}",
-			"other": "mako da ya gabata {0}"
-		},
-		"future": "a cikin mako {0}"
+		"past": "mako {0} da ya gabata",
+		"future": {
+			"one": "a cikin mako {0}",
+			"other": "a cikin makonni {0}"
+		}
 	},
 	"day": {
 		"previous": "jiya",
 		"current": "yau",
 		"next": "gobe",
 		"past": {
-			"one": "rana da ya gabata {0}",
-			"other": "kwanaki da suka gabata {0}"
+			"one": "kwana {0} da ya gabata",
+			"other": "kwanaki {0} da suka gabata"
 		},
-		"future": {
-			"one": "a cikin rana {0}",
-			"other": "a cikin kwanaki {0}"
-		}
+		"future": "a cikin kwanaki {0}"
 	},
 	"hour": {
 		"current": "wannan awa",
-		"past": "{0} awa da ya gabata",
-		"future": "cikin {0} awa"
+		"past": {
+			"one": "awa {0} da ta gabata",
+			"other": "awanni {0} da suka gabata"
+		},
+		"future": {
+			"one": "cikin awa {0}",
+			"other": "cikin awanni {0}"
+		}
 	},
 	"minute": {
 		"current": "wannan mintin",
-		"past": "{0} minti da ya gabata",
-		"future": "cikin {0} minti"
+		"past": {
+			"one": "minti {0} da ya gabata",
+			"other": "mintuna {0} da suka gabata"
+		},
+		"future": {
+			"one": "cikin minti {0}",
+			"other": "cikin mintuna {0}"
+		}
 	},
 	"second": {
 		"current": "yanzu",
-		"past": "{0} dakika da ya gabata",
-		"future": "cikin {0} dakika"
+		"past": {
+			"one": "dakika {0} da ta gabata",
+			"other": "dakiku {0} da suka gabata"
+		},
+		"future": {
+			"one": "cikin dakika {0}",
+			"other": "cikin dakiku {0}"
+		}
 	}
 }

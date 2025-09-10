@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/om",
+	"main": "../om.json",
+	"module": "../om.json.js",
+	"types": "../om.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../om.json.d.ts",
+			"import": "../om.json.js",
+			"require": "../om.json"
+		}
+	},
+	"sideEffects": false
+}

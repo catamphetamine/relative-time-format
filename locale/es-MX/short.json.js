@@ -4,7 +4,7 @@ export default {
 	"year": {
 		"previous": "el año pasado",
 		"current": "este año",
-		"next": "el próximo año",
+		"next": "el año próximo",
 		"past": "hace {0} a",
 		"future": "en {0} a"
 	},
@@ -21,7 +21,7 @@ export default {
 	"month": {
 		"previous": "el mes pasado",
 		"current": "este mes",
-		"next": "el próximo mes",
+		"next": "el mes próximo",
 		"past": "hace {0} m",
 		"future": "en {0} m"
 	},

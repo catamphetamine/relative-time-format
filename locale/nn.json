@@ -124,7 +124,7 @@
 			"future": "om {0} min"
 		},
 		"second": {
-			"current": "nå",
+			"current": "no",
 			"past": "for {0} sek sidan",
 			"future": "om {0} sek"
 		}
@@ -155,8 +155,8 @@
 			"previous": "førre veke",
 			"current": "denne veka",
 			"next": "neste veke",
-			"past": "–{0} v.",
-			"future": "+{0} v."
+			"past": "for {0} v. sidan",
+			"future": "om {0} v."
 		},
 		"day": {
 			"previous": "i går",
@@ -178,7 +178,7 @@
 			"future": "+{0} min"
 		},
 		"second": {
-			"current": "nå",
+			"current": "no",
 			"past": {
 				"one": "–{0} s",
 				"other": "–{0} s"
