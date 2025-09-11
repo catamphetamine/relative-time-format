@@ -5,8 +5,8 @@
 
 	"plugins": [
 		["@babel/plugin-transform-for-of", { "loose": true }],
-		"@babel/proposal-import-attributes-to-assertions",
-		"@babel/plugin-syntax-import-assertions",
+		"@babel/plugin-proposal-import-attributes-to-assertions",
+		"@babel/plugin-syntax-import-assertions"
 	],
 
 	"env": {
