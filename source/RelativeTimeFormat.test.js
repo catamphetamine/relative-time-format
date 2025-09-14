@@ -80,7 +80,7 @@ describe('Intl.RelativeTimeFormat', () => {
 
   it('should throw if no supported locale was found', () => {
     RelativeTimeFormat.setDefaultLocale('xx')
-    expect(() => new RelativeTimeFormat()).to.throw("No supported locale was found")
+    expect(() => new RelativeTimeFormat()).to.throw("Unsupported locale")
     RelativeTimeFormat.setDefaultLocale('en')
   })
 

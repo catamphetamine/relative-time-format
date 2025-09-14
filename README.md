@@ -17,7 +17,7 @@ Easily create labels like `"1 day ago"`.
 npm install relative-time-format --save
 ```
 
-Alternatively, one could [include it on a web page directly via a `<script/>` tag](#cdn).
+Alternatively, one could include it on a web page [directly](#cdn) via a `<script/>` tag.
 
 ## Use
 

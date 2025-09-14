@@ -102,7 +102,7 @@ export default class RelativeTimeFormat {
       localeMatcher: this.localeMatcher
     })[0]
     if (!this.locale) {
-      throw new Error("No supported locale was found")
+      throw new Error("Unsupported locale")
     }
 
     // Construct an `Intl.PluralRules` instance (polyfill).

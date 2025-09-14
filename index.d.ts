@@ -77,7 +77,7 @@ export default class RelativeTimeFormat {
   resolvedOptions(): { locale: Locale, style: Style, numeric: Numeric, numberingSystem: NumberingSystem };
 
   static addLocale(localeData: LocaleData): void;
-  static addDefaultLocale(localeData: LocaleData): void;
+  static getDefaultLocale(): Locale;
   static setDefaultLocale(locale: Locale): void;
 
   static PluralRules: PluralRules;
