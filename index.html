@@ -150,7 +150,7 @@
 	<body>
 		<a target="_blank" class="main" href="https://github.com/catamphetamine/relative-time-format"><code>relative-time-format</code></a>
 
-		<p>The most convenient polyfill for <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RelativeTimeFormat" target="_blank"><code>Intl.RelativeTimeFormat</code></a></p>
+		<p>A polyfill for <a href="https://github.com/tc39/proposal-intl-relative-time" target="_blank"><code>Intl.RelativeTimeFormat</code></a></p>
 
 		<div id="content"></div>
 
@@ -418,29 +418,29 @@
 							<h2>Example</h2>
 
 							<div className="section">
-								<code className="code-source">rtf.format(-1, "day")</code> <span className="arrow">→</span> <code className="code-result">"{rtf.format(-1, "day")}"</code>
+								<code className="code-source">formatter.format(-1, "day")</code> <span className="arrow">→</span> <code className="code-result">"{rtf.format(-1, "day")}"</code>
 								<div style={{ height: '0.4em' }}/>
-								<code className="code-source">rtf.format(1, "day")</code> <span className="arrow">→</span> <code className="code-result">"{rtf.format(1, "day")}"</code>
+								<code className="code-source">formatter.format(1, "day")</code> <span className="arrow">→</span> <code className="code-result">"{rtf.format(1, "day")}"</code>
 							</div>
 
 							<Highlight lang="jsx">
 {`import RelativeTimeFormat from "relative-time-format"
-import en from "relative-time-format/locale/en.json"
+import en from "relative-time-format/locale/en"
 
-// Import English relative time messages.
+// Add English language
 RelativeTimeFormat.addLocale(en)
 
-// Create a relative time formatter in your locale.
-const rtf = new RelativeTimeFormat("en", {
-  style: "long" // "long" is the default. Other options: "short", "narrow".
+// Create English formatter
+const formatter = new RelativeTimeFormat("en", {
+  style: "long" // other styles: "short", "narrow"
 })
 
-// Format relative time using negative value (-1).
-rtf.format(-1, "day")
+// Get label for "now + (-1) * day"
+formatter.format(-1, "day")
 // > "1 day ago"
 
-// Format relative time using positive value (1).
-rtf.format(1, "day")
+// Get label for "now + 1 * day"
+formatter.format(1, "day")
 // > "in 1 day"
 `}
 							</Highlight>
