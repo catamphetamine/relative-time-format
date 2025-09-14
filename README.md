@@ -5,15 +5,11 @@
 [![npm size](https://img.shields.io/bundlephobia/minzip/relative-time-format.svg?label=size)](https://www.npmjs.com/package/relative-time-format)
 [![coverage](https://img.shields.io/coveralls/catamphetamine/relative-time-format/master.svg?style=flat-square)](https://coveralls.io/r/catamphetamine/relative-time-format?branch=master)
 
-This library consists of three parts:
+Zero-dependency [`Intl.RelativeTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RelativeTimeFormat) / [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) polyfill.
 
-* A convenient [`Intl.RelativeTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RelativeTimeFormat) polyfill. No dependencies (doesn't require [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules) because it's already [built in](https://github.com/catamphetamine/relative-time-format/blob/master/source/PluralRuleFunctions.js)).
+Easily create labels like `"1 day ago"`.
 
-* A high-level relative time formatting library.
-
-* A React component for relative time formatting.
-
-[See Demo](https://catamphetamine.github.io/relative-time-format/)
+[Demo](https://catamphetamine.github.io/relative-time-format/)
 
 ## Install
 
@@ -21,25 +17,39 @@ This library consists of three parts:
 npm install relative-time-format --save
 ```
 
-If you're not using a bundler then use a [standalone version from a CDN](#cdn).
+Alternatively, one could [include it on a web page directly via a `<script/>` tag](#cdn).
 
 ## Use
+
+* Import the languages that your application is using from `relative-time-format/locale/..`
+* Add those languages by calling `RelativeTimeFormat.addLocale()`
+* Create a `formatter` for a given language
+* Call `formatter.format()` to create a label
 
 ```js
 import RelativeTimeFormat from "relative-time-format"
 import en from "relative-time-format/locale/en"
 
+// Add English language
 RelativeTimeFormat.addLocale(en)
 
+// Create English formatter
+const formatter = new RelativeTimeFormat("en", {
+  style: "long" // other styles: "short", "narrow"
+})
+
+// Get label for "now + (-2) * day"
 // Returns "2 days ago"
-new RelativeTimeFormat("en", {
-  style: "long" // "long" is the default. Other options: "short", "narrow".
-}).format(-2, "day")
+formatter.format(-2, "day")
 ```
 
-## Locales
+That's basically it. More details can be read in the [official docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat) for `Intl.RelativeTimeFormat`.
 
-The localization resides in the [`locale`](https://github.com/catamphetamine/relative-time-format/tree/master/locale) folder. The format of a localization is:
+P.S. `Intl` not only has `RelativeTimeFormat` but a lot of other cool stuff. [Check it out](https://www.smashingmagazine.com/2025/08/power-intl-api-guide-browser-native-internationalization/).
+
+## Languages
+
+All supported languages can be found in the [`locale`](https://github.com/catamphetamine/relative-time-format/tree/master/locale) folder. Each language is a JSON file of shape:
 
 ```js
 {
@@ -58,11 +68,22 @@ The localization resides in the [`locale`](https://github.com/catamphetamine/rel
 }
 ```
 
-The `past` and `future` can be defined by any of: `zero`, `one`, `two`, `few`, `many` and `other`. For more info on which is which read the [official Unicode CLDR documentation](http://cldr.unicode.org/index/cldr-spec/plural-rules). [Unicode CLDR](http://cldr.unicode.org/) (Common Locale Data Repository) is an industry standard and is basically a collection of formatting rules for all locales (date, time, currency, measurement units, numbers, etc). All localizations come from [`cldr-dates-full`](https://github.com/unicode-cldr/cldr-dates-full) package (for example, [`en-US`](https://github.com/unicode-cldr/cldr-dates-full/blob/master/main/en-US-POSIX/dateFields.json)).
+The `format()` function simply substitutes `{0}` for a number and then returns the result.
 
-To determine whether a certain amount of time (number) is `one`, `few`, or something else, `relative-time-format` uses Unicode CLDR rules for formatting plurals. These rules are number quantifying functions (one for each locale) which can tell if a number should be treated as `zero`, `one`, `two`, `few`, `many` or `other`. Knowing how these pluralization rules work is not required but anyway here are some links for curious advanced readers: [rules explanation](http://cldr.unicode.org/index/cldr-spec/plural-rules), [list of rules for all locales](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html), [list of rules for all locales in JSON format](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/plurals.json) (part of `cldr-core/supplemental` package), [converting those rules to javascript functions](https://github.com/eemeli/make-plural). These quantifying functions can be found as `quantify` properties of a locale data.
+`past` is used for negative numbers and `future` is used for positive ones.
 
-The `locale` folder is generated from CLDR data by running:
+Each number is classified into a category — `zero`, `one`, `two`, `few`, `many` or `other` — and then a corresponding label is picked.
+
+<details>
+<summary>Down the rabbit hole</summary>
+
+######
+
+[Unicode CLDR](http://cldr.unicode.org/) (Common Locale Data Repository) is an industry standard and is basically a collection of formatting rules for all locales (date, time, currency, measurement units, numbers, etc). All localizations come from [`cldr-dates-full`](https://github.com/unicode-cldr/cldr-dates-full) package (for example, [`en-US`](https://github.com/unicode-cldr/cldr-dates-full/blob/master/main/en-US-POSIX/dateFields.json)).
+
+To determine whether a certain number is `one`, `few`, or something else, `relative-time-format` uses Unicode CLDR rules for formatting plurals. These rules are number quantifying functions (one for each locale) which can tell if a number should be treated as `zero`, `one`, `two`, `few`, `many` or `other`. Knowing how these pluralization rules work is not required but anyway here are some links for curious advanced readers: [rules explanation](http://cldr.unicode.org/index/cldr-spec/plural-rules), [list of rules for all locales](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html), [list of rules for all locales in JSON format](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/plurals.json) (part of `cldr-core/supplemental` package), [converting those rules to javascript functions](https://github.com/eemeli/make-plural). These quantifying functions can be found as `quantify` properties of a locale data.
+
+The `/locale` folder contains all supported languages and is generated from Unicode CLDR data using the following command:
 
 ```sh
 npm run generate-locales
@@ -73,22 +94,23 @@ Locale data is extracted from `cldr-core` (quantifiers) and `cldr-dates-full` (r
 ```sh
 npm run update-locales
 ```
+</details>
 
 ## Higher-level API
 
-`Intl.RelativeTimeFormat` is intentionally a low-level API. Third-party libraries are supposed to be built on top of this base-level API. An example of such library is [`javascript-time-ago`](https://github.com/catamphetamine/javascript-time-ago/) which uses `Intl.RelativeTimeFormat` internally and provides a higher-level API:
+`Intl.RelativeTimeFormat` is intentionally a low-level API. Third-party libraries are supposed to be built on top of this low-level API. An example of such library is [`javascript-time-ago`](https://npmjs.com/package/javascript-time-ago).
 
 ```js
 import TimeAgo from 'javascript-time-ago'
-
-// Load locale-specific relative date/time formatting rules.
 import en from 'javascript-time-ago/locale/en'
 
-// Add locale-specific relative date/time formatting rules.
+// Add English language
 TimeAgo.addLocale(en)
 
-// Create relative date/time formatter.
-const timeAgo = new TimeAgo('en-US')
+// Create English formatter
+const timeAgo = new TimeAgo('en')
+
+// `.format()` function automatically converts a `Date` into a label like "1 day ago".
 
 timeAgo.format(new Date())
 // "just now"
@@ -105,7 +127,7 @@ timeAgo.format(Date.now() - 24 * 60 * 60 * 1000)
 
 ## CDN
 
-One can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdelivr.net](https://jsdelivr.net)
+To include this library directly via a `<script/>` tag on a page, one can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdelivr.net](https://jsdelivr.net)
 
 ```html
 <script src="https://unpkg.com/relative-time-format@[version]/bundle/polyfill.js"></script>
