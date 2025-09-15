@@ -32,7 +32,9 @@ import en from "relative-time-format/locale/en"
 
 // Add English language
 RelativeTimeFormat.addLocale(en)
+```
 
+```js
 // Create English formatter
 const formatter = new RelativeTimeFormat("en", {
   style: "long" // other styles: "short", "narrow"
@@ -127,7 +129,7 @@ timeAgo.format(Date.now() - 24 * 60 * 60 * 1000)
 
 ## CDN
 
-To include this library directly via a `<script/>` tag on a page, one can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdelivr.net](https://jsdelivr.net)
+To include this library directly via a `<script/>` tag on a page, one can use any npm CDN service, e.g. [unpkg.com](https://unpkg.com) or [jsdelivr.com](https://jsdelivr.com)
 
 ```html
 <script src="https://unpkg.com/relative-time-format@[version]/bundle/polyfill.js"></script>
