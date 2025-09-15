@@ -21,10 +21,9 @@ Alternatively, one could include it on a web page [directly](#cdn) via a `<scrip
 
 ## Use
 
-* `import` the languages, that your application is using, from `relative-time-format/locale/..`
-* Add those languages by calling `RelativeTimeFormat.addLocale()`
-* Create a `new RelativeTimeFormat(language, { style })` instance for a given `language` and `style`
-* Call `.format(amount, unitOfTime)` to create a label
+To begin, decide on the set of languages that your application will be translated into. For now, let's assume that it's gonna be just English.
+
+Then, for each of those languages, `import` the language data from `relative-time-format/locale/..`, and pass it to `RelativeTimeFormat.addLocale()` function.
 
 ```js
 import RelativeTimeFormat from "relative-time-format"
@@ -34,10 +33,14 @@ import en from "relative-time-format/locale/en"
 RelativeTimeFormat.addLocale(en)
 ```
 
+Now you're ready to create a `new RelativeTimeFormat()` formatter for any of those languages, and use it to create labels.
+
 ```js
 // Create English formatter
 const formatter = new RelativeTimeFormat("en", {
-  style: "long" // other styles: "short", "narrow"
+  // "long" style is the default one.
+  // Other styles: "short", "narrow".
+  style: "long"
 })
 
 // Get label for "now + (-2) * day"
@@ -50,6 +53,48 @@ That's basically it. More details can be read in the [official docs](https://dev
 P.S. `Intl` not only has `RelativeTimeFormat` but a lot of other cool stuff. [Check it out](https://www.smashingmagazine.com/2025/08/power-intl-api-guide-browser-native-internationalization/).
 
 ## Languages
+
+This library supports a lot of languages. None of those languages are loaded by default. A developer must manually choose which languages should be loaded and then call `RelativeTimeFormat.addLocale()` for each one of them.
+
+The `locale` argument of `new RelativeTimeFormat(locale)` constructor will be matched against the list of added languages, and the first matching one will be used. For example, `new RelativeTimeFormat("en")` and `new RelativeTimeFormat("en-US")` will both use `"en"` language.
+
+If the language for the specified `locale` hasn't been added, it will retry with a "default" `locale`. For that, a "default" `locale` has to have been added by calling `RelativeTimeFormat.addDefaultLocale()`. Otherwise, when there's no "default" locale to fall back to, it will just throw an error.
+
+So how is "default" locale useful? It frees a developer from worrying about whether the `locale` argument is supported or not. They can just create a `new RelativeTimeFormat()` formatter with whatever `locale` argument and not even worry about potentially crashing the application in case it throws an error for that `locale`.
+
+In the following example, the application supports three languages — English, German and French — and English is set to be the "default" one that will be used for any other language like Spanish.
+
+```js
+import en from 'relative-time-format/locale/en'
+import de from 'relative-time-format/locale/de'
+import fr from 'relative-time-format/locale/fr'
+
+RelativeTimeFormat.addDefaultLocale(en)
+RelativeTimeFormat.addLocale(de)
+RelativeTimeFormat.addLocale(fr)
+```
+
+```js
+// "es" locale hasn't been added, so it falls back to "en".
+const formatter = new RelativeTimeFormat('es')
+
+formatter.format(-1, 'second')
+// "1 second ago"
+```
+
+`new RelativeTimeFormat()` constructor also supports passing a list of `locales` to choose from. In that case, it will choose the first one that works.
+
+```js
+// Add English and German languages
+RelativeTimeFormat.addDefaultLocale(en)
+RelativeTimeFormat.addLocale(de)
+
+// "de" language will be chosen because it's the first one that works.
+const formatter = new RelativeTimeFormat(['ru-RU', 'de-DE', 'en-US'])
+
+formatter.format(-1, 'second')
+// "vor 1 Sekunde"
+```
 
 All supported languages can be found in the [`locale`](https://github.com/catamphetamine/relative-time-format/tree/master/locale) folder. Each language is a JSON file of shape:
 

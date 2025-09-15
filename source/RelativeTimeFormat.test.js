@@ -23,7 +23,7 @@ en.tiny = {
 
 RelativeTimeFormat.addLocale(ccp)
 RelativeTimeFormat.addLocale(de)
-RelativeTimeFormat.addLocale(en)
+RelativeTimeFormat.addDefaultLocale(en)
 RelativeTimeFormat.addLocale(ru)
 RelativeTimeFormat.addLocale(to)
 RelativeTimeFormat.addLocale(ar_AE)

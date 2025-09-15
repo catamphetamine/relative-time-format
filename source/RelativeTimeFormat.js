@@ -345,6 +345,15 @@ RelativeTimeFormat.supportedLocalesOf = function(locales, options = {}) {
 RelativeTimeFormat.addLocale = addLocaleData
 
 /**
+ * Adds locale data for a specific locale and then sets it as the "default" locale.
+ * @param {Object} localeData
+ */
+RelativeTimeFormat.addDefaultLocale = function(localeData) {
+	addLocaleData(localeData)
+	setDefaultLocale(localeData.locale)
+}
+
+/**
  * Sets default locale.
  * @param  {string} locale
  */
