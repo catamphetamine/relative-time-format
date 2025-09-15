@@ -428,9 +428,11 @@
 import en from "relative-time-format/locale/en"
 
 // Add English language
-RelativeTimeFormat.addLocale(en)
+RelativeTimeFormat.addLocale(en)`}
+							</Highlight>
 
-// Create English formatter
+							<Highlight lang="jsx">
+{`// Create English formatter
 const formatter = new RelativeTimeFormat("en", {
   style: "long" // other styles: "short", "narrow"
 })
