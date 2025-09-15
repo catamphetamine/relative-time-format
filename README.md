@@ -21,10 +21,10 @@ Alternatively, one could include it on a web page [directly](#cdn) via a `<scrip
 
 ## Use
 
-* Import the languages that your application is using from `relative-time-format/locale/..`
+* `import` the languages, that your application is using, from `relative-time-format/locale/..`
 * Add those languages by calling `RelativeTimeFormat.addLocale()`
-* Create a `formatter` for a given language
-* Call `formatter.format()` to create a label
+* Create a `new RelativeTimeFormat(language, { style })` instance for a given `language` and `style`
+* Call `.format(amount, unitOfTime)` to create a label
 
 ```js
 import RelativeTimeFormat from "relative-time-format"
