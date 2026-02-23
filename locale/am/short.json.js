@@ -13,7 +13,7 @@ export default {
 		"current": "ይህ ሩብ",
 		"next": "የሚቀጥለው ሩብ",
 		"past": "{0} ሩብ በፊት",
-		"future": "+{0} ሩብ"
+		"future": "በ{0} ሩብ"
 	},
 	"month": {
 		"previous": "ያለፈው ወር",

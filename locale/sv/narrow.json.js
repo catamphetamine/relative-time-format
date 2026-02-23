@@ -2,7 +2,7 @@ export default {
 	"locale": "sv",
 	"style": "narrow",
 	"year": {
-		"previous": "i fjol",
+		"previous": "förra året",
 		"current": "i år",
 		"next": "nästa år",
 		"past": "−{0} år",

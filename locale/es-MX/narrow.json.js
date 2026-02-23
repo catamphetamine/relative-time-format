@@ -47,10 +47,7 @@ export default {
 	"hour": {
 		"current": "esta hora",
 		"past": "hace {0} h",
-		"future": {
-			"one": "en {0} h",
-			"other": "en {0} n"
-		}
+		"future": "en {0} h"
 	},
 	"minute": {
 		"current": "este minuto",

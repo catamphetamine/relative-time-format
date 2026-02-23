@@ -4,13 +4,13 @@ export default {
 	"year": {
 		"previous": "sala borî",
 		"current": "îsal",
-		"next": "sala bê",
+		"next": "sala were",
 		"past": {
 			"one": "berî {0} salê",
 			"other": "berî {0} salan"
 		},
 		"future": {
-			"one": "di salekê de",
+			"one": "di {0} salê de",
 			"other": "di {0} salan de"
 		}
 	},
@@ -18,49 +18,85 @@ export default {
 		"previous": "çaryeka dawî",
 		"current": "ev çaryek",
 		"next": "çaryeka were",
-		"past": "-{0} Q",
-		"future": "+{0} Q"
+		"past": {
+			"one": "berî {0} çaryekê",
+			"other": "berî {0} çaryekan"
+		},
+		"future": {
+			"one": "piştî {0} çaryekê",
+			"other": "piştî {0} çaryekan"
+		}
 	},
 	"month": {
 		"previous": "meha borî",
 		"current": "ev meh",
-		"next": "meha bê",
-		"past": "-{0} m",
-		"future": "+{0} m"
+		"next": "meha were",
+		"past": {
+			"one": "berî {0} mehê",
+			"other": "berî {0} mehan"
+		},
+		"future": {
+			"one": "piştî {0} mehê",
+			"other": "piştî {0} mehan"
+		}
 	},
 	"week": {
 		"previous": "hefteya borî",
 		"current": "ev hefte",
-		"next": "hefteya bê",
-		"past": "-{0} w",
-		"future": "+{0} w"
+		"next": "hefteya were",
+		"past": {
+			"one": "berî {0} hefteyê",
+			"other": "berî {0} hefteyan"
+		},
+		"future": {
+			"one": "piştî {0} hefteyê",
+			"other": "piştî {0} hefteyan"
+		}
 	},
 	"day": {
 		"previous": "duh",
 		"current": "îro",
 		"next": "sibê",
-		"past": "-{0} d",
-		"future": "+{0} d"
-	},
-	"hour": {
-		"current": "this hour",
-		"past": "-{0} h",
-		"future": "+{0} h"
-	},
-	"minute": {
-		"current": "vê deqeyê",
 		"past": {
-			"one": "berî {0} deqeyê",
-			"other": "berî {0} deqeyan"
+			"one": "berî {0} rojê",
+			"other": "berî {0} rojan"
 		},
 		"future": {
-			"one": "di {0} deqeyê de",
-			"other": "di {0} deqeyan de"
+			"one": "piştî {0} rojê",
+			"other": "piştî {0} rojan"
+		}
+	},
+	"hour": {
+		"current": "ev saet",
+		"past": {
+			"one": "berî {0} saetê",
+			"other": "berî {0} saetan"
+		},
+		"future": {
+			"one": "piştî {0} saetê",
+			"other": "piştî {0} saetan"
+		}
+	},
+	"minute": {
+		"current": "ev deqîqe",
+		"past": {
+			"one": "berî {0} deqîqeyê",
+			"other": "berî {0} deqîqeyan"
+		},
+		"future": {
+			"one": "piştî {0} deqîqeyê",
+			"other": "piştî {0} deqîqeyan"
 		}
 	},
 	"second": {
-		"current": "vêga",
-		"past": "-{0} s",
-		"future": "+{0} s"
+		"current": "niha",
+		"past": {
+			"one": "berî {0} saniyeyê",
+			"other": "berî {0} saniyeyan"
+		},
+		"future": {
+			"one": "piştî {0} saniyeyê",
+			"other": "piştî {0} saniyeyan"
+		}
 	}
 }

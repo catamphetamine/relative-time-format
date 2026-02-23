@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/sd-Deva",
+	"main": "../sd-Deva.json",
+	"module": "../sd-Deva.json.js",
+	"types": "../sd-Deva.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../sd-Deva.json.d.ts",
+			"import": "../sd-Deva.json.js",
+			"require": "../sd-Deva.json"
+		}
+	},
+	"sideEffects": false
+}

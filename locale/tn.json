@@ -16,23 +16,23 @@
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "kgwedi e fetileng",
+			"current": "kgwedi eno",
+			"next": "kgwedi e tlang",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
+			"previous": "beke e fetileng",
+			"current": "beke eno",
+			"next": "beke e tlang",
 			"past": "-{0} w",
 			"future": "+{0} w"
 		},
 		"day": {
-			"previous": "yesterday",
-			"current": "today",
-			"next": "tomorrow",
+			"previous": "maabane",
+			"current": "gompieno",
+			"next": "kamoso",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},
@@ -68,23 +68,23 @@
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "kgwedi e fetileng",
+			"current": "kgwedi eno",
+			"next": "kgwedi e tlang",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
+			"previous": "beke e fetileng",
+			"current": "beke eno",
+			"next": "beke e tlang",
 			"past": "-{0} w",
 			"future": "+{0} w"
 		},
 		"day": {
-			"previous": "yesterday",
-			"current": "today",
-			"next": "tomorrow",
+			"previous": "maabane",
+			"current": "gompieno",
+			"next": "kamoso",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},
@@ -120,23 +120,23 @@
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "kgwedi e fetileng",
+			"current": "kgwedi eno",
+			"next": "kgwedi e tlang",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
 		"week": {
-			"previous": "last week",
-			"current": "this week",
-			"next": "next week",
+			"previous": "beke e fetileng",
+			"current": "beke eno",
+			"next": "beke e tlang",
 			"past": "-{0} w",
 			"future": "+{0} w"
 		},
 		"day": {
-			"previous": "yesterday",
-			"current": "today",
-			"next": "tomorrow",
+			"previous": "maabane",
+			"current": "gompieno",
+			"next": "kamoso",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},

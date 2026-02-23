@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-GE",
+	"main": "../en-GE.json",
+	"module": "../en-GE.json.js",
+	"types": "../en-GE.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-GE.json.d.ts",
+			"import": "../en-GE.json.js",
+			"require": "../en-GE.json"
+		}
+	},
+	"sideEffects": false
+}

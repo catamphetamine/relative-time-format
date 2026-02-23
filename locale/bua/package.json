@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/bua",
+	"main": "../bua.json",
+	"module": "../bua.json.js",
+	"types": "../bua.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../bua.json.d.ts",
+			"import": "../bua.json.js",
+			"require": "../bua.json"
+		}
+	},
+	"sideEffects": false
+}

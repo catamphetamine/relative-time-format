@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/en-UA",
+	"main": "../en-UA.json",
+	"module": "../en-UA.json.js",
+	"types": "../en-UA.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../en-UA.json.d.ts",
+			"import": "../en-UA.json.js",
+			"require": "../en-UA.json"
+		}
+	},
+	"sideEffects": false
+}

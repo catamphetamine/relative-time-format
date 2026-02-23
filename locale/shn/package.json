@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/shn",
+	"main": "../shn.json",
+	"module": "../shn.json.js",
+	"types": "../shn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../shn.json.d.ts",
+			"import": "../shn.json.js",
+			"require": "../shn.json"
+		}
+	},
+	"sideEffects": false
+}

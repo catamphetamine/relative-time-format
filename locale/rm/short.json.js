@@ -5,29 +5,47 @@ export default {
 		"previous": "l’onn passà",
 		"current": "quest onn",
 		"next": "l’onn proxim",
-		"past": "-{0} y",
-		"future": "+{0} y"
+		"past": {
+			"one": "avant {0} onn",
+			"other": "avant {0} onns"
+		},
+		"future": {
+			"one": "en {0} onn",
+			"other": "en {0} onns"
+		}
 	},
 	"quarter": {
-		"previous": "last quarter",
-		"current": "this quarter",
-		"next": "next quarter",
-		"past": "-{0} Q",
-		"future": "+{0} Q"
+		"previous": "l’ultim quartal",
+		"current": "quest quartal",
+		"next": "il proxim quartal",
+		"past": {
+			"one": "avant {0} qrtl.",
+			"other": "avant {0} qrtls."
+		},
+		"future": {
+			"one": "en {0} qrtl.",
+			"other": "en {0} qrtls."
+		}
 	},
 	"month": {
-		"previous": "last month",
-		"current": "this month",
-		"next": "next month",
-		"past": "-{0} m",
-		"future": "+{0} m"
+		"previous": "ultim mais",
+		"current": "quest mais",
+		"next": "proxim mais",
+		"past": "avant {0} mais",
+		"future": "en {0} mais"
 	},
 	"week": {
-		"previous": "last week",
-		"current": "this week",
-		"next": "next week",
-		"past": "-{0} w",
-		"future": "+{0} w"
+		"previous": "ultim’emna",
+		"current": "quest’emna",
+		"next": "proxim’emna",
+		"past": {
+			"one": "avant {0} emna",
+			"other": "avant {0} emnas"
+		},
+		"future": {
+			"one": "en {0} emna",
+			"other": "en {0} emnas"
+		}
 	},
 	"day": {
 		"previous": "ier",
@@ -35,22 +53,28 @@ export default {
 		"current": "oz",
 		"next": "damaun",
 		"next-2": "puschmaun",
-		"past": "-{0} d",
-		"future": "+{0} d"
+		"past": {
+			"one": "avant {0} di",
+			"other": "avant {0} dis"
+		},
+		"future": {
+			"one": "en {0} di",
+			"other": "en {0} dis"
+		}
 	},
 	"hour": {
-		"current": "this hour",
-		"past": "-{0} h",
-		"future": "+{0} h"
+		"current": "quest’ura",
+		"past": "avant {0} h",
+		"future": "en {0} h"
 	},
 	"minute": {
-		"current": "this minute",
-		"past": "-{0} min",
-		"future": "+{0} min"
+		"current": "questa minuta",
+		"past": "avant {0} min",
+		"future": "en {0} min"
 	},
 	"second": {
-		"current": "now",
-		"past": "-{0} s",
-		"future": "+{0} s"
+		"current": "ussa",
+		"past": "avant {0} s",
+		"future": "en {0} s"
 	}
 }

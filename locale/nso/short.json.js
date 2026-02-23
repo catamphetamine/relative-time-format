@@ -1,0 +1,54 @@
+export default {
+	"locale": "nso",
+	"style": "short",
+	"year": {
+		"previous": "ngwaga wa go feta",
+		"current": "ngwaga wo",
+		"next": "ngwaga wo o tlago",
+		"past": "-{0} y",
+		"future": "+{0} y"
+	},
+	"quarter": {
+		"previous": "last quarter",
+		"current": "this quarter",
+		"next": "next quarter",
+		"past": "-{0} Q",
+		"future": "+{0} Q"
+	},
+	"month": {
+		"previous": "kgwedi ye e fetilego",
+		"current": "kgwedi ye",
+		"next": "kgwedi ye e tlago",
+		"past": "-{0} m",
+		"future": "+{0} m"
+	},
+	"week": {
+		"previous": "beke ye e fetilego",
+		"current": "beke ye",
+		"next": "beke ye e tlago",
+		"past": "-{0} w",
+		"future": "+{0} w"
+	},
+	"day": {
+		"previous": "maabane",
+		"current": "lehono",
+		"next": "gosasa",
+		"past": "-{0} d",
+		"future": "+{0} d"
+	},
+	"hour": {
+		"current": "this hour",
+		"past": "-{0} h",
+		"future": "+{0} h"
+	},
+	"minute": {
+		"current": "this minute",
+		"past": "-{0} min",
+		"future": "+{0} min"
+	},
+	"second": {
+		"current": "now",
+		"past": "-{0} s",
+		"future": "+{0} s"
+	}
+}

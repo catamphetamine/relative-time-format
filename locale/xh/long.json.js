@@ -9,9 +9,9 @@ export default {
 		"future": "+{0} y"
 	},
 	"quarter": {
-		"previous": "last quarter",
-		"current": "this quarter",
-		"next": "next quarter",
+		"previous": "ikota edlulileyo",
+		"current": "ikota esikuyo",
+		"next": "ikota elandelayp",
 		"past": "-{0} Q",
 		"future": "+{0} Q"
 	},
@@ -37,17 +37,17 @@ export default {
 		"future": "+{0} d"
 	},
 	"hour": {
-		"current": "this hour",
+		"current": "ngale yure",
 		"past": "-{0} h",
 		"future": "+{0} h"
 	},
 	"minute": {
-		"current": "this minute",
+		"current": "ngalo mzuzu",
 		"past": "-{0} min",
 		"future": "+{0} min"
 	},
 	"second": {
-		"current": "now",
+		"current": "ngoku",
 		"past": "-{0} s",
 		"future": "+{0} s"
 	}

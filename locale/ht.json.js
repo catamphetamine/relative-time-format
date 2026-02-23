@@ -98,9 +98,9 @@ export default {
 	},
 	"short": {
 		"year": {
-			"previous": "l’année dernière",
+			"previous": "l’an dernier",
 			"current": "cette année",
-			"next": "l’année prochaine",
+			"next": "l’an prochain",
 			"past": "il y a {0} a",
 			"future": "dans {0} a"
 		},
@@ -152,9 +152,9 @@ export default {
 	},
 	"narrow": {
 		"year": {
-			"previous": "l’année dernière",
+			"previous": "l’an dernier",
 			"current": "cette année",
-			"next": "l’année prochaine",
+			"next": "l’an prochain",
 			"past": "-{0} a",
 			"future": "+{0} a"
 		},

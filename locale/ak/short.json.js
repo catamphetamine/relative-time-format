@@ -48,8 +48,8 @@ export default {
 		"future": "nnawɔtwe {0} mu"
 	},
 	"day": {
-		"previous": "Ndeda ɛnnora",
-		"current": "Ndɛ ɛnnɛ",
+		"previous": "nnora",
+		"current": "ɛnnɛ",
 		"next": "Ɔkyena",
 		"past": {
 			"one": "da{0} a atwam",
@@ -78,13 +78,7 @@ export default {
 	},
 	"second": {
 		"current": "seesei",
-		"past": {
-			"one": "anibuo {0} a atwam",
-			"other": "nnibuo {0} a atwam"
-		},
-		"future": {
-			"one": "anibuo {0} mu",
-			"other": "nnibuo {0} mu"
-		}
+		"past": "simasin {0} a atwam",
+		"future": "simasin {0} mu"
 	}
 }

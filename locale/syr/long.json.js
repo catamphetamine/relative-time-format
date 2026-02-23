@@ -4,7 +4,7 @@ export default {
 	"year": {
 		"previous": "ܐܫܬܩܕܝ",
 		"current": "ܗܕܐ ܫܢܬܐ",
-		"next": "ܫܢܬܐ ܐܚܪܬܐ",
+		"next": "ܫܢܬܐ ܕܐܬܝܐ",
 		"past": {
 			"one": "ܡ̣ܢ ܩܕܡ ܚܕܐ ܫܢܬܐ",
 			"other": "ܡ̣ܢ ܩܕܡ {0} ܫܢܝ̈ܐ"
@@ -28,7 +28,7 @@ export default {
 		}
 	},
 	"month": {
-		"previous": "ܝܪܚܐ ܕܕܥܒܪ",
+		"previous": "ܝܪܚܐ ܐܚܪܝܐ",
 		"current": "ܗܢܐ ܝܪܚܐ",
 		"next": "ܝܪܚܐ ܕܐܬܐ",
 		"past": {
@@ -41,8 +41,8 @@ export default {
 		}
 	},
 	"week": {
-		"previous": "ܫܒܘܥܐ ܕܕܥܒܪ",
-		"current": "ܗܕܐ ܫܒܘܥܐ",
+		"previous": "ܫܒܘܥܐ ܐܚܪܝܐ",
+		"current": "ܗܢܐ ܫܒܘܥܐ",
 		"next": "ܫܒܘܥܐ ܕܐܬܐ",
 		"past": {
 			"one": "ܡ̣ܢ ܩܕܡ ܚܕ ܫܒܘܥܐ",
@@ -56,7 +56,7 @@ export default {
 	"day": {
 		"previous": "ܐܬܡܠܝ",
 		"current": "ܐܕܝܘܡ",
-		"next": "ܝܘܡܐ ܕܐܬܐ",
+		"next": "ܩܘܕܡܐ",
 		"past": {
 			"one": "ܡ̣ܢ ܩܕܡ ܚܕ ܝܘܡܐ",
 			"other": "ܡ̣ܢ ܩܕܡ {0} ܝܘܡܢ̈ܐ"

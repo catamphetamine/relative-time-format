@@ -4,156 +4,208 @@ export default {
 		"year": {
 			"previous": "пӗлтӗр",
 			"current": "кӑҫал",
-			"next": "ҫитес ҫул",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"next": "ҫитес ҫулта",
+			"past": "{0} ҫул каялла",
+			"future": "{0} ҫултан"
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"previous": "иртнӗ чӗрӗкре",
+			"current": "ку чӗрӗкре",
+			"next": "ҫитес чӗрӗкре",
+			"past": "{0} чӗрӗк каялла",
+			"future": "{0} чӗрӗкрен"
 		},
 		"month": {
 			"previous": "иртнӗ уйӑхра",
 			"current": "ку уйӑхра",
 			"next": "ҫитес уйӑхра",
-			"past": "-{0} m",
-			"future": "+{0} m"
+			"past": "{0} уйӑх каялла",
+			"future": "{0} уйӑхран"
 		},
 		"week": {
 			"previous": "иртнӗ эрнере",
-			"current": "ҫак эрнере",
+			"current": "ку эрнере",
 			"next": "ҫитес эрнере",
-			"past": "-{0} w",
-			"future": "+{0} w"
+			"past": "{0} эрне каялла",
+			"future": "{0} эрнерен"
 		},
 		"day": {
 			"previous": "ӗнер",
 			"current": "паян",
 			"next": "ыран",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"past": "{0} кун каялла",
+			"future": "{0} кунтан"
 		},
 		"hour": {
-			"current": "this hour",
-			"past": "-{0} h",
-			"future": "+{0} h"
+			"current": "ку сехетре",
+			"past": "{0} сехет каялла",
+			"future": "{0} сехетрен"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "ку минутра",
+			"past": "{0} минут каялла",
+			"future": "{0} минутран"
 		},
 		"second": {
-			"current": "now",
-			"past": "-{0} s",
-			"future": "+{0} s"
+			"current": "халь",
+			"past": "{0} ҫеккунт каялла",
+			"future": "{0} ҫеккунтран"
 		}
 	},
 	"short": {
 		"year": {
 			"previous": "пӗлтӗр",
 			"current": "кӑҫал",
-			"next": "ҫитес ҫ.",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"next": "ҫитес ҫулта",
+			"past": "{0} ҫул каялла",
+			"future": "{0} ҫултан"
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"previous": "иртнӗ чӗр.",
+			"current": "ку чӗр.",
+			"next": "ҫитес чӗр.",
+			"past": {
+				"zero": "{0} чӗрӗк каялла",
+				"one": "{0} чӗрӗк каялла",
+				"other": "{0} чӗр. каялла"
+			},
+			"future": "{0} чӗрӗкрен"
 		},
 		"month": {
-			"previous": "иртнӗ уй.",
-			"current": "ку уй.",
-			"next": "ҫитес уй.",
-			"past": "-{0} m",
-			"future": "+{0} m"
+			"previous": "иртнӗ уйӑхра",
+			"current": "ку уйӑхра",
+			"next": "ҫитес уйӑхра",
+			"past": {
+				"zero": "{0} уйӑх каялла",
+				"one": "{0} уйӑх каялла",
+				"other": "{0} уй. каялла"
+			},
+			"future": "{0} уйӑхран"
 		},
 		"week": {
-			"previous": "иртнӗ эр.",
-			"current": "ҫак эр.",
-			"next": "ҫитес эр.",
-			"past": "-{0} w",
-			"future": "+{0} w"
+			"previous": "иртнӗ эрн.",
+			"current": "ку эрн.",
+			"next": "ҫитес эрн.",
+			"past": {
+				"zero": "{0} эрне каялла",
+				"one": "{0} эрне каялла",
+				"other": "{0} эрн. каялла"
+			},
+			"future": "{0} эрнерен"
 		},
 		"day": {
 			"previous": "ӗнер",
 			"current": "паян",
 			"next": "ыран",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"past": "{0} кун каялла",
+			"future": "{0} кунтан"
 		},
 		"hour": {
-			"current": "this hour",
-			"past": "-{0} h",
-			"future": "+{0} h"
+			"current": "ку сех.",
+			"past": {
+				"zero": "{0} сехет каялла",
+				"one": "{0} сехет каялла",
+				"other": "{0} сех. каялла"
+			},
+			"future": "{0} сехетрен"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "ку мин.",
+			"past": {
+				"zero": "{0} минут каялла",
+				"one": "{0} минут каялла",
+				"other": "{0} мин. каялла"
+			},
+			"future": "{0} минутран"
 		},
 		"second": {
-			"current": "now",
-			"past": "-{0} s",
-			"future": "+{0} s"
+			"current": "халь",
+			"past": {
+				"zero": "{0} ҫеккунт каялла",
+				"one": "{0} ҫеккунт каялла",
+				"other": "{0} ҫек. каялла"
+			},
+			"future": "{0} ҫеккунтран"
 		}
 	},
 	"narrow": {
 		"year": {
 			"previous": "пӗлтӗр",
 			"current": "кӑҫал",
-			"next": "ҫитес ҫ.",
-			"past": "-{0} y",
-			"future": "+{0} y"
+			"next": "ҫитес ҫулта",
+			"past": "{0} ҫул каялла",
+			"future": "{0} ҫултан"
 		},
 		"quarter": {
-			"previous": "last quarter",
-			"current": "this quarter",
-			"next": "next quarter",
-			"past": "-{0} Q",
-			"future": "+{0} Q"
+			"previous": "иртнӗ чӗр.",
+			"current": "ку чӗр.",
+			"next": "ҫитес чӗр.",
+			"past": {
+				"zero": "{0} чӗрӗк каялла",
+				"one": "{0} чӗрӗк каялла",
+				"other": "{0} чӗр. каялла"
+			},
+			"future": "{0} чӗрӗкрен"
 		},
 		"month": {
-			"previous": "иртнӗ уй.",
-			"current": "ку уй.",
-			"next": "ҫитес уй.",
-			"past": "-{0} m",
-			"future": "+{0} m"
+			"previous": "иртнӗ уйӑхра",
+			"current": "ку уйӑхра",
+			"next": "ҫитес уйӑхра",
+			"past": {
+				"zero": "{0} уйӑх каялла",
+				"one": "{0} уйӑх каялла",
+				"other": "{0} уй. каялла"
+			},
+			"future": "{0} уйӑхран"
 		},
 		"week": {
-			"previous": "иртнӗ эр.",
-			"current": "ҫак эр.",
-			"next": "ҫитес эр.",
-			"past": "-{0} w",
-			"future": "+{0} w"
+			"previous": "иртнӗ эрн.",
+			"current": "ку эрн.",
+			"next": "ҫитес эрн.",
+			"past": {
+				"zero": "{0} эрне каялла",
+				"one": "{0} эрне каялла",
+				"other": "{0} эрн. каялла"
+			},
+			"future": "{0} эрнерен"
 		},
 		"day": {
 			"previous": "ӗнер",
 			"current": "паян",
 			"next": "ыран",
-			"past": "-{0} d",
-			"future": "+{0} d"
+			"past": "{0} кун каялла",
+			"future": "{0} кунтан"
 		},
 		"hour": {
-			"current": "this hour",
-			"past": "-{0} h",
-			"future": "+{0} h"
+			"current": "ку сех.",
+			"past": {
+				"zero": "{0} сехет каялла",
+				"one": "{0} сехет каялла",
+				"other": "{0} сех. каялла"
+			},
+			"future": "{0} сехетрен"
 		},
 		"minute": {
-			"current": "this minute",
-			"past": "-{0} min",
-			"future": "+{0} min"
+			"current": "ку мин.",
+			"past": {
+				"zero": "{0} минут каялла",
+				"one": "{0} минут каялла",
+				"other": "{0} мин. каялла"
+			},
+			"future": "{0} минутран"
 		},
 		"second": {
-			"current": "now",
-			"past": "-{0} s",
-			"future": "+{0} s"
+			"current": "халь",
+			"past": {
+				"zero": "{0} ҫеккунт каялла",
+				"one": "{0} ҫеккунт каялла",
+				"other": "{0} ҫ каялла"
+			},
+			"future": {
+				"zero": "{0} ҫеккунтран",
+				"one": "{0} ҫеккунтран",
+				"other": "{0} ҫ-ран"
+			}
 		}
 	}
 }

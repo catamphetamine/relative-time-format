@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/nso",
+	"main": "../nso.json",
+	"module": "../nso.json.js",
+	"types": "../nso.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../nso.json.d.ts",
+			"import": "../nso.json.js",
+			"require": "../nso.json"
+		}
+	},
+	"sideEffects": false
+}

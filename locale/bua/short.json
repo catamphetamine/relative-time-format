@@ -1,0 +1,54 @@
+{
+	"locale": "bua",
+	"style": "short",
+	"year": {
+		"previous": "үнгэрэгшэ жэл",
+		"current": "энэ жэл",
+		"next": "хойто жэл",
+		"past": "-{0} y",
+		"future": "+{0} y"
+	},
+	"quarter": {
+		"previous": "last quarter",
+		"current": "this quarter",
+		"next": "next quarter",
+		"past": "-{0} Q",
+		"future": "+{0} Q"
+	},
+	"month": {
+		"previous": "үнгэрэгшэ һара",
+		"current": "энэ һара",
+		"next": "хойто һара",
+		"past": "-{0} m",
+		"future": "+{0} m"
+	},
+	"week": {
+		"previous": "үнгэрэгшэ долоон хоног",
+		"current": "энэ долоон хоног",
+		"next": "хойто долоон хоног",
+		"past": "-{0} w",
+		"future": "+{0} w"
+	},
+	"day": {
+		"previous": "үсэгэлдэр",
+		"current": "мүнөө",
+		"next": "үглөөдэр",
+		"past": "-{0} d",
+		"future": "+{0} d"
+	},
+	"hour": {
+		"current": "this hour",
+		"past": "-{0} h",
+		"future": "+{0} h"
+	},
+	"minute": {
+		"current": "this minute",
+		"past": "-{0} min",
+		"future": "+{0} min"
+	},
+	"second": {
+		"current": "now",
+		"past": "-{0} s",
+		"future": "+{0} s"
+	}
+}

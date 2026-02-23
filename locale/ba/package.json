@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/ba",
+	"main": "../ba.json",
+	"module": "../ba.json.js",
+	"types": "../ba.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../ba.json.d.ts",
+			"import": "../ba.json.js",
+			"require": "../ba.json"
+		}
+	},
+	"sideEffects": false
+}

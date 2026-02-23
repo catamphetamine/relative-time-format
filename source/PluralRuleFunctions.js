@@ -49,10 +49,10 @@ var $ = {
 			: v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12 || i100 > 14) || (f10 >= 2 && f10 <= 4) && (f100 < 12 || f100 > 14) ? 'few'
 			: 'other';
 	},
-	ca: (n) => {
+	ca: (n, c) => {
 		const s = String(n).split('.'), i = s[0], v0 = !s[1], i1000000 = i.slice(-6);
 		return n == 1 && v0 ? 'one'
-			: i != 0 && i1000000 == 0 && v0 ? 'many'
+			: !c && i != 0 && i1000000 == 0 && v0 || c > 5 ? 'many'
 			: 'other';
 	},
 	ceb: (n) => {
@@ -84,17 +84,17 @@ var $ = {
 			: 'other';
 	},
 	dz: (n) => 'other',
-	es: (n) => {
+	es: (n, c) => {
 		const s = String(n).split('.'), i = s[0], v0 = !s[1], i1000000 = i.slice(-6);
 		return n == 1 ? 'one'
-			: i != 0 && i1000000 == 0 && v0 ? 'many'
+			: !c && i != 0 && i1000000 == 0 && v0 || c > 5 ? 'many'
 			: 'other';
 	},
 	ff: (n) => n >= 0 && n < 2 ? 'one' : 'other',
-	fr: (n) => {
+	fr: (n, c) => {
 		const s = String(n).split('.'), i = s[0], v0 = !s[1], i1000000 = i.slice(-6);
 		return n >= 0 && n < 2 ? 'one'
-			: i != 0 && i1000000 == 0 && v0 ? 'many'
+			: !c && i != 0 && i1000000 == 0 && v0 || c > 5 ? 'many'
 			: 'other';
 	},
 	ga: (n) => {
@@ -154,10 +154,10 @@ var $ = {
 			: v0 && i != 1 && (i10 == 0 || i10 == 1) || v0 && (i10 >= 5 && i10 <= 9) || v0 && (i100 >= 12 && i100 <= 14) ? 'many'
 			: 'other';
 	},
-	pt: (n) => {
+	pt: (n, c) => {
 		const s = String(n).split('.'), i = s[0], v0 = !s[1], i1000000 = i.slice(-6);
 		return (i == 0 || i == 1) ? 'one'
-			: i != 0 && i1000000 == 0 && v0 ? 'many'
+			: !c && i != 0 && i1000000 == 0 && v0 || c > 5 ? 'many'
 			: 'other';
 	},
 	ro: (n) => {
@@ -197,11 +197,14 @@ $.bn = $.am
 $.brx = $.af
 $.ce = $.af
 $.chr = $.af
+$.csw = $.ak
+$.cv = $.blo
 $.de = $.ast
 $.doi = $.am
 $.ee = $.af
 $.el = $.af
 $.en = $.ast
+$.eo = $.af
 $.et = $.ast
 $.eu = $.af
 $.fa = $.am
@@ -220,6 +223,7 @@ $.hu = $.af
 $.hy = $.ff
 $.ia = $.ast
 $.id = $.dz
+$.ie = $.ast
 $.ig = $.dz
 $.ii = $.dz
 $.it = $.ca
@@ -233,12 +237,14 @@ $.kl = $.af
 $.km = $.dz
 $.kn = $.am
 $.ko = $.dz
+$.kok = $.am
 $.ks = $.af
 $.ksh = $.blo
 $.ku = $.af
 $.ky = $.af
 $.lb = $.af
 $.lkt = $.dz
+$.lld = $.ca
 $.lo = $.dz
 $.ml = $.af
 $.mn = $.af
@@ -251,6 +257,7 @@ $.nl = $.ast
 $.nn = $.af
 $.no = $.af
 $.nqo = $.dz
+$.nso = $.ak
 $.om = $.af
 $.or = $.af
 $.pa = $.ak
@@ -259,6 +266,7 @@ $.ps = $.af
 $.rm = $.af
 $.sah = $.dz
 $.sc = $.ast
+$.scn = $.ca
 $.sd = $.af
 $.sk = $.cs
 $.so = $.af

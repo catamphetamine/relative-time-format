@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/rw",
+	"main": "../rw.json",
+	"module": "../rw.json.js",
+	"types": "../rw.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../rw.json.d.ts",
+			"import": "../rw.json.js",
+			"require": "../rw.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/tok",
+	"main": "../tok.json",
+	"module": "../tok.json.js",
+	"types": "../tok.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../tok.json.d.ts",
+			"import": "../tok.json.js",
+			"require": "../tok.json"
+		}
+	},
+	"sideEffects": false
+}

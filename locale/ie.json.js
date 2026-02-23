@@ -16,9 +16,9 @@ export default {
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "ultim mensu",
+			"current": "ho-mensu",
+			"next": "sequent mensu",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
@@ -31,8 +31,10 @@ export default {
 		},
 		"day": {
 			"previous": "yer",
+			"previous-2": "anteyer",
 			"current": "hodie",
 			"next": "deman",
+			"next-2": "posdeman",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},
@@ -68,9 +70,9 @@ export default {
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "ultim mensu",
+			"current": "ho-mensu",
+			"next": "sequent mensu",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
@@ -83,8 +85,10 @@ export default {
 		},
 		"day": {
 			"previous": "yer",
+			"previous-2": "anteyer",
 			"current": "hodie",
 			"next": "deman",
+			"next-2": "posdeman",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},
@@ -120,9 +124,9 @@ export default {
 			"future": "+{0} Q"
 		},
 		"month": {
-			"previous": "last month",
-			"current": "this month",
-			"next": "next month",
+			"previous": "ultim mensu",
+			"current": "ho-mensu",
+			"next": "sequent mensu",
 			"past": "-{0} m",
 			"future": "+{0} m"
 		},
@@ -135,8 +139,10 @@ export default {
 		},
 		"day": {
 			"previous": "yer",
+			"previous-2": "anteyer",
 			"current": "hodie",
 			"next": "deman",
+			"next-2": "posdeman",
 			"past": "-{0} d",
 			"future": "+{0} d"
 		},

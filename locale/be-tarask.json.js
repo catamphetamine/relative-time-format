@@ -2,8 +2,8 @@ export default {
 	"locale": "be-tarask",
 	"long": {
 		"year": {
-			"previous": "у мінулым годзе",
-			"current": "у гэтым годзе",
+			"previous": "летась",
+			"current": "сёлета",
 			"next": "у наступным годзе",
 			"past": {
 				"one": "{0} год таму",
@@ -131,7 +131,7 @@ export default {
 	"short": {
 		"year": {
 			"previous": "у мін. годзе",
-			"current": "у гэтым годзе",
+			"current": "сёлета",
 			"next": "у наст. годзе",
 			"past": "{0} г. таму",
 			"future": "праз {0} г."
@@ -195,7 +195,7 @@ export default {
 	"narrow": {
 		"year": {
 			"previous": "у мін. годзе",
-			"current": "у гэтым годзе",
+			"current": "сёлета",
 			"next": "у наст. годзе",
 			"past": "{0} г. таму",
 			"future": "праз {0} г."

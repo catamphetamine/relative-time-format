@@ -147,11 +147,13 @@
 			"next": "luna viitoare",
 			"past": {
 				"one": "acum {0} lună",
-				"other": "acum {0} luni"
+				"few": "acum {0} luni",
+				"other": "acum {0} de luni"
 			},
 			"future": {
 				"one": "peste {0} lună",
-				"other": "peste {0} luni"
+				"few": "peste {0} luni",
+				"other": "peste {0} de luni"
 			}
 		},
 		"week": {

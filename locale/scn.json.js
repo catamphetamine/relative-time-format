@@ -1,0 +1,249 @@
+export default {
+	"locale": "scn",
+	"long": {
+		"year": {
+			"previous": "l’annu passatu",
+			"current": "st’annu",
+			"next": "l’annu vinturu",
+			"past": {
+				"one": "n’annu nnarrè",
+				"other": "{0} anni nnarrè"
+			},
+			"future": {
+				"one": "ntra n’annu",
+				"other": "ntra {0} anni"
+			}
+		},
+		"quarter": {
+			"previous": "l’ùrtimu trimestri",
+			"current": "stu trimestri",
+			"next": "u pròssimu trimestri",
+			"past": {
+				"one": "un trimestri nnarrè",
+				"other": "{0} trimestri nnarrè"
+			},
+			"future": {
+				"one": "ntra un trimestri",
+				"other": "ntra {0} trimestri"
+			}
+		},
+		"month": {
+			"previous": "u misi passatu",
+			"current": "stu misi",
+			"next": "u misi vinturu",
+			"past": {
+				"one": "un misi nnarrè",
+				"other": "{0} misi nnarrè"
+			},
+			"future": {
+				"one": "ntra un misi",
+				"other": "ntra {0} misi"
+			}
+		},
+		"week": {
+			"previous": "a simana passata",
+			"current": "sta simana",
+			"next": "a pròssima simana",
+			"past": {
+				"one": "na simana nnarrè",
+				"other": "{0} simani nnarrè"
+			},
+			"future": {
+				"one": "ntra na simana",
+				"other": "ntra {0} simani"
+			}
+		},
+		"day": {
+			"previous": "ajeri",
+			"current": "oji",
+			"next": "dumani",
+			"past": {
+				"one": "un jornu nnarrè",
+				"other": "{0} jorna nnarrè"
+			},
+			"future": {
+				"one": "ntra un jornu",
+				"other": "ntra {0} jorna"
+			}
+		},
+		"hour": {
+			"current": "this hour",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "this minute",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "ora",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	},
+	"short": {
+		"year": {
+			"previous": "l’a. passatu",
+			"current": "st’a.",
+			"next": "l’a. vinturu",
+			"past": {
+				"one": "n’annu nnarrè",
+				"other": "{0} anni nnarrè"
+			},
+			"future": {
+				"one": "ntra n’annu",
+				"other": "ntra {0} anni"
+			}
+		},
+		"quarter": {
+			"previous": "l’ùrtimu trimestri",
+			"current": "stu trimestri",
+			"next": "u pròssimu trimestri",
+			"past": {
+				"one": "un tri. nnarrè",
+				"other": "{0} tri. nnarrè"
+			},
+			"future": {
+				"one": "ntra un tri.",
+				"other": "ntra {0} tri."
+			}
+		},
+		"month": {
+			"previous": "u m. passatu",
+			"current": "stu m.",
+			"next": "u m. vinturu",
+			"past": {
+				"one": "un m. nnarrè",
+				"other": "{0} m. nnarrè"
+			},
+			"future": {
+				"one": "ntra un m.",
+				"other": "ntra {0} m."
+			}
+		},
+		"week": {
+			"previous": "a smn. passata",
+			"current": "sta smn.",
+			"next": "a pròssima smn.",
+			"past": {
+				"one": "na simana nnarrè",
+				"other": "{0} simani nnarrè"
+			},
+			"future": {
+				"one": "ntra na simana",
+				"other": "ntra {0} simani"
+			}
+		},
+		"day": {
+			"previous": "ajeri",
+			"current": "oji",
+			"next": "dumani",
+			"past": {
+				"one": "un jornu nnarrè",
+				"other": "{0} jorna nnarrè"
+			},
+			"future": {
+				"one": "ntra un jornu",
+				"other": "ntra {0} jorna"
+			}
+		},
+		"hour": {
+			"current": "this hour",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "this minute",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "ora",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	},
+	"narrow": {
+		"year": {
+			"previous": "l’a. passatu",
+			"current": "st’.a",
+			"next": "l’a. vinturu",
+			"past": {
+				"one": "n’annu nnarrè",
+				"other": "{0} anni nnarrè"
+			},
+			"future": {
+				"one": "ntra n’annu",
+				"other": "ntra {0} anni"
+			}
+		},
+		"quarter": {
+			"previous": "l’ùrtimu trimestri",
+			"current": "stu trimestri",
+			"next": "u pròssimu trimestri",
+			"past": {
+				"one": "un t. nnarrè",
+				"other": "{0} t. nnarrè"
+			},
+			"future": {
+				"one": "ntra un t.",
+				"other": "ntra {0} t."
+			}
+		},
+		"month": {
+			"previous": "u m. passatu",
+			"current": "stu m.",
+			"next": "u m. vinturu",
+			"past": {
+				"one": "un m. nnarrè",
+				"other": "{0} m. nnarrè"
+			},
+			"future": {
+				"one": "ntra un m.",
+				"other": "ntra {0} m."
+			}
+		},
+		"week": {
+			"previous": "a smn. passata",
+			"current": "sta smn.",
+			"next": "a pròssima smn.",
+			"past": {
+				"one": "na simana nnarrè",
+				"other": "{0} simani nnarrè"
+			},
+			"future": {
+				"one": "ntra na simana",
+				"other": "ntra {0} simani"
+			}
+		},
+		"day": {
+			"previous": "ajeri",
+			"current": "oji",
+			"next": "dumani",
+			"past": {
+				"one": "un jornu nnarrè",
+				"other": "{0} jorna nnarrè"
+			},
+			"future": {
+				"one": "ntra un jornu",
+				"other": "ntra {0} jorna"
+			}
+		},
+		"hour": {
+			"current": "this hour",
+			"past": "-{0} h",
+			"future": "+{0} h"
+		},
+		"minute": {
+			"current": "this minute",
+			"past": "-{0} min",
+			"future": "+{0} min"
+		},
+		"second": {
+			"current": "ora",
+			"past": "-{0} s",
+			"future": "+{0} s"
+		}
+	}
+}

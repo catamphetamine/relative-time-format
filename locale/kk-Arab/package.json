@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/kk-Arab",
+	"main": "../kk-Arab.json",
+	"module": "../kk-Arab.json.js",
+	"types": "../kk-Arab.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../kk-Arab.json.d.ts",
+			"import": "../kk-Arab.json.js",
+			"require": "../kk-Arab.json"
+		}
+	},
+	"sideEffects": false
+}

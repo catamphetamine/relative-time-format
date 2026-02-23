@@ -2,7 +2,7 @@ export default {
 	"locale": "sv",
 	"long": {
 		"year": {
-			"previous": "i fjol",
+			"previous": "förra året",
 			"current": "i år",
 			"next": "nästa år",
 			"past": "för {0} år sedan",
@@ -92,7 +92,7 @@ export default {
 	},
 	"short": {
 		"year": {
-			"previous": "i fjol",
+			"previous": "förra året",
 			"current": "i år",
 			"next": "nästa år",
 			"past": "för {0} år sen",
@@ -152,7 +152,7 @@ export default {
 	},
 	"narrow": {
 		"year": {
-			"previous": "i fjol",
+			"previous": "förra året",
 			"current": "i år",
 			"next": "nästa år",
 			"past": "−{0} år",

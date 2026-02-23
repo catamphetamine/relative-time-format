@@ -40,8 +40,8 @@ export default {
 		},
 		"hour": {
 			"current": "এই ঘণ্টায়",
-			"past": "{0} ঘন্টা আগে",
-			"future": "{0} ঘন্টায়"
+			"past": "{0} ঘণ্টা আগে",
+			"future": "{0} ঘণ্টায়"
 		},
 		"minute": {
 			"current": "এই মিনিট",
@@ -97,8 +97,8 @@ export default {
 		},
 		"hour": {
 			"current": "এই ঘণ্টায়",
-			"past": "{0} ঘন্টা আগে",
-			"future": "{0} ঘন্টায়"
+			"past": "{0} ঘণ্টা আগে",
+			"future": "{0} ঘণ্টায়"
 		},
 		"minute": {
 			"current": "এই মিনিট",
@@ -151,8 +151,8 @@ export default {
 		},
 		"hour": {
 			"current": "এই ঘণ্টায়",
-			"past": "{0} ঘন্টা আগে",
-			"future": "{0} ঘন্টায়"
+			"past": "{0} ঘণ্টা আগে",
+			"future": "{0} ঘণ্টায়"
 		},
 		"minute": {
 			"current": "এই মিনিট",

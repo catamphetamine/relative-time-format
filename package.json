@@ -1,6 +1,6 @@
 {
   "name": "relative-time-format",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "A convenient Intl.RelativeTimeFormat polyfill",
   "main": "index.cjs",
   "module": "index.js",
@@ -772,6 +772,16 @@
       "import": "./locale/bo-IN.json.js",
       "require": "./locale/bo-IN.json"
     },
+    "./locale/bqi.json": {
+      "types": "./locale/bqi.json.d.ts",
+      "import": "./locale/bqi.json.js",
+      "require": "./locale/bqi.json"
+    },
+    "./locale/bqi": {
+      "types": "./locale/bqi.json.d.ts",
+      "import": "./locale/bqi.json.js",
+      "require": "./locale/bqi.json"
+    },
     "./locale/br.json": {
       "types": "./locale/br.json.d.ts",
       "import": "./locale/br.json.js",
@@ -831,6 +841,16 @@
       "types": "./locale/bss.json.d.ts",
       "import": "./locale/bss.json.js",
       "require": "./locale/bss.json"
+    },
+    "./locale/bua.json": {
+      "types": "./locale/bua.json.d.ts",
+      "import": "./locale/bua.json.js",
+      "require": "./locale/bua.json"
+    },
+    "./locale/bua": {
+      "types": "./locale/bua.json.d.ts",
+      "import": "./locale/bua.json.js",
+      "require": "./locale/bua.json"
     },
     "./locale/byn.json": {
       "types": "./locale/byn.json.d.ts",
@@ -1602,6 +1622,16 @@
       "import": "./locale/en-Dsrt.json.js",
       "require": "./locale/en-Dsrt.json"
     },
+    "./locale/en-EE.json": {
+      "types": "./locale/en-EE.json.d.ts",
+      "import": "./locale/en-EE.json.js",
+      "require": "./locale/en-EE.json"
+    },
+    "./locale/en-EE": {
+      "types": "./locale/en-EE.json.d.ts",
+      "import": "./locale/en-EE.json.js",
+      "require": "./locale/en-EE.json"
+    },
     "./locale/en-ER.json": {
       "types": "./locale/en-ER.json.d.ts",
       "import": "./locale/en-ER.json.js",
@@ -1691,6 +1721,16 @@
       "types": "./locale/en-GD.json.d.ts",
       "import": "./locale/en-GD.json.js",
       "require": "./locale/en-GD.json"
+    },
+    "./locale/en-GE.json": {
+      "types": "./locale/en-GE.json.d.ts",
+      "import": "./locale/en-GE.json.js",
+      "require": "./locale/en-GE.json"
+    },
+    "./locale/en-GE": {
+      "types": "./locale/en-GE.json.d.ts",
+      "import": "./locale/en-GE.json.js",
+      "require": "./locale/en-GE.json"
     },
     "./locale/en-GG.json": {
       "types": "./locale/en-GG.json.d.ts",
@@ -1872,6 +1912,16 @@
       "import": "./locale/en-JM.json.js",
       "require": "./locale/en-JM.json"
     },
+    "./locale/en-JP.json": {
+      "types": "./locale/en-JP.json.d.ts",
+      "import": "./locale/en-JP.json.js",
+      "require": "./locale/en-JP.json"
+    },
+    "./locale/en-JP": {
+      "types": "./locale/en-JP.json.d.ts",
+      "import": "./locale/en-JP.json.js",
+      "require": "./locale/en-JP.json"
+    },
     "./locale/en-KE.json": {
       "types": "./locale/en-KE.json.d.ts",
       "import": "./locale/en-KE.json.js",
@@ -1941,6 +1991,26 @@
       "types": "./locale/en-LS.json.d.ts",
       "import": "./locale/en-LS.json.js",
       "require": "./locale/en-LS.json"
+    },
+    "./locale/en-LT.json": {
+      "types": "./locale/en-LT.json.d.ts",
+      "import": "./locale/en-LT.json.js",
+      "require": "./locale/en-LT.json"
+    },
+    "./locale/en-LT": {
+      "types": "./locale/en-LT.json.d.ts",
+      "import": "./locale/en-LT.json.js",
+      "require": "./locale/en-LT.json"
+    },
+    "./locale/en-LV.json": {
+      "types": "./locale/en-LV.json.d.ts",
+      "import": "./locale/en-LV.json.js",
+      "require": "./locale/en-LV.json"
+    },
+    "./locale/en-LV": {
+      "types": "./locale/en-LV.json.d.ts",
+      "import": "./locale/en-LV.json.js",
+      "require": "./locale/en-LV.json"
     },
     "./locale/en-MG.json": {
       "types": "./locale/en-MG.json.d.ts",
@@ -2411,6 +2481,16 @@
       "types": "./locale/en-TZ.json.d.ts",
       "import": "./locale/en-TZ.json.js",
       "require": "./locale/en-TZ.json"
+    },
+    "./locale/en-UA.json": {
+      "types": "./locale/en-UA.json.d.ts",
+      "import": "./locale/en-UA.json.js",
+      "require": "./locale/en-UA.json"
+    },
+    "./locale/en-UA": {
+      "types": "./locale/en-UA.json.d.ts",
+      "import": "./locale/en-UA.json.js",
+      "require": "./locale/en-UA.json"
     },
     "./locale/en-UG.json": {
       "types": "./locale/en-UG.json.d.ts",
@@ -4222,6 +4302,16 @@
       "import": "./locale/kea.json.js",
       "require": "./locale/kea.json"
     },
+    "./locale/kek.json": {
+      "types": "./locale/kek.json.d.ts",
+      "import": "./locale/kek.json.js",
+      "require": "./locale/kek.json"
+    },
+    "./locale/kek": {
+      "types": "./locale/kek.json.d.ts",
+      "import": "./locale/kek.json.js",
+      "require": "./locale/kek.json"
+    },
     "./locale/ken.json": {
       "types": "./locale/ken.json.d.ts",
       "import": "./locale/ken.json.js",
@@ -4502,6 +4592,66 @@
       "import": "./locale/ku.json.js",
       "require": "./locale/ku.json"
     },
+    "./locale/ku-Arab.json": {
+      "types": "./locale/ku-Arab.json.d.ts",
+      "import": "./locale/ku-Arab.json.js",
+      "require": "./locale/ku-Arab.json"
+    },
+    "./locale/ku-Arab": {
+      "types": "./locale/ku-Arab.json.d.ts",
+      "import": "./locale/ku-Arab.json.js",
+      "require": "./locale/ku-Arab.json"
+    },
+    "./locale/ku-Arab-IR.json": {
+      "types": "./locale/ku-Arab-IR.json.d.ts",
+      "import": "./locale/ku-Arab-IR.json.js",
+      "require": "./locale/ku-Arab-IR.json"
+    },
+    "./locale/ku-Arab-IR": {
+      "types": "./locale/ku-Arab-IR.json.d.ts",
+      "import": "./locale/ku-Arab-IR.json.js",
+      "require": "./locale/ku-Arab-IR.json"
+    },
+    "./locale/ku-Latn.json": {
+      "types": "./locale/ku-Latn.json.d.ts",
+      "import": "./locale/ku-Latn.json.js",
+      "require": "./locale/ku-Latn.json"
+    },
+    "./locale/ku-Latn": {
+      "types": "./locale/ku-Latn.json.d.ts",
+      "import": "./locale/ku-Latn.json.js",
+      "require": "./locale/ku-Latn.json"
+    },
+    "./locale/ku-Latn-IQ.json": {
+      "types": "./locale/ku-Latn-IQ.json.d.ts",
+      "import": "./locale/ku-Latn-IQ.json.js",
+      "require": "./locale/ku-Latn-IQ.json"
+    },
+    "./locale/ku-Latn-IQ": {
+      "types": "./locale/ku-Latn-IQ.json.d.ts",
+      "import": "./locale/ku-Latn-IQ.json.js",
+      "require": "./locale/ku-Latn-IQ.json"
+    },
+    "./locale/ku-Latn-SY.json": {
+      "types": "./locale/ku-Latn-SY.json.d.ts",
+      "import": "./locale/ku-Latn-SY.json.js",
+      "require": "./locale/ku-Latn-SY.json"
+    },
+    "./locale/ku-Latn-SY": {
+      "types": "./locale/ku-Latn-SY.json.d.ts",
+      "import": "./locale/ku-Latn-SY.json.js",
+      "require": "./locale/ku-Latn-SY.json"
+    },
+    "./locale/ku-TR.json": {
+      "types": "./locale/ku-TR.json.d.ts",
+      "import": "./locale/ku-TR.json.js",
+      "require": "./locale/ku-TR.json"
+    },
+    "./locale/ku-TR": {
+      "types": "./locale/ku-TR.json.d.ts",
+      "import": "./locale/ku-TR.json.js",
+      "require": "./locale/ku-TR.json"
+    },
     "./locale/kw.json": {
       "types": "./locale/kw.json.d.ts",
       "import": "./locale/kw.json.js",
@@ -4781,6 +4931,16 @@
       "types": "./locale/lv.json.d.ts",
       "import": "./locale/lv.json.js",
       "require": "./locale/lv.json"
+    },
+    "./locale/lzz.json": {
+      "types": "./locale/lzz.json.d.ts",
+      "import": "./locale/lzz.json.js",
+      "require": "./locale/lzz.json"
+    },
+    "./locale/lzz": {
+      "types": "./locale/lzz.json.d.ts",
+      "import": "./locale/lzz.json.js",
+      "require": "./locale/lzz.json"
     },
     "./locale/mai.json": {
       "types": "./locale/mai.json.d.ts",
@@ -5092,6 +5252,26 @@
       "import": "./locale/mus.json.js",
       "require": "./locale/mus.json"
     },
+    "./locale/mww.json": {
+      "types": "./locale/mww.json.d.ts",
+      "import": "./locale/mww.json.js",
+      "require": "./locale/mww.json"
+    },
+    "./locale/mww": {
+      "types": "./locale/mww.json.d.ts",
+      "import": "./locale/mww.json.js",
+      "require": "./locale/mww.json"
+    },
+    "./locale/mww-Hmnp.json": {
+      "types": "./locale/mww-Hmnp.json.d.ts",
+      "import": "./locale/mww-Hmnp.json.js",
+      "require": "./locale/mww-Hmnp.json"
+    },
+    "./locale/mww-Hmnp": {
+      "types": "./locale/mww-Hmnp.json.d.ts",
+      "import": "./locale/mww-Hmnp.json.js",
+      "require": "./locale/mww-Hmnp.json"
+    },
     "./locale/my.json": {
       "types": "./locale/my.json.d.ts",
       "import": "./locale/my.json.js",
@@ -5402,6 +5582,26 @@
       "import": "./locale/oc-ES.json.js",
       "require": "./locale/oc-ES.json"
     },
+    "./locale/oka.json": {
+      "types": "./locale/oka.json.d.ts",
+      "import": "./locale/oka.json.js",
+      "require": "./locale/oka.json"
+    },
+    "./locale/oka": {
+      "types": "./locale/oka.json.d.ts",
+      "import": "./locale/oka.json.js",
+      "require": "./locale/oka.json"
+    },
+    "./locale/oka-US.json": {
+      "types": "./locale/oka-US.json.d.ts",
+      "import": "./locale/oka-US.json.js",
+      "require": "./locale/oka-US.json"
+    },
+    "./locale/oka-US": {
+      "types": "./locale/oka-US.json.d.ts",
+      "import": "./locale/oka-US.json.js",
+      "require": "./locale/oka-US.json"
+    },
     "./locale/om.json": {
       "types": "./locale/om.json.d.ts",
       "import": "./locale/om.json.js",
@@ -5522,6 +5722,26 @@
       "import": "./locale/pcm.json.js",
       "require": "./locale/pcm.json"
     },
+    "./locale/pi.json": {
+      "types": "./locale/pi.json.d.ts",
+      "import": "./locale/pi.json.js",
+      "require": "./locale/pi.json"
+    },
+    "./locale/pi": {
+      "types": "./locale/pi.json.d.ts",
+      "import": "./locale/pi.json.js",
+      "require": "./locale/pi.json"
+    },
+    "./locale/pi-Latn.json": {
+      "types": "./locale/pi-Latn.json.d.ts",
+      "import": "./locale/pi-Latn.json.js",
+      "require": "./locale/pi-Latn.json"
+    },
+    "./locale/pi-Latn": {
+      "types": "./locale/pi-Latn.json.d.ts",
+      "import": "./locale/pi-Latn.json.js",
+      "require": "./locale/pi-Latn.json"
+    },
     "./locale/pis.json": {
       "types": "./locale/pis.json.d.ts",
       "import": "./locale/pis.json.js",
@@ -5541,6 +5761,16 @@
       "types": "./locale/pl.json.d.ts",
       "import": "./locale/pl.json.js",
       "require": "./locale/pl.json"
+    },
+    "./locale/pms.json": {
+      "types": "./locale/pms.json.d.ts",
+      "import": "./locale/pms.json.js",
+      "require": "./locale/pms.json"
+    },
+    "./locale/pms": {
+      "types": "./locale/pms.json.d.ts",
+      "import": "./locale/pms.json.js",
+      "require": "./locale/pms.json"
     },
     "./locale/prg.json": {
       "types": "./locale/prg.json.d.ts",
@@ -6112,6 +6342,16 @@
       "import": "./locale/sg.json.js",
       "require": "./locale/sg.json"
     },
+    "./locale/sgs.json": {
+      "types": "./locale/sgs.json.d.ts",
+      "import": "./locale/sgs.json.js",
+      "require": "./locale/sgs.json"
+    },
+    "./locale/sgs": {
+      "types": "./locale/sgs.json.d.ts",
+      "import": "./locale/sgs.json.js",
+      "require": "./locale/sgs.json"
+    },
     "./locale/shi.json": {
       "types": "./locale/shi.json.d.ts",
       "import": "./locale/shi.json.js",
@@ -6511,6 +6751,36 @@
       "types": "./locale/su-Latn.json.d.ts",
       "import": "./locale/su-Latn.json.js",
       "require": "./locale/su-Latn.json"
+    },
+    "./locale/suz.json": {
+      "types": "./locale/suz.json.d.ts",
+      "import": "./locale/suz.json.js",
+      "require": "./locale/suz.json"
+    },
+    "./locale/suz": {
+      "types": "./locale/suz.json.d.ts",
+      "import": "./locale/suz.json.js",
+      "require": "./locale/suz.json"
+    },
+    "./locale/suz-Deva.json": {
+      "types": "./locale/suz-Deva.json.d.ts",
+      "import": "./locale/suz-Deva.json.js",
+      "require": "./locale/suz-Deva.json"
+    },
+    "./locale/suz-Deva": {
+      "types": "./locale/suz-Deva.json.d.ts",
+      "import": "./locale/suz-Deva.json.js",
+      "require": "./locale/suz-Deva.json"
+    },
+    "./locale/suz-Sunu.json": {
+      "types": "./locale/suz-Sunu.json.d.ts",
+      "import": "./locale/suz-Sunu.json.js",
+      "require": "./locale/suz-Sunu.json"
+    },
+    "./locale/suz-Sunu": {
+      "types": "./locale/suz-Sunu.json.d.ts",
+      "import": "./locale/suz-Sunu.json.js",
+      "require": "./locale/suz-Sunu.json"
     },
     "./locale/sv.json": {
       "types": "./locale/sv.json.d.ts",
@@ -7417,15 +7687,15 @@
     "babel-loader": "^8.2.5",
     "babel-plugin-istanbul": "^6.1.1",
     "chai": "^4.3.6",
-    "cldr-core": "^47.0.0",
-    "cldr-dates-full": "^47.0.0",
+    "cldr-core": "^48.1.0",
+    "cldr-dates-full": "^48.1.0",
     "cross-env": "^7.0.3",
     "fs-extra": "^10.1.0",
     "handlebars": "^4.5.3",
     "istanbul": "^1.1.0-alpha.1",
     "lodash-es": "^4.17.21",
-    "make-plural": "^7.4.0",
-    "make-plural-compiler": "^6.0.0",
+    "make-plural": "^8.1.0",
+    "make-plural-compiler": "^6.1.0",
     "mkdirp": "^1.0.4",
     "mocha": "^10.0.0",
     "npm-run-all": "^4.1.5",
@@ -7446,14 +7716,14 @@
     "build-commonjs": "npm-run-all build-commonjs-modules-with-tests build-commonjs-package.json",
     "build-commonjs-modules": "cross-env babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
     "build-commonjs-modules-with-tests": "cross-env babel ./source --out-dir ./commonjs --source-maps",
-    "build-commonjs-package.json": "node bin/create-commonjs-package-json.js",
+    "build-commonjs-package.json": "node scripts/create-commonjs-package-json.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
     "build": "npm-run-all clean-for-build build-commonjs build-es6-modules browser-build",
     "prepublishOnly": "npm-run-all update-locales build test",
     "update-locales": "npm install make-plural@latest make-plural-compiler@latest cldr-core@latest cldr-dates-full@latest --save-dev && npm run generate-locales",
     "delete-locales": "rimraf ./locale/**/*",
     "create-locales-directory": "mkdirp locale",
-    "generate-locale-messages": "node --experimental-json-modules bin/generate-locale-messages",
+    "generate-locale-messages": "node --experimental-json-modules scripts/generate-locale-messages",
     "generate-locales": "npm-run-all delete-locales create-locales-directory generate-locale-messages"
   },
   "repository": {

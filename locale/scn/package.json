@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "relative-time-format/locale/scn",
+	"main": "../scn.json",
+	"module": "../scn.json.js",
+	"types": "../scn.json.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "../scn.json.d.ts",
+			"import": "../scn.json.js",
+			"require": "../scn.json"
+		}
+	},
+	"sideEffects": false
+}

@@ -2,8 +2,8 @@ export default {
 	"locale": "be",
 	"style": "long",
 	"year": {
-		"previous": "у мінулым годзе",
-		"current": "у гэтым годзе",
+		"previous": "летась",
+		"current": "сёлета",
 		"next": "у наступным годзе",
 		"past": {
 			"one": "{0} год таму",

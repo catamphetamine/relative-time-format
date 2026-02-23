@@ -2,9 +2,9 @@ export default {
 	"locale": "syr",
 	"style": "short",
 	"year": {
-		"previous": "ܐܫܬܩܕܝ",
-		"current": "ܗܕܐ ܫܢܬܐ",
-		"next": "ܫܢܬܐ ܐܚܪܬܐ",
+		"previous": "܏ܫܬܩܕ",
+		"current": "ܗܕ ܏ܫܢ",
+		"next": "܏ܫܢ ܕܐܬܝܐ",
 		"past": {
 			"one": "ܡ̣ܢ ܩܕܡ ܚܕܐ ܫܢܬܐ",
 			"other": "ܡ̣ܢ ܩܕܡ {0} ܫܢܝ̈ܐ"
@@ -28,9 +28,9 @@ export default {
 		}
 	},
 	"month": {
-		"previous": "ܝܪܚܐ ܕܕܥܒܪ",
-		"current": "ܗܢܐ ܝܪܚܐ",
-		"next": "ܝܪܚܐ ܕܐܬܐ",
+		"previous": "܏ܝܪܚ ܏ܐܚܪ",
+		"current": "ܗܢ ܏ܝܪܚ",
+		"next": "܏ܝܪܚ ܕܐܬܐ",
 		"past": {
 			"one": "ܡ̣ܢ ܩܕܡ ܚܕ ܝܪܚܐ",
 			"other": "ܡ̣ܢ ܩܕܡ {0} ܝܖ̈ܚܐ"
@@ -41,9 +41,9 @@ export default {
 		}
 	},
 	"week": {
-		"previous": "ܫܒܘܥܐ ܕܕܥܒܪ",
-		"current": "ܗܕܐ ܫܒܘܥܐ",
-		"next": "ܫܒܘܥܐ ܕܐܬܐ",
+		"previous": "܏ܫܒܘ ܏ܐܚܪ",
+		"current": "ܗܢ ܏ܫܒܘ",
+		"next": "܏ܫܒܘ ܕܐܬܐ",
 		"past": {
 			"one": "ܡ̣ܢ ܩܕܡ ܚܕ ܫܒܘܥܐ",
 			"other": "ܡ̣ܢ ܩܕܡ {0} ܫܒ̈ܘܥܐ"
@@ -54,9 +54,9 @@ export default {
 		}
 	},
 	"day": {
-		"previous": "ܐܬܡܠܝ",
+		"previous": "܏ܬܡܠ",
 		"current": "ܐܕܝܘܡ",
-		"next": "ܝܘܡܐ ܕܐܬܐ",
+		"next": "܏ܩܘܕܡ",
 		"past": {
 			"one": "ܡ̣ܢ ܩܕܡ ܚܕ ܝܘܡܐ",
 			"other": "ܡ̣ܢ ܩܕܡ {0} ܝܘܡܢ̈ܐ"

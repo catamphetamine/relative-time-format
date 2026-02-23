@@ -2,9 +2,9 @@ export default {
 	"locale": "fr",
 	"style": "short",
 	"year": {
-		"previous": "l’année dernière",
+		"previous": "l’an dernier",
 		"current": "cette année",
-		"next": "l’année prochaine",
+		"next": "l’an prochain",
 		"past": "il y a {0} a",
 		"future": "dans {0} a"
 	},
