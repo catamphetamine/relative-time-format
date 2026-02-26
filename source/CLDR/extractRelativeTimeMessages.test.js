@@ -1,9 +1,12 @@
+import { describe, it } from 'mocha'
+import { expect } from 'chai'
+
 import extractRelativeTimeMessages from './extractRelativeTimeMessages.js'
 
 describe('CLDR', () => {
 	it('should parse Unicode CLDR locale data', () => {
     // console.log(JSON.stringify(extractRelativeTimeMessages(englishDateMessagesInCLDR), null, 2))
-		extractRelativeTimeMessages(englishDateMessagesInCLDR).should.deep.equal(englishRelativeTimeMessages)
+		expect(extractRelativeTimeMessages(englishDateMessagesInCLDR)).to.deep.equal(englishRelativeTimeMessages)
 	})
 })
 

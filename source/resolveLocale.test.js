@@ -1,12 +1,13 @@
+import { describe, it } from 'mocha'
+import { expect } from 'chai'
+
 import resolveLocale from './resolveLocale.js'
-import { addLocaleData, getLocaleData } from './LocaleDataStore.js'
 
 describe('resolveLocale', () => {
   it('should resolve locale', () => {
-    // console.log()
-    resolveLocale("EN").should.equal("en")
-    resolveLocale("en-XX").should.equal("en")
-    resolveLocale("ar-AE-oed").should.equal("ar-AE")
+    expect(resolveLocale("EN")).to.equal("en")
+    expect(resolveLocale("en-XX")).to.equal("en")
+    expect(resolveLocale("ar-AE-oed")).to.equal("ar-AE")
   })
 
   it('should throw when "localeMatcher" option is not a valid one', () => {
@@ -14,6 +15,6 @@ describe('resolveLocale', () => {
   })
 
   it('should fall back to "lookup" when passed "best fit" "localeMatcher" option', () => {
-    resolveLocale("en-XX", { localeMatcher: "best fit" }).should.equal("en")
+    expect(resolveLocale("en-XX", { localeMatcher: "best fit" })).to.equal("en")
   })
 })

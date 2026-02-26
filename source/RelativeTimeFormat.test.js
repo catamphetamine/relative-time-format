@@ -1,3 +1,6 @@
+import { describe, it } from 'mocha'
+import { expect } from 'chai'
+
 import RelativeTimeFormat from './RelativeTimeFormat.js'
 
 import ccp from '../locale/ccp.json' with { type: 'json' }
@@ -306,30 +309,30 @@ describe('Intl.RelativeTimeFormat', () => {
   })
 
   it('should quantify as "other" when no quantifier function is present for a locale', () => {
-    new RelativeTimeFormat("ccp").format(1, "quarter").should.equal("𑄷 𑄖𑄨𑄚𑄟𑄏𑄬")
+    expect(new RelativeTimeFormat("ccp").format(1, "quarter")).to.equal("𑄷 𑄖𑄨𑄚𑄟𑄏𑄬")
   })
 
   it('should use quantify for a language of a specific locale', () => {
     // Will use `quantify` for "ar" language.
-    new RelativeTimeFormat("ar-AE").format(-1, "year").should.equal("قبل سنة واحدة")
-    new RelativeTimeFormat("ar-AE").format(-2, "year").should.equal("قبل سنتين")
+    expect(new RelativeTimeFormat("ar-AE").format(-1, "year")).to.equal("قبل سنة واحدة")
+    expect(new RelativeTimeFormat("ar-AE").format(-2, "year")).to.equal("قبل سنتين")
 
     // Uses local digits:
-    // new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل ٣ سنوات")
+    // expect(new RelativeTimeFormat("ar-AE").format(-3, "year")).to.equal("قبل ٣ سنوات")
 
     // Uses generic ANSI 0-9 digits:
-    new RelativeTimeFormat("ar-AE").format(-3, "year").should.equal("قبل 3 سنوات")
+    expect(new RelativeTimeFormat("ar-AE").format(-3, "year")).to.equal("قبل 3 سنوات")
 
     // Uses local digits:
-    // new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل ١٫٢٣ سنة")
+    // expect(new RelativeTimeFormat("ar-AE").format(-1.23, "year")).to.equal("قبل ١٫٢٣ سنة")
 
     // Uses generic ANSI 0-9 digits:
-    new RelativeTimeFormat("ar-AE").format(-1.23, "year").should.equal("قبل 1.23 سنة")
+    expect(new RelativeTimeFormat("ar-AE").format(-1.23, "year")).to.equal("قبل 1.23 سنة")
   })
 
   it('should use correct quantify for Portuguese ("pt") and European Portuguese ("pt-PT")', () => {
-    new RelativeTimeFormat("pt").format(1.5, "day").should.equal("em 1,5 dia")
-    new RelativeTimeFormat("pt-PT").format(1.5, "day").should.equal("dentro de 1,5 dias")
+    expect(new RelativeTimeFormat("pt").format(1.5, "day")).to.equal("em 1,5 dia")
+    expect(new RelativeTimeFormat("pt-PT").format(1.5, "day")).to.equal("dentro de 1,5 dias")
   })
 
   it('should show resolved options', () => {
